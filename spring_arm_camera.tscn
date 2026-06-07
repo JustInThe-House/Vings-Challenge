@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://bgmm2wr21g6pr"]
+
+[ext_resource type="Script" uid="uid://bdq1q74t4beng" path="res://spring_arm_pivot.gd" id="1_thaak"]
+[ext_resource type="Script" uid="uid://br31teyrp8vy4" path="res://camera_spring_arm.gd" id="2_v33g6"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_7jwrs"]
+radius = 5.0
+
+[node name="SpringArmPivot" type="Node3D" unique_id=377660430]
+top_level = true
+script = ExtResource("1_thaak")
+
+[node name="SpringArm3D" type="SpringArm3D" parent="." unique_id=320587476]
+shape = SubResource("SphereShape3D_7jwrs")
+spring_length = 5.0
+script = ExtResource("2_v33g6")
+
+[node name="Camera3D" type="Camera3D" parent="SpringArm3D" unique_id=898324505]

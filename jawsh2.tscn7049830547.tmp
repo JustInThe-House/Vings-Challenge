@@ -1,0 +1,37 @@
+[gd_scene format=3 uid="uid://tpedlxwfyd3t"]
+
+[ext_resource type="Script" uid="uid://wkrundivu03f" path="res://jawsh_2.gd" id="1_flrai"]
+[ext_resource type="Texture2D" uid="uid://tm6d1p0utrnm" path="res://icon.svg" id="1_mlfnx"]
+[ext_resource type="Script" uid="uid://bdq1q74t4beng" path="res://spring_arm_pivot.gd" id="2_flrai"]
+[ext_resource type="Script" uid="uid://br31teyrp8vy4" path="res://camera_spring_arm.gd" id="3_31s1k"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_wtokj"]
+albedo_texture = ExtResource("1_mlfnx")
+
+[sub_resource type="SphereMesh" id="SphereMesh_cmcmu"]
+material = SubResource("StandardMaterial3D_wtokj")
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_14aab"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_7jwrs"]
+
+[node name="Jawsh" type="RigidBody3D" unique_id=208343381]
+linear_damp = 1.0
+script = ExtResource("1_flrai")
+
+[node name="Model" type="MeshInstance3D" parent="." unique_id=829259342]
+mesh = SubResource("SphereMesh_cmcmu")
+
+[node name="Collision" type="CollisionShape3D" parent="." unique_id=1059162590]
+shape = SubResource("SphereShape3D_14aab")
+
+[node name="SpringArmPivot" type="Node3D" parent="." unique_id=303197641]
+top_level = true
+script = ExtResource("2_flrai")
+
+[node name="SpringArm3D" type="SpringArm3D" parent="SpringArmPivot" unique_id=1218569853]
+shape = SubResource("SphereShape3D_7jwrs")
+spring_length = 5.0
+script = ExtResource("3_31s1k")
+
+[node name="Camera3D" type="Camera3D" parent="SpringArmPivot/SpringArm3D" unique_id=1753204443]
