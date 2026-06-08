@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bi66fauwvb4m8"
-path.s3tc="res://.godot/imported/wega.png-c9201186c3f7a9576d68f43793429bb2.s3tc.ctex"
+path.s3tc="res://.godot/imported/wega.png-e21c08b6a147533681ac7625252a42d1.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://wega.png"
-dest_files=["res://.godot/imported/wega.png-c9201186c3f7a9576d68f43793429bb2.s3tc.ctex"]
+source_file="res://images/wega.png"
+dest_files=["res://.godot/imported/wega.png-e21c08b6a147533681ac7625252a42d1.s3tc.ctex"]
 
 [params]
 

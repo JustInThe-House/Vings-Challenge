@@ -1,9 +1,9 @@
 [gd_scene format=3 uid="uid://bfritw13mopd"]
 
-[ext_resource type="Texture2D" uid="uid://d4nqrmjyaia37" path="res://retro.png" id="1_r4q86"]
+[ext_resource type="Texture2D" uid="uid://d4nqrmjyaia37" path="res://images/retro.png" id="1_26y1u"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_e1q23"]
-albedo_texture = ExtResource("1_r4q86")
+albedo_texture = ExtResource("1_26y1u")
 uv1_scale = Vector3(3, 2, 1)
 
 [sub_resource type="BoxMesh" id="BoxMesh_q076o"]
@@ -11,7 +11,7 @@ material = SubResource("StandardMaterial3D_e1q23")
 size = Vector3(4, 1, 4)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_r4q86"]
-albedo_texture = ExtResource("1_r4q86")
+albedo_texture = ExtResource("1_26y1u")
 uv1_scale = Vector3(3, 2, 1)
 
 [sub_resource type="PrismMesh" id="PrismMesh_e1q23"]

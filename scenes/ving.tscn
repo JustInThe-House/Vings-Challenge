@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://cdtmwdfvfj3cg"]
 
-[ext_resource type="Script" uid="uid://btjqq6ivmrsao" path="res://ving.gd" id="1_6k4lq"]
-[ext_resource type="Texture2D" uid="uid://bi66fauwvb4m8" path="res://wega.png" id="2_6d33d"]
+[ext_resource type="Script" uid="uid://btjqq6ivmrsao" path="res://scripts/ving.gd" id="1_6k4lq"]
+[ext_resource type="Texture2D" uid="uid://bi66fauwvb4m8" path="res://images/wega.png" id="2_6d33d"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_6k4lq"]
 height = 10.0

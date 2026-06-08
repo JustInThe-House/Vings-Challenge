@@ -13,7 +13,7 @@ config_version=5
 config/name="Ving's Challenge"
 run/main_scene="uid://cki4qi7ubw672"
 config/features=PackedStringArray("4.6", "Forward Plus")
-config/icon="res://icon.svg"
+config/icon="res://images/icon.svg"
 
 [input]
 
