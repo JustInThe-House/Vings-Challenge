@@ -1,22 +1,30 @@
 [gd_scene format=3 uid="uid://cdtmwdfvfj3cg"]
 
-[ext_resource type="Script" uid="uid://btjqq6ivmrsao" path="res://scripts/ving.gd" id="1_6k4lq"]
+[ext_resource type="Script" uid="uid://btjqq6ivmrsao" path="res://ving/ving.gd" id="1_6k4lq"]
 [ext_resource type="Texture2D" uid="uid://bi66fauwvb4m8" path="res://images/wega.png" id="2_6d33d"]
+[ext_resource type="AudioStream" uid="uid://gen1gdlrvao" path="res://ving/ving_scream.wav" id="2_fyqwa"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_6k4lq"]
 height = 10.0
 
 [node name="Ving" type="CharacterBody3D" unique_id=1142625738]
+collision_layer = 2
 script = ExtResource("1_6k4lq")
+speed = 7.0
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1121717348]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4, 0)
 shape = SubResource("CapsuleShape3D_6k4lq")
 
 [node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="." unique_id=176060668]
-
-[node name="ScreamTimer" type="Timer" parent="AudioStreamPlayer3D" unique_id=1423043763]
+stream = ExtResource("2_fyqwa")
+unit_size = 20.0
+max_db = 0.0
+max_distance = 150.0
+max_polyphony = 16
 
 [node name="Sprite3D" type="Sprite3D" parent="." unique_id=1946103702]
 transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 0, 0, 0)
-billboard = 1
+offset = Vector2(0, 200)
+billboard = 2
 texture = ExtResource("2_6d33d")

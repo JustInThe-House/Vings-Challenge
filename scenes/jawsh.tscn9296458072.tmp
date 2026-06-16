@@ -17,14 +17,13 @@ material = SubResource("StandardMaterial3D_wtokj")
 [sub_resource type="SphereShape3D" id="SphereShape3D_14aab"]
 
 [sub_resource type="SphereShape3D" id="SphereShape3D_mlfnx"]
-radius = 0.001
+radius = 5.0
 
 [node name="Jawsh" type="RigidBody3D" unique_id=208343381]
 physics_material_override = SubResource("PhysicsMaterial_mlfnx")
-gravity_scale = 4.678
-angular_damp = 6.0
+gravity_scale = 4.2
 script = ExtResource("1_flrai")
-roll_speed = 200.0
+roll_speed = 40
 
 [node name="Model" type="MeshInstance3D" parent="." unique_id=829259342]
 mesh = SubResource("SphereMesh_cmcmu")
@@ -33,13 +32,10 @@ mesh = SubResource("SphereMesh_cmcmu")
 shape = SubResource("SphereShape3D_14aab")
 
 [node name="SpringArmPivot" parent="." unique_id=377660430 instance=ExtResource("3_mlfnx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 1)
 
 [node name="SpringArm3D" parent="SpringArmPivot" index="0" unique_id=320587476]
 shape = SubResource("SphereShape3D_mlfnx")
-spring_length = 6.0
-
-[node name="Camera3D" parent="SpringArmPivot/SpringArm3D" index="0" unique_id=898324505]
-current = true
 
 [node name="OnGroundCheck" type="RayCast3D" parent="." unique_id=1524855557]
 top_level = true
@@ -50,10 +46,6 @@ debug_shape_custom_color = Color(0.93624073, 0.2503544, 7.70092e-07, 1)
 script = ExtResource("4_wsjaa")
 
 [node name="JumpTimer" type="Timer" parent="." unique_id=395493187]
-wait_time = 0.2
-one_shot = true
-
-[node name="AudioListener3D" type="AudioListener3D" parent="." unique_id=1777506621]
-current = true
+wait_time = 0.5
 
 [editable path="SpringArmPivot"]

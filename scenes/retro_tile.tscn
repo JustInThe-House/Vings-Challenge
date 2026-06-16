@@ -2,40 +2,24 @@
 
 [ext_resource type="Texture2D" uid="uid://d4nqrmjyaia37" path="res://images/retro.png" id="1_26y1u"]
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_e1q23"]
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_26y1u"]
 albedo_texture = ExtResource("1_26y1u")
 uv1_scale = Vector3(3, 2, 1)
 
 [sub_resource type="BoxMesh" id="BoxMesh_q076o"]
-material = SubResource("StandardMaterial3D_e1q23")
+material = SubResource("StandardMaterial3D_26y1u")
 size = Vector3(4, 1, 4)
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_r4q86"]
-albedo_texture = ExtResource("1_26y1u")
-uv1_scale = Vector3(3, 2, 1)
-
-[sub_resource type="PrismMesh" id="PrismMesh_e1q23"]
-material = SubResource("StandardMaterial3D_r4q86")
-left_to_right = 0.0
-size = Vector3(4, 2, 4)
+[sub_resource type="BoxShape3D" id="BoxShape3D_0a5em"]
+size = Vector3(4, 1, 4)
 
 [node name="Library" type="Node3D" unique_id=79337603]
 
 [node name="retro" type="MeshInstance3D" parent="." unique_id=987640745]
 mesh = SubResource("BoxMesh_q076o")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="retro" unique_id=362974150]
+[node name="StaticBody3D" type="StaticBody3D" parent="retro" unique_id=1006597265]
 
-[node name="CollisionPolygon3D" type="CollisionPolygon3D" parent="retro/StaticBody3D" unique_id=941499212]
-depth = 4.0
-polygon = PackedVector2Array(-2.0045238, -0.4811995, -2.0045238, 0.4982836, 1.9874396, 0.4982836, 1.993135, -0.5039782)
-
-[node name="retro_stair" type="MeshInstance3D" parent="." unique_id=1817538780]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.5, 4)
-mesh = SubResource("PrismMesh_e1q23")
-
-[node name="StaticBody3D" type="StaticBody3D" parent="retro_stair" unique_id=1532240446]
-
-[node name="CollisionPolygon3D" type="CollisionPolygon3D" parent="retro_stair/StaticBody3D" unique_id=118156077]
-depth = 4.0
-polygon = PackedVector2Array(-2.0146825, -0.73304147, -2.0078995, 0.7593163, 2.0079, -0.7533919)
+[node name="CollisionShape3D" type="CollisionShape3D" parent="retro/StaticBody3D" unique_id=128884892]
+shape = SubResource("BoxShape3D_0a5em")
+debug_color = Color(0.984654, 0.12398631, 3.85046e-07, 0.41960785)

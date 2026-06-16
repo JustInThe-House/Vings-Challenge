@@ -1,14 +1,16 @@
-extends Node3D
+extends Node2D
 
-@export var player: RigidBody3D
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
+	$AnimationPlayer.play()
 	pass # Replace with function body.
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
-	if player.global_position.y < -10:
-		print("hiiii")
-		#get_tree().change_scene_to_file("res://scenes/gameover.tscn")
+	pass
+
+
+func _on_animation_player_animation_finished(anim_name: StringName) -> void:
+	get_tree().change_scene_to_file("res://scenes/menu.tscn")

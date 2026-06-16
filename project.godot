@@ -13,7 +13,13 @@ config_version=5
 config/name="Ving's Challenge"
 run/main_scene="uid://cki4qi7ubw672"
 config/features=PackedStringArray("4.6", "Forward Plus")
+run/max_fps=60
 config/icon="res://images/icon.svg"
+
+[display]
+
+window/size/viewport_width=1280
+window/size/viewport_height=720
 
 [input]
 

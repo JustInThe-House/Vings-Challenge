@@ -1,6 +1,5 @@
-extends Node3D
+extends RayCast3D
 
-@export var player: RigidBody3D
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -8,7 +7,5 @@ func _ready() -> void:
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta: float) -> void:
-	if player.global_position.y < -10:
-		print("hiiii")
-		#get_tree().change_scene_to_file("res://scenes/gameover.tscn")
+func _physics_process(delta: float) -> void:
+	global_transform.origin = $"..".global_transform.origin
