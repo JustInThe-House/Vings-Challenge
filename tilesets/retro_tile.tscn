@@ -1,0 +1,25 @@
+[gd_scene format=3 uid="uid://bfritw13mopd"]
+
+[ext_resource type="Texture2D" uid="uid://d4nqrmjyaia37" path="res://tilesets/retro.png" id="1_7qf6r"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_26y1u"]
+albedo_texture = ExtResource("1_7qf6r")
+uv1_scale = Vector3(3, 2, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_q076o"]
+material = SubResource("StandardMaterial3D_26y1u")
+size = Vector3(4, 1, 4)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_0a5em"]
+size = Vector3(4, 1, 4)
+
+[node name="Library" type="Node3D" unique_id=79337603]
+
+[node name="retro" type="MeshInstance3D" parent="." unique_id=987640745]
+mesh = SubResource("BoxMesh_q076o")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="retro" unique_id=1006597265]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="retro/StaticBody3D" unique_id=128884892]
+shape = SubResource("BoxShape3D_0a5em")
+debug_color = Color(0.984654, 0.12398631, 3.85046e-07, 0.41960785)

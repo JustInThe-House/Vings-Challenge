@@ -1,7 +1,8 @@
-extends CharacterBody3D
+extends Area3D
 
 @export var speed: float
-@export var player: RigidBody3D
+var player: RigidBody3D
+var fury := 0.0
 var scream_timer := 1.0
 
 func _ready() -> void:
@@ -14,10 +15,10 @@ func _process(delta: float) -> void:
 		$AudioStreamPlayer3D.play()
 
 func _physics_process(delta: float) -> void:
-	#if enabled:
-	global_position = global_position.move_toward(player.global_position, delta * speed)
+	if player != null:
+		global_position = global_position.move_toward(player.global_position, delta * speed * (1 + fury * 0.45))
+#	1.45% is probably the max he should go. though may have to factor in controller, which is a LOT harder
 
-
-#func _on_area_3d_body_entered(body: Node3D) -> void:
-	#if body is PlayerCharacter:
-		#get_tree().change_scene_to_file("res://scenes/gameover.tscn")
+func _on_body_entered(body: RigidBody3D) -> void:
+	get_tree().change_scene_to_file("res://gameover/gameover.tscn")
+	pass # Replace with function body.

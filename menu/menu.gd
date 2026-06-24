@@ -1,22 +1,108 @@
-extends Node2D
+extends Control
 
 var menu_index = 0
-enum menu_options {PLAY, CONTROLS}
+var settings_index = 0
+var menu_state = "MAIN"
+enum menu_options {PLAY, CONTROLS, SETTINGS, EXIT}
+enum settings_options {VOLUME, FULLSCREEN, VSYNC, BACK}
+
 
 func _ready() -> void:
-	pass # Replace with function body.
+	Music.play()
+	update_main()
+	$SettingsText.visible = false
+
+# update the menu whenever the player does an action
+func update_main() -> void:
+	for option in len(menu_options):
+		if menu_index == option:
+			$MenuText.get_child(option).selected = true
+		else:
+			$MenuText.get_child(option).selected = false
+
+func update_settings() -> void:
+	for option in len(settings_options):
+		if settings_index == option:
+			$SettingsText.get_child(option).selected = true
+		else:
+			$SettingsText.get_child(option).selected = false
+	$SettingsText/Fullscreen.text = "Fullscreen: " + ("ON" if DisplayServer.window_get_mode() == DisplayServer.WINDOW_MODE_EXCLUSIVE_FULLSCREEN else "OFF")
+	$SettingsText/Vsync.text = "Vsync: " + ("ON" if DisplayServer.window_get_vsync_mode() == 1 else "OFF")
 
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta: float) -> void:
-	if Input.is_action_pressed("move_up"):
-		menu_index -= 1
-	elif Input.is_action_pressed("move_down"):
-		menu_index += 1
-	menu_index = clamp(menu_index, 0, len(menu_options)-1)
+func _input(event: InputEvent) -> void:
+	if event.is_action_pressed("move_up"):
+		if menu_state == "MAIN":
+			if menu_index == 0:
+				menu_index = len(menu_options)-1
+			else:
+				menu_index -= 1
+			update_main()
+		if menu_state == "SETTINGS":
+			if settings_index == 0:
+				settings_index = len(settings_options)-1
+			else:
+				settings_index -= 1
+			update_settings()
 	
-	if Input.is_action_pressed("jump"):
-		if menu_index == menu_options.PLAY:
-			pass
-		elif menu_index == menu_options.PLAY:
-			pass 
+	elif event.is_action_pressed("move_down"):
+		if menu_state == "MAIN":
+			if menu_index == len(menu_options)-1:
+				menu_index = 0
+			else:
+				menu_index += 1
+			update_main()
+		elif menu_state == "SETTINGS":
+			if settings_index == len(settings_options)-1:
+					settings_index = 0
+			else:
+				settings_index += 1
+			update_settings()
+	
+	
+	elif event.is_action_pressed("jump") and not event.is_action_pressed("fullscreen"):
+		# MAIN MENU
+		if menu_state == "MAIN":
+			if menu_index == menu_options.PLAY:
+				get_tree().change_scene_to_file("res://rooms/collect_room.tscn")
+			elif menu_index == menu_options.CONTROLS:
+				pass
+			elif menu_index == menu_options.SETTINGS:
+				$SettingsText.visible = true
+				$MenuText.visible = false
+				$Title.visible = false
+				settings_index = 0
+				update_settings()
+				menu_state = "SETTINGS"
+			elif menu_index == menu_options.EXIT:
+				get_tree().quit()
+				
+		# SETTINGS MENU
+		elif menu_state == "SETTINGS":
+			if settings_index == settings_options.FULLSCREEN:
+				Universal.set_fullscreen()
+			elif settings_index == settings_options.VSYNC:
+				var is_vsync: bool = DisplayServer.window_get_vsync_mode() == 1 # 1 means vsync on; 0 means not
+				if is_vsync:
+					DisplayServer.window_set_vsync_mode(DisplayServer.VSYNC_DISABLED)
+				else:
+					DisplayServer.window_set_vsync_mode(DisplayServer.VSYNC_ENABLED)
+				print(DisplayServer.window_get_vsync_mode())
+			elif settings_index == settings_options.BACK:
+				$SettingsText.visible = false
+				$MenuText.visible = true
+				$Title.visible = true
+				menu_state = "MAIN"
+		update_settings()
+				
+			
+	elif event.is_action_pressed("back"):
+		if menu_state == "SETTINGS":
+			$SettingsText.visible = false
+			$MenuText.visible = true
+			$Title.visible = true
+			menu_state = "MAIN"
+			
+	elif event.is_action_pressed("volume_down", true) or event.is_action_pressed("volume_up", true):
+		$SettingsText/Volume.text = "Volume: " + str(Universal.volume_perc) + "%" 
+		print(Universal.volume_perc)

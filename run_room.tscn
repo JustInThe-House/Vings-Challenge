@@ -1,0 +1,37 @@
+[gd_scene format=3 uid="uid://4u02w7of4bq4"]
+
+[ext_resource type="Texture2D" uid="uid://d4nqrmjyaia37" path="res://tilesets/retro.png" id="1_qndof"]
+[ext_resource type="PackedScene" uid="uid://tpedlxwfyd3t" path="res://jawsh/jawsh.tscn" id="2_ik565"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_e1q23"]
+albedo_texture = ExtResource("1_qndof")
+uv1_scale = Vector3(3, 2, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_aes75"]
+material = SubResource("StandardMaterial3D_e1q23")
+size = Vector3(4, 1, 4)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_aes75"]
+size = Vector3(4, 1, 4)
+
+[node name="Node3D" type="Node3D" unique_id=142164863]
+
+[node name="ind tiles" type="Node3D" parent="." unique_id=1116881432]
+
+[node name="retro" type="MeshInstance3D" parent="ind tiles" unique_id=783299205]
+layers = 3
+mesh = SubResource("BoxMesh_aes75")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="ind tiles/retro" unique_id=963609258]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="ind tiles/retro/StaticBody3D" unique_id=1553887098]
+shape = SubResource("BoxShape3D_aes75")
+debug_color = Color(0.984654, 0.12398631, 3.85046e-07, 0.41960785)
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="ind tiles/retro/StaticBody3D" unique_id=1756433814]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 0)
+shape = SubResource("BoxShape3D_aes75")
+debug_color = Color(0.984654, 0.12398631, 3.85046e-07, 0.41960785)
+
+[node name="Jawsh" parent="." unique_id=208343381 instance=ExtResource("2_ik565")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4, 0)

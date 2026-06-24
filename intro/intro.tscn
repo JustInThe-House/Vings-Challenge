@@ -1,6 +1,8 @@
 [gd_scene format=3 uid="uid://dg1tism7k5m81"]
 
 [ext_resource type="Texture2D" uid="uid://ccoynk1kyqe8n" path="res://intro/kino_productions.png" id="1_fpmxm"]
+[ext_resource type="Script" uid="uid://dpfrfbyiovi8s" path="res://intro/intro.gd" id="1_jkt4n"]
+[ext_resource type="AudioStream" uid="uid://cf62qo8fuutly" path="res://intro/intro.wav" id="3_vjsr4"]
 
 [sub_resource type="Animation" id="Animation_jkt4n"]
 length = 0.001
@@ -31,7 +33,7 @@ tracks/1/keys = {
 
 [sub_resource type="Animation" id="Animation_vjsr4"]
 resource_name = "intro"
-length = 4.0
+length = 4.25
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -56,6 +58,21 @@ tracks/1/keys = {
 "update": 0,
 "values": [Vector2(0, 0), Vector2(3, 3)]
 }
+tracks/2/type = "audio"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("AudioStreamPlayer")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"clips": [{
+"end_offset": 0.0,
+"start_offset": 0.0,
+"stream": ExtResource("3_vjsr4")
+}],
+"times": PackedFloat32Array(0.6666667)
+}
+tracks/2/use_blend = true
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_pxqmo"]
 _data = {
@@ -72,6 +89,7 @@ offset_right = -1280.0
 offset_bottom = -720.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_jkt4n")
 metadata/_edit_use_anchors_ = true
 
 [node name="ColorRect" type="ColorRect" parent="." unique_id=1740601533]
@@ -85,5 +103,10 @@ position = Vector2(640, 360)
 scale = Vector2(2, 2)
 texture = ExtResource("1_fpmxm")
 
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=780783335]
+
 [node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1781253830]
 libraries/ = SubResource("AnimationLibrary_pxqmo")
+speed_scale = 1.5
+
+[connection signal="animation_finished" from="AnimationPlayer" to="." method="_on_animation_player_animation_finished"]

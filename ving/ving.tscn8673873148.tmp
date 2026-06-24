@@ -7,7 +7,7 @@
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_6k4lq"]
 height = 10.0
 
-[node name="Ving" type="Area3D" unique_id=277050341]
+[node name="Ving" type="CharacterBody3D" unique_id=1142625738]
 collision_layer = 2
 script = ExtResource("1_6k4lq")
 speed = 7.0
@@ -28,5 +28,3 @@ transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 0, 0, 0)
 offset = Vector2(0, 200)
 billboard = 2
 texture = ExtResource("2_6d33d")
-
-[connection signal="body_entered" from="." to="." method="_on_body_entered"]

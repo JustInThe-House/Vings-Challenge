@@ -2,13 +2,13 @@
 
 importer="wav"
 type="AudioStreamWAV"
-uid="uid://gen1gdlrvao"
-path="res://.godot/imported/ving_scream.wav-39d5978ac447550cc158ff7cba5475c8.sample"
+uid="uid://dfo6icije8y64"
+path="res://.godot/imported/jump.wav-3a77872fca05cd15446b191816e3c583.sample"
 
 [deps]
 
-source_file="res://ving/ving_scream.wav"
-dest_files=["res://.godot/imported/ving_scream.wav-39d5978ac447550cc158ff7cba5475c8.sample"]
+source_file="res://jawsh/jump.wav"
+dest_files=["res://.godot/imported/jump.wav-3a77872fca05cd15446b191816e3c583.sample"]
 
 [params]
 
