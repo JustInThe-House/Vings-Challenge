@@ -1,0 +1,40 @@
+[gd_scene format=3 uid="uid://cst3is2p2vex6"]
+
+[ext_resource type="Script" uid="uid://d0eriq8dqnwg2" path="res://rooms/ui_run.gd" id="1_p3xrv"]
+
+[node name="UI" type="Control" unique_id=1563677572]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+script = ExtResource("1_p3xrv")
+speed = 180.0
+
+[node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="." unique_id=1937376308]
+rect = Rect2(0, 0, 1280, 720)
+
+[node name="RUN" type="Label" parent="." unique_id=1214151958]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -638.0
+offset_top = -360.5
+offset_right = 638.0
+offset_bottom = 360.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0, 0.439, 0, 1)
+theme_override_font_sizes/font_size = 100
+text = "RUN!!!!!!!!!!
+
+
+s"
+horizontal_alignment = 1
+
+[connection signal="screen_exited" from="VisibleOnScreenNotifier2D" to="." method="_on_visible_on_screen_notifier_2d_screen_exited"]

@@ -10,7 +10,7 @@ height = 10.0
 [node name="Ving" type="Area3D" unique_id=277050341]
 collision_layer = 2
 script = ExtResource("1_6k4lq")
-speed = 7.0
+speed = 8.0
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1121717348]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4, 0)

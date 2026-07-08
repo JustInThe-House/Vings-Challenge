@@ -1,7 +1,6 @@
 [gd_scene format=3 uid="uid://cki4qi7ubw672"]
 
 [ext_resource type="Script" uid="uid://dbdck4kir0r47" path="res://rooms/collect_room.gd" id="1_xkuw5"]
-[ext_resource type="Script" uid="uid://cua3f3l2k53ek" path="res://scripts/game_manager.gd" id="2_nmqhj"]
 [ext_resource type="MeshLibrary" uid="uid://b4koq7uqw0e8w" path="res://tilesets/retro.tres" id="3_fv8q0"]
 [ext_resource type="Texture2D" uid="uid://jv7tdi2n2j2s" path="res://images/spoopy_edited.png" id="4_m0767"]
 [ext_resource type="PackedScene" uid="uid://tpedlxwfyd3t" path="res://jawsh/jawsh.tscn" id="5_48vym"]
@@ -9,31 +8,16 @@
 [ext_resource type="PackedScene" uid="uid://u25vubh1fgmg" path="res://ving doll/ving_doll.tscn" id="7_71awx"]
 
 [sub_resource type="Environment" id="Environment_cxv18"]
-fog_enabled = true
 fog_mode = 1
 fog_light_color = Color(0, 0, 0, 1)
 fog_light_energy = 0.0
 fog_density = 1.0
 fog_depth_curve = 0.32987857
 fog_depth_begin = 0.0
-fog_depth_end = 80.0
+fog_depth_end = 60.0
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_30yl3"]
-cull_mode = 2
-shading_mode = 0
-albedo_color = Color(0, 0, 0, 1)
-
-[sub_resource type="BoxMesh" id="BoxMesh_xtwfc"]
-material = SubResource("StandardMaterial3D_30yl3")
-size = Vector3(400, 400, 400)
-
-[node name="Room" type="Node3D" unique_id=552525402 node_paths=PackedStringArray("player")]
+[node name="CollectRoom" type="Node3D" unique_id=552525402]
 script = ExtResource("1_xkuw5")
-player = NodePath("Jawsh")
-
-[node name="GameManager" type="Node" parent="." unique_id=1806977683]
-unique_name_in_owner = true
-script = ExtResource("2_nmqhj")
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1678540566]
 environment = SubResource("Environment_cxv18")
@@ -48,7 +32,7 @@ directional_shadow_max_distance = 1.0
 mesh_library = ExtResource("3_fv8q0")
 cell_size = Vector3(4, 1, 4)
 data = {
-"cells": PackedInt32Array(65515, 65523, 0, 65515, 65522, 0, 65515, 65521, 0, 65514, 65521, 0, 65512, 65521, 0, 65513, 65521, 0, 65513, 65522, 0, 65513, 65523, 0, 65512, 65523, 0, 65512, 65524, 0, 65514, 65523, 0, 65512, 65525, 0, 65512, 65526, 0, 65512, 65527, 0, 65513, 65527, 0, 65514, 65527, 0, 65515, 65527, 0, 65516, 65527, 0, 65517, 65527, 0, 65516, 65528, 0, 65511, 65527, 0, 65510, 65527, 0, 65509, 65528, 0, 65508, 65528, 0, 65509, 65527, 0, 65508, 65527, 0, 65510, 65528, 0, 65507, 65527, 0, 65507, 65528, 0, 65507, 65529, 0, 65508, 65529, 0, 65509, 65529, 0, 65510, 65529, 0, 65516, 65523, 0, 65507, 65531, 0, 65507, 65530, 0, 65507, 65532, 0, 65507, 65533, 0, 65507, 65534, 0, 65507, 65535, 0, 65511, 65521, 0, 65511, 65523, 0, 65511, 65522, 0, 65508, 65535, 0, 65509, 65535, 0, 65510, 65535, 0, 65511, 65535, 0, 65512, 65535, 0, 65513, 65535, 0, 65513, 0, 0, 65512, 0, 0, 65511, 0, 0, 65513, 65534, 0, 65514, 65534, 0, 65515, 65534, 0, 65516, 65534, 0, 65517, 65534, 0, 65517, 65535, 0, 65517, 0, 0, 65518, 0, 0, 65519, 0, 0, 65519, 65535, 0, 65519, 65534, 0, 65518, 65534, 0, 65520, 0, 0, 65521, 0, 0, 65522, 0, 0, 65523, 0, 0, 65524, 0, 0, 65522, 65535, 0, 65522, 65534, 0, 65523, 65534, 0, 65524, 65534, 0, 65524, 65535, 0, 65522, 65533, 0, 65522, 65532, 0, 65522, 65531, 0, 65519, 65533, 0, 65519, 65532, 0, 65519, 65531, 0, 65522, 65530, 0, 65521, 65530, 0, 65520, 65530, 0, 65519, 65530, 0, 65519, 65529, 0, 65519, 65528, 0, 65519, 65527, 0, 65518, 65527, 0, 65523, 65530, 0, 65524, 65530, 0, 65525, 65530, 0, 65526, 65530, 0, 65527, 65530, 0, 65528, 65530, 0, 65529, 65530, 0, 65529, 65529, 0, 65529, 65528, 0, 65530, 65530, 0, 65530, 65528, 0, 65531, 65530, 0, 65531, 65528, 0, 65531, 65529, 0, 65532, 65530, 0, 65533, 65530, 0, 65534, 65530, 0, 65533, 65529, 0, 65533, 65528, 0, 65532, 65528, 0, 65534, 65528, 0, 65535, 65528, 0, 65535, 65530, 0, 65535, 65529, 0, 65535, 65527, 0, 65535, 65526, 0, 65535, 65525, 0, 65533, 65527, 0, 65533, 65526, 0, 65534, 65526, 0, 65532, 65526, 0, 65531, 65526, 0, 65531, 65527, 0, 65530, 65526, 0, 65529, 65526, 0, 65529, 65527, 0, 65529, 65525, 0, 65531, 65525, 0, 65533, 65525, 0, 65535, 65524, 0, 65534, 65524, 0, 65533, 65524, 0, 65532, 65524, 0, 65531, 65524, 0, 65530, 65524, 0, 65529, 65524, 0, 65517, 65523, 0, 65519, 65523, 0, 65520, 65523, 0, 65518, 65523, 0, 65523, 65523, 0, 65521, 65523, 0, 65522, 65523, 0, 65523, 65524, 0, 65523, 65525, 0, 65523, 65526, 0, 65524, 65526, 0, 65524, 65527, 0, 65524, 65528, 0, 65524, 65529, 0, 65513, 1, 0, 65513, 2, 0, 65513, 3, 0, 65513, 4, 0, 65513, 5, 0, 65513, 6, 0, 65513, 7, 0, 65513, 8, 0, 65513, 9, 0, 65513, 10, 0, 65513, 11, 0, 65513, 12, 0, 65522, 7, 0, 65521, 7, 0, 65520, 7, 0, 65519, 7, 0, 65518, 7, 0, 65517, 7, 0, 65516, 7, 0, 65515, 7, 0, 65514, 7, 0, 65512, 7, 0, 65511, 7, 0, 65510, 7, 0, 65509, 7, 0, 65508, 7, 0, 65507, 7, 0, 65506, 7, 0, 65519, 17, 0, 65519, 16, 0, 65519, 15, 0, 65519, 14, 0, 65519, 13, 0, 65519, 12, 0, 65519, 11, 0, 65519, 10, 0, 65519, 9, 0, 65519, 8, 0, 65519, 6, 0, 65519, 5, 0, 65519, 4, 0, 65525, 4, 0, 65524, 4, 0, 65523, 4, 0, 65522, 4, 0, 65521, 4, 0, 65520, 4, 0, 65518, 4, 0, 65517, 4, 0, 65516, 4, 0, 65515, 4, 0, 65514, 4, 0, 65512, 4, 0, 65511, 4, 0, 65510, 4, 0, 65509, 4, 0, 65508, 4, 0, 65523, 12, 0, 65522, 12, 0, 65521, 12, 0, 65520, 12, 0, 65518, 12, 0, 65517, 12, 0, 65516, 12, 0, 65515, 12, 0, 65514, 12, 0, 65512, 12, 0, 65511, 12, 0, 65510, 12, 0, 65509, 12, 0, 65508, 12, 0, 65507, 12, 0, 65506, 12, 0, 65513, 14, 0, 65513, 13, 0, 65509, 11, 0, 65509, 10, 0, 65509, 9, 0, 65509, 8, 0, 65509, 21, 0, 65510, 21, 0, 65511, 21, 0, 65512, 21, 0, 65513, 21, 0, 65514, 21, 0, 65515, 21, 0, 65516, 21, 0, 65517, 21, 0, 65518, 21, 0, 65519, 21, 0, 65527, 10, 0, 65527, 11, 0, 65528, 11, 0, 65528, 10, 0, 65528, 9, 0, 65527, 9, 0, 65529, 11, 0, 65529, 10, 0, 65529, 9, 0, 65530, 7, 0, 65531, 7, 0, 65532, 7, 0, 65532, 6, 0, 65531, 6, 0, 65530, 6, 0, 65530, 5, 0, 65531, 5, 0, 65532, 5, 0, 65525, 21, 0, 65525, 20, 0, 65525, 19, 0, 65525, 18, 0, 65525, 17, 0, 65525, 16, 0, 65525, 15, 0, 65525, 14, 0, 65525, 13, 0, 65525, 12, 0, 65525, 11, 0, 65525, 10, 0, 65525, 9, 0, 65525, 8, 0, 65525, 7, 0, 65525, 6, 0, 65525, 5, 0, 65520, 21, 0, 65521, 21, 0, 65522, 21, 0, 65523, 21, 0, 65524, 21, 0, 65519, 20, 0, 65519, 19, 0, 65519, 18, 0, 65513, 20, 0, 65513, 19, 0, 65513, 18, 0, 65513, 17, 0, 65513, 16, 0, 65513, 15, 0, 65523, 7, 0, 65524, 7, 0, 65524, 12, 0, 65524, 17, 0, 65523, 17, 0, 65522, 17, 0, 65521, 17, 0, 65520, 17, 0, 65518, 17, 0, 65517, 17, 0, 65516, 17, 0, 65515, 17, 0, 65514, 17, 0, 65508, 21, 0, 65506, 13, 0, 65506, 14, 0, 65506, 15, 0, 65506, 16, 0, 65506, 17, 0, 65506, 18, 0, 65506, 19, 0, 65506, 21, 0, 65506, 20, 0, 65507, 21, 0, 65506, 11, 0, 65506, 10, 0, 65506, 9, 0, 65506, 8, 0, 65506, 6, 0, 65506, 5, 0, 65506, 4, 0, 65507, 4, 0, 65525, 0, 0, 65525, 65534, 0, 65531, 65531, 0, 65510, 65522, 524288, 65510, 65521, 524288, 13, 0, 0, 14, 0, 0, 15, 0, 0, 16, 0, 0, 16, 1, 0, 16, 2, 0, 16, 3, 0, 16, 4, 0, 16, 5, 0, 16, 6, 0, 16, 7, 0, 16, 8, 0, 16, 9, 0, 16, 10, 0, 16, 11, 0, 16, 12, 0, 15, 12, 0, 14, 12, 0, 13, 12, 0, 12, 12, 0, 11, 12, 0, 10, 12, 0, 9, 12, 0, 8, 12, 0, 7, 12, 0, 6, 12, 0, 11, 65535, 0, 11, 65534, 0, 11, 65533, 0, 11, 65532, 0, 11, 65531, 0, 11, 65530, 0, 10, 65530, 0, 9, 65530, 0, 8, 65530, 0, 8, 65529, 0, 8, 65528, 0, 8, 65527, 0, 8, 65526, 0, 8, 65525, 0, 7, 65525, 0, 6, 65525, 0, 5, 65525, 0, 4, 65525, 0, 3, 65525, 0, 2, 65525, 0, 1, 65525, 0, 0, 65525, 0, 65533, 9, 0, 65534, 9, 0, 65535, 9, 0, 65535, 10, 0, 65535, 11, 0, 65534, 11, 0, 65533, 11, 0, 65533, 10, 0, 65534, 10, 0, 5, 12, 0, 4, 12, 0, 3, 12, 0, 2, 12, 0, 1, 12, 0, 0, 12, 0, 65535, 12, 0, 65535, 13, 0, 0, 13, 0, 65535, 14, 0, 0, 14, 0, 0, 15, 0, 65535, 15, 0, 12, 0, 0, 11, 0, 0, 7, 0, 0, 8, 0, 0, 9, 0, 0, 10, 0, 0, 6, 0, 0, 5, 0, 0, 4, 0, 0, 3, 0, 0, 2, 0, 0, 1, 0, 0, 0, 0, 0, 65535, 0, 0, 65534, 0, 0, 65533, 0, 0, 65532, 0, 0, 65531, 0, 0, 65531, 65535, 0, 65532, 65535, 0, 65530, 0, 0, 65529, 0, 0, 65528, 0, 0, 65527, 0, 0, 65526, 0, 0, 65526, 65534, 0, 65526, 65535, 0, 65531, 65534, 0, 65531, 65532, 0, 65531, 65533, 0, 65531, 1, 0, 65532, 1, 0, 65533, 1, 0, 65534, 1, 0, 65535, 65535, 0, 65535, 65534, 0, 65534, 65534, 0, 65533, 65534, 0, 65533, 65535, 0, 65534, 65535, 0, 65534, 65533, 0, 65533, 65533, 0, 65532, 65533, 0, 65532, 65534, 0, 65530, 1, 0)
+"cells": PackedInt32Array(65515, 65523, 0, 65515, 65522, 0, 65515, 65521, 0, 65514, 65521, 0, 65512, 65521, 0, 65513, 65521, 0, 65513, 65522, 0, 65513, 65523, 0, 65512, 65523, 0, 65512, 65524, 0, 65514, 65523, 0, 65512, 65525, 0, 65512, 65526, 0, 65512, 65527, 0, 65513, 65527, 0, 65514, 65527, 0, 65515, 65527, 0, 65516, 65527, 0, 65517, 65527, 0, 65511, 65527, 0, 65510, 65527, 0, 65509, 65528, 0, 65508, 65528, 0, 65509, 65527, 0, 65508, 65527, 0, 65510, 65528, 0, 65507, 65527, 0, 65507, 65528, 0, 65507, 65529, 0, 65508, 65529, 0, 65509, 65529, 0, 65510, 65529, 0, 65516, 65523, 0, 65507, 65531, 0, 65507, 65530, 0, 65507, 65532, 0, 65507, 65533, 0, 65507, 65534, 0, 65507, 65535, 0, 65511, 65521, 0, 65511, 65523, 0, 65511, 65522, 0, 65508, 65535, 0, 65509, 65535, 0, 65510, 65535, 0, 65511, 65535, 0, 65512, 65535, 0, 65513, 65535, 0, 65513, 0, 0, 65513, 65534, 0, 65514, 65534, 0, 65515, 65534, 0, 65516, 65534, 0, 65517, 65534, 0, 65517, 65535, 0, 65517, 0, 0, 65518, 0, 0, 65519, 0, 0, 65519, 65535, 0, 65519, 65534, 0, 65518, 65534, 0, 65520, 0, 0, 65521, 0, 0, 65522, 0, 0, 65523, 0, 0, 65524, 0, 0, 65522, 65535, 0, 65522, 65534, 0, 65523, 65534, 0, 65524, 65534, 0, 65524, 65535, 0, 65522, 65533, 0, 65522, 65532, 0, 65522, 65531, 0, 65519, 65533, 0, 65519, 65532, 0, 65519, 65531, 0, 65522, 65530, 0, 65521, 65530, 0, 65520, 65530, 0, 65519, 65530, 0, 65519, 65529, 0, 65519, 65528, 0, 65519, 65527, 0, 65518, 65527, 0, 65523, 65530, 0, 65524, 65530, 0, 65525, 65530, 0, 65526, 65530, 0, 65527, 65530, 0, 65528, 65530, 0, 65529, 65530, 0, 65529, 65529, 0, 65529, 65528, 0, 65530, 65530, 0, 65530, 65528, 0, 65531, 65530, 0, 65531, 65528, 0, 65531, 65529, 0, 65532, 65530, 0, 65533, 65530, 0, 65534, 65530, 0, 65533, 65529, 0, 65533, 65528, 0, 65532, 65528, 0, 65534, 65528, 0, 65535, 65528, 0, 65535, 65530, 0, 65535, 65529, 0, 65535, 65527, 0, 65535, 65526, 0, 65535, 65525, 0, 65533, 65527, 0, 65533, 65526, 0, 65534, 65526, 0, 65532, 65526, 0, 65531, 65526, 0, 65531, 65527, 0, 65530, 65526, 0, 65529, 65526, 0, 65529, 65527, 0, 65529, 65525, 0, 65531, 65525, 0, 65533, 65525, 0, 65535, 65524, 0, 65534, 65524, 0, 65533, 65524, 0, 65532, 65524, 0, 65531, 65524, 0, 65530, 65524, 0, 65529, 65524, 0, 65517, 65523, 0, 65519, 65523, 0, 65520, 65523, 0, 65518, 65523, 0, 65523, 65523, 0, 65521, 65523, 0, 65522, 65523, 0, 65523, 65524, 0, 65523, 65525, 0, 65523, 65526, 0, 65524, 65526, 0, 65524, 65527, 0, 65524, 65528, 0, 65524, 65529, 0, 65513, 1, 0, 65513, 2, 0, 65513, 3, 0, 65513, 4, 0, 65513, 5, 0, 65513, 6, 0, 65513, 7, 0, 65513, 8, 0, 65513, 9, 0, 65513, 10, 0, 65513, 11, 0, 65513, 12, 0, 65522, 7, 0, 65521, 7, 0, 65520, 7, 0, 65519, 7, 0, 65518, 7, 0, 65517, 7, 0, 65516, 7, 0, 65515, 7, 0, 65514, 7, 0, 65507, 7, 0, 65506, 7, 0, 65519, 16, 0, 65519, 15, 0, 65519, 14, 0, 65519, 13, 0, 65519, 12, 0, 65519, 11, 0, 65519, 10, 0, 65519, 9, 0, 65519, 8, 0, 65519, 6, 0, 65519, 5, 0, 65519, 4, 0, 65525, 4, 0, 65524, 4, 0, 65523, 4, 0, 65522, 4, 0, 65521, 4, 0, 65520, 4, 0, 65518, 4, 0, 65517, 4, 0, 65516, 4, 0, 65515, 4, 0, 65514, 4, 0, 65512, 4, 0, 65511, 4, 0, 65510, 4, 0, 65509, 4, 0, 65508, 4, 0, 65523, 12, 0, 65522, 12, 0, 65521, 12, 0, 65520, 12, 0, 65518, 12, 0, 65517, 12, 0, 65516, 12, 0, 65515, 12, 0, 65514, 12, 0, 65512, 12, 0, 65510, 12, 0, 65513, 14, 0, 65513, 13, 0, 65525, 12, 0, 65525, 7, 0, 65513, 16, 0, 65513, 15, 0, 65523, 7, 0, 65524, 7, 0, 65524, 12, 0, 65506, 4, 0, 65507, 4, 0, 65525, 0, 0, 65531, 65531, 0, 16, 0, 0, 16, 1, 0, 16, 2, 0, 16, 3, 0, 16, 4, 0, 16, 5, 0, 16, 6, 0, 16, 7, 0, 16, 8, 0, 16, 9, 0, 16, 10, 0, 16, 11, 0, 16, 12, 0, 15, 12, 0, 14, 12, 0, 13, 12, 0, 12, 12, 0, 11, 12, 0, 10, 12, 0, 9, 12, 0, 8, 12, 0, 7, 12, 0, 6, 12, 0, 65535, 9, 0, 65535, 10, 0, 65535, 11, 0, 5, 12, 0, 4, 12, 0, 3, 12, 0, 2, 12, 0, 1, 12, 0, 0, 12, 0, 65535, 12, 0, 65532, 0, 0, 65531, 0, 0, 65531, 65535, 0, 65532, 65535, 0, 65530, 0, 0, 65529, 0, 0, 65528, 0, 0, 65527, 0, 0, 65526, 0, 0, 65531, 65532, 0, 65531, 1, 0, 65532, 1, 0, 65530, 1, 0, 65530, 65535, 0, 65529, 65535, 0, 65529, 1, 0, 65529, 2, 0, 65530, 2, 0, 65531, 2, 0, 65532, 2, 0, 65511, 12, 0, 65512, 7, 0, 65508, 7, 0, 65509, 7, 0, 65510, 7, 0, 65511, 7, 0, 65509, 12, 0, 65508, 12, 0, 65507, 12, 0, 65506, 12, 0, 65505, 12, 0, 65509, 3, 0, 65509, 5, 0, 65509, 6, 0, 65509, 8, 0, 65509, 9, 0, 65509, 10, 0, 65509, 11, 0, 65509, 13, 0, 65509, 14, 0, 65509, 15, 0, 65509, 16, 0, 65509, 2, 0, 65505, 7, 0, 65505, 4, 0, 65519, 3, 0, 65519, 2, 0, 65519, 1, 0, 65525, 65534, 0, 65526, 65534, 0, 65526, 65535, 0, 65509, 1, 0, 65509, 0, 0, 65512, 0, 0, 65511, 0, 0, 65531, 65534, 0, 65531, 65533, 0, 4, 65532, 0, 4, 65531, 0, 4, 65530, 0, 3, 65530, 0, 2, 65530, 0, 2, 65531, 0, 2, 65532, 0, 3, 65532, 0, 3, 65531, 0, 4, 65528, 0, 5, 65528, 0, 6, 65528, 0, 6, 65527, 0, 5, 65527, 0, 4, 65527, 0, 4, 65526, 0, 5, 65526, 0, 6, 65526, 0, 4, 65524, 0, 3, 65524, 0, 2, 65524, 0, 1, 65524, 0, 1, 65523, 0, 1, 65522, 0, 1, 65521, 0, 2, 65521, 0, 3, 65521, 0, 3, 65522, 0, 4, 65522, 0, 4, 65523, 0, 3, 65523, 0, 4, 65521, 0, 2, 65522, 0, 2, 65523, 0, 5, 65531, 0, 6, 65531, 0, 7, 65531, 0, 8, 65531, 0, 9, 65531, 0, 9, 65530, 0, 9, 65529, 0, 9, 65528, 0, 10, 65528, 0, 11, 65528, 0, 12, 65528, 0, 12, 65527, 0, 12, 65526, 0, 12, 65525, 0, 11, 65525, 0, 10, 65525, 0, 9, 65525, 0, 9, 65526, 0, 9, 65527, 0, 10, 65527, 0, 11, 65527, 0, 11, 65526, 0, 10, 65526, 0, 13, 65528, 0, 13, 65527, 0, 13, 65526, 0, 13, 65525, 0, 13, 65524, 0, 12, 65524, 0, 11, 65524, 0, 10, 65524, 0, 9, 65524, 0, 8, 65522, 0, 7, 65522, 0, 6, 65522, 0, 6, 65521, 0, 7, 65521, 0, 8, 65521, 0, 8, 65520, 0, 7, 65520, 0, 6, 65520, 0, 16, 65523, 0, 16, 65522, 0, 16, 65521, 0, 15, 65521, 0, 15, 65522, 0, 15, 65523, 0, 17, 65523, 0, 17, 65522, 0, 17, 65521, 0, 14, 65522, 0, 13, 65522, 0, 12, 65522, 0, 12, 65523, 0, 13, 65520, 0, 12, 65520, 0, 11, 65520, 0, 11, 65519, 0, 12, 65519, 0, 13, 65519, 0, 13, 65518, 0, 12, 65518, 0, 11, 65518, 0, 15, 65528, 0, 15, 65527, 0, 15, 65526, 0, 16, 65526, 0, 17, 65526, 0, 17, 65527, 0, 17, 65528, 0, 16, 65528, 0, 16, 65527, 0, 16, 65529, 0, 16, 65530, 0, 16, 65531, 0, 10, 65531, 0, 11, 65531, 0, 11, 65530, 0, 12, 65530, 0, 13, 65530, 0, 13, 65531, 0, 14, 65531, 0, 15, 65531, 0, 16, 65532, 0, 16, 65533, 0, 16, 65534, 0, 16, 65535, 0, 15, 2, 0, 14, 2, 0, 13, 2, 0, 12, 2, 0, 11, 2, 0, 10, 2, 0, 9, 2, 0, 8, 2, 0, 7, 2, 0, 6, 2, 0, 5, 2, 0, 4, 2, 0, 3, 2, 0, 2, 2, 0, 1, 2, 0, 0, 2, 0, 65535, 2, 0, 65534, 2, 0, 65533, 2, 0, 65535, 8, 0, 65535, 7, 0, 65535, 6, 0, 65535, 5, 0, 65535, 4, 0, 65535, 3, 0, 65529, 10, 0, 65528, 10, 0, 65530, 10, 0, 65531, 10, 0, 65532, 10, 0, 65529, 6, 0, 65528, 6, 0, 65530, 6, 0, 65531, 6, 0, 65532, 6, 0, 65533, 6, 0, 65533, 10, 0, 65527, 10, 0, 65533, 5, 0, 65532, 5, 0, 65531, 5, 0, 65530, 5, 0, 65529, 5, 0, 65528, 5, 0, 65527, 6, 0, 65527, 5, 0, 65533, 9, 0, 65532, 9, 0, 65531, 9, 0, 65530, 9, 0, 65529, 9, 0, 65528, 9, 0, 65527, 9, 0)
 }
 metadata/_editor_floor_ = Vector3(0, 0, 0)
 
@@ -58,27 +42,15 @@ texture = ExtResource("4_m0767")
 
 [node name="Jawsh" parent="." unique_id=208343381 instance=ExtResource("5_48vym")]
 unique_name_in_owner = true
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18, 1.5, 2)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20, 1.5, 4)
 
-[node name="Ving" parent="." unique_id=334393529 node_paths=PackedStringArray("player") instance=ExtResource("6_lwnle")]
+[node name="Ving" parent="." unique_id=277050341 node_paths=PackedStringArray("player") instance=ExtResource("6_lwnle")]
 unique_name_in_owner = true
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -41, 4, 251)
 player = NodePath("../Jawsh")
 
-[node name="Skybox" type="MeshInstance3D" parent="." unique_id=449089059]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 21, 0)
-mesh = SubResource("BoxMesh_xtwfc")
-
 [node name="Dolls" type="Node3D" parent="." unique_id=1342605683]
-
-[node name="VingDoll" parent="Dolls" unique_id=919709208 instance=ExtResource("7_71awx")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 2, -26)
-
-[node name="VingDoll3" parent="Dolls" unique_id=2056954201 instance=ExtResource("7_71awx")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 2, -30)
-
-[node name="VingDoll2" parent="Dolls" unique_id=1108738819 instance=ExtResource("7_71awx")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 2, -22)
+unique_name_in_owner = true
 
 [node name="VingDoll4" parent="Dolls" unique_id=1186859985 instance=ExtResource("7_71awx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 2, -22)
@@ -101,8 +73,646 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18, 2, -22)
 [node name="VingDoll10" parent="Dolls" unique_id=981418844 instance=ExtResource("7_71awx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -22, 2, -22)
 
-[node name="VingDoll11" parent="Dolls" unique_id=531762478 instance=ExtResource("7_71awx")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -26, 2, -22)
-
 [node name="VingDoll12" parent="Dolls" unique_id=98600257 instance=ExtResource("7_71awx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -30, 2, -22)
+
+[node name="VingDoll13" parent="Dolls" unique_id=1606766754 instance=ExtResource("7_71awx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34, 2, -22)
+
+[node name="VingDoll14" parent="Dolls" unique_id=1834324609 instance=ExtResource("7_71awx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -38, 2, -22)
+
+[node name="VingDoll15" parent="Dolls" unique_id=529494083 instance=ExtResource("7_71awx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -42, 2, -22)
+
+[node name="VingDoll16" parent="Dolls" unique_id=1500949769 instance=ExtResource("7_71awx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -46, 2, -22)
+
+[node name="VingDoll17" parent="Dolls" unique_id=1178250006 instance=ExtResource("7_71awx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -50, 2, -22)
+
+[node name="VingDoll18" parent="Dolls" unique_id=800115739 instance=ExtResource("7_71awx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -54, 2, -22)
+
+[node name="VingDoll19" parent="Dolls" unique_id=291645835 instance=ExtResource("7_71awx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -58, 2, -22)
+
+[node name="VingDoll20" parent="Dolls" unique_id=118992349 instance=ExtResource("7_71awx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -30, 2, 2)
+
+[node name="VingDoll21" parent="Dolls" unique_id=2067055362 instance=ExtResource("7_71awx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34, 2, 2)
+
+[node name="VingDoll22" parent="Dolls" unique_id=1322327595 instance=ExtResource("7_71awx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -38, 2, 2)
+
+[node name="VingDoll23" parent="Dolls" unique_id=1445827405 instance=ExtResource("7_71awx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -42, 2, 2)
+
+[node name="VingDoll24" parent="Dolls" unique_id=1155406558 instance=ExtResource("7_71awx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -46, 2, 2)
+
+[node name="VingDoll25" parent="Dolls" unique_id=1347625223 instance=ExtResource("7_71awx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -50, 2, 2)
+
+[node name="VingDoll32" parent="Dolls" unique_id=11523727 instance=ExtResource("7_71awx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -38, 2, -6)
+
+[node name="VingDoll33" parent="Dolls" unique_id=1731886196 instance=ExtResource("7_71awx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -42, 2, -6)
+
+[node name="VingDoll34" parent="Dolls" unique_id=1718844128 instance=ExtResource("7_71awx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -46, 2, -6)
+
+[node name="VingDoll35" parent="Dolls" unique_id=1646667183 instance=ExtResource("7_71awx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -50, 2, -6)
+
+[node name="VingDoll36" parent="Dolls" unique_id=1725485131 instance=ExtResource("7_71awx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -54, 2, -6)
+
+[node name="VingDoll37" parent="Dolls" unique_id=1652649612 instance=ExtResource("7_71awx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -54, 2, 2)
+
+[node name="VingDoll58" parent="Dolls" unique_id=1541488259 instance=ExtResource("7_71awx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 30, 2, 10)
+
+[node name="VingDoll132" parent="Dolls" unique_id=341058669 instance=ExtResource("7_71awx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 2, -30)
+
+[node name="VingDoll136" parent="Dolls" unique_id=1880065718 instance=ExtResource("7_71awx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 2, -38)
+
+[node name="VingDoll137" parent="Dolls" unique_id=268608138 instance=ExtResource("7_71awx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 2, -42)
+
+[node name="VingDoll139" parent="Dolls" unique_id=1520101401 instance=ExtResource("7_71awx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 2, -38)
+
+[node name="VingDoll141" parent="Dolls" unique_id=1471470939 instance=ExtResource("7_71awx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18, 2, -42)
+
+[node name="VingDoll143" parent="Dolls" unique_id=1242510383 instance=ExtResource("7_71awx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18, 2, -38)
+
+[node name="VingDoll144" parent="Dolls" unique_id=1764442406 instance=ExtResource("7_71awx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -22, 2, -38)
+
+[node name="VingDoll149" parent="Dolls" unique_id=509208758 instance=ExtResource("7_71awx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18, 2, -34)
+
+[node name="VingDoll150" parent="Dolls" unique_id=1763877147 instance=ExtResource("7_71awx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18, 2, -30)
+
+[node name="VingDoll151" parent="Dolls" unique_id=1823763007 instance=ExtResource("7_71awx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -22, 2, -30)
+
+[node name="VingDoll26" parent="Dolls" unique_id=720552922 instance=ExtResource("7_71awx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -58, 2, 2)
+
+[node name="VingDoll27" parent="Dolls" unique_id=1264418391 instance=ExtResource("7_71awx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -62, 2, 2)
+
+[node name="VingDoll38" parent="Dolls" unique_id=1883931556 instance=ExtResource("7_71awx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -66, 2, 2)
+
+[node name="VingDoll31" parent="Dolls" unique_id=901229993 instance=ExtResource("7_71awx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -66, 2, 18)
+
+[node name="VingDoll39" parent="Dolls" unique_id=1449577856 instance=ExtResource("7_71awx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -70, 2, 18)
+
+[node name="VingDoll40" parent="Dolls" unique_id=1105127485 instance=ExtResource("7_71awx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -74, 2, 18)
+
+[node name="VingDoll41" parent="Dolls" unique_id=1199478421 instance=ExtResource("7_71awx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -78, 2, 18)
+
+[node name="VingDoll42" parent="Dolls" unique_id=747994427 instance=ExtResource("7_71awx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -82, 2, 18)
+
+[node name="VingDoll43" parent="Dolls" unique_id=46474190 instance=ExtResource("7_71awx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -86, 2, 18)
+
+[node name="VingDoll44" parent="Dolls" unique_id=1556661463 instance=ExtResource("7_71awx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -90, 2, 18)
+
+[node name="VingDoll48" parent="Dolls" unique_id=1797605199 instance=ExtResource("7_71awx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -66, 2, 30)
+
+[node name="VingDoll59" parent="Dolls" unique_id=1463731161 instance=ExtResource("7_71awx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -66, 2, 50)
+
+[node name="VingDoll60" parent="Dolls" unique_id=1291926639 instance=ExtResource("7_71awx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -70, 2, 50)
+
+[node name="VingDoll61" parent="Dolls" unique_id=1916018542 instance=ExtResource("7_71awx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -74, 2, 50)
+
+[node name="VingDoll62" parent="Dolls" unique_id=936338654 instance=ExtResource("7_71awx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -78, 2, 50)
+
+[node name="VingDoll63" parent="Dolls" unique_id=425342981 instance=ExtResource("7_71awx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -82, 2, 50)
+
+[node name="VingDoll64" parent="Dolls" unique_id=1603218645 instance=ExtResource("7_71awx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -86, 2, 50)
+
+[node name="VingDoll65" parent="Dolls" unique_id=1010908666 instance=ExtResource("7_71awx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -90, 2, 50)
+
+[node name="VingDoll66" parent="Dolls" unique_id=127776870 instance=ExtResource("7_71awx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 26, 2, 10)
+
+[node name="VingDoll67" parent="Dolls" unique_id=1902627155 instance=ExtResource("7_71awx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22, 2, 10)
+
+[node name="VingDoll68" parent="Dolls" unique_id=1404931249 instance=ExtResource("7_71awx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18, 2, 10)
+
+[node name="VingDoll69" parent="Dolls" unique_id=239557639 instance=ExtResource("7_71awx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 2, 10)
+
+[node name="VingDoll70" parent="Dolls" unique_id=1791739042 instance=ExtResource("7_71awx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 2, 10)
+
+[node name="VingDoll71" parent="Dolls" unique_id=1568814162 instance=ExtResource("7_71awx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 2, 10)
+
+[node name="VingDoll72" parent="Dolls" unique_id=1874097397 instance=ExtResource("7_71awx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 2, 10)
+
+[node name="VingDoll73" parent="Dolls" unique_id=1026774453 instance=ExtResource("7_71awx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 2, 10)
+
+[node name="VingDoll74" parent="Dolls" unique_id=526622218 instance=ExtResource("7_71awx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 2, 10)
+
+[node name="VingDoll75" parent="Dolls" unique_id=372299633 instance=ExtResource("7_71awx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 2, 10)
+
+[node name="VingDoll154" parent="Dolls" unique_id=410966187 instance=ExtResource("7_71awx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14, 2, -30)
+
+[node name="VingDoll155" parent="Dolls" unique_id=1641143313 instance=ExtResource("7_71awx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18, 2, -26)
+
+[node name="VingDoll77" parent="Dolls" unique_id=1955120618 instance=ExtResource("7_71awx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 2, -34)
+
+[node name="VingDoll79" parent="Dolls" unique_id=1262585452 instance=ExtResource("7_71awx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14, 2, -38)
+
+[node name="VingDoll94" parent="Dolls" unique_id=1277941655 instance=ExtResource("7_71awx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -66, 2, 42)
+
+[node name="VingDoll95" parent="Dolls" unique_id=422608844 instance=ExtResource("7_71awx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -66, 2, 38)
+
+[node name="VingDoll81" parent="Dolls" unique_id=2103783051 instance=ExtResource("7_71awx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -66, 2, 34)
+
+[node name="VingDoll83" parent="Dolls" unique_id=1385045716 instance=ExtResource("7_71awx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -106, 2, 30)
+
+[node name="VingDoll98" parent="Dolls" unique_id=1852107138 instance=ExtResource("7_71awx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -106, 2, 42)
+
+[node name="VingDoll99" parent="Dolls" unique_id=688875324 instance=ExtResource("7_71awx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -106, 2, 38)
+
+[node name="VingDoll84" parent="Dolls" unique_id=1207564662 instance=ExtResource("7_71awx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -106, 2, 34)
+
+[node name="VingDoll85" parent="Dolls" unique_id=649998188 instance=ExtResource("7_71awx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -106, 2, 46)
+
+[node name="VingDoll86" parent="Dolls" unique_id=2142247498 instance=ExtResource("7_71awx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -106, 2, 50)
+
+[node name="VingDoll90" parent="Dolls" unique_id=200391912 instance=ExtResource("7_71awx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -94, 2, 50)
+
+[node name="VingDoll91" parent="Dolls" unique_id=646659472 instance=ExtResource("7_71awx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -98, 2, 50)
+
+[node name="VingDoll104" parent="Dolls" unique_id=252926031 instance=ExtResource("7_71awx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -102, 2, 50)
+
+[node name="VingDoll108" parent="Dolls" unique_id=1374935433 instance=ExtResource("7_71awx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -94, 2, 18)
+
+[node name="VingDoll109" parent="Dolls" unique_id=961692202 instance=ExtResource("7_71awx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -98, 2, 18)
+
+[node name="VingDoll110" parent="Dolls" unique_id=1540644844 instance=ExtResource("7_71awx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -102, 2, 18)
+
+[node name="VingDoll117" parent="Dolls" unique_id=2105752636 instance=ExtResource("7_71awx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -66, 2, 46)
+
+[node name="VingDoll119" parent="Dolls" unique_id=1572222963 instance=ExtResource("7_71awx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -66, 2, 26)
+
+[node name="VingDoll120" parent="Dolls" unique_id=48832848 instance=ExtResource("7_71awx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -66, 2, 22)
+
+[node name="VingDoll123" parent="Dolls" unique_id=1257566851 instance=ExtResource("7_71awx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -106, 2, 26)
+
+[node name="VingDoll124" parent="Dolls" unique_id=491778156 instance=ExtResource("7_71awx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -106, 2, 22)
+
+[node name="VingDoll125" parent="Dolls" unique_id=1054496571 instance=ExtResource("7_71awx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -46, 2, -26)
+
+[node name="VingDoll157" parent="Dolls" unique_id=1462402875 instance=ExtResource("7_71awx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -46, 2, -38)
+
+[node name="VingDoll158" parent="Dolls" unique_id=2017027112 instance=ExtResource("7_71awx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -66, 2, -30)
+
+[node name="VingDoll159" parent="Dolls" unique_id=564336981 instance=ExtResource("7_71awx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -46, 2, -34)
+
+[node name="VingDoll126" parent="Dolls" unique_id=357306192 instance=ExtResource("7_71awx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -46, 2, -30)
+
+[node name="VingDoll127" parent="Dolls" unique_id=1392221104 instance=ExtResource("7_71awx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -50, 2, -38)
+
+[node name="VingDoll160" parent="Dolls" unique_id=342028465 instance=ExtResource("7_71awx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -50, 2, -50)
+
+[node name="VingDoll161" parent="Dolls" unique_id=2047170910 instance=ExtResource("7_71awx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -50, 2, -46)
+
+[node name="VingDoll162" parent="Dolls" unique_id=1078674946 instance=ExtResource("7_71awx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -50, 2, -46)
+
+[node name="VingDoll128" parent="Dolls" unique_id=233400503 instance=ExtResource("7_71awx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -50, 2, -42)
+
+[node name="VingDoll129" parent="Dolls" unique_id=1413504395 instance=ExtResource("7_71awx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -54, 2, -50)
+
+[node name="VingDoll130" parent="Dolls" unique_id=1307605320 instance=ExtResource("7_71awx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -58, 2, -50)
+
+[node name="VingDoll131" parent="Dolls" unique_id=1054196654 instance=ExtResource("7_71awx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -62, 2, -50)
+
+[node name="VingDoll163" parent="Dolls" unique_id=724615911 instance=ExtResource("7_71awx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -66, 2, -50)
+
+[node name="VingDoll164" parent="Dolls" unique_id=1793778903 instance=ExtResource("7_71awx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -70, 2, -50)
+
+[node name="VingDoll165" parent="Dolls" unique_id=960569134 instance=ExtResource("7_71awx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -74, 2, -50)
+
+[node name="VingDoll166" parent="Dolls" unique_id=1175036792 instance=ExtResource("7_71awx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -78, 2, -50)
+
+[node name="VingDoll167" parent="Dolls" unique_id=869958207 instance=ExtResource("7_71awx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -82, 2, -50)
+
+[node name="VingDoll168" parent="Dolls" unique_id=461659462 instance=ExtResource("7_71awx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -86, 2, -50)
+
+[node name="VingDoll169" parent="Dolls" unique_id=1291135737 instance=ExtResource("7_71awx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -66, 2, -34)
+
+[node name="VingDoll170" parent="Dolls" unique_id=93989279 instance=ExtResource("7_71awx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -70, 2, -34)
+
+[node name="VingDoll171" parent="Dolls" unique_id=1209024961 instance=ExtResource("7_71awx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -74, 2, -34)
+
+[node name="VingDoll172" parent="Dolls" unique_id=115604829 instance=ExtResource("7_71awx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -78, 2, -34)
+
+[node name="VingDoll173" parent="Dolls" unique_id=819021223 instance=ExtResource("7_71awx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -82, 2, -34)
+
+[node name="VingDoll174" parent="Dolls" unique_id=288077382 instance=ExtResource("7_71awx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -86, 2, -34)
+
+[node name="VingDoll175" parent="Dolls" unique_id=794450055 instance=ExtResource("7_71awx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -90, 2, -34)
+
+[node name="VingDoll176" parent="Dolls" unique_id=1366691207 instance=ExtResource("7_71awx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -94, 2, -34)
+
+[node name="VingDoll177" parent="Dolls" unique_id=651151553 instance=ExtResource("7_71awx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -98, 2, -34)
+
+[node name="VingDoll178" parent="Dolls" unique_id=1591019017 instance=ExtResource("7_71awx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 46, 2, 10)
+
+[node name="VingDoll179" parent="Dolls" unique_id=1043219477 instance=ExtResource("7_71awx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 42, 2, 10)
+
+[node name="VingDoll180" parent="Dolls" unique_id=774044629 instance=ExtResource("7_71awx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 38, 2, 10)
+
+[node name="VingDoll181" parent="Dolls" unique_id=1869248256 instance=ExtResource("7_71awx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 34, 2, 10)
+
+[node name="VingDoll182" parent="Dolls" unique_id=767536461 instance=ExtResource("7_71awx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 62, 2, 10)
+
+[node name="VingDoll183" parent="Dolls" unique_id=2117465276 instance=ExtResource("7_71awx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 58, 2, 10)
+
+[node name="VingDoll184" parent="Dolls" unique_id=1896606345 instance=ExtResource("7_71awx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 54, 2, 10)
+
+[node name="VingDoll185" parent="Dolls" unique_id=1312953745 instance=ExtResource("7_71awx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 50, 2, 10)
+
+[node name="VingDoll186" parent="Dolls" unique_id=1188220193 instance=ExtResource("7_71awx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 2, -50)
+
+[node name="VingDoll187" parent="Dolls" unique_id=849511675 instance=ExtResource("7_71awx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 2, -54)
+
+[node name="VingDoll188" parent="Dolls" unique_id=1094329137 instance=ExtResource("7_71awx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 2, -50)
+
+[node name="VingDoll189" parent="Dolls" unique_id=795794641 instance=ExtResource("7_71awx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 2, -54)
+
+[node name="VingDoll190" parent="Dolls" unique_id=276815770 instance=ExtResource("7_71awx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 46, 2, -34)
+
+[node name="VingDoll191" parent="Dolls" unique_id=2058261799 instance=ExtResource("7_71awx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 46, 2, -38)
+
+[node name="VingDoll192" parent="Dolls" unique_id=863136880 instance=ExtResource("7_71awx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 50, 2, -34)
+
+[node name="VingDoll193" parent="Dolls" unique_id=1353530487 instance=ExtResource("7_71awx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 50, 2, -38)
+
+[node name="VingDoll194" parent="Dolls" unique_id=1038494117 instance=ExtResource("7_71awx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 66, 2, -54)
+
+[node name="VingDoll195" parent="Dolls" unique_id=325240277 instance=ExtResource("7_71awx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 66, 2, -34)
+
+[node name="VingDoll196" parent="Dolls" unique_id=744320469 instance=ExtResource("7_71awx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 42, 2, -34)
+
+[node name="VingDoll197" parent="Dolls" unique_id=15273597 instance=ExtResource("7_71awx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 42, 2, -38)
+
+[node name="VingDoll198" parent="Dolls" unique_id=959319361 instance=ExtResource("7_71awx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 46, 2, -42)
+
+[node name="VingDoll199" parent="Dolls" unique_id=959029778 instance=ExtResource("7_71awx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 50, 2, -42)
+
+[node name="VingDoll200" parent="Dolls" unique_id=1321654254 instance=ExtResource("7_71awx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 42, 2, -42)
+
+[node name="VingDoll201" parent="Dolls" unique_id=1030007916 instance=ExtResource("7_71awx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -38, 2, -2)
+
+[node name="VingDoll202" parent="Dolls" unique_id=1874125287 instance=ExtResource("7_71awx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -46, 2, -2)
+
+[node name="VingDoll203" parent="Dolls" unique_id=1891367110 instance=ExtResource("7_71awx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -54, 2, -2)
+
+[node name="VingDoll204" parent="Dolls" unique_id=447827641 instance=ExtResource("7_71awx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -66, 2, 6)
+
+[node name="VingDoll205" parent="Dolls" unique_id=1206052944 instance=ExtResource("7_71awx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -66, 2, 14)
+
+[node name="VingDoll206" parent="Dolls" unique_id=165284977 instance=ExtResource("7_71awx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -66, 2, 10)
+
+[node name="VingDoll207" parent="Dolls" unique_id=1237751678 instance=ExtResource("7_71awx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -70, 2, 2)
+
+[node name="VingDoll208" parent="Dolls" unique_id=1059135289 instance=ExtResource("7_71awx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -74, 2, 2)
+
+[node name="VingDoll209" parent="Dolls" unique_id=1445852482 instance=ExtResource("7_71awx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -66, 2, -6)
+
+[node name="VingDoll210" parent="Dolls" unique_id=994274733 instance=ExtResource("7_71awx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -70, 2, -6)
+
+[node name="VingDoll211" parent="Dolls" unique_id=1779587690 instance=ExtResource("7_71awx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -74, 2, -6)
+
+[node name="VingDoll212" parent="Dolls" unique_id=433079164 instance=ExtResource("7_71awx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -74, 2, -2)
+
+[node name="VingDoll213" parent="Dolls" unique_id=1092987028 instance=ExtResource("7_71awx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -66, 2, -2)
+
+[node name="VingDoll11" parent="Dolls" unique_id=919709208 instance=ExtResource("7_71awx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -26, 2, -22)
+
+[node name="VingDoll49" parent="Dolls" unique_id=1295447007 instance=ExtResource("7_71awx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -62, 2, -22)
+
+[node name="VingDoll50" parent="Dolls" unique_id=583849730 instance=ExtResource("7_71awx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -66, 2, -22)
+
+[node name="VingDoll214" parent="Dolls" unique_id=50823679 instance=ExtResource("7_71awx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -102, 2, -26)
+
+[node name="VingDoll215" parent="Dolls" unique_id=1873603410 instance=ExtResource("7_71awx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -106, 2, -26)
+
+[node name="VingDoll216" parent="Dolls" unique_id=1675550524 instance=ExtResource("7_71awx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -110, 2, -26)
+
+[node name="VingDoll217" parent="Dolls" unique_id=770214246 instance=ExtResource("7_71awx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -102, 2, -30)
+
+[node name="VingDoll218" parent="Dolls" unique_id=1820971290 instance=ExtResource("7_71awx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -106, 2, -30)
+
+[node name="VingDoll219" parent="Dolls" unique_id=885197035 instance=ExtResource("7_71awx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -110, 2, -30)
+
+[node name="VingDoll220" parent="Dolls" unique_id=384873322 instance=ExtResource("7_71awx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -90, 2, 2)
+
+[node name="VingDoll221" parent="Dolls" unique_id=2062936136 instance=ExtResource("7_71awx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -94, 2, 2)
+
+[node name="VingDoll222" parent="Dolls" unique_id=1842849210 instance=ExtResource("7_71awx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -98, 2, 2)
+
+[node name="VingDoll223" parent="Dolls" unique_id=2002711687 instance=ExtResource("7_71awx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -90, 2, -2)
+
+[node name="VingDoll224" parent="Dolls" unique_id=1319351839 instance=ExtResource("7_71awx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -94, 2, -2)
+
+[node name="VingDoll225" parent="Dolls" unique_id=1132035688 instance=ExtResource("7_71awx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -98, 2, -2)
+
+[node name="VingDoll226" parent="Dolls" unique_id=2028767740 instance=ExtResource("7_71awx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -90, 2, 6)
+
+[node name="VingDoll227" parent="Dolls" unique_id=790346783 instance=ExtResource("7_71awx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -90, 2, 14)
+
+[node name="VingDoll228" parent="Dolls" unique_id=133751162 instance=ExtResource("7_71awx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -90, 2, 10)
+
+[node name="VingDoll229" parent="Dolls" unique_id=535293165 instance=ExtResource("7_71awx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -106, 2, 6)
+
+[node name="VingDoll230" parent="Dolls" unique_id=121295970 instance=ExtResource("7_71awx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -106, 2, 2)
+
+[node name="VingDoll231" parent="Dolls" unique_id=147518914 instance=ExtResource("7_71awx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -106, 2, 10)
+
+[node name="VingDoll232" parent="Dolls" unique_id=350428204 instance=ExtResource("7_71awx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -106, 2, 14)
+
+[node name="VingDoll233" parent="Dolls" unique_id=218078104 instance=ExtResource("7_71awx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -82, 2, -6)
+
+[node name="VingDoll234" parent="Dolls" unique_id=439821830 instance=ExtResource("7_71awx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -86, 2, -6)
+
+[node name="VingDoll235" parent="Dolls" unique_id=528916346 instance=ExtResource("7_71awx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -90, 2, -6)
+
+[node name="VingDoll236" parent="Dolls" unique_id=799917080 instance=ExtResource("7_71awx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -102, 2, -2)
+
+[node name="VingDoll237" parent="Dolls" unique_id=2112304008 instance=ExtResource("7_71awx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -106, 2, -2)
+
+[node name="VingDoll238" parent="Dolls" unique_id=113187232 instance=ExtResource("7_71awx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -110, 2, -2)
+
+[node name="VingDoll239" parent="Dolls" unique_id=1890864093 instance=ExtResource("7_71awx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -78, 2, -6)
+
+[node name="VingDoll240" parent="Dolls" unique_id=1426218518 instance=ExtResource("7_71awx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -82, 2, -58)
+
+[node name="VingDoll241" parent="Dolls" unique_id=2102136241 instance=ExtResource("7_71awx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -86, 2, -58)
+
+[node name="VingDoll242" parent="Dolls" unique_id=1543959776 instance=ExtResource("7_71awx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -90, 2, -58)
+
+[node name="VingDoll243" parent="Dolls" unique_id=2038556743 instance=ExtResource("7_71awx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -94, 2, -58)
+
+[node name="VingDoll244" parent="Dolls" unique_id=1408878611 instance=ExtResource("7_71awx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -98, 2, -58)
+
+[node name="VingDoll245" parent="Dolls" unique_id=1622485618 instance=ExtResource("7_71awx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -90, 2, -50)
+
+[node name="VingDoll246" parent="Dolls" unique_id=942600316 instance=ExtResource("7_71awx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -94, 2, -50)
+
+[node name="VingDoll247" parent="Dolls" unique_id=2114452415 instance=ExtResource("7_71awx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -98, 2, -50)
+
+[node name="VingDoll248" parent="Dolls" unique_id=1162649756 instance=ExtResource("7_71awx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -82, 2, -54)
+
+[node name="VingDoll249" parent="Dolls" unique_id=704536614 instance=ExtResource("7_71awx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -90, 2, -54)
+
+[node name="VingDoll250" parent="Dolls" unique_id=354915556 instance=ExtResource("7_71awx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -98, 2, -54)
+
+[node name="VingDoll251" parent="Dolls" unique_id=406634765 instance=ExtResource("7_71awx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -94, 2, -46)
+
+[node name="VingDoll252" parent="Dolls" unique_id=884989498 instance=ExtResource("7_71awx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -94, 2, -38)
+
+[node name="VingDoll253" parent="Dolls" unique_id=108338695 instance=ExtResource("7_71awx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -94, 2, -42)
+
+[node name="VingDoll28" parent="Dolls" unique_id=1830616080 instance=ExtResource("7_71awx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 2, -18)
+
+[node name="VingDoll254" parent="Dolls" unique_id=1618917159 instance=ExtResource("7_71awx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 66, 2, 10)
+
+[node name="VingDoll255" parent="Dolls" unique_id=870286932 instance=ExtResource("7_71awx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 66, 2, 6)
+
+[node name="VingDoll256" parent="Dolls" unique_id=539862447 instance=ExtResource("7_71awx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 66, 2, 2)
+
+[node name="VingDoll257" parent="Dolls" unique_id=660372791 instance=ExtResource("7_71awx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 66, 2, -2)
+
+[node name="VingDoll258" parent="Dolls" unique_id=1733464920 instance=ExtResource("7_71awx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 66, 2, -6)
+
+[node name="VingDoll259" parent="Dolls" unique_id=44260538 instance=ExtResource("7_71awx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 66, 2, -10)
+
+[node name="VingDoll260" parent="Dolls" unique_id=2130407711 instance=ExtResource("7_71awx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 66, 2, -14)
+
+[node name="VingDoll261" parent="Dolls" unique_id=1877244233 instance=ExtResource("7_71awx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 66, 2, -18)
+
+[node name="VingDoll262" parent="Dolls" unique_id=775504660 instance=ExtResource("7_71awx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -114, 2, -14)
+
+[node name="VingDoll263" parent="Dolls" unique_id=1869254582 instance=ExtResource("7_71awx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -114, 2, -18)
+
+[node name="VingDoll264" parent="Dolls" unique_id=967722987 instance=ExtResource("7_71awx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -114, 2, -22)
+
+[node name="VingDoll265" parent="Dolls" unique_id=1319276153 instance=ExtResource("7_71awx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -114, 2, -2)
+
+[node name="VingDoll266" parent="Dolls" unique_id=1564185474 instance=ExtResource("7_71awx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -114, 2, -6)
+
+[node name="VingDoll267" parent="Dolls" unique_id=6499782 instance=ExtResource("7_71awx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -114, 2, -10)
+
+[node name="VingDoll268" parent="Dolls" unique_id=627123516 instance=ExtResource("7_71awx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -66, 2, -26)
+
+[node name="VingDoll46" parent="Dolls" unique_id=1145892140 instance=ExtResource("7_71awx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -54, 2, -18)
+
+[node name="VingDoll47" parent="Dolls" unique_id=1336825719 instance=ExtResource("7_71awx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -54, 2, -10)
+
+[node name="VingDoll269" parent="Dolls" unique_id=854724265 instance=ExtResource("7_71awx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -54, 2, -14)
+
+[node name="VingDoll51" parent="Dolls" unique_id=1083823500 instance=ExtResource("7_71awx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -66, 2, -18)
+
+[node name="VingDoll52" parent="Dolls" unique_id=1880190737 instance=ExtResource("7_71awx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -66, 2, -10)
+
+[node name="VingDoll270" parent="Dolls" unique_id=2035931853 instance=ExtResource("7_71awx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -66, 2, -14)
+
+[node name="VingDoll133" parent="Dolls" unique_id=1901147434 instance=ExtResource("7_71awx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -106, 2, 18)
+
+[node name="Tiles" type="Node3D" parent="." unique_id=1063820172]
+
+[editable path="Jawsh"]
+[editable path="Jawsh/SpringArmPivot"]

@@ -23,3 +23,7 @@ mesh = SubResource("BoxMesh_q076o")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="retro/StaticBody3D" unique_id=128884892]
 shape = SubResource("BoxShape3D_0a5em")
 debug_color = Color(0.984654, 0.12398631, 3.85046e-07, 0.41960785)
+
+[node name="Retro No Collision" type="MeshInstance3D" parent="." unique_id=1618131818]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 0)
+mesh = SubResource("BoxMesh_q076o")

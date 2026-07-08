@@ -11,6 +11,7 @@ func _ready() -> void:
 	Music.play()
 	update_main()
 	$SettingsText.visible = false
+	$ControlsText.visible = false
 
 # update the menu whenever the player does an action
 func update_main() -> void:
@@ -32,6 +33,7 @@ func update_settings() -> void:
 
 func _input(event: InputEvent) -> void:
 	if event.is_action_pressed("move_up"):
+		UtilsSound.play_sound("res://menu/ui_move.wav", -3.0)
 		if menu_state == "MAIN":
 			if menu_index == 0:
 				menu_index = len(menu_options)-1
@@ -44,8 +46,11 @@ func _input(event: InputEvent) -> void:
 			else:
 				settings_index -= 1
 			update_settings()
+		$ControlsText.visible = false
+		
 	
 	elif event.is_action_pressed("move_down"):
+		UtilsSound.play_sound("res://menu/ui_move.wav", -3.0)
 		if menu_state == "MAIN":
 			if menu_index == len(menu_options)-1:
 				menu_index = 0
@@ -58,15 +63,17 @@ func _input(event: InputEvent) -> void:
 			else:
 				settings_index += 1
 			update_settings()
+		$ControlsText.visible = false
 	
 	
 	elif event.is_action_pressed("jump") and not event.is_action_pressed("fullscreen"):
+		UtilsSound.play_sound("res://menu/ui_confirm.wav", -3.0)
 		# MAIN MENU
 		if menu_state == "MAIN":
 			if menu_index == menu_options.PLAY:
 				get_tree().change_scene_to_file("res://rooms/collect_room.tscn")
 			elif menu_index == menu_options.CONTROLS:
-				pass
+				$ControlsText.visible = true
 			elif menu_index == menu_options.SETTINGS:
 				$SettingsText.visible = true
 				$MenuText.visible = false
@@ -94,8 +101,8 @@ func _input(event: InputEvent) -> void:
 				$Title.visible = true
 				menu_state = "MAIN"
 		update_settings()
-				
-			
+	
+
 	elif event.is_action_pressed("back"):
 		if menu_state == "SETTINGS":
 			$SettingsText.visible = false
@@ -103,6 +110,14 @@ func _input(event: InputEvent) -> void:
 			$Title.visible = true
 			menu_state = "MAIN"
 			
-	elif event.is_action_pressed("volume_down", true) or event.is_action_pressed("volume_up", true):
-		$SettingsText/Volume.text = "Volume: " + str(Universal.volume_perc) + "%" 
-		print(Universal.volume_perc)
+			
+		# settings for volume
+	if menu_state == "SETTINGS" and settings_index == settings_options.VOLUME:
+		if event.is_action_pressed("move_right", true):
+			Universal.change_volume(0.01)
+		elif event.is_action_pressed("move_left", true):
+			Universal.change_volume(-0.01)
+			
+			
+func _process(delta: float) -> void:
+	$SettingsText/Volume.text = "Volume: " + str(int(round(Universal.volume_perc * 100))) + "%" 

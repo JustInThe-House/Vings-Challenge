@@ -3,35 +3,28 @@ extends Node
 var Player: RigidBody3D = null
 var MasterAudioIndex: int = AudioServer.get_bus_index("Master")
 var MasterAudioVolume: float = AudioServer.get_bus_volume_db(AudioServer.get_bus_index("Master"))
-var volume_perc: int = 68
+var volume_perc: float = 0.3
 
 func _ready() -> void:
 #hide mouse always. may need to change if debugging
-	if not OS.is_debug_build():
+	#if not OS.is_debug_build():
+	if OS.is_debug_build():
 		Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
+		pass
 	
-	# set global volume to -6 to start so its not too loud (mainly for me)
-	#set to -10 for now
-	MasterAudioVolume = -10.0
-	AudioServer.set_bus_volume_db(MasterAudioIndex, MasterAudioVolume)
-	print(MasterAudioVolume)
+	AudioServer.set_bus_volume_db(MasterAudioIndex, linear_to_db(volume_perc))
 
-	
+func change_volume(increment: float = 0.01):
+	volume_perc = clamp(volume_perc + increment, 0, 1)
+	AudioServer.set_bus_volume_db(MasterAudioIndex, linear_to_db(volume_perc))
+	print(linear_to_db(volume_perc))
+
 func _input(event: InputEvent) -> void:
 	if event.is_action_pressed("volume_up", true):
-		volume_perc = min(volume_perc + 1, 100)
-		if MasterAudioVolume < 0.0:
-			MasterAudioVolume = min(MasterAudioVolume + 0.1, 0.0)
-			AudioServer.set_bus_volume_db(MasterAudioIndex, MasterAudioVolume)
-			print(MasterAudioVolume)
-		pass
+		change_volume(0.01)
 	elif event.is_action_pressed("volume_down", true):
-		volume_perc = max(volume_perc - 1, 0)
-		if MasterAudioVolume > -48.0:
-			MasterAudioVolume = max(MasterAudioVolume - 0.1, -48.0)
-			AudioServer.set_bus_volume_db(MasterAudioIndex, MasterAudioVolume)
-			print(MasterAudioVolume)
-		pass
+		change_volume(-0.01)
+
 
 func set_fullscreen() -> void:
 	var mode := DisplayServer.window_get_mode()
