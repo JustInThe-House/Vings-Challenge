@@ -5,383 +5,377 @@
 [ext_resource type="PackedScene" uid="uid://bmx0wv4b1h7kk" path="res://tilesets/editable_tiles.tscn" id="2_yeh0e"]
 [ext_resource type="Texture2D" uid="uid://d4nqrmjyaia37" path="res://tilesets/retro.png" id="3_0dsp7"]
 [ext_resource type="PackedScene" uid="uid://u25vubh1fgmg" path="res://ving doll/ving_doll.tscn" id="3_ik565"]
+[ext_resource type="PackedScene" uid="uid://cdtmwdfvfj3cg" path="res://ving/ving.tscn" id="6_yeh0e"]
 
 [sub_resource type="Environment" id="Environment_xgfqp"]
+fog_enabled = true
 fog_mode = 1
 fog_light_color = Color(0, 0, 0, 1)
 fog_light_energy = 0.0
 fog_density = 1.0
 fog_depth_curve = 0.32987857
 fog_depth_begin = 0.0
-fog_depth_end = 40.0
+fog_depth_end = 120.0
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_xgfqp"]
-resource_local_to_scene = true
-albedo_texture = ExtResource("3_0dsp7")
-uv1_scale = Vector3(54, 2, 3)
-
-[sub_resource type="BoxMesh" id="BoxMesh_yeh0e"]
-resource_local_to_scene = true
-material = SubResource("StandardMaterial3D_xgfqp")
-size = Vector3(72, 1, 4)
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_0dsp7"]
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_yeh0e"]
 resource_local_to_scene = true
 albedo_texture = ExtResource("3_0dsp7")
 uv1_scale = Vector3(3, 6, 3)
 
-[sub_resource type="BoxMesh" id="BoxMesh_umras"]
+[sub_resource type="BoxMesh" id="BoxMesh_0dsp7"]
 resource_local_to_scene = true
-material = SubResource("StandardMaterial3D_0dsp7")
+material = SubResource("StandardMaterial3D_yeh0e")
 size = Vector3(4, 1, 12)
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_mxtbp"]
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_umras"]
 resource_local_to_scene = true
 albedo_texture = ExtResource("3_0dsp7")
 uv1_scale = Vector3(24, 2, 3)
 
-[sub_resource type="BoxMesh" id="BoxMesh_08o2w"]
+[sub_resource type="BoxMesh" id="BoxMesh_mxtbp"]
 resource_local_to_scene = true
-material = SubResource("StandardMaterial3D_mxtbp")
+material = SubResource("StandardMaterial3D_umras")
 size = Vector3(32, 1, 4)
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_lgr5y"]
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_08o2w"]
 resource_local_to_scene = true
 albedo_texture = ExtResource("3_0dsp7")
 uv1_scale = Vector3(3, 6, 3)
 
-[sub_resource type="BoxMesh" id="BoxMesh_8addc"]
+[sub_resource type="BoxMesh" id="BoxMesh_lgr5y"]
 resource_local_to_scene = true
-material = SubResource("StandardMaterial3D_lgr5y")
+material = SubResource("StandardMaterial3D_08o2w")
 size = Vector3(4, 1, 12)
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_wigkt"]
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_8addc"]
 resource_local_to_scene = true
 albedo_texture = ExtResource("3_0dsp7")
 uv1_scale = Vector3(3, 6, 3)
 
-[sub_resource type="BoxMesh" id="BoxMesh_tkkj8"]
+[sub_resource type="BoxMesh" id="BoxMesh_wigkt"]
 resource_local_to_scene = true
-material = SubResource("StandardMaterial3D_wigkt")
+material = SubResource("StandardMaterial3D_8addc")
 size = Vector3(4, 1, 12)
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_fan0n"]
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_tkkj8"]
 resource_local_to_scene = true
 albedo_texture = ExtResource("3_0dsp7")
 uv1_scale = Vector3(3, 4, 3)
 
-[sub_resource type="BoxMesh" id="BoxMesh_5hokl"]
+[sub_resource type="BoxMesh" id="BoxMesh_fan0n"]
 resource_local_to_scene = true
-material = SubResource("StandardMaterial3D_fan0n")
+material = SubResource("StandardMaterial3D_tkkj8")
 size = Vector3(4, 1, 8)
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_c2stp"]
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_5hokl"]
 resource_local_to_scene = true
 albedo_texture = ExtResource("3_0dsp7")
 uv1_scale = Vector3(3, 8, 3)
 
-[sub_resource type="BoxMesh" id="BoxMesh_5tvxi"]
+[sub_resource type="BoxMesh" id="BoxMesh_c2stp"]
 resource_local_to_scene = true
-material = SubResource("StandardMaterial3D_c2stp")
+material = SubResource("StandardMaterial3D_5hokl")
 size = Vector3(4, 1, 16)
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_qx7rn"]
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_5tvxi"]
 resource_local_to_scene = true
 albedo_texture = ExtResource("3_0dsp7")
 uv1_scale = Vector3(3, 8, 3)
 
-[sub_resource type="BoxMesh" id="BoxMesh_0p41h"]
+[sub_resource type="BoxMesh" id="BoxMesh_qx7rn"]
 resource_local_to_scene = true
-material = SubResource("StandardMaterial3D_qx7rn")
+material = SubResource("StandardMaterial3D_5tvxi")
 size = Vector3(4, 1, 16)
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_qb1id"]
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_0p41h"]
 resource_local_to_scene = true
 albedo_texture = ExtResource("3_0dsp7")
 uv1_scale = Vector3(21, 2, 3)
 
-[sub_resource type="BoxMesh" id="BoxMesh_akw0s"]
+[sub_resource type="BoxMesh" id="BoxMesh_qb1id"]
 resource_local_to_scene = true
-material = SubResource("StandardMaterial3D_qb1id")
+material = SubResource("StandardMaterial3D_0p41h")
 size = Vector3(28, 1, 4)
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_yfwrk"]
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_akw0s"]
 resource_local_to_scene = true
 albedo_texture = ExtResource("3_0dsp7")
 uv1_scale = Vector3(3, 8, 3)
 
-[sub_resource type="BoxMesh" id="BoxMesh_wn8ap"]
+[sub_resource type="BoxMesh" id="BoxMesh_yfwrk"]
 resource_local_to_scene = true
-material = SubResource("StandardMaterial3D_yfwrk")
+material = SubResource("StandardMaterial3D_akw0s")
 size = Vector3(4, 1, 16)
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_sdf2y"]
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_wn8ap"]
 resource_local_to_scene = true
 albedo_texture = ExtResource("3_0dsp7")
 uv1_scale = Vector3(3, 6, 3)
 
-[sub_resource type="BoxMesh" id="BoxMesh_1lm68"]
+[sub_resource type="BoxMesh" id="BoxMesh_sdf2y"]
 resource_local_to_scene = true
-material = SubResource("StandardMaterial3D_sdf2y")
+material = SubResource("StandardMaterial3D_wn8ap")
 size = Vector3(4, 1, 12)
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_qv5dp"]
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_1lm68"]
 resource_local_to_scene = true
 albedo_texture = ExtResource("3_0dsp7")
 uv1_scale = Vector3(3, 4, 3)
 
-[sub_resource type="BoxMesh" id="BoxMesh_0434o"]
+[sub_resource type="BoxMesh" id="BoxMesh_qv5dp"]
 resource_local_to_scene = true
-material = SubResource("StandardMaterial3D_qv5dp")
+material = SubResource("StandardMaterial3D_1lm68")
 size = Vector3(4, 1, 8)
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_01is6"]
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_0434o"]
 resource_local_to_scene = true
 albedo_texture = ExtResource("3_0dsp7")
 uv1_scale = Vector3(6, 2, 3)
 
-[sub_resource type="BoxMesh" id="BoxMesh_0eajg"]
+[sub_resource type="BoxMesh" id="BoxMesh_01is6"]
 resource_local_to_scene = true
-material = SubResource("StandardMaterial3D_01is6")
+material = SubResource("StandardMaterial3D_0434o")
 size = Vector3(8, 1, 4)
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_3ouy0"]
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_0eajg"]
 resource_local_to_scene = true
 albedo_texture = ExtResource("3_0dsp7")
 uv1_scale = Vector3(3, 6, 3)
 
-[sub_resource type="BoxMesh" id="BoxMesh_qlym1"]
+[sub_resource type="BoxMesh" id="BoxMesh_3ouy0"]
 resource_local_to_scene = true
-material = SubResource("StandardMaterial3D_3ouy0")
+material = SubResource("StandardMaterial3D_0eajg")
 size = Vector3(4, 1, 12)
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_eam7w"]
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_qlym1"]
 resource_local_to_scene = true
 albedo_texture = ExtResource("3_0dsp7")
 uv1_scale = Vector3(3, 8, 3)
 
-[sub_resource type="BoxMesh" id="BoxMesh_qwh68"]
+[sub_resource type="BoxMesh" id="BoxMesh_eam7w"]
 resource_local_to_scene = true
-material = SubResource("StandardMaterial3D_eam7w")
+material = SubResource("StandardMaterial3D_qlym1")
 size = Vector3(4, 1, 16)
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_5ijej"]
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_qwh68"]
 resource_local_to_scene = true
 albedo_texture = ExtResource("3_0dsp7")
 uv1_scale = Vector3(3, 14, 3)
 
-[sub_resource type="BoxMesh" id="BoxMesh_mggv5"]
+[sub_resource type="BoxMesh" id="BoxMesh_5ijej"]
 resource_local_to_scene = true
-material = SubResource("StandardMaterial3D_5ijej")
+material = SubResource("StandardMaterial3D_qwh68")
 size = Vector3(4, 1, 28)
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_th1ny"]
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_mggv5"]
 resource_local_to_scene = true
 albedo_texture = ExtResource("3_0dsp7")
 uv1_scale = Vector3(3, 6, 3)
 
-[sub_resource type="BoxMesh" id="BoxMesh_uwne6"]
+[sub_resource type="BoxMesh" id="BoxMesh_th1ny"]
 resource_local_to_scene = true
-material = SubResource("StandardMaterial3D_th1ny")
+material = SubResource("StandardMaterial3D_mggv5")
 size = Vector3(4, 1, 12)
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_0b3ed"]
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_uwne6"]
 resource_local_to_scene = true
 albedo_texture = ExtResource("3_0dsp7")
 uv1_scale = Vector3(3, 6, 3)
 
-[sub_resource type="BoxMesh" id="BoxMesh_qtkv8"]
+[sub_resource type="BoxMesh" id="BoxMesh_0b3ed"]
 resource_local_to_scene = true
-material = SubResource("StandardMaterial3D_0b3ed")
+material = SubResource("StandardMaterial3D_uwne6")
 size = Vector3(4, 1, 12)
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_i4fyy"]
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_qtkv8"]
 resource_local_to_scene = true
 albedo_texture = ExtResource("3_0dsp7")
 uv1_scale = Vector3(3, 6, 3)
 
-[sub_resource type="BoxMesh" id="BoxMesh_joon5"]
+[sub_resource type="BoxMesh" id="BoxMesh_i4fyy"]
 resource_local_to_scene = true
-material = SubResource("StandardMaterial3D_i4fyy")
+material = SubResource("StandardMaterial3D_qtkv8")
 size = Vector3(4, 1, 12)
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_nau44"]
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_joon5"]
 resource_local_to_scene = true
 albedo_texture = ExtResource("3_0dsp7")
 uv1_scale = Vector3(3, 6, 3)
 
-[sub_resource type="BoxMesh" id="BoxMesh_cxo6q"]
+[sub_resource type="BoxMesh" id="BoxMesh_nau44"]
 resource_local_to_scene = true
-material = SubResource("StandardMaterial3D_nau44")
+material = SubResource("StandardMaterial3D_joon5")
 size = Vector3(4, 1, 12)
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_dclqe"]
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_cxo6q"]
 resource_local_to_scene = true
 albedo_texture = ExtResource("3_0dsp7")
 uv1_scale = Vector3(9, 6, 3)
 
-[sub_resource type="BoxMesh" id="BoxMesh_hitcq"]
+[sub_resource type="BoxMesh" id="BoxMesh_dclqe"]
 resource_local_to_scene = true
-material = SubResource("StandardMaterial3D_dclqe")
+material = SubResource("StandardMaterial3D_cxo6q")
 size = Vector3(12, 1, 12)
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_xpoek"]
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_hitcq"]
 resource_local_to_scene = true
 albedo_texture = ExtResource("3_0dsp7")
 uv1_scale = Vector3(9, 6, 3)
 
-[sub_resource type="BoxMesh" id="BoxMesh_dbier"]
+[sub_resource type="BoxMesh" id="BoxMesh_xpoek"]
 resource_local_to_scene = true
-material = SubResource("StandardMaterial3D_xpoek")
+material = SubResource("StandardMaterial3D_hitcq")
 size = Vector3(12, 1, 12)
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_t8w4t"]
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_dbier"]
 resource_local_to_scene = true
 albedo_texture = ExtResource("3_0dsp7")
 uv1_scale = Vector3(9, 6, 3)
 
-[sub_resource type="BoxMesh" id="BoxMesh_om1j0"]
+[sub_resource type="BoxMesh" id="BoxMesh_t8w4t"]
 resource_local_to_scene = true
-material = SubResource("StandardMaterial3D_t8w4t")
+material = SubResource("StandardMaterial3D_dbier")
 size = Vector3(12, 1, 12)
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_5c2ge"]
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_om1j0"]
 resource_local_to_scene = true
 albedo_texture = ExtResource("3_0dsp7")
 uv1_scale = Vector3(3, 4, 3)
 
-[sub_resource type="BoxMesh" id="BoxMesh_nocto"]
+[sub_resource type="BoxMesh" id="BoxMesh_5c2ge"]
 resource_local_to_scene = true
-material = SubResource("StandardMaterial3D_5c2ge")
+material = SubResource("StandardMaterial3D_om1j0")
 size = Vector3(4, 1, 8)
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_swpcp"]
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_nocto"]
 resource_local_to_scene = true
 albedo_texture = ExtResource("3_0dsp7")
 uv1_scale = Vector3(3, 4, 3)
 
-[sub_resource type="BoxMesh" id="BoxMesh_dso70"]
+[sub_resource type="BoxMesh" id="BoxMesh_swpcp"]
 resource_local_to_scene = true
-material = SubResource("StandardMaterial3D_swpcp")
+material = SubResource("StandardMaterial3D_nocto")
 size = Vector3(4, 1, 8)
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_axkkk"]
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_dso70"]
 resource_local_to_scene = true
 albedo_texture = ExtResource("3_0dsp7")
 uv1_scale = Vector3(3, 4, 3)
 
-[sub_resource type="BoxMesh" id="BoxMesh_lxoi7"]
+[sub_resource type="BoxMesh" id="BoxMesh_axkkk"]
 resource_local_to_scene = true
-material = SubResource("StandardMaterial3D_axkkk")
+material = SubResource("StandardMaterial3D_dso70")
 size = Vector3(4, 1, 8)
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_no5pf"]
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_lxoi7"]
 resource_local_to_scene = true
 albedo_texture = ExtResource("3_0dsp7")
 uv1_scale = Vector3(3, 4, 3)
 
-[sub_resource type="BoxMesh" id="BoxMesh_4wf5y"]
+[sub_resource type="BoxMesh" id="BoxMesh_no5pf"]
 resource_local_to_scene = true
-material = SubResource("StandardMaterial3D_no5pf")
+material = SubResource("StandardMaterial3D_lxoi7")
 size = Vector3(4, 1, 8)
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ch3a5"]
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_4wf5y"]
 resource_local_to_scene = true
 albedo_texture = ExtResource("3_0dsp7")
 uv1_scale = Vector3(3, 6, 3)
 
-[sub_resource type="BoxMesh" id="BoxMesh_s8o7c"]
+[sub_resource type="BoxMesh" id="BoxMesh_ch3a5"]
 resource_local_to_scene = true
-material = SubResource("StandardMaterial3D_ch3a5")
+material = SubResource("StandardMaterial3D_4wf5y")
 size = Vector3(4, 1, 12)
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_rp7oq"]
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_s8o7c"]
 resource_local_to_scene = true
 albedo_texture = ExtResource("3_0dsp7")
 uv1_scale = Vector3(3, 4, 3)
 
-[sub_resource type="BoxMesh" id="BoxMesh_hd72h"]
+[sub_resource type="BoxMesh" id="BoxMesh_rp7oq"]
 resource_local_to_scene = true
-material = SubResource("StandardMaterial3D_rp7oq")
+material = SubResource("StandardMaterial3D_s8o7c")
 size = Vector3(4, 1, 8)
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_hiw5n"]
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_hd72h"]
 resource_local_to_scene = true
 albedo_texture = ExtResource("3_0dsp7")
 uv1_scale = Vector3(3, 4, 3)
 
-[sub_resource type="BoxMesh" id="BoxMesh_uel4i"]
+[sub_resource type="BoxMesh" id="BoxMesh_hiw5n"]
 resource_local_to_scene = true
-material = SubResource("StandardMaterial3D_hiw5n")
+material = SubResource("StandardMaterial3D_hd72h")
 size = Vector3(4, 1, 8)
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_odtfp"]
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_uel4i"]
 resource_local_to_scene = true
 albedo_texture = ExtResource("3_0dsp7")
 uv1_scale = Vector3(3, 4, 3)
 
-[sub_resource type="BoxMesh" id="BoxMesh_xmq7d"]
+[sub_resource type="BoxMesh" id="BoxMesh_odtfp"]
 resource_local_to_scene = true
-material = SubResource("StandardMaterial3D_odtfp")
+material = SubResource("StandardMaterial3D_uel4i")
 size = Vector3(4, 1, 8)
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_64van"]
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_xmq7d"]
 resource_local_to_scene = true
 albedo_texture = ExtResource("3_0dsp7")
 uv1_scale = Vector3(3, 6, 3)
 
-[sub_resource type="BoxMesh" id="BoxMesh_2ppyd"]
+[sub_resource type="BoxMesh" id="BoxMesh_64van"]
 resource_local_to_scene = true
-material = SubResource("StandardMaterial3D_64van")
+material = SubResource("StandardMaterial3D_xmq7d")
 size = Vector3(4, 1, 12)
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_h41h6"]
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_2ppyd"]
 resource_local_to_scene = true
 albedo_texture = ExtResource("3_0dsp7")
 uv1_scale = Vector3(3, 4, 3)
 
-[sub_resource type="BoxMesh" id="BoxMesh_8tqvy"]
+[sub_resource type="BoxMesh" id="BoxMesh_h41h6"]
 resource_local_to_scene = true
-material = SubResource("StandardMaterial3D_h41h6")
+material = SubResource("StandardMaterial3D_2ppyd")
 size = Vector3(4, 1, 8)
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_qc154"]
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_8tqvy"]
 resource_local_to_scene = true
 albedo_texture = ExtResource("3_0dsp7")
 uv1_scale = Vector3(3, 4, 3)
 
-[sub_resource type="BoxMesh" id="BoxMesh_qijyq"]
+[sub_resource type="BoxMesh" id="BoxMesh_qc154"]
 resource_local_to_scene = true
-material = SubResource("StandardMaterial3D_qc154")
+material = SubResource("StandardMaterial3D_8tqvy")
 size = Vector3(4, 1, 8)
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_duqkk"]
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_qijyq"]
 resource_local_to_scene = true
 albedo_texture = ExtResource("3_0dsp7")
 uv1_scale = Vector3(3, 8, 3)
 
-[sub_resource type="BoxMesh" id="BoxMesh_kj1d1"]
+[sub_resource type="BoxMesh" id="BoxMesh_duqkk"]
 resource_local_to_scene = true
-material = SubResource("StandardMaterial3D_duqkk")
+material = SubResource("StandardMaterial3D_qijyq")
 size = Vector3(4, 1, 16)
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_3yj3m"]
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_kj1d1"]
 resource_local_to_scene = true
 albedo_texture = ExtResource("3_0dsp7")
 uv1_scale = Vector3(3, 4, 3)
 
-[sub_resource type="BoxMesh" id="BoxMesh_amq3s"]
+[sub_resource type="BoxMesh" id="BoxMesh_3yj3m"]
 resource_local_to_scene = true
-material = SubResource("StandardMaterial3D_3yj3m")
+material = SubResource("StandardMaterial3D_kj1d1")
 size = Vector3(4, 1, 8)
 
-[sub_resource type="Curve3D" id="Curve3D_xgfqp"]
-_data = {
-"points": PackedVector3Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 68, 0, 0, 0, 0, 0, 0, 0, 0, 68, 0, 16, 0, 0, 0, 0, 0, 0, 40, 0, 16, 0, 0, 0, 0, 0, 0, 40, 0, 31.671, 0, 0, 0, 0, 0, 0, 68.001, 0, 32, 0, 0, 0, 0, 0, 0, 68, 0, 48, 0, 0, 0, 0, 0, 0, 64.065, 0, 48, 0, 0, 0, 0, 0, 0, 64.065, 0, 56, 0, 0, 0, 0, 0, 0, 68, 0, 56, 0, 0, 0, 0, 0, 0, 68, 0, 64, 0, 0, 0, 0, 0, 0, 72, 0, 64, 0, 0, 0, 0, 0, 0, 72, 0, 72),
-"tilts": PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
-}
-point_count = 13
-up_vector_enabled = false
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_amq3s"]
+resource_local_to_scene = true
+albedo_texture = ExtResource("3_0dsp7")
+uv1_scale = Vector3(24, 2, 3)
+
+[sub_resource type="BoxMesh" id="BoxMesh_hxujf"]
+resource_local_to_scene = true
+material = SubResource("StandardMaterial3D_amq3s")
+size = Vector3(32, 1, 4)
 
 [node name="RunRoom" type="Node3D" unique_id=142164863]
 script = ExtResource("1_yeh0e")
@@ -401,149 +395,149 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 1.5, 0)
 
 [node name="Tiles" type="Node3D" parent="." unique_id=1719688194]
 
-[node name="MeshInstance3D" parent="Tiles" unique_id=1476247298 instance=ExtResource("2_yeh0e")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 0.5, 0)
-mesh = SubResource("BoxMesh_yeh0e")
-
 [node name="MeshInstance3D2" parent="Tiles" unique_id=60757732 instance=ExtResource("2_yeh0e")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 26, 0.5, 8)
-mesh = SubResource("BoxMesh_umras")
+mesh = SubResource("BoxMesh_0dsp7")
 
 [node name="MeshInstance3D3" parent="Tiles" unique_id=769230926 instance=ExtResource("2_yeh0e")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 0.5, 16)
-mesh = SubResource("BoxMesh_08o2w")
+mesh = SubResource("BoxMesh_mxtbp")
 
 [node name="MeshInstance3D4" parent="Tiles" unique_id=1372359381 instance=ExtResource("2_yeh0e")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0.5, 24)
-mesh = SubResource("BoxMesh_8addc")
+mesh = SubResource("BoxMesh_lgr5y")
 
 [node name="MeshInstance3D5" parent="Tiles" unique_id=969277027 instance=ExtResource("2_yeh0e")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 26, 0.5, 60)
-mesh = SubResource("BoxMesh_tkkj8")
+mesh = SubResource("BoxMesh_wigkt")
 
 [node name="MeshInstance3D7" parent="Tiles" unique_id=496300386 instance=ExtResource("2_yeh0e")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 0.5, 234)
-mesh = SubResource("BoxMesh_5hokl")
+mesh = SubResource("BoxMesh_fan0n")
 
 [node name="MeshInstance3D8" parent="Tiles" unique_id=275894138 instance=ExtResource("2_yeh0e")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 0.5, 250)
-mesh = SubResource("BoxMesh_5tvxi")
+mesh = SubResource("BoxMesh_c2stp")
 
 [node name="MeshInstance3D9" parent="Tiles" unique_id=223987044 instance=ExtResource("2_yeh0e")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 0.5, 272)
-mesh = SubResource("BoxMesh_0p41h")
+mesh = SubResource("BoxMesh_qx7rn")
 
 [node name="MeshInstance3D11" parent="Tiles" unique_id=1352404399 instance=ExtResource("2_yeh0e")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 0.5, 32)
-mesh = SubResource("BoxMesh_akw0s")
+mesh = SubResource("BoxMesh_qb1id")
 
 [node name="MeshInstance3D12" parent="Tiles" unique_id=1991697080 instance=ExtResource("2_yeh0e")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 26, 0.5, 38)
-mesh = SubResource("BoxMesh_wn8ap")
+mesh = SubResource("BoxMesh_yfwrk")
 
 [node name="MeshInstance3D13" parent="Tiles" unique_id=1515408503 instance=ExtResource("2_yeh0e")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 26, 0.5, 76)
-mesh = SubResource("BoxMesh_1lm68")
+mesh = SubResource("BoxMesh_sdf2y")
 
 [node name="MeshInstance3D14" parent="Tiles" unique_id=1955144345 instance=ExtResource("2_yeh0e")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22, 0.5, 54)
-mesh = SubResource("BoxMesh_0434o")
+mesh = SubResource("BoxMesh_qv5dp")
 
 [node name="MeshInstance3D15" parent="Tiles" unique_id=1996177129 instance=ExtResource("2_yeh0e")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24, 0.5, 48)
-mesh = SubResource("BoxMesh_0eajg")
+mesh = SubResource("BoxMesh_01is6")
 
 [node name="MeshInstance3D16" parent="Tiles" unique_id=723017512 instance=ExtResource("2_yeh0e")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 30, 0.5, 68)
-mesh = SubResource("BoxMesh_qlym1")
+mesh = SubResource("BoxMesh_3ouy0")
 
 [node name="MeshInstance3D18" parent="Tiles" unique_id=1497884763 instance=ExtResource("2_yeh0e")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 0.5, 296)
-mesh = SubResource("BoxMesh_qwh68")
+mesh = SubResource("BoxMesh_eam7w")
 
 [node name="MeshInstance3D17" parent="Tiles" unique_id=1674123403 instance=ExtResource("2_yeh0e")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 0.5, 328)
-mesh = SubResource("BoxMesh_mggv5")
+mesh = SubResource("BoxMesh_5ijej")
 
 [node name="MeshInstance3D6" parent="Tiles" unique_id=1377096604 instance=ExtResource("2_yeh0e")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 26, 0.5, 92)
-mesh = SubResource("BoxMesh_uwne6")
+mesh = SubResource("BoxMesh_th1ny")
 
 [node name="MeshInstance3D20" parent="Tiles" unique_id=2042815541 instance=ExtResource("2_yeh0e")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 26, 0.5, 108)
-mesh = SubResource("BoxMesh_qtkv8")
+mesh = SubResource("BoxMesh_0b3ed")
 
 [node name="MeshInstance3D21" parent="Tiles" unique_id=878181880 instance=ExtResource("2_yeh0e")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22, 0.5, 84)
-mesh = SubResource("BoxMesh_joon5")
+mesh = SubResource("BoxMesh_i4fyy")
 
 [node name="MeshInstance3D23" parent="Tiles" unique_id=711998168 instance=ExtResource("2_yeh0e")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 30, 0.5, 100)
-mesh = SubResource("BoxMesh_cxo6q")
+mesh = SubResource("BoxMesh_nau44")
 
 [node name="MeshInstance3D22" parent="Tiles" unique_id=380533010 instance=ExtResource("2_yeh0e")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18, 0.5, 192)
-mesh = SubResource("BoxMesh_hitcq")
+mesh = SubResource("BoxMesh_dclqe")
 
 [node name="MeshInstance3D24" parent="Tiles" unique_id=1016555582 instance=ExtResource("2_yeh0e")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 30, 0.5, 208)
-mesh = SubResource("BoxMesh_dbier")
+mesh = SubResource("BoxMesh_xpoek")
 
 [node name="MeshInstance3D25" parent="Tiles" unique_id=206699494 instance=ExtResource("2_yeh0e")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 0.5, 224)
-mesh = SubResource("BoxMesh_om1j0")
+mesh = SubResource("BoxMesh_t8w4t")
 
 [node name="MeshInstance3D26" parent="Tiles" unique_id=446955962 instance=ExtResource("2_yeh0e")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22, 0.5, 114)
-mesh = SubResource("BoxMesh_nocto")
+mesh = SubResource("BoxMesh_5c2ge")
 
 [node name="MeshInstance3D27" parent="Tiles" unique_id=700791980 instance=ExtResource("2_yeh0e")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 0.5, 122)
-mesh = SubResource("BoxMesh_dso70")
+mesh = SubResource("BoxMesh_swpcp")
 
 [node name="MeshInstance3D28" parent="Tiles" unique_id=374876040 instance=ExtResource("2_yeh0e")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 0.5, 134)
-mesh = SubResource("BoxMesh_lxoi7")
+mesh = SubResource("BoxMesh_axkkk")
 
 [node name="MeshInstance3D29" parent="Tiles" unique_id=1396269251 instance=ExtResource("2_yeh0e")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18, 0.5, 118)
-mesh = SubResource("BoxMesh_4wf5y")
+mesh = SubResource("BoxMesh_no5pf")
 
 [node name="MeshInstance3D30" parent="Tiles" unique_id=225498410 instance=ExtResource("2_yeh0e")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 0.5, 128)
-mesh = SubResource("BoxMesh_s8o7c")
+mesh = SubResource("BoxMesh_ch3a5")
 
 [node name="MeshInstance3D31" parent="Tiles" unique_id=1118882247 instance=ExtResource("2_yeh0e")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22, 0.5, 142)
-mesh = SubResource("BoxMesh_hd72h")
+mesh = SubResource("BoxMesh_rp7oq")
 
 [node name="MeshInstance3D32" parent="Tiles" unique_id=2030495781 instance=ExtResource("2_yeh0e")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18, 0.5, 138)
-mesh = SubResource("BoxMesh_uel4i")
+mesh = SubResource("BoxMesh_hiw5n")
 
 [node name="MeshInstance3D33" parent="Tiles" unique_id=634342513 instance=ExtResource("2_yeh0e")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 26, 0.5, 146)
-mesh = SubResource("BoxMesh_xmq7d")
+mesh = SubResource("BoxMesh_odtfp")
 
 [node name="MeshInstance3D34" parent="Tiles" unique_id=1992605098 instance=ExtResource("2_yeh0e")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 34, 0.5, 156)
-mesh = SubResource("BoxMesh_2ppyd")
+mesh = SubResource("BoxMesh_64van")
 
 [node name="MeshInstance3D35" parent="Tiles" unique_id=370560415 instance=ExtResource("2_yeh0e")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 30, 0.5, 150)
-mesh = SubResource("BoxMesh_8tqvy")
+mesh = SubResource("BoxMesh_h41h6")
 
 [node name="MeshInstance3D36" parent="Tiles" unique_id=226662279 instance=ExtResource("2_yeh0e")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 30, 0.5, 162)
-mesh = SubResource("BoxMesh_qijyq")
+mesh = SubResource("BoxMesh_qc154")
 
 [node name="MeshInstance3D37" parent="Tiles" unique_id=157611254 instance=ExtResource("2_yeh0e")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22, 0.5, 174)
-mesh = SubResource("BoxMesh_kj1d1")
+mesh = SubResource("BoxMesh_duqkk")
 
 [node name="MeshInstance3D38" parent="Tiles" unique_id=153341456 instance=ExtResource("2_yeh0e")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 26, 0.5, 166)
-mesh = SubResource("BoxMesh_amq3s")
+mesh = SubResource("BoxMesh_3yj3m")
+
+[node name="MeshInstance3D10" parent="Tiles" unique_id=1476247298 instance=ExtResource("2_yeh0e")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 0.5, 0)
+mesh = SubResource("BoxMesh_hxujf")
 
 [node name="Dolls" type="Node3D" parent="." unique_id=558332462]
 unique_name_in_owner = true
@@ -551,7 +545,63 @@ unique_name_in_owner = true
 [node name="VingDoll" parent="Dolls" unique_id=919709208 instance=ExtResource("3_ik565")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 2, 340)
 
-[node name="Path3D" type="Path3D" parent="." unique_id=762979432]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -42, 2, 0)
-curve = SubResource("Curve3D_xgfqp")
-debug_custom_color = Color(1, 1, 1, 1)
+[node name="Vings" type="Node3D" parent="." unique_id=578859053]
+
+[node name="Ving" parent="Vings" unique_id=277050341 node_paths=PackedStringArray("player") instance=ExtResource("6_yeh0e")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 101.12155, 0, -93.27301)
+speed = 10.0
+player = NodePath("../../Jawsh")
+chase = true
+
+[node name="Ving2" parent="Vings" unique_id=648319121 node_paths=PackedStringArray("player") instance=ExtResource("6_yeh0e")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -140.35385, 0, 23.72699)
+speed = 10.0
+player = NodePath("../../Jawsh")
+chase = true
+
+[node name="Ving3" parent="Vings" unique_id=384641613 node_paths=PackedStringArray("player") instance=ExtResource("6_yeh0e")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.8269196, 0, -111.27301)
+speed = 10.0
+player = NodePath("../../Jawsh")
+chase = true
+
+[node name="Ving4" parent="Vings" unique_id=564748197 node_paths=PackedStringArray("player") instance=ExtResource("6_yeh0e")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 171.29584, 0, 99.4447)
+speed = 10.15
+player = NodePath("../../Jawsh")
+chase = true
+
+[node name="Ving5" parent="Vings" unique_id=610451773 node_paths=PackedStringArray("player") instance=ExtResource("6_yeh0e")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 185.29584, 0, 350.8156)
+speed = 11.0
+player = NodePath("../../Jawsh")
+chase = true
+
+[node name="Ving6" parent="Vings" unique_id=1869720616 node_paths=PackedStringArray("player") instance=ExtResource("6_yeh0e")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -152.27951, 0, 161.04973)
+speed = 10.3
+player = NodePath("../../Jawsh")
+chase = true
+
+[node name="Ving7" parent="Vings" unique_id=624180098 node_paths=PackedStringArray("player") instance=ExtResource("6_yeh0e")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -146.27951, 0, 406.8652)
+speed = 11.0
+player = NodePath("../../Jawsh")
+chase = true
+
+[node name="Ving10" parent="Vings" unique_id=524189082 node_paths=PackedStringArray("player") instance=ExtResource("6_yeh0e")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.8269196, 0, 641.63257)
+player = NodePath("../../Jawsh")
+chase = true
+
+[node name="Ving8" parent="Vings" unique_id=1884469220 node_paths=PackedStringArray("player") instance=ExtResource("6_yeh0e")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -152.27951, 0, 254.04973)
+speed = 10.6
+player = NodePath("../../Jawsh")
+chase = true
+
+[node name="Ving9" parent="Vings" unique_id=29082182 node_paths=PackedStringArray("player") instance=ExtResource("6_yeh0e")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 181.29584, 0, 211.4447)
+speed = 10.45
+player = NodePath("../../Jawsh")
+chase = true

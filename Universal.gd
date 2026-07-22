@@ -6,12 +6,6 @@ var MasterAudioVolume: float = AudioServer.get_bus_volume_db(AudioServer.get_bus
 var volume_perc: float = 0.3
 
 func _ready() -> void:
-#hide mouse always. may need to change if debugging
-	#if not OS.is_debug_build():
-	if OS.is_debug_build():
-		Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
-		pass
-	
 	AudioServer.set_bus_volume_db(MasterAudioIndex, linear_to_db(volume_perc))
 
 func change_volume(increment: float = 0.01):
@@ -19,11 +13,19 @@ func change_volume(increment: float = 0.01):
 	AudioServer.set_bus_volume_db(MasterAudioIndex, linear_to_db(volume_perc))
 	print(linear_to_db(volume_perc))
 
+#volume settings. probably best way to do it, though could be done with a signal
 func _input(event: InputEvent) -> void:
 	if event.is_action_pressed("volume_up", true):
 		change_volume(0.01)
 	elif event.is_action_pressed("volume_down", true):
 		change_volume(-0.01)
+
+# this makes it so you can tab out of game. in future use, best to use a signal.
+func _process(delta: float) -> void:
+	if get_tree().get_root().has_focus() and Input.mouse_mode != Input.MOUSE_MODE_CAPTURED:
+		Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
+	elif not get_tree().get_root().has_focus() and Input.mouse_mode == Input.MOUSE_MODE_CAPTURED:
+		Input.mouse_mode = Input.MOUSE_MODE_VISIBLE
 
 
 func set_fullscreen() -> void:

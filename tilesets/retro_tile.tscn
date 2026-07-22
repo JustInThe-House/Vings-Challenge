@@ -13,6 +13,13 @@ size = Vector3(4, 1, 4)
 [sub_resource type="BoxShape3D" id="BoxShape3D_0a5em"]
 size = Vector3(4, 1, 4)
 
+[sub_resource type="BoxMesh" id="BoxMesh_7qf6r"]
+material = SubResource("StandardMaterial3D_26y1u")
+size = Vector3(4, 4, 4)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_h2ybg"]
+size = Vector3(4, 4, 4)
+
 [node name="Library" type="Node3D" unique_id=79337603]
 
 [node name="retro" type="MeshInstance3D" parent="." unique_id=987640745]
@@ -27,3 +34,13 @@ debug_color = Color(0.984654, 0.12398631, 3.85046e-07, 0.41960785)
 [node name="Retro No Collision" type="MeshInstance3D" parent="." unique_id=1618131818]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 0)
 mesh = SubResource("BoxMesh_q076o")
+
+[node name="retro_cube" type="MeshInstance3D" parent="." unique_id=2103142855]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 1.5, 0)
+mesh = SubResource("BoxMesh_7qf6r")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="retro_cube" unique_id=490993925]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="retro_cube/StaticBody3D" unique_id=1703255810]
+shape = SubResource("BoxShape3D_h2ybg")
+debug_color = Color(0.984654, 0.12398631, 3.85046e-07, 0.41960785)

@@ -11,7 +11,7 @@ func _ready() -> void:
 	Music.play()
 	update_main()
 	$SettingsText.visible = false
-	$ControlsText.visible = false
+	$ControlsText.visible = true
 
 # update the menu whenever the player does an action
 func update_main() -> void:

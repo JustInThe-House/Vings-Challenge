@@ -35,7 +35,7 @@ func _process(delta: float) -> void:
 	var dolls_left_actual: float = %Dolls.get_child_count()
 	if dolls_left != dolls_left_actual:
 		if dolls_left_actual == 0:
-			print("YOU WIN!")
+			get_tree().change_scene_to_file("res://youwin/youwin.tscn")
 		print(dolls_left_actual)
 	dolls_left = dolls_left_actual
 	

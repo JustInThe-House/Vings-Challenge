@@ -51,7 +51,7 @@ debug_shape_custom_color = Color(0.93624073, 0.2503544, 7.70092e-07, 1)
 script = ExtResource("4_wsjaa")
 
 [node name="JumpTimer" type="Timer" parent="." unique_id=395493187]
-wait_time = 0.2
+wait_time = 0.18
 one_shot = true
 
 [node name="AudioListener3D" type="AudioListener3D" parent="." unique_id=1777506621 node_paths=PackedStringArray("camera")]

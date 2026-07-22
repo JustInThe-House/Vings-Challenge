@@ -2,14 +2,16 @@ extends Area3D
 
 @export var speed: float
 @export var player: RigidBody3D
+@export var chase: bool = false
 var fury: float = 0.0
 var scream_timer := 1.0
 
 func _ready() -> void:
-	var distance_radius = 175
-	var theta = randf_range(0, 2*PI)
-	position.x = player.position.x + distance_radius*cos(theta)
-	position.z = player.position.z + distance_radius*sin(theta)
+	if not chase:
+		var distance_radius = 150
+		var theta = randf_range(0, 2*PI)
+		position.x = player.position.x + distance_radius*cos(theta)
+		position.z = player.position.z + distance_radius*sin(theta)
 	pass # Replace with function body.
 
 func _process(delta: float) -> void:
@@ -17,7 +19,7 @@ func _process(delta: float) -> void:
 	scream_timer += delta * (1 + fury * 1.5)
 	if scream_timer > 1:
 		scream_timer = 0.0
-		$AudioStreamPlayer3D.pitch_scale = 0.9 + fury*0.5
+		$AudioStreamPlayer3D.pitch_scale = (speed / 10.0) * (1 + fury * 0.5)
 		$AudioStreamPlayer3D.play()
 
 func _physics_process(delta: float) -> void:
