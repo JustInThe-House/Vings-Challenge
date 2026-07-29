@@ -3,11 +3,6 @@ extends AudioStreamPlayer
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	var music = load("res://music/wegas_challenge.ogg")
+	var music = load("res://music/Ving's Challenge.ogg")
 	stream = music
 	pass # Replace with function body.
-
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta: float) -> void:
-	pass

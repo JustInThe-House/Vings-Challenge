@@ -14,7 +14,8 @@ func _ready() -> void:
 	
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta: float) -> void:
+func _process(_delta: float) -> void:
+	#print(%Jawsh.position.y)
 	if %Jawsh.global_position.y < -5:
 		if gameover_fall != true:
 			gameover_fall = true
@@ -27,7 +28,6 @@ func _process(delta: float) -> void:
 	if dolls_left != dolls_left_actual:
 		if dolls_left_actual == 0:
 			get_tree().change_scene_to_file("res://run_room.tscn")
-			print("HI")
 		print(dolls_left_actual)
 		%Ving.fury = 1.0 - (dolls_left_actual/total_dolls)
 	dolls_left = dolls_left_actual

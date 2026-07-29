@@ -17,6 +17,153 @@ fog_depth_curve = 0.32987857
 fog_depth_begin = 0.0
 fog_depth_end = 60.0
 
+[sub_resource type="BoxShape3D" id="BoxShape3D_g4v7s"]
+size = Vector3(64, 1, 36)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_wr40r"]
+size = Vector3(4, 1, 36)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_xkuw5"]
+size = Vector3(20, 1, 4)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_nmqhj"]
+size = Vector3(12, 1, 12)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_fv8q0"]
+size = Vector3(12, 1, 12)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_m0767"]
+size = Vector3(12, 1, 12)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_48vym"]
+size = Vector3(12, 1, 12)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_lwnle"]
+size = Vector3(12, 1, 12)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_71awx"]
+size = Vector3(8, 1, 4)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_jkovd"]
+size = Vector3(12, 1, 12)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_btpqy"]
+size = Vector3(4, 1, 20)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_tbxqe"]
+size = Vector3(16, 1, 16)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_pyph3"]
+size = Vector3(8, 1, 4)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_7ymk5"]
+size = Vector3(12, 1, 4)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_xg8bu"]
+size = Vector3(16, 1, 4)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_dy4nq"]
+size = Vector3(4, 1, 4)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_metit"]
+size = Vector3(4, 1, 4)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_rq5s1"]
+size = Vector3(4, 1, 88)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_c704u"]
+size = Vector3(12, 1, 4)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_p4cwx"]
+size = Vector3(12, 1, 4)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_gvrvm"]
+size = Vector3(12, 1, 4)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_x01pb"]
+size = Vector3(4, 1, 64)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_vo37d"]
+size = Vector3(4, 1, 60)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_18pqd"]
+size = Vector3(28, 1, 8)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_eg21p"]
+size = Vector3(28, 1, 8)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_vauw5"]
+size = Vector3(12, 1, 8)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_u4hh1"]
+size = Vector3(24, 1, 4)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ivhrq"]
+size = Vector3(4, 1, 36)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_h21o5"]
+size = Vector3(28, 1, 4)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_est6e"]
+size = Vector3(16, 1, 4)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_5as3f"]
+size = Vector3(4, 1, 4)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_gr2yq"]
+size = Vector3(4, 1, 4)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_h08nt"]
+size = Vector3(32, 1, 4)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_xuroh"]
+size = Vector3(24, 1, 4)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_akeef"]
+size = Vector3(4, 1, 12)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_4mqq3"]
+size = Vector3(4, 1, 36)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_nu7u0"]
+size = Vector3(4, 1, 8)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_5rwmq"]
+size = Vector3(4, 1, 4)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_lohg6"]
+size = Vector3(12, 1, 4)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_l2sce"]
+size = Vector3(12, 1, 4)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_iiukg"]
+size = Vector3(12, 1, 4)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_xulia"]
+size = Vector3(12, 1, 4)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_0clfq"]
+size = Vector3(12, 1, 4)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_muoil"]
+size = Vector3(12, 1, 4)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_t0pr2"]
+size = Vector3(12, 1, 4)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_3wrg1"]
+size = Vector3(12, 1, 4)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_bfo38"]
+size = Vector3(12, 1, 4)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_1bgop"]
+size = Vector3(8, 1, 4)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_v8f6e"]
+size = Vector3(24, 1, 4)
+
 [node name="CollectRoom" type="Node3D" unique_id=552525402]
 script = ExtResource("1_xkuw5")
 
@@ -33,7 +180,7 @@ directional_shadow_max_distance = 1.0
 mesh_library = ExtResource("3_fv8q0")
 cell_size = Vector3(4, 1, 4)
 data = {
-"cells": PackedInt32Array(65513, 65527, 0, 65514, 65527, 0, 65515, 65527, 0, 65516, 65527, 0, 65517, 65527, 0, 65511, 65535, 0, 65512, 65535, 0, 65513, 65535, 0, 65513, 0, 0, 65513, 65534, 0, 65514, 65534, 0, 65515, 65534, 0, 65516, 65534, 0, 65517, 65534, 0, 65517, 65535, 0, 65517, 0, 0, 65518, 0, 0, 65519, 0, 0, 65519, 65535, 0, 65519, 65534, 0, 65518, 65534, 0, 65520, 0, 0, 65521, 0, 0, 65522, 0, 0, 65523, 0, 0, 65524, 0, 0, 65522, 65535, 0, 65522, 65534, 0, 65523, 65534, 0, 65524, 65534, 0, 65524, 65535, 0, 65522, 65533, 0, 65522, 65532, 0, 65522, 65531, 0, 65519, 65533, 0, 65519, 65532, 0, 65519, 65531, 0, 65522, 65530, 0, 65521, 65530, 0, 65520, 65530, 0, 65519, 65530, 0, 65519, 65529, 0, 65519, 65528, 0, 65519, 65527, 0, 65518, 65527, 0, 65523, 65530, 0, 65524, 65530, 0, 65525, 65530, 0, 65526, 65530, 0, 65527, 65530, 0, 65528, 65530, 0, 65529, 65530, 0, 65530, 65530, 0, 65531, 65530, 0, 65523, 65526, 0, 65524, 65526, 0, 65524, 65527, 0, 65524, 65528, 0, 65524, 65529, 0, 65525, 4, 0, 65524, 4, 0, 65523, 4, 0, 65522, 4, 0, 65521, 4, 0, 65523, 12, 0, 65522, 12, 0, 65521, 12, 0, 65525, 12, 0, 65524, 12, 0, 65525, 0, 0, 65531, 65531, 0, 65535, 9, 0, 65535, 10, 0, 65532, 0, 0, 65531, 0, 0, 65531, 65535, 0, 65532, 65535, 0, 65530, 0, 0, 65529, 0, 0, 65528, 0, 0, 65527, 0, 0, 65526, 0, 0, 65531, 65532, 0, 65531, 1, 0, 65532, 1, 0, 65530, 1, 0, 65530, 65535, 0, 65529, 65535, 0, 65529, 1, 0, 65529, 2, 0, 65530, 2, 0, 65531, 2, 0, 65532, 2, 0, 65525, 65534, 0, 65526, 65534, 0, 65526, 65535, 0, 65512, 0, 0, 65531, 65534, 0, 65531, 65533, 0, 11, 2, 0, 10, 2, 0, 9, 2, 0, 8, 2, 0, 7, 2, 0, 6, 2, 0, 5, 2, 0, 4, 2, 0, 3, 2, 0, 2, 2, 0, 1, 2, 0, 0, 2, 0, 65535, 2, 0, 65534, 2, 0, 65533, 2, 0, 65535, 8, 0, 65535, 7, 0, 65535, 6, 0, 65535, 5, 0, 65535, 4, 0, 65535, 3, 0, 65529, 10, 0, 65528, 10, 0, 65530, 10, 0, 65531, 10, 0, 65532, 10, 0, 65529, 6, 0, 65528, 6, 0, 65530, 6, 0, 65531, 6, 0, 65532, 6, 0, 65533, 6, 0, 65533, 10, 0, 65527, 10, 0, 65533, 5, 0, 65532, 5, 0, 65531, 5, 0, 65530, 5, 0, 65529, 5, 0, 65528, 5, 0, 65527, 6, 0, 65527, 5, 0, 65533, 9, 0, 65532, 9, 0, 65531, 9, 0, 65530, 9, 0, 65529, 9, 0, 65528, 9, 0, 65527, 9, 0, 11, 1, 131072, 11, 0, 131072, 11, 65535, 131072, 11, 65534, 131072, 11, 65533, 131072, 11, 65532, 131072, 12, 2, 0, 13, 2, 0, 14, 2, 0, 14, 10, 131072, 14, 9, 131072, 14, 8, 131072, 14, 7, 131072, 14, 6, 131072, 14, 5, 131072, 14, 4, 131072, 14, 3, 131072, 0, 3, 131072, 0, 4, 131072, 0, 5, 131072, 0, 6, 131072, 0, 7, 131072, 0, 8, 131072, 0, 9, 131072, 0, 10, 131072, 1, 10, 131072, 1, 9, 131072, 1, 8, 131072, 1, 7, 131072, 1, 6, 131072, 1, 5, 131072, 1, 4, 131072, 1, 3, 131072, 2, 3, 131072, 3, 3, 131072, 4, 3, 131072, 5, 3, 131072, 6, 3, 131072, 7, 3, 131072, 8, 3, 131072, 7, 4, 131072, 6, 4, 131072, 5, 4, 131072, 4, 4, 131072, 3, 4, 131072, 2, 4, 131072, 3, 5, 131072, 4, 5, 131072, 5, 5, 131072, 8, 4, 131072, 9, 4, 131072, 10, 4, 131072, 10, 3, 131072, 9, 3, 131072, 11, 3, 131072, 12, 3, 131072, 13, 3, 131072, 13, 4, 131072, 12, 4, 131072, 11, 4, 131072, 10, 5, 131072, 9, 5, 131072, 8, 5, 131072, 7, 5, 131072, 6, 6, 131072, 5, 6, 131072, 4, 6, 131072, 3, 6, 131072, 3, 7, 131072, 2, 7, 131072, 2, 6, 131072, 2, 5, 131072, 2, 10, 131072, 3, 10, 131072, 4, 10, 131072, 5, 10, 131072, 6, 10, 131072, 7, 10, 131072, 8, 10, 131072, 9, 10, 131072, 10, 10, 131072, 10, 9, 131072, 11, 9, 131072, 11, 8, 131072, 11, 7, 131072, 11, 6, 131072, 11, 5, 131072, 12, 7, 131072, 11, 10, 131072, 12, 10, 131072, 13, 10, 131072, 13, 9, 131072, 13, 8, 131072, 13, 7, 131072, 13, 6, 131072, 12, 6, 131072, 12, 5, 131072, 12, 8, 131072, 12, 9, 131072, 10, 7, 131072, 10, 6, 131072, 9, 6, 131072, 8, 6, 131072, 7, 6, 131072, 6, 5, 131072, 13, 5, 131072, 5, 7, 131072, 4, 7, 131072, 6, 8, 131072, 7, 8, 131072, 8, 8, 131072, 9, 8, 131072, 10, 8, 131072, 9, 9, 131072, 9, 7, 131072, 7, 7, 131072, 6, 7, 131072, 2, 8, 131072, 3, 8, 131072, 4, 8, 131072, 5, 8, 131072, 3, 9, 131072, 2, 9, 131072, 4, 9, 131072, 5, 9, 131072, 6, 9, 131072, 7, 9, 131072, 8, 9, 131072, 8, 7, 131072, 131078, 5, 393218, 131081, 6, 393218, 393222, 5, 393218, 131080, 6, 393218, 131082, 6, 393218, 131075, 7, 393218, 131075, 8, 393218, 131075, 9, 393218, 131076, 9, 393218, 131077, 9, 393218, 131077, 8, 393218, 131077, 7, 393218, 131076, 7, 393218, 393221, 5, 393218, 393220, 5, 393218, 393219, 5, 393218, 393218, 5, 393218, 655362, 8, 393218, 655362, 7, 393218, 655363, 7, 393218, 655363, 8, 393218, 655366, 7, 393218, 655365, 7, 393218, 655365, 8, 393218, 655366, 8, 393218, 393224, 8, 393218, 393225, 8, 393218, 131085, 4, 393218, 131085, 5, 393218, 131085, 6, 393218, 131085, 7, 393218, 131085, 8, 393218, 11, 65531, 0, 11, 65530, 0, 11, 65529, 0, 5, 65529, 0, 6, 65529, 0, 10, 65529, 0, 9, 65529, 0, 8, 65529, 0, 7, 65529, 0, 65530, 65526, 0, 65530, 65527, 0, 65530, 65528, 0, 65531, 65526, 0, 65531, 65527, 0, 65531, 65528, 0, 65532, 65526, 0, 65532, 65527, 0, 65532, 65528, 0, 65535, 65524, 131072, 65535, 65525, 131072, 65535, 65526, 131072, 0, 65524, 131072, 0, 65525, 131072, 0, 65526, 131072, 1, 65524, 131072, 1, 65525, 131072, 1, 65526, 131072, 4, 65524, 0, 3, 65524, 0, 2, 65524, 0, 3, 65528, 0, 3, 65529, 0, 3, 65530, 0, 4, 65528, 0, 4, 65529, 0, 4, 65530, 0, 5, 65528, 0, 5, 65530, 0, 4, 65525, 0, 4, 65526, 0, 5, 65524, 0, 5, 65525, 0, 5, 65526, 0, 6, 65524, 0, 6, 65525, 0, 6, 65526, 0, 65534, 65528, 0, 65534, 65529, 0, 65534, 65530, 0, 65535, 65528, 0, 65535, 65529, 0, 65535, 65530, 0, 0, 65528, 0, 0, 65529, 0, 0, 65530, 0, 65534, 65532, 131072, 65534, 65533, 131072, 65534, 65534, 131072, 65535, 65532, 131072, 65535, 65533, 131072, 65535, 65534, 131072, 0, 65532, 131072, 0, 65533, 131072, 0, 65534, 131072, 2, 65529, 0, 65511, 4, 0, 65511, 12, 0, 65512, 4, 0, 65512, 12, 0, 65513, 4, 0, 65513, 12, 0, 65514, 1, 0, 65514, 2, 0, 65514, 3, 0, 65514, 4, 0, 65514, 5, 0, 65514, 6, 0, 65514, 9, 0, 65514, 10, 0, 65514, 11, 0, 65514, 12, 0, 65514, 13, 0, 65514, 14, 0, 65514, 15, 0, 65515, 4, 0, 65515, 12, 0, 65516, 4, 0, 65516, 12, 0, 65517, 4, 0, 65517, 12, 0, 65518, 1, 0, 65518, 2, 0, 65518, 3, 0, 65518, 4, 0, 65518, 5, 0, 65518, 6, 0, 65518, 9, 0, 65518, 10, 0, 65518, 11, 0, 65518, 12, 0, 65518, 13, 0, 65518, 14, 0, 65518, 15, 0, 65519, 4, 0, 65519, 12, 0, 65520, 4, 0, 65520, 12, 0, 65522, 1, 0, 65522, 2, 0, 65522, 3, 0, 65522, 5, 0, 65522, 6, 0, 65522, 9, 0, 65522, 10, 0, 65522, 11, 0, 65522, 13, 0, 65522, 14, 0, 65522, 15, 0, 65511, 8, 0, 65512, 8, 0, 65513, 8, 0, 65514, 8, 0, 65515, 8, 0, 65516, 8, 0, 65517, 8, 0, 65518, 8, 0, 65519, 8, 0, 65520, 8, 0, 65521, 8, 0, 65522, 8, 0, 65523, 8, 0, 65524, 8, 0, 65525, 8, 0, 65522, 7, 0, 65518, 7, 0, 65514, 7, 0, 65514, 0, 0, 65514, 65535, 0, 131076, 8, 2, 65511, 65530, 0, 65511, 65531, 0, 65511, 65532, 0, 65511, 65533, 0, 65511, 65534, 0, 65511, 65527, 0, 65511, 65528, 0, 65511, 65529, 0, 65512, 65527, 0, 65513, 65528, 0, 65512, 65529, 0, 65513, 65529, 0, 65514, 65529, 0, 65515, 65528, 0, 65515, 65529, 0, 65522, 65526, 0, 65521, 65526, 0, 65520, 65526, 0, 65519, 65526, 0)
+"cells": PackedInt32Array(131078, 5, 393218, 131081, 6, 393218, 393222, 5, 393218, 131080, 6, 393218, 131082, 6, 393218, 131075, 7, 393218, 131075, 8, 393218, 131075, 9, 393218, 131076, 9, 393218, 131077, 9, 393218, 131077, 8, 393218, 131077, 7, 393218, 131076, 7, 393218, 393221, 5, 393218, 393220, 5, 393218, 393219, 5, 393218, 393218, 5, 393218, 655362, 8, 393218, 655362, 7, 393218, 655363, 7, 393218, 655363, 8, 393218, 655366, 7, 393218, 655365, 7, 393218, 655365, 8, 393218, 655366, 8, 393218, 393224, 8, 393218, 393225, 8, 393218, 131085, 4, 393218, 131085, 5, 393218, 131085, 6, 393218, 131085, 7, 393218, 131085, 8, 393218, 0, 65534, 1, 131076, 8, 2, 11, 65529, 1, 10, 65529, 1, 9, 65529, 1, 8, 65529, 1, 7, 65529, 1, 6, 65529, 1, 5, 65529, 1, 5, 65528, 1, 4, 65528, 1, 3, 65528, 1, 3, 65529, 1, 3, 65530, 1, 4, 65530, 1, 5, 65530, 1, 4, 65529, 1, 2, 65529, 1, 6, 65526, 1, 6, 65525, 1, 6, 65524, 1, 5, 65524, 1, 4, 65524, 1, 4, 65525, 1, 4, 65526, 1, 5, 65526, 1, 5, 65525, 1, 3, 65524, 1, 2, 65524, 1, 1, 65524, 1, 1, 65525, 1, 1, 65526, 1, 0, 65526, 1, 65535, 65526, 1, 65535, 65525, 1, 65535, 65524, 1, 0, 65524, 1, 0, 65528, 1, 0, 65529, 1, 65535, 65529, 1, 65535, 65528, 1, 65534, 65528, 1, 65534, 65529, 1, 65534, 65530, 1, 65535, 65530, 1, 0, 65530, 1, 0, 65533, 1, 0, 65532, 1, 65535, 65532, 1, 65534, 65532, 1, 65534, 65533, 1, 65534, 65534, 1, 65535, 65534, 1, 65535, 65533, 1, 65532, 65528, 1, 65532, 65527, 1, 65532, 65526, 1, 65531, 65526, 1, 65531, 65527, 1, 65530, 65527, 1, 65530, 65528, 1, 65531, 65528, 1, 65530, 65526, 1, 65531, 65530, 1, 65531, 65531, 1, 65531, 65532, 1, 65531, 65533, 1, 65531, 65534, 1, 65531, 65535, 1, 65532, 65535, 1, 65530, 65535, 1, 65529, 65535, 1, 65529, 0, 1, 65530, 0, 1, 65531, 0, 1, 65532, 0, 1, 65532, 1, 1, 65531, 1, 1, 65530, 1, 1, 65529, 1, 1, 65529, 2, 1, 65530, 2, 1, 65531, 2, 1, 65532, 2, 1, 65533, 2, 1, 65534, 2, 1, 65535, 2, 1, 65535, 3, 1, 0, 3, 1, 0, 4, 1, 0, 5, 1, 0, 2, 1, 1, 2, 1, 2, 2, 1, 3, 2, 1, 4, 2, 1, 5, 2, 1, 6, 2, 1, 7, 2, 1, 8, 2, 1, 9, 2, 1, 11, 65530, 1, 11, 65531, 1, 11, 65532, 1, 11, 65533, 1, 11, 65534, 1, 11, 65535, 1, 11, 0, 1, 11, 1, 1, 11, 2, 1, 10, 2, 1, 12, 2, 1, 13, 2, 1, 14, 2, 1, 14, 3, 1, 14, 4, 1, 13, 4, 1, 13, 3, 1, 12, 3, 1, 11, 3, 1, 10, 3, 1, 9, 3, 1, 8, 3, 1, 7, 3, 1, 6, 3, 1, 5, 3, 1, 4, 3, 1, 3, 3, 1, 2, 3, 1, 1, 3, 1, 1, 4, 1, 2, 4, 1, 3, 5, 1, 4, 5, 1, 5, 5, 1, 6, 5, 1, 7, 5, 1, 7, 4, 1, 6, 4, 1, 5, 4, 1, 4, 4, 1, 5, 6, 1, 6, 6, 1, 7, 6, 1, 8, 6, 1, 9, 5, 1, 8, 4, 1, 8, 5, 1, 9, 4, 1, 10, 5, 1, 11, 4, 1, 10, 4, 1, 11, 5, 1, 12, 4, 1, 13, 5, 1, 14, 5, 1, 14, 6, 1, 14, 7, 1, 14, 8, 1, 14, 9, 1, 14, 10, 1, 13, 10, 1, 13, 9, 1, 13, 8, 1, 12, 8, 1, 12, 7, 1, 12, 6, 1, 12, 5, 1, 12, 9, 1, 12, 10, 1, 11, 10, 1, 10, 10, 1, 9, 10, 1, 9, 9, 1, 8, 9, 1, 10, 9, 1, 10, 8, 1, 11, 8, 1, 11, 7, 1, 10, 7, 1, 9, 7, 1, 11, 6, 1, 10, 6, 1, 9, 8, 1, 11, 9, 1, 9, 6, 1, 7, 7, 1, 8, 7, 1, 8, 8, 1, 5, 7, 1, 6, 7, 1, 3, 4, 1, 65535, 4, 1, 65535, 5, 1, 65535, 6, 1, 65535, 7, 1, 65535, 8, 1, 0, 9, 1, 0, 10, 1, 65535, 10, 1, 1, 10, 1, 2, 10, 1, 3, 10, 1, 4, 10, 1, 5, 10, 1, 6, 10, 1, 7, 10, 1, 8, 10, 1, 7, 9, 1, 6, 9, 1, 5, 9, 1, 4, 9, 1, 4, 8, 1, 3, 8, 1, 3, 7, 1, 4, 7, 1, 4, 6, 1, 2, 5, 1, 2, 6, 1, 1, 5, 1, 1, 6, 1, 0, 6, 1, 0, 7, 1, 0, 8, 1, 65535, 9, 1, 1, 9, 1, 2, 9, 1, 2, 8, 1, 2, 7, 1, 1, 7, 1, 1, 8, 1, 5, 8, 1, 6, 8, 1, 3, 6, 1, 7, 8, 1, 65533, 5, 1, 65532, 5, 1, 65531, 5, 1, 65530, 5, 1, 65529, 5, 1, 65528, 5, 1, 65527, 5, 1, 65527, 6, 1, 65528, 6, 1, 65529, 6, 1, 65530, 6, 1, 65531, 6, 1, 65532, 6, 1, 65533, 6, 1, 65533, 9, 1, 65532, 9, 1, 65531, 9, 1, 65530, 9, 1, 65529, 9, 1, 65528, 9, 1, 65527, 9, 1, 65527, 10, 1, 65528, 10, 1, 65529, 10, 1, 65530, 10, 1, 65531, 10, 1, 65532, 10, 1, 65533, 10, 1, 65528, 0, 1, 65527, 0, 1, 65526, 0, 1, 65526, 65535, 1, 65526, 65534, 1, 65525, 65534, 1, 65524, 65534, 1, 65524, 65535, 1, 65524, 0, 1, 65525, 0, 1, 65523, 0, 1, 65522, 0, 1, 65522, 65535, 1, 65522, 65534, 1, 65523, 65534, 1, 65530, 65530, 1, 65529, 65530, 1, 65528, 65530, 1, 65527, 65530, 1, 65526, 65530, 1, 65525, 65530, 1, 65524, 65530, 1, 65524, 65526, 1, 65524, 65527, 1, 65524, 65528, 1, 65524, 65529, 1, 65523, 65526, 1, 65522, 65526, 1, 65521, 65526, 1, 65520, 65526, 1, 65519, 65526, 1, 65519, 65527, 1, 65519, 65528, 1, 65519, 65529, 1, 65519, 65530, 1, 65520, 65530, 1, 65521, 65530, 1, 65522, 65530, 1, 65523, 65530, 1, 65522, 65531, 1, 65522, 65532, 1, 65522, 65533, 1, 65519, 65531, 1, 65519, 65532, 1, 65519, 65533, 1, 65519, 65534, 1, 65519, 65535, 1, 65519, 0, 1, 65520, 0, 1, 65521, 0, 1, 65518, 0, 1, 65517, 0, 1, 65517, 65535, 1, 65517, 65534, 1, 65518, 65534, 1, 65516, 65534, 1, 65515, 65534, 1, 65514, 65534, 1, 65514, 65535, 1, 65514, 0, 1, 65513, 0, 1, 65512, 0, 1, 65513, 65535, 1, 65513, 65534, 1, 65512, 65535, 1, 65511, 65535, 1, 65511, 65534, 1, 65511, 65533, 1, 65511, 65532, 1, 65511, 65531, 1, 65511, 65530, 1, 65511, 65529, 1, 65512, 65529, 1, 65513, 65529, 1, 65514, 65529, 1, 65515, 65527, 1, 65516, 65527, 1, 65517, 65527, 1, 65518, 65527, 1, 65515, 65528, 1, 65515, 65529, 1, 65514, 65527, 1, 65513, 65527, 1, 65513, 65528, 1, 65512, 65527, 1, 65511, 65527, 1, 65511, 65528, 1, 65514, 1, 1, 65514, 2, 1, 65514, 3, 1, 65514, 4, 1, 65511, 4, 1, 65512, 4, 1, 65513, 4, 1, 65515, 4, 1, 65516, 4, 1, 65517, 4, 1, 65518, 4, 1, 65519, 4, 1, 65520, 4, 1, 65521, 4, 1, 65522, 4, 1, 65523, 4, 1, 65524, 4, 1, 65525, 4, 1, 65522, 1, 1, 65522, 2, 1, 65522, 3, 1, 65522, 5, 1, 65522, 6, 1, 65522, 7, 1, 65522, 8, 1, 65523, 8, 1, 65524, 8, 1, 65525, 8, 1, 65522, 11, 1, 65522, 10, 1, 65522, 9, 1, 65522, 15, 1, 65522, 14, 1, 65522, 13, 1, 65522, 12, 1, 65525, 12, 1, 65524, 12, 1, 65523, 12, 1, 65521, 12, 1, 65520, 12, 1, 65519, 12, 1, 65518, 15, 1, 65518, 14, 1, 65518, 13, 1, 65518, 12, 1, 65517, 12, 1, 65516, 12, 1, 65515, 12, 1, 65514, 15, 1, 65514, 14, 1, 65514, 13, 1, 65514, 12, 1, 65513, 12, 1, 65512, 12, 1, 65511, 12, 1, 65514, 11, 1, 65514, 10, 1, 65514, 9, 1, 65514, 8, 1, 65513, 8, 1, 65512, 8, 1, 65511, 8, 1, 65515, 8, 1, 65516, 8, 1, 65517, 8, 1, 65518, 8, 1, 65518, 9, 1, 65518, 10, 1, 65518, 11, 1, 65519, 8, 1, 65520, 8, 1, 65521, 8, 1, 65518, 7, 1, 65518, 6, 1, 65518, 5, 1, 65514, 7, 1, 65514, 6, 1, 65514, 5, 1, 65518, 3, 1, 65518, 2, 1, 65518, 1, 1, 0, 65525, 1)
 }
 metadata/_editor_floor_ = Vector3(0, 0, 0)
 
@@ -47,6 +194,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20, 1.5, 4)
 
 [node name="Ving" parent="." unique_id=277050341 node_paths=PackedStringArray("player") instance=ExtResource("6_lwnle")]
 unique_name_in_owner = true
+process_mode = 4
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -41, 4, 251)
 speed = 7.5
 player = NodePath("../Jawsh")
@@ -618,7 +766,252 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18, 2, 40)
 [node name="VingDoll76" parent="Dolls" unique_id=1887626760 instance=ExtResource("7_71awx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -70, 2, 34)
 
-[node name="Tiles" type="Node3D" parent="." unique_id=1063820172]
+[node name="Collisions" type="StaticBody3D" parent="." unique_id=689859672]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Collisions" unique_id=356909177]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 28, 0.5, 26)
+shape = SubResource("BoxShape3D_g4v7s")
+debug_color = Color(1, 0.003921569, 0.09411765, 1)
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="Collisions" unique_id=912083030]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 46, 0.5, -10)
+shape = SubResource("BoxShape3D_wr40r")
+debug_color = Color(1, 0.003921569, 0.09411765, 1)
+
+[node name="CollisionShape3D3" type="CollisionShape3D" parent="Collisions" unique_id=1093073474]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 34, 0.5, -26)
+shape = SubResource("BoxShape3D_xkuw5")
+debug_color = Color(1, 0.003921569, 0.09411765, 1)
+
+[node name="CollisionShape3D4" type="CollisionShape3D" parent="Collisions" unique_id=1446602931]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18, 0.5, -26)
+shape = SubResource("BoxShape3D_nmqhj")
+debug_color = Color(1, 0.003921569, 0.09411765, 1)
+
+[node name="CollisionShape3D5" type="CollisionShape3D" parent="Collisions" unique_id=1078844656]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0.5, -26)
+shape = SubResource("BoxShape3D_fv8q0")
+debug_color = Color(1, 0.003921569, 0.09411765, 1)
+
+[node name="CollisionShape3D6" type="CollisionShape3D" parent="Collisions" unique_id=902531510]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0.5, -10)
+shape = SubResource("BoxShape3D_m0767")
+debug_color = Color(1, 0.003921569, 0.09411765, 1)
+
+[node name="CollisionShape3D7" type="CollisionShape3D" parent="Collisions" unique_id=1304981379]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0.5, -42)
+shape = SubResource("BoxShape3D_48vym")
+debug_color = Color(1, 0.003921569, 0.09411765, 1)
+
+[node name="CollisionShape3D8" type="CollisionShape3D" parent="Collisions" unique_id=1228437233]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22, 0.5, -42)
+shape = SubResource("BoxShape3D_lwnle")
+debug_color = Color(1, 0.003921569, 0.09411765, 1)
+
+[node name="CollisionShape3D9" type="CollisionShape3D" parent="Collisions" unique_id=159330279]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 0.5, -46)
+shape = SubResource("BoxShape3D_71awx")
+debug_color = Color(1, 0.003921569, 0.09411765, 1)
+
+[node name="CollisionShape3D10" type="CollisionShape3D" parent="Collisions" unique_id=1443686610]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18, 0.5, -34)
+shape = SubResource("BoxShape3D_jkovd")
+debug_color = Color(1, 0.003921569, 0.09411765, 1)
+
+[node name="CollisionShape3D11" type="CollisionShape3D" parent="Collisions" unique_id=1402778695]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18, 0.5, -14)
+shape = SubResource("BoxShape3D_btpqy")
+debug_color = Color(1, 0.003921569, 0.09411765, 1)
+
+[node name="CollisionShape3D12" type="CollisionShape3D" parent="Collisions" unique_id=98223976]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20, 0.5, 4)
+shape = SubResource("BoxShape3D_tbxqe")
+debug_color = Color(1, 0.003921569, 0.09411765, 1)
+
+[node name="CollisionShape3D13" type="CollisionShape3D" parent="Collisions" unique_id=1230226507]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 0.5, 10)
+shape = SubResource("BoxShape3D_pyph3")
+debug_color = Color(1, 0.003921569, 0.09411765, 1)
+
+[node name="CollisionShape3D14" type="CollisionShape3D" parent="Collisions" unique_id=1680112276]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -62, 0.5, 2)
+shape = SubResource("BoxShape3D_7ymk5")
+debug_color = Color(1, 0.003921569, 0.09411765, 1)
+
+[node name="CollisionShape3D15" type="CollisionShape3D" parent="Collisions" unique_id=238707412]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -44, 0.5, -6)
+shape = SubResource("BoxShape3D_xg8bu")
+debug_color = Color(1, 0.003921569, 0.09411765, 1)
+
+[node name="CollisionShape3D16" type="CollisionShape3D" parent="Collisions" unique_id=1482567]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -38, 0.5, -2)
+shape = SubResource("BoxShape3D_dy4nq")
+debug_color = Color(1, 0.003921569, 0.09411765, 1)
+
+[node name="CollisionShape3D17" type="CollisionShape3D" parent="Collisions" unique_id=1962712933]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -46, 0.5, -2)
+shape = SubResource("BoxShape3D_metit")
+debug_color = Color(1, 0.003921569, 0.09411765, 1)
+
+[node name="CollisionShape3D18" type="CollisionShape3D" parent="Collisions" unique_id=1714293878]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -54, 0.5, 20)
+shape = SubResource("BoxShape3D_rq5s1")
+debug_color = Color(1, 0.003921569, 0.09411765, 1)
+
+[node name="CollisionShape3D19" type="CollisionShape3D" parent="Collisions" unique_id=95632237]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -46, 0.5, 50)
+shape = SubResource("BoxShape3D_c704u")
+debug_color = Color(1, 0.003921569, 0.09411765, 1)
+
+[node name="CollisionShape3D20" type="CollisionShape3D" parent="Collisions" unique_id=562874998]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -46, 0.5, 34)
+shape = SubResource("BoxShape3D_p4cwx")
+debug_color = Color(1, 0.003921569, 0.09411765, 1)
+
+[node name="CollisionShape3D21" type="CollisionShape3D" parent="Collisions" unique_id=666600312]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -46, 0.5, 18)
+shape = SubResource("BoxShape3D_gvrvm")
+debug_color = Color(1, 0.003921569, 0.09411765, 1)
+
+[node name="CollisionShape3D22" type="CollisionShape3D" parent="Collisions" unique_id=621854693]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -70, 0.5, 32)
+shape = SubResource("BoxShape3D_x01pb")
+debug_color = Color(1, 0.003921569, 0.09411765, 1)
+
+[node name="CollisionShape3D23" type="CollisionShape3D" parent="Collisions" unique_id=461383557]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -86, 0.5, 34)
+shape = SubResource("BoxShape3D_vo37d")
+debug_color = Color(1, 0.003921569, 0.09411765, 1)
+
+[node name="CollisionShape3D24" type="CollisionShape3D" parent="Collisions" unique_id=111391166]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -22, 0.5, 24)
+shape = SubResource("BoxShape3D_18pqd")
+debug_color = Color(1, 0.003921569, 0.09411765, 1)
+
+[node name="CollisionShape3D25" type="CollisionShape3D" parent="Collisions" unique_id=289370121]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -22, 0.5, 40)
+shape = SubResource("BoxShape3D_eg21p")
+debug_color = Color(1, 0.003921569, 0.09411765, 1)
+
+[node name="CollisionShape3D26" type="CollisionShape3D" parent="Collisions" unique_id=1791198106]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -90, 0.5, 0)
+shape = SubResource("BoxShape3D_vauw5")
+debug_color = Color(1, 0.003921569, 0.09411765, 1)
+
+[node name="CollisionShape3D27" type="CollisionShape3D" parent="Collisions" unique_id=1903194344]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -80, 0.5, -6)
+shape = SubResource("BoxShape3D_u4hh1")
+debug_color = Color(1, 0.003921569, 0.09411765, 1)
+
+[node name="CollisionShape3D28" type="CollisionShape3D" parent="Collisions" unique_id=1559937723]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -98, 0.5, -18)
+shape = SubResource("BoxShape3D_ivhrq")
+debug_color = Color(1, 0.003921569, 0.09411765, 1)
+
+[node name="CollisionShape3D29" type="CollisionShape3D" parent="Collisions" unique_id=497284910]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -82, 0.5, -34)
+shape = SubResource("BoxShape3D_h21o5")
+debug_color = Color(1, 0.003921569, 0.09411765, 1)
+
+[node name="CollisionShape3D30" type="CollisionShape3D" parent="Collisions" unique_id=1794760771]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -88, 0.5, -26)
+shape = SubResource("BoxShape3D_est6e")
+debug_color = Color(1, 0.003921569, 0.09411765, 1)
+
+[node name="CollisionShape3D31" type="CollisionShape3D" parent="Collisions" unique_id=1610039606]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -90, 0.5, -30)
+shape = SubResource("BoxShape3D_5as3f")
+debug_color = Color(1, 0.003921569, 0.09411765, 1)
+
+[node name="CollisionShape3D32" type="CollisionShape3D" parent="Collisions" unique_id=1152508983]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -82, 0.5, -30)
+shape = SubResource("BoxShape3D_gr2yq")
+debug_color = Color(1, 0.003921569, 0.09411765, 1)
+
+[node name="CollisionShape3D33" type="CollisionShape3D" parent="Collisions" unique_id=817243894]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -36, 0.5, -22)
+shape = SubResource("BoxShape3D_h08nt")
+debug_color = Color(1, 0.003921569, 0.09411765, 1)
+
+[node name="CollisionShape3D34" type="CollisionShape3D" parent="Collisions" unique_id=1179188533]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -56, 0.5, -38)
+shape = SubResource("BoxShape3D_xuroh")
+debug_color = Color(1, 0.003921569, 0.09411765, 1)
+
+[node name="CollisionShape3D35" type="CollisionShape3D" parent="Collisions" unique_id=93010253]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -46, 0.5, -30)
+shape = SubResource("BoxShape3D_akeef")
+debug_color = Color(1, 0.003921569, 0.09411765, 1)
+
+[node name="CollisionShape3D36" type="CollisionShape3D" parent="Collisions" unique_id=210988945]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -66, 0.5, -18)
+shape = SubResource("BoxShape3D_4mqq3")
+debug_color = Color(1, 0.003921569, 0.09411765, 1)
+
+[node name="CollisionShape3D37" type="CollisionShape3D" parent="Collisions" unique_id=2047444235]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -74, 0.5, 0)
+shape = SubResource("BoxShape3D_nu7u0")
+debug_color = Color(1, 0.003921569, 0.09411765, 1)
+
+[node name="CollisionShape3D38" type="CollisionShape3D" parent="Collisions" unique_id=2052411700]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 0.5, -26)
+shape = SubResource("BoxShape3D_5rwmq")
+debug_color = Color(1, 0.003921569, 0.09411765, 1)
+
+[node name="CollisionShape3D39" type="CollisionShape3D" parent="Collisions" unique_id=1138071832]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -62, 0.5, 50)
+shape = SubResource("BoxShape3D_lohg6")
+debug_color = Color(1, 0.003921569, 0.09411765, 1)
+
+[node name="CollisionShape3D40" type="CollisionShape3D" parent="Collisions" unique_id=243640476]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -78, 0.5, 50)
+shape = SubResource("BoxShape3D_l2sce")
+debug_color = Color(1, 0.003921569, 0.09411765, 1)
+
+[node name="CollisionShape3D41" type="CollisionShape3D" parent="Collisions" unique_id=1709357763]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -94, 0.5, 50)
+shape = SubResource("BoxShape3D_iiukg")
+debug_color = Color(1, 0.003921569, 0.09411765, 1)
+
+[node name="CollisionShape3D42" type="CollisionShape3D" parent="Collisions" unique_id=1118786521]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -62, 0.5, 34)
+shape = SubResource("BoxShape3D_xulia")
+debug_color = Color(1, 0.003921569, 0.09411765, 1)
+
+[node name="CollisionShape3D43" type="CollisionShape3D" parent="Collisions" unique_id=186471078]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -78, 0.5, 34)
+shape = SubResource("BoxShape3D_0clfq")
+debug_color = Color(1, 0.003921569, 0.09411765, 1)
+
+[node name="CollisionShape3D44" type="CollisionShape3D" parent="Collisions" unique_id=154130485]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -94, 0.5, 34)
+shape = SubResource("BoxShape3D_muoil")
+debug_color = Color(1, 0.003921569, 0.09411765, 1)
+
+[node name="CollisionShape3D45" type="CollisionShape3D" parent="Collisions" unique_id=1404077669]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -62, 0.5, 18)
+shape = SubResource("BoxShape3D_t0pr2")
+debug_color = Color(1, 0.003921569, 0.09411765, 1)
+
+[node name="CollisionShape3D46" type="CollisionShape3D" parent="Collisions" unique_id=2087421344]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -78, 0.5, 18)
+shape = SubResource("BoxShape3D_3wrg1")
+debug_color = Color(1, 0.003921569, 0.09411765, 1)
+
+[node name="CollisionShape3D47" type="CollisionShape3D" parent="Collisions" unique_id=1242428430]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -94, 0.5, 18)
+shape = SubResource("BoxShape3D_bfo38")
+debug_color = Color(1, 0.003921569, 0.09411765, 1)
+
+[node name="CollisionShape3D48" type="CollisionShape3D" parent="Collisions" unique_id=230206592]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -60, 0.5, -22)
+shape = SubResource("BoxShape3D_1bgop")
+debug_color = Color(1, 0.003921569, 0.09411765, 1)
+
+[node name="CollisionShape3D49" type="CollisionShape3D" parent="Collisions" unique_id=1645138072]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -40, 0.5, 2)
+shape = SubResource("BoxShape3D_v8f6e")
+debug_color = Color(1, 0.003921569, 0.09411765, 1)
 
 [editable path="Jawsh"]
 [editable path="Jawsh/SpringArmPivot"]

@@ -27,6 +27,6 @@ func _physics_process(delta: float) -> void:
 		global_position = global_position.move_toward(player.global_position, delta * speed * (1 + fury * 0.5))
 #	50% is probably the max he should go. though may have to factor in controller, which is a LOT harder
 
-func _on_body_entered(body: RigidBody3D) -> void:
+func _on_body_entered(_body: RigidBody3D) -> void:
 	get_tree().change_scene_to_file("res://gameover/gameover.tscn")
 	pass # Replace with function body.

@@ -119,5 +119,5 @@ func _input(event: InputEvent) -> void:
 			Universal.change_volume(-0.01)
 			
 			
-func _process(delta: float) -> void:
+func _process(_delta: float) -> void:
 	$SettingsText/Volume.text = "Volume: " + str(int(round(Universal.volume_perc * 100))) + "%" 

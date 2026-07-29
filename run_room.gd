@@ -9,14 +9,14 @@ var gameover_fall: bool = false
 func _ready() -> void:
 	%Jawsh.CAN_MOVE = false
 	Music.play()
-	Music.seek(55.5)
+	Music.seek(57.8)
 	total_dolls = %Dolls.get_child_count()
 	dolls_left = total_dolls
 	print(total_dolls)
-	await get_tree().create_timer(1).timeout
-	Music.pitch_scale = 1.27
+	await get_tree().create_timer(1.5).timeout
+	Music.pitch_scale = 1.3
 	# pause music, play scary scream, then play music pitched up
-	await get_tree().create_timer(0.75).timeout
+	await get_tree().create_timer(0.5).timeout
 	%Jawsh.CAN_MOVE = true
 	var run_title = preload("res://rooms/ui_run.tscn").instantiate()
 	run_title.position.y = 720.0

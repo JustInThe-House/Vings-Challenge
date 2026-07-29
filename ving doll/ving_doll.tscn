@@ -4,7 +4,7 @@
 [ext_resource type="ArrayMesh" uid="uid://do6uqwp4sc66i" path="res://ving doll/Cube_008.res" id="2_22pcg"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_22pcg"]
-size = Vector3(0.037842408, 0.036921047, 0.0747395)
+size = Vector3(0.042419586, 0.040724404, 0.07753088)
 
 [node name="VingDoll" type="Area3D" unique_id=919709208]
 script = ExtResource("1_al00h")
@@ -14,7 +14,7 @@ transform = Transform3D(18, 0, 0, 0, -7.86805e-07, 18, 0, -18, -7.86805e-07, 0, 
 mesh = ExtResource("2_22pcg")
 
 [node name="CollisionShape3D2" type="CollisionShape3D" parent="." unique_id=1480383797]
-transform = Transform3D(18, 0, 0, 0, -7.86805e-07, 18, 0, -18, -7.86805e-07, -0.00018540025, 0.052721933, -0.017990433)
+transform = Transform3D(18, 0, 0, 0, -7.86805e-07, 18, 0, -18, -7.86805e-07, -0.0040319897, 0.077844374, -0.0065803844)
 shape = SubResource("BoxShape3D_22pcg")
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]

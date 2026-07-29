@@ -21,7 +21,7 @@ func _input(event: InputEvent) -> void:
 		change_volume(-0.01)
 
 # this makes it so you can tab out of game. in future use, best to use a signal.
-func _process(delta: float) -> void:
+func _process(_delta: float) -> void:
 	if get_tree().get_root().has_focus() and Input.mouse_mode != Input.MOUSE_MODE_CAPTURED:
 		Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
 	elif not get_tree().get_root().has_focus() and Input.mouse_mode == Input.MOUSE_MODE_CAPTURED:

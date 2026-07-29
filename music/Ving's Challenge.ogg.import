@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://b8822b4oj0gqd"
+path="res://.godot/imported/Ving's Challenge.ogg-95b5a36063f22ace58255bc184074550.oggvorbisstr"
+
+[deps]
+
+source_file="res://music/Ving's Challenge.ogg"
+dest_files=["res://.godot/imported/Ving's Challenge.ogg-95b5a36063f22ace58255bc184074550.oggvorbisstr"]
+
+[params]
+
+loop=true
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
