@@ -6,6 +6,7 @@
 [ext_resource type="Script" uid="uid://i2lxwg26ruwe" path="res://menu/ving_doll.gd" id="3_juveg"]
 [ext_resource type="ArrayMesh" uid="uid://do6uqwp4sc66i" path="res://ving doll/Cube_008.res" id="3_svuvw"]
 [ext_resource type="Script" uid="uid://b7lt6ewkcevc1" path="res://menu/title.gd" id="5_juveg"]
+[ext_resource type="Script" uid="uid://f0ked1idfsgc" path="res://menu/win_star_outline.gd" id="6_v6yed"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_juveg"]
 font_size = 118
@@ -36,11 +37,6 @@ font_size = 70
 font_color = Color(0, 0.439, 0, 1)
 outline_color = Color(0, 1, 0, 1)
 
-[sub_resource type="LabelSettings" id="LabelSettings_iesyu"]
-font_size = 70
-font_color = Color(0, 0.439, 0, 1)
-outline_color = Color(0, 1, 0, 1)
-
 [sub_resource type="LabelSettings" id="LabelSettings_iuxab"]
 font_size = 70
 font_color = Color(0, 0.439, 0, 1)
@@ -50,6 +46,160 @@ outline_color = Color(0, 1, 0, 1)
 font_size = 70
 font_color = Color(0, 0.439, 0, 1)
 outline_color = Color(0, 1, 0, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_3vbpa"]
+font_size = 70
+font_color = Color(0, 0.439, 0, 1)
+outline_color = Color(0, 1, 0, 1)
+
+[sub_resource type="Animation" id="Animation_juveg"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Title:position")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-437, -550)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Actions & Info:position")
+tracks/1/interp = 2
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 550)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Node2D:position")
+tracks/2/interp = 2
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-1440, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_3vbpa"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Node2D:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Title:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-437, -294)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Actions & Info:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 0)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Node2D/Parallax2D:autoscroll")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(120, 80)]
+}
+
+[sub_resource type="Animation" id="Animation_aycgx"]
+resource_name = "titlecard_returning"
+length = 4.333336892667785
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Node2D:position")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(1.6666666, 4.2666664),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(-1440, 0), Vector2(0, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Title:position")
+tracks/1/interp = 2
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0.53333336, 1.1333334),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(-437, -550), Vector2(-437, -294)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Actions & Info:position")
+tracks/2/interp = 2
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(1.9999998, 4.2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(0, 550), Vector2(0, 0)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Node2D/Parallax2D:autoscroll")
+tracks/3/interp = 0
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 4.166667),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(-10, 80), Vector2(120, 80)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_bpqio"]
+_data = {
+&"RESET": SubResource("Animation_juveg"),
+&"finish": SubResource("Animation_3vbpa"),
+&"titlecard": SubResource("Animation_aycgx")
+}
 
 [node name="Menu" type="Control" unique_id=1795108188]
 layout_mode = 3
@@ -80,46 +230,51 @@ grow_vertical = 2
 color = Color(0, 0, 0, 1)
 metadata/_edit_lock_ = true
 
-[node name="Parallax2D" type="Parallax2D" parent="." unique_id=1580022771]
+[node name="Node2D" type="Node2D" parent="." unique_id=995234933]
+position = Vector2(-1440, 0)
+
+[node name="Parallax2D" type="Parallax2D" parent="Node2D" unique_id=1580022771]
 scroll_offset = Vector2(-28.34, 62.975)
 repeat_size = Vector2(240, 160)
-autoscroll = Vector2(120, 80)
+autoscroll = Vector2(-10, 80)
 repeat_times = 6
+follow_viewport = false
 
-[node name="SubViewportContainer" type="SubViewportContainer" parent="Parallax2D" unique_id=1061409652]
+[node name="SubViewportContainer" type="SubViewportContainer" parent="Node2D/Parallax2D" unique_id=1061409652]
 offset_left = -208.0
 offset_top = 1.0
 offset_right = 264.0
 offset_bottom = 159.0
 stretch = true
 
-[node name="SubViewport" type="SubViewport" parent="Parallax2D/SubViewportContainer" unique_id=717101716]
+[node name="SubViewport" type="SubViewport" parent="Node2D/Parallax2D/SubViewportContainer" unique_id=717101716]
 transparent_bg = true
 handle_input_locally = false
 size = Vector2i(472, 158)
 render_target_update_mode = 4
 
-[node name="VingDoll" type="MeshInstance3D" parent="Parallax2D/SubViewportContainer/SubViewport" unique_id=2099049727]
+[node name="VingDoll" type="MeshInstance3D" parent="Node2D/Parallax2D/SubViewportContainer/SubViewport" unique_id=2099049727]
 transform = Transform3D(18, 0, 0, 0, -7.86805e-07, 18, 0, -18, -7.86805e-07, 0, 0.22418678, -0.028792828)
 mesh = ExtResource("3_svuvw")
 script = ExtResource("3_juveg")
 
-[node name="Camera3D" type="Camera3D" parent="Parallax2D/SubViewportContainer/SubViewport" unique_id=2144090951]
+[node name="Camera3D" type="Camera3D" parent="Node2D/Parallax2D/SubViewportContainer/SubViewport" unique_id=2144090951]
 transform = Transform3D(0.7071068, 0.3535534, -0.61237246, 0, 0.8660254, 0.50000006, 0.7071068, -0.3535534, 0.61237246, -0.75, 0.75, 0.75)
 
-[node name="OmniLight3D" type="OmniLight3D" parent="Parallax2D/SubViewportContainer/SubViewport" unique_id=965067044]
+[node name="OmniLight3D" type="OmniLight3D" parent="Node2D/Parallax2D/SubViewportContainer/SubViewport" unique_id=965067044]
 transform = Transform3D(0.7071068, 0.3535534, -0.61237246, 0, 0.8660254, 0.50000006, 0.7071068, -0.3535534, 0.61237246, -1, 1, 1)
 
 [node name="Title" type="Label" parent="." unique_id=28405839]
+unique_name_in_owner = true
 layout_mode = 1
 anchors_preset = -1
 anchor_top = 0.5
 anchor_right = 0.85
 anchor_bottom = 0.5
 offset_left = -437.0
-offset_top = -294.0
+offset_top = -550.0
 offset_right = 505.0
-offset_bottom = -128.0
+offset_bottom = -384.0
 grow_horizontal = 2
 grow_vertical = 2
 pivot_offset_ratio = Vector2(0.5, 0.5)
@@ -129,7 +284,31 @@ text = "VinG's Challenge"
 label_settings = SubResource("LabelSettings_juveg")
 script = ExtResource("5_juveg")
 
-[node name="Credits" type="Label" parent="." unique_id=390067654]
+[node name="Actions & Info" type="Control" parent="." unique_id=925152455]
+anchors_preset = 0
+offset_top = 550.0
+offset_right = 40.0
+offset_bottom = 589.99976
+
+[node name="WinStar" type="Node2D" parent="Actions & Info" unique_id=265321927]
+
+[node name="StarOutline" type="Polygon2D" parent="Actions & Info/WinStar" unique_id=1331421390]
+position = Vector2(-96, 167.40503)
+scale = Vector2(1.245, 1.245)
+skew = -0.087266445
+color = Color(0, 1, 0, 1)
+polygon = PackedVector2Array(-23.443024, -80.29827, 2.9353027, 0.06915283, 89.83978, 0.51670074, 17.768982, 64.61727, 25.041687, 132.25371, -25.140198, 83.52638, -76.86151, 130.11186, -68.77661, 58.799088, -147.78436, -0.97104263, -52.26477, 0.06915283)
+uv = PackedVector2Array(-12.62262, -74.21881, 16.126953, 4.5763855, 98.11658, 4.5763855, 13.9973755, 53.55719, 40.61737, 117.44519, -26.465027, 58.881195, -76.51062, 115.3156, -63.733032, 48.2332, -154.24103, 8.835587, -64.79785, 6.7059937)
+script = ExtResource("6_v6yed")
+
+[node name="StarBase" type="Polygon2D" parent="Actions & Info/WinStar" unique_id=263278715]
+position = Vector2(-111.40503, 172.80005)
+scale = Vector2(0.7, 0.7)
+color = Color(0, 0.439, 0, 1)
+polygon = PackedVector2Array(-23.443024, -80.29827, 2.9353027, 0.06915283, 89.83978, 0.51670074, 17.768982, 64.61727, 25.041687, 132.25371, -25.140198, 83.52638, -76.86151, 130.11186, -68.77661, 58.799088, -147.78436, -0.97104263, -52.26477, 0.06915283)
+uv = PackedVector2Array(-12.62262, -74.21881, 16.126953, 4.5763855, 98.11658, 4.5763855, 13.9973755, 53.55719, 40.61737, 117.44519, -26.465027, 58.881195, -76.51062, 115.3156, -63.733032, 48.2332, -154.24103, 8.835587, -64.79785, 6.7059937)
+
+[node name="Credits" type="Label" parent="Actions & Info" unique_id=390067654]
 layout_mode = 1
 offset_left = 355.0
 offset_top = 183.0
@@ -145,15 +324,16 @@ Swaglexoid
 "
 horizontal_alignment = 1
 
-[node name="MenuText" type="VBoxContainer" parent="." unique_id=1397448756]
+[node name="MenuText" type="VBoxContainer" parent="Actions & Info" unique_id=1397448756]
+unique_name_in_owner = true
 layout_mode = 0
 offset_left = -520.0
 offset_top = -120.0
-offset_right = -247.0
+offset_right = -239.0
 offset_bottom = 270.0
 theme_override_constants/separation = -2
 
-[node name="Play" type="Label" parent="MenuText" unique_id=156030958]
+[node name="Play" type="Label" parent="Actions & Info/MenuText" unique_id=156030958]
 layout_mode = 2
 theme_override_fonts/font = ExtResource("2_6nwqt")
 text = "Play"
@@ -163,7 +343,8 @@ script = ExtResource("3_6nwqt")
 OUTLINE_SPACING = 3
 OUTLINE_TIMESPEED = 6
 
-[node name="Controls" type="Label" parent="MenuText" unique_id=1992306138]
+[node name="Controls" type="Label" parent="Actions & Info/MenuText" unique_id=1992306138]
+unique_name_in_owner = true
 layout_mode = 2
 theme_override_fonts/font = ExtResource("2_6nwqt")
 text = "Controls"
@@ -173,7 +354,7 @@ script = ExtResource("3_6nwqt")
 OUTLINE_SPACING = 3
 OUTLINE_TIMESPEED = 6
 
-[node name="Settings" type="Label" parent="MenuText" unique_id=2060295891]
+[node name="Settings" type="Label" parent="Actions & Info/MenuText" unique_id=2060295891]
 layout_mode = 2
 theme_override_fonts/font = ExtResource("2_6nwqt")
 text = "Settings"
@@ -183,7 +364,7 @@ script = ExtResource("3_6nwqt")
 OUTLINE_SPACING = 3
 OUTLINE_TIMESPEED = 6
 
-[node name="Exit" type="Label" parent="MenuText" unique_id=745328619]
+[node name="Exit" type="Label" parent="Actions & Info/MenuText" unique_id=745328619]
 layout_mode = 2
 theme_override_fonts/font = ExtResource("2_6nwqt")
 text = "Exit"
@@ -193,59 +374,13 @@ script = ExtResource("3_6nwqt")
 OUTLINE_SPACING = 3
 OUTLINE_TIMESPEED = 6
 
-[node name="SettingsText" type="VBoxContainer" parent="." unique_id=1909426644]
-layout_mode = 0
-offset_left = -640.0
-offset_top = -184.0
-offset_right = 640.0
-offset_bottom = 224.0
-
-[node name="Volume" type="Label" parent="SettingsText" unique_id=757052038]
-layout_mode = 2
-theme_override_fonts/font = ExtResource("2_6nwqt")
-text = "Volume: 30%"
-label_settings = SubResource("LabelSettings_043lm")
-horizontal_alignment = 1
-script = ExtResource("3_6nwqt")
-OUTLINE_SPACING = 3
-OUTLINE_TIMESPEED = 6
-
-[node name="Fullscreen" type="Label" parent="SettingsText" unique_id=286247738]
-layout_mode = 2
-theme_override_fonts/font = ExtResource("2_6nwqt")
-text = "Fullscreen: OFF"
-label_settings = SubResource("LabelSettings_iesyu")
-horizontal_alignment = 1
-script = ExtResource("3_6nwqt")
-OUTLINE_SPACING = 3
-OUTLINE_TIMESPEED = 6
-
-[node name="Vsync" type="Label" parent="SettingsText" unique_id=1915958289]
-layout_mode = 2
-theme_override_fonts/font = ExtResource("2_6nwqt")
-text = "Vsync"
-label_settings = SubResource("LabelSettings_iuxab")
-horizontal_alignment = 1
-script = ExtResource("3_6nwqt")
-OUTLINE_SPACING = 3
-OUTLINE_TIMESPEED = 6
-
-[node name="Back" type="Label" parent="SettingsText" unique_id=1881775194]
-layout_mode = 2
-theme_override_fonts/font = ExtResource("2_6nwqt")
-text = "Back"
-label_settings = SubResource("LabelSettings_dmxns")
-horizontal_alignment = 1
-script = ExtResource("3_6nwqt")
-OUTLINE_SPACING = 3
-OUTLINE_TIMESPEED = 6
-
-[node name="ControlsText" type="Label" parent="." unique_id=1470207416]
+[node name="ControlsText" type="Label" parent="Actions & Info" unique_id=1470207416]
+unique_name_in_owner = true
 layout_mode = 0
 offset_left = -216.0
 offset_top = -104.0
 offset_right = 580.0
-offset_bottom = 218.0
+offset_bottom = 228.0
 theme_override_colors/font_color = Color(0, 0.439, 0, 1)
 theme_override_colors/font_outline_color = Color(0, 1, 0, 1)
 theme_override_constants/outline_size = 4
@@ -257,3 +392,59 @@ Confirm/Jump: Space/Enter/A
 Back: Shift/B
 (Controller sucks)"
 horizontal_alignment = 1
+
+[node name="SettingsText" type="VBoxContainer" parent="." unique_id=1909426644]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+alignment = 1
+
+[node name="Volume" type="Label" parent="SettingsText" unique_id=757052038]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_6nwqt")
+text = "Volume: 30%"
+label_settings = SubResource("LabelSettings_043lm")
+horizontal_alignment = 1
+script = ExtResource("3_6nwqt")
+OUTLINE_SPACING = 3
+OUTLINE_TIMESPEED = 6
+
+[node name="Vsync" type="Label" parent="SettingsText" unique_id=1915958289]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_6nwqt")
+text = "Vsync"
+label_settings = SubResource("LabelSettings_iuxab")
+horizontal_alignment = 1
+script = ExtResource("3_6nwqt")
+OUTLINE_SPACING = 3
+OUTLINE_TIMESPEED = 6
+
+[node name="FPSCap" type="Label" parent="SettingsText" unique_id=298299519]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_6nwqt")
+text = "60 FPS Cap"
+label_settings = SubResource("LabelSettings_dmxns")
+horizontal_alignment = 1
+script = ExtResource("3_6nwqt")
+OUTLINE_SPACING = 3
+OUTLINE_TIMESPEED = 6
+
+[node name="Back" type="Label" parent="SettingsText" unique_id=1881775194]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_6nwqt")
+text = "Back"
+label_settings = SubResource("LabelSettings_3vbpa")
+horizontal_alignment = 1
+script = ExtResource("3_6nwqt")
+OUTLINE_SPACING = 3
+OUTLINE_TIMESPEED = 6
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1425895561]
+libraries/ = SubResource("AnimationLibrary_bpqio")

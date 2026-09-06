@@ -1,12 +1,22 @@
 extends Node
 
-var Player: RigidBody3D = null
 var MasterAudioIndex: int = AudioServer.get_bus_index("Master")
 var MasterAudioVolume: float = AudioServer.get_bus_volume_db(AudioServer.get_bus_index("Master"))
 var volume_perc: float = 0.3
+var played_once: bool = false
+
+func _init() -> void:
+	if OS.is_debug_build():
+		DisplayServer.window_set_mode(DisplayServer.WINDOW_MODE_WINDOWED)
+	pass
 
 func _ready() -> void:
 	AudioServer.set_bus_volume_db(MasterAudioIndex, linear_to_db(volume_perc))
+	Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
+
+		
+		
+	
 
 func change_volume(increment: float = 0.01):
 	volume_perc = clamp(volume_perc + increment, 0, 1)
@@ -20,18 +30,21 @@ func _input(event: InputEvent) -> void:
 	elif event.is_action_pressed("volume_down", true):
 		change_volume(-0.01)
 
-# this makes it so you can tab out of game. in future use, best to use a signal.
-func _process(_delta: float) -> void:
-	if get_tree().get_root().has_focus() and Input.mouse_mode != Input.MOUSE_MODE_CAPTURED:
-		Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
-	elif not get_tree().get_root().has_focus() and Input.mouse_mode == Input.MOUSE_MODE_CAPTURED:
-		Input.mouse_mode = Input.MOUSE_MODE_VISIBLE
-
-
+# this makes it so you can tab out of game.
+func _notification(what: int) -> void:
+	match what:
+		MainLoop.NOTIFICATION_APPLICATION_FOCUS_OUT:
+			Input.mouse_mode = Input.MOUSE_MODE_VISIBLE
+		MainLoop.NOTIFICATION_APPLICATION_FOCUS_IN:
+			Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
+			
+# required fullscreen for actual game, otherwise there are issues with moving the window while also capturing mouse.
+# this is also why i removed its button in Menu.
 func set_fullscreen() -> void:
-	var mode := DisplayServer.window_get_mode()
-	var is_windowed: bool = mode != DisplayServer.WINDOW_MODE_EXCLUSIVE_FULLSCREEN
-	if is_windowed:
-		DisplayServer.window_set_mode(DisplayServer.WINDOW_MODE_EXCLUSIVE_FULLSCREEN)
-	else:
-		DisplayServer.window_set_mode(DisplayServer.WINDOW_MODE_WINDOWED)
+	if OS.is_debug_build():
+		var mode := DisplayServer.window_get_mode()
+		var is_windowed: bool = mode != DisplayServer.WINDOW_MODE_EXCLUSIVE_FULLSCREEN
+		if is_windowed:
+			DisplayServer.window_set_mode(DisplayServer.WINDOW_MODE_EXCLUSIVE_FULLSCREEN)
+		else:
+			DisplayServer.window_set_mode(DisplayServer.WINDOW_MODE_WINDOWED)

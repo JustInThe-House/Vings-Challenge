@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" uid="uid://c4p3x5axrxdhd" path="res://gameover/gameover.gd" id="1_iywfi"]
 [ext_resource type="Texture2D" uid="uid://bi66fauwvb4m8" path="res://ving/wega.png" id="2_d573a"]
-[ext_resource type="AudioStream" uid="uid://gen1gdlrvao" path="res://ving/ving_scream.wav" id="3_d573a"]
+[ext_resource type="AudioStream" uid="uid://cmahhx4hrkcj8" path="res://ving/ving_scream_new.wav" id="3_d573a"]
 
 [sub_resource type="Animation" id="Animation_2mkfd"]
 length = 0.001
@@ -45,7 +45,7 @@ tracks/2/keys = {
 
 [sub_resource type="Animation" id="Animation_h8i2o"]
 resource_name = "jumpscare"
-length = 4.0333333
+length = 4.3333335
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true

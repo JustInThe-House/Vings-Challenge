@@ -1,10 +1,11 @@
 [gd_scene format=3 uid="uid://bfritw13mopd"]
 
-[ext_resource type="Texture2D" uid="uid://d4nqrmjyaia37" path="res://tilesets/retro.png" id="1_7qf6r"]
+[ext_resource type="Texture2D" uid="uid://debqjq3fjf0j6" path="res://tilesets/retro_new.png" id="1_7qf6r"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_26y1u"]
 albedo_texture = ExtResource("1_7qf6r")
 uv1_scale = Vector3(3, 2, 1)
+texture_filter = 2
 
 [sub_resource type="BoxMesh" id="BoxMesh_q076o"]
 material = SubResource("StandardMaterial3D_26y1u")

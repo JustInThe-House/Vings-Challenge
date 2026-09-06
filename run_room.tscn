@@ -119,7 +119,7 @@ size = Vector3(4, 1, 16)
 size = Vector3(4, 1, 16)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_0b3ed"]
-size = Vector3(4, 1, 28)
+size = Vector3(4, 1, 32)
 
 [node name="RunRoom" type="Node3D" unique_id=142164863]
 script = ExtResource("1_yeh0e")
@@ -141,7 +141,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 1.5, 0)
 unique_name_in_owner = true
 
 [node name="VingDoll" parent="Dolls" unique_id=919709208 instance=ExtResource("3_ik565")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 2, 340)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 2, 344)
 
 [node name="Vings" type="Node3D" parent="." unique_id=578859053]
 
@@ -150,12 +150,14 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 101.12155, 0, -93.27301)
 speed = 10.0
 player = NodePath("../../Jawsh")
 chase = true
+color = Color(0.9960334, 0, 0.12835406, 0.70900005)
 
 [node name="Ving2" parent="Vings" unique_id=648319121 node_paths=PackedStringArray("player") instance=ExtResource("6_yeh0e")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -140.35385, 0, 23.72699)
 speed = 10.0
 player = NodePath("../../Jawsh")
 chase = true
+color = Color(0.8865197, 0.39151636, 0, 0.65300006)
 
 [node name="Ving3" parent="Vings" unique_id=384641613 node_paths=PackedStringArray("player") instance=ExtResource("6_yeh0e")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.8269196, 0, -111.27301)
@@ -168,41 +170,48 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 171.29584, 0, 99.4447)
 speed = 10.15
 player = NodePath("../../Jawsh")
 chase = true
+color = Color(0.95468724, 0.8570065, 0, 0.68100005)
 
 [node name="Ving5" parent="Vings" unique_id=610451773 node_paths=PackedStringArray("player") instance=ExtResource("6_yeh0e")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 185.29584, 0, 350.8156)
 speed = 11.0
 player = NodePath("../../Jawsh")
 chase = true
+color = Color(0.1680183, 0, 0.8729805, 0.69500005)
 
 [node name="Ving6" parent="Vings" unique_id=1869720616 node_paths=PackedStringArray("player") instance=ExtResource("6_yeh0e")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -152.27951, 0, 161.04973)
 speed = 10.3
 player = NodePath("../../Jawsh")
 chase = true
+color = Color(0.33890283, 0.6460767, 0, 0.66700006)
 
 [node name="Ving7" parent="Vings" unique_id=624180098 node_paths=PackedStringArray("player") instance=ExtResource("6_yeh0e")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -146.27951, 0, 406.8652)
 speed = 11.0
 player = NodePath("../../Jawsh")
 chase = true
+color = Color(0.45043758, 0, 0.6843325, 0.69500005)
 
 [node name="Ving10" parent="Vings" unique_id=524189082 node_paths=PackedStringArray("player") instance=ExtResource("6_yeh0e")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.8269196, 0, 645.63257)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 650)
 player = NodePath("../../Jawsh")
 chase = true
+color = Color(0.83396184, 0, 0.6843325, 0.73300004)
 
 [node name="Ving8" parent="Vings" unique_id=1884469220 node_paths=PackedStringArray("player") instance=ExtResource("6_yeh0e")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -152.27951, 0, 254.04973)
 speed = 10.6
 player = NodePath("../../Jawsh")
 chase = true
+color = Color(0, 0.4565437, 0.6302477, 0.648)
 
 [node name="Ving9" parent="Vings" unique_id=29082182 node_paths=PackedStringArray("player") instance=ExtResource("6_yeh0e")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 181.29584, 0, 211.4447)
 speed = 10.45
 player = NodePath("../../Jawsh")
 chase = true
+color = Color(0, 0.5127158, 0.49121526, 0.69500005)
 
 [node name="Collisions" type="StaticBody3D" parent="." unique_id=1024504871]
 
@@ -377,7 +386,7 @@ shape = SubResource("BoxShape3D_uwne6")
 debug_color = Color(0.99687725, 0, 0.16816565, 1)
 
 [node name="CollisionShape3D35" type="CollisionShape3D" parent="Collisions" unique_id=2118651566]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 0.5, 328)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 0.5, 330)
 shape = SubResource("BoxShape3D_0b3ed")
 debug_color = Color(0.99687725, 0, 0.16816565, 1)
 
@@ -386,7 +395,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 2)
 mesh_library = ExtResource("5_xgfqp")
 cell_size = Vector3(4, 1, 4)
 data = {
-"cells": PackedInt32Array(65535, 65535, 1, 0, 65535, 1, 1, 65535, 1, 2, 65535, 1, 3, 65535, 1, 4, 65535, 1, 5, 65535, 1, 6, 65535, 1, 6, 0, 1, 6, 1, 1, 6, 2, 1, 6, 3, 1, 5, 3, 1, 4, 3, 1, 3, 3, 1, 2, 3, 1, 1, 3, 1, 0, 3, 1, 65535, 3, 1, 65535, 4, 1, 65535, 5, 1, 65535, 6, 1, 65535, 7, 1, 0, 7, 1, 1, 7, 1, 2, 7, 1, 3, 7, 1, 4, 7, 1, 5, 7, 1, 6, 7, 1, 6, 8, 1, 6, 9, 1, 6, 10, 1, 5, 11, 1, 5, 12, 1, 5, 13, 1, 6, 11, 1, 6, 13, 1, 6, 14, 1, 6, 15, 1, 7, 15, 1, 7, 16, 1, 7, 17, 1, 6, 17, 1, 6, 18, 1, 6, 19, 1, 5, 19, 1, 5, 20, 1, 5, 21, 1, 6, 21, 1, 6, 22, 1, 6, 23, 1, 7, 23, 1, 7, 24, 1, 7, 25, 1, 6, 25, 1, 6, 26, 1, 6, 27, 1, 5, 27, 1, 5, 28, 1, 4, 28, 1, 4, 29, 1, 3, 29, 1, 3, 30, 1, 2, 30, 1, 2, 31, 1, 2, 32, 1, 3, 32, 1, 3, 33, 1, 4, 33, 1, 4, 34, 1, 5, 34, 1, 5, 35, 1, 6, 35, 1, 6, 36, 1, 7, 36, 1, 7, 37, 1, 8, 37, 1, 8, 38, 1, 8, 39, 1, 7, 39, 1, 7, 40, 1, 6, 40, 1, 6, 41, 1, 5, 41, 1, 5, 42, 1, 5, 43, 1, 5, 44, 1, 5, 46, 1, 4, 46, 1, 3, 46, 1, 3, 47, 1, 5, 47, 1, 4, 47, 1, 5, 48, 1, 4, 48, 1, 3, 48, 1, 8, 50, 1, 7, 50, 1, 6, 50, 1, 6, 51, 1, 7, 51, 1, 8, 51, 1, 8, 52, 1, 7, 52, 1, 6, 52, 1, 4, 54, 1, 3, 54, 1, 2, 54, 1, 2, 55, 1, 2, 56, 1, 3, 56, 1, 4, 56, 1, 4, 55, 1, 3, 55, 1, 3, 57, 1, 3, 58, 1, 3, 60, 1, 3, 61, 1, 3, 62, 1, 3, 63, 1, 3, 78, 1, 3, 79, 1, 3, 80, 1, 3, 81, 1, 3, 82, 1, 3, 83, 1, 3, 84, 1)
+"cells": PackedInt32Array(65535, 65535, 1, 0, 65535, 1, 1, 65535, 1, 2, 65535, 1, 3, 65535, 1, 4, 65535, 1, 5, 65535, 1, 6, 65535, 1, 6, 0, 1, 6, 1, 1, 6, 2, 1, 6, 3, 1, 5, 3, 1, 4, 3, 1, 3, 3, 1, 2, 3, 1, 1, 3, 1, 0, 3, 1, 65535, 3, 1, 65535, 4, 1, 65535, 5, 1, 65535, 6, 1, 65535, 7, 1, 0, 7, 1, 1, 7, 1, 2, 7, 1, 3, 7, 1, 4, 7, 1, 5, 7, 1, 6, 7, 1, 6, 8, 1, 6, 9, 1, 6, 10, 1, 5, 11, 1, 5, 12, 1, 5, 13, 1, 6, 11, 1, 6, 13, 1, 6, 14, 1, 6, 15, 1, 7, 15, 1, 7, 16, 1, 7, 17, 1, 6, 17, 1, 6, 18, 1, 6, 19, 1, 5, 19, 1, 5, 20, 1, 5, 21, 1, 6, 21, 1, 6, 22, 1, 6, 23, 1, 7, 23, 1, 7, 24, 1, 7, 25, 1, 6, 25, 1, 6, 26, 1, 6, 27, 1, 5, 27, 1, 5, 28, 1, 4, 28, 1, 4, 29, 1, 3, 29, 1, 3, 30, 1, 2, 30, 1, 2, 31, 1, 2, 32, 1, 3, 32, 1, 3, 33, 1, 4, 33, 1, 4, 34, 1, 5, 34, 1, 5, 35, 1, 6, 35, 1, 6, 36, 1, 7, 36, 1, 7, 37, 1, 8, 37, 1, 8, 38, 1, 8, 39, 1, 7, 39, 1, 7, 40, 1, 6, 40, 1, 6, 41, 1, 5, 41, 1, 5, 42, 1, 5, 43, 1, 5, 44, 1, 5, 46, 1, 4, 46, 1, 3, 46, 1, 3, 47, 1, 5, 47, 1, 4, 47, 1, 5, 48, 1, 4, 48, 1, 3, 48, 1, 8, 50, 1, 7, 50, 1, 6, 50, 1, 6, 51, 1, 7, 51, 1, 8, 51, 1, 8, 52, 1, 7, 52, 1, 6, 52, 1, 4, 54, 1, 3, 54, 1, 2, 54, 1, 2, 55, 1, 2, 56, 1, 3, 56, 1, 4, 56, 1, 4, 55, 1, 3, 55, 1, 3, 57, 1, 3, 58, 1, 3, 60, 1, 3, 61, 1, 3, 62, 1, 3, 63, 1, 3, 78, 1, 3, 79, 1, 3, 80, 1, 3, 81, 1, 3, 82, 1, 3, 83, 1, 3, 84, 1, 3, 85, 1)
 }
 
 [node name="GridMap2" type="GridMap" parent="." unique_id=1960793944]

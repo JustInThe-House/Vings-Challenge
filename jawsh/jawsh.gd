@@ -8,6 +8,8 @@ var CAN_MOVE := true
 
 @onready var camera := $SpringArmPivot/SpringArm3D/Camera3D as Camera3D
 @onready var camera_pivot := $SpringArmPivot as Node3D
+@onready var jump_timer := $JumpTimer
+@onready var ground_check := $OnGroundCheck
 
 
 func _physics_process(delta: float) -> void:
@@ -38,21 +40,21 @@ func _physics_process(delta: float) -> void:
 	
 	
 		# jump
-		var is_on_floor = $OnGroundCheck.is_colliding()
-		if Input.is_action_just_pressed("jump") and not Input.is_action_pressed("fullscreen") and is_on_floor and $JumpTimer.is_stopped():
+		var is_on_floor = ground_check.is_colliding()
+		if Input.is_action_just_pressed("jump") and not Input.is_action_pressed("fullscreen") and is_on_floor and jump_timer.is_stopped():
 			# physics
 			apply_central_force(Vector3.UP*JUMP_POWER)
-			$JumpTimer.start()
+			jump_timer.start()
 			
 			# sound effect
 			UtilsSound.play_sound("res://jawsh/jump.wav", -10.0)
 		
 		#cooldown for jump
-		if $JumpTimer.time_left > 0:
-			if !is_on_floor and $JumpTimer.paused == false:
-				$JumpTimer.paused = true
-			elif is_on_floor and $JumpTimer.paused == true:
-				$JumpTimer.paused = false
+		if jump_timer.time_left > 0:
+			if !is_on_floor and jump_timer.paused == false:
+				jump_timer.paused = true
+			elif is_on_floor and jump_timer.paused == true:
+				jump_timer.paused = false
 	
 
 	
