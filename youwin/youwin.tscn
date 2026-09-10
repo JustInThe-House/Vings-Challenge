@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://blhtqre0ffqo7"]
 
 [ext_resource type="Script" uid="uid://dydmuxrc2k5j7" path="res://youwin/youwin.gd" id="1_eagvd"]
-[ext_resource type="Texture2D" uid="uid://bi66fauwvb4m8" path="res://ving/wega.png" id="2_hqvw6"]
+[ext_resource type="Texture2D" uid="uid://bi66fauwvb4m8" path="res://ving/ving.png" id="2_hqvw6"]
 [ext_resource type="AudioStream" uid="uid://uadex2ulpbwt" path="res://youwin/win.mp3" id="3_vq6yk"]
 [ext_resource type="Texture2D" uid="uid://trbh807j0l0o" path="res://youwin/Smile_Open_4.webp" id="4_vq6yk"]
 

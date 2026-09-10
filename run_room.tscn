@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://cgest2ft2fb3k" path="res://run_room.gd" id="1_yeh0e"]
 [ext_resource type="PackedScene" uid="uid://tpedlxwfyd3t" path="res://jawsh/jawsh.tscn" id="2_ik565"]
+[ext_resource type="Shader" uid="uid://dsc1555ndnkeb" path="res://utilities/crt.gdshader" id="2_yeh0e"]
 [ext_resource type="PackedScene" uid="uid://u25vubh1fgmg" path="res://ving doll/ving_doll.tscn" id="3_ik565"]
 [ext_resource type="MeshLibrary" uid="uid://b4koq7uqw0e8w" path="res://tilesets/retro.tres" id="5_xgfqp"]
 [ext_resource type="PackedScene" uid="uid://cdtmwdfvfj3cg" path="res://ving/ving.tscn" id="6_yeh0e"]
@@ -120,6 +121,16 @@ size = Vector3(4, 1, 16)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_0b3ed"]
 size = Vector3(4, 1, 32)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_g4v7s"]
+shader = ExtResource("2_yeh0e")
+shader_parameter/scanlines_1 = 500.0
+shader_parameter/scanlines_2 = 22.0
+shader_parameter/scan_reduction = 0.1
+shader_parameter/alpha = 0.0
+shader_parameter/vinnette_alpla = 0.999999977648
+shader_parameter/vinnette_inner_radius = 0.0
+shader_parameter/vinnette_outer_radius = 0.5
 
 [node name="RunRoom" type="Node3D" unique_id=142164863]
 script = ExtResource("1_yeh0e")
@@ -404,3 +415,13 @@ cell_size = Vector3(4, 1, 4)
 data = {
 "cells": PackedInt32Array(3, 66, 1, 3, 67, 1, 3, 68, 1, 3, 69, 1, 3, 72, 1, 3, 73, 1, 3, 74, 1, 3, 75, 1)
 }
+
+[node name="CRT" type="ColorRect" parent="." unique_id=326614091]
+material = SubResource("ShaderMaterial_g4v7s")
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(1, 1, 1, 0)

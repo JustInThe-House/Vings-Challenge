@@ -6,6 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://tpedlxwfyd3t" path="res://jawsh/jawsh.tscn" id="5_48vym"]
 [ext_resource type="PackedScene" uid="uid://cdtmwdfvfj3cg" path="res://ving/ving.tscn" id="6_lwnle"]
 [ext_resource type="PackedScene" uid="uid://u25vubh1fgmg" path="res://ving doll/ving_doll.tscn" id="7_71awx"]
+[ext_resource type="Shader" uid="uid://dsc1555ndnkeb" path="res://utilities/crt.gdshader" id="7_xkuw5"]
 
 [sub_resource type="Environment" id="Environment_cxv18"]
 fog_enabled = true
@@ -163,6 +164,16 @@ size = Vector3(8, 1, 4)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_v8f6e"]
 size = Vector3(24, 1, 4)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_nmqhj"]
+shader = ExtResource("7_xkuw5")
+shader_parameter/scanlines_1 = 500.0
+shader_parameter/scanlines_2 = 22.0
+shader_parameter/scan_reduction = 0.1
+shader_parameter/alpha = 0.0
+shader_parameter/vinnette_alpla = 1.0
+shader_parameter/vinnette_inner_radius = 0.0
+shader_parameter/vinnette_outer_radius = 0.5000000074506
 
 [node name="CollectRoom" type="Node3D" unique_id=552525402]
 script = ExtResource("1_xkuw5")
@@ -763,6 +774,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18, 2, 40)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -70, 2, 34)
 
 [node name="Collisions" type="StaticBody3D" parent="." unique_id=689859672]
+input_ray_pickable = false
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Collisions" unique_id=356909177]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 28, 0.5, 26)
@@ -1008,6 +1020,16 @@ debug_color = Color(1, 0.003921569, 0.09411765, 1)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -40, 0.5, 2)
 shape = SubResource("BoxShape3D_v8f6e")
 debug_color = Color(1, 0.003921569, 0.09411765, 1)
+
+[node name="CRT" type="ColorRect" parent="." unique_id=1656920956]
+material = SubResource("ShaderMaterial_nmqhj")
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(1, 1, 1, 0)
 
 [editable path="Jawsh"]
 [editable path="Jawsh/SpringArmPivot"]

@@ -37,17 +37,22 @@ font_size = 70
 font_color = Color(0, 0.439, 0, 1)
 outline_color = Color(0, 1, 0, 1)
 
+[sub_resource type="LabelSettings" id="LabelSettings_iesyu"]
+font_size = 70
+font_color = Color(0, 0.439, 0, 1)
+outline_color = Color(0, 1, 0, 1)
+
 [sub_resource type="LabelSettings" id="LabelSettings_iuxab"]
 font_size = 70
 font_color = Color(0, 0.439, 0, 1)
 outline_color = Color(0, 1, 0, 1)
 
-[sub_resource type="LabelSettings" id="LabelSettings_dmxns"]
+[sub_resource type="LabelSettings" id="LabelSettings_3vbpa"]
 font_size = 70
 font_color = Color(0, 0.439, 0, 1)
 outline_color = Color(0, 1, 0, 1)
 
-[sub_resource type="LabelSettings" id="LabelSettings_3vbpa"]
+[sub_resource type="LabelSettings" id="LabelSettings_dmxns"]
 font_size = 70
 font_color = Color(0, 0.439, 0, 1)
 outline_color = Color(0, 1, 0, 1)
@@ -341,7 +346,6 @@ label_settings = SubResource("LabelSettings_v6yed")
 horizontal_alignment = 1
 script = ExtResource("3_6nwqt")
 OUTLINE_SPACING = 3
-OUTLINE_TIMESPEED = 6
 
 [node name="Controls" type="Label" parent="Actions & Info/MenuText" unique_id=1992306138]
 unique_name_in_owner = true
@@ -352,7 +356,6 @@ label_settings = SubResource("LabelSettings_s4hbh")
 horizontal_alignment = 1
 script = ExtResource("3_6nwqt")
 OUTLINE_SPACING = 3
-OUTLINE_TIMESPEED = 6
 
 [node name="Settings" type="Label" parent="Actions & Info/MenuText" unique_id=2060295891]
 layout_mode = 2
@@ -362,7 +365,6 @@ label_settings = SubResource("LabelSettings_6fswf")
 horizontal_alignment = 1
 script = ExtResource("3_6nwqt")
 OUTLINE_SPACING = 3
-OUTLINE_TIMESPEED = 6
 
 [node name="Exit" type="Label" parent="Actions & Info/MenuText" unique_id=745328619]
 layout_mode = 2
@@ -372,7 +374,6 @@ label_settings = SubResource("LabelSettings_bc54p")
 horizontal_alignment = 1
 script = ExtResource("3_6nwqt")
 OUTLINE_SPACING = 3
-OUTLINE_TIMESPEED = 6
 
 [node name="ControlsText" type="Label" parent="Actions & Info" unique_id=1470207416]
 unique_name_in_owner = true
@@ -412,39 +413,45 @@ label_settings = SubResource("LabelSettings_043lm")
 horizontal_alignment = 1
 script = ExtResource("3_6nwqt")
 OUTLINE_SPACING = 3
-OUTLINE_TIMESPEED = 6
 
 [node name="Vsync" type="Label" parent="SettingsText" unique_id=1915958289]
 unique_name_in_owner = true
 layout_mode = 2
 theme_override_fonts/font = ExtResource("2_6nwqt")
 text = "Vsync"
-label_settings = SubResource("LabelSettings_iuxab")
+label_settings = SubResource("LabelSettings_iesyu")
 horizontal_alignment = 1
 script = ExtResource("3_6nwqt")
 OUTLINE_SPACING = 3
-OUTLINE_TIMESPEED = 6
 
 [node name="FPSCap" type="Label" parent="SettingsText" unique_id=298299519]
 unique_name_in_owner = true
 layout_mode = 2
 theme_override_fonts/font = ExtResource("2_6nwqt")
 text = "60 FPS Cap"
-label_settings = SubResource("LabelSettings_dmxns")
+label_settings = SubResource("LabelSettings_iuxab")
 horizontal_alignment = 1
 script = ExtResource("3_6nwqt")
 OUTLINE_SPACING = 3
-OUTLINE_TIMESPEED = 6
+
+[node name="Shaders" type="Label" parent="SettingsText" unique_id=805540815]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_6nwqt")
+text = "Settings"
+label_settings = SubResource("LabelSettings_3vbpa")
+horizontal_alignment = 1
+script = ExtResource("3_6nwqt")
+OUTLINE_SPACING = 3
 
 [node name="Back" type="Label" parent="SettingsText" unique_id=1881775194]
 layout_mode = 2
 theme_override_fonts/font = ExtResource("2_6nwqt")
 text = "Back"
-label_settings = SubResource("LabelSettings_3vbpa")
+label_settings = SubResource("LabelSettings_dmxns")
 horizontal_alignment = 1
 script = ExtResource("3_6nwqt")
 OUTLINE_SPACING = 3
-OUTLINE_TIMESPEED = 6
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1425895561]
 libraries/ = SubResource("AnimationLibrary_bpqio")

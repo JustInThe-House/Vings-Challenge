@@ -6,3 +6,5 @@ class_name SaveData extends Resource
 #}
 @export var first_time_playing := true
 @export var beat_game := false
+@export var volume: float = 0.3
+@export var shaders := true

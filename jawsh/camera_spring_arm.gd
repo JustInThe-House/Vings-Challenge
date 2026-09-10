@@ -1,10 +1,9 @@
 extends SpringArm3D
 
 @export var sensitivity = 0.005
-const extra_pad_sensitivity_x = 480
-const extra_pad_sensitivity_y = 240
+const extra_pad_sensitivity_x = 720
+const extra_pad_sensitivity_y = extra_pad_sensitivity_x * 0.5
 
-# Called every frame.  'delta' is the elapsed time since the previous frame.
 func _unhandled_input(event: InputEvent) -> void:
 	if $"..".frozen == false:
 		if event is InputEventMouseMotion:
@@ -13,15 +12,11 @@ func _unhandled_input(event: InputEvent) -> void:
 			rotation.x -= event.relative.y * sensitivity
 			rotation.x = clamp(rotation.x, -PI/2, 0)
 
+# probably need to set actual movement to be like keyboard, otherwise its really annoying to play (cant move in straight line!)
 func _process(delta: float) -> void:
 	if $"..".frozen == false:
-		if Input.is_action_pressed("camera_right"):
-			rotation.y -= sensitivity * delta * extra_pad_sensitivity_x
-		elif Input.is_action_pressed("camera_left"):
-			rotation.y += sensitivity * delta * extra_pad_sensitivity_x
+		var camera_movement = Input.get_vector("camera_left","camera_right","camera_up","camera_down")
+		rotation.y -= sensitivity * camera_movement.x * delta * extra_pad_sensitivity_x
+		rotation.x -= sensitivity * camera_movement.y * delta * extra_pad_sensitivity_x
 		rotation.y = wrapf(rotation.y, 0.0, TAU)
-		if Input.is_action_pressed("camera_up"):
-			rotation.x += sensitivity * delta * extra_pad_sensitivity_y
-		elif Input.is_action_pressed("camera_down"):
-			rotation.x -= sensitivity * delta * extra_pad_sensitivity_y
 		rotation.x = clamp(rotation.x, -PI/2, 0)

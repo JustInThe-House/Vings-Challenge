@@ -7,9 +7,11 @@ var dolls_collected: float = 0
 var total_dolls: float
 var dolls_left: float
 var gameover_fall: bool = false
+@onready var CRT: ColorRect = $CRT
 
-# Called when the node enters the scene tree for the first time.
 func _ready() -> void:
+	if SaveManager.save_data.shaders:
+		CRT.material.set("shader_parameter/alpha", 1.0)
 	jawsh.CAN_MOVE = false
 	Music.play()
 	Music.seek(57.8)

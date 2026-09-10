@@ -8,6 +8,7 @@ var dolls_collected: float = 0
 var total_dolls: float
 var dolls_left: float
 var gameover_fall: bool = false
+@onready var CRT: ColorRect = $CRT
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -34,4 +35,10 @@ func _process(_delta: float) -> void:
 		print(dolls_left_actual)
 		ving.fury = 1.0 - (dolls_left_actual/total_dolls)
 	dolls_left = dolls_left_actual
+	
+	var distance: float = jawsh.position.distance_to(ving.position)
+	if distance < 80.0 and SaveManager.save_data.shaders:
+		CRT.material.set("shader_parameter/alpha", 0.6 * (1 - distance/80.0))
+		CRT.material.set("shader_parameter/vinnette_outer_radius", 0.2 + 0.5 * (distance/80.0))
+		pass
 	

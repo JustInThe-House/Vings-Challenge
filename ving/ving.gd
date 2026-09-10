@@ -17,7 +17,6 @@ func _ready() -> void:
 		var theta = randf_range(0, 2*PI)
 		position.x = player.position.x + distance_radius*cos(theta)
 		position.z = player.position.z + distance_radius*sin(theta)
-	pass # Replace with function body.
 
 func _process(delta: float) -> void:
 	# MAKE THIS AN EMIT
@@ -29,11 +28,8 @@ func _process(delta: float) -> void:
 
 func _physics_process(delta: float) -> void:
 	if player != null:
-		global_position = global_position.move_toward(player.global_position, delta * speed * (1 + fury * 0.5))
-		#var direction_to = global_position.direction_to(player.global_position)
-		#print(direction_to)
-		#collision.rotation.y = direction_to.z
-#	50% is probably the max he should go. though may have to factor in controller, which is a LOT harder
+		# move ving toward player. to make controller at least playable, make it slower
+		global_position = global_position.move_toward(player.global_position, delta * speed * (1 + fury * 0.5) * (1 - float(Universal.on_controller) * 0.2))
 
 func _on_body_entered(_body: RigidBody3D) -> void:
 	get_tree().change_scene_to_file("res://gameover/gameover.tscn")

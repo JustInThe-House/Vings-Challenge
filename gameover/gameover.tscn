@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://hcbcu3b8y1j5"]
 
 [ext_resource type="Script" uid="uid://c4p3x5axrxdhd" path="res://gameover/gameover.gd" id="1_iywfi"]
-[ext_resource type="Texture2D" uid="uid://bi66fauwvb4m8" path="res://ving/wega.png" id="2_d573a"]
+[ext_resource type="Texture2D" uid="uid://bi66fauwvb4m8" path="res://ving/ving.png" id="2_d573a"]
 [ext_resource type="AudioStream" uid="uid://cmahhx4hrkcj8" path="res://ving/ving_scream_new.wav" id="3_d573a"]
 
 [sub_resource type="Animation" id="Animation_2mkfd"]

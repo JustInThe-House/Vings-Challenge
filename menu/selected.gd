@@ -8,7 +8,7 @@ var time := 0.0
 @export var OUTLINE_SPACING = 5
 @export var OUTLINE_MIN = 12
 const FONT_SIZE = 70
-@export var OUTLINE_TIMESPEED = 5
+@export var OUTLINE_TIMESPEED = 6
 
 func _ready() -> void:
 	setting.outline_color = Color.GREEN
@@ -23,7 +23,7 @@ func _process(delta: float) -> void:
 
 	if selected == true:
 		time += delta * OUTLINE_TIMESPEED
-		setting.outline_size = OUTLINE_MIN + OUTLINE_SPACING - OUTLINE_SPACING * sin(time)
+		setting.outline_size = OUTLINE_MIN + OUTLINE_SPACING - OUTLINE_SPACING * sin(time*1.7)
 	else:
 		setting.outline_size = 0
 		

@@ -2,8 +2,8 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cbdxf545fdm6i"
-path.s3tc="res://.godot/imported/wega.png-dd8202f21404c3981a6ed21b8d354bce.s3tc.ctex"
+uid="uid://bi66fauwvb4m8"
+path.s3tc="res://.godot/imported/ving.png-425bb2adf698ed92de40f1b33133069c.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://ving/wega.png"
-dest_files=["res://.godot/imported/wega.png-dd8202f21404c3981a6ed21b8d354bce.s3tc.ctex"]
+source_file="res://ving/ving.png"
+dest_files=["res://.godot/imported/ving.png-425bb2adf698ed92de40f1b33133069c.s3tc.ctex"]
 
 [params]
 

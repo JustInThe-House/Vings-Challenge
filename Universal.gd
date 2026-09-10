@@ -2,8 +2,9 @@ extends Node
 
 var MasterAudioIndex: int = AudioServer.get_bus_index("Master")
 var MasterAudioVolume: float = AudioServer.get_bus_volume_db(AudioServer.get_bus_index("Master"))
-var volume_perc: float = 0.3
+var volume_perc: float = 0.6
 var played_once: bool = false
+var on_controller: bool = false
 
 func _init() -> void:
 	if OS.is_debug_build():
@@ -11,12 +12,10 @@ func _init() -> void:
 	pass
 
 func _ready() -> void:
+	volume_perc = SaveManager.save_data.volume
 	AudioServer.set_bus_volume_db(MasterAudioIndex, linear_to_db(volume_perc))
 	Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
 
-		
-		
-	
 
 func change_volume(increment: float = 0.01):
 	volume_perc = clamp(volume_perc + increment, 0, 1)

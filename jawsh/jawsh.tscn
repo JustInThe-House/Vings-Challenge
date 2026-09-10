@@ -25,7 +25,6 @@ physics_material_override = SubResource("PhysicsMaterial_mlfnx")
 gravity_scale = 4.678
 angular_damp = 6.0
 script = ExtResource("1_flrai")
-roll_speed = 200.0
 
 [node name="Model" type="MeshInstance3D" parent="." unique_id=829259342]
 mesh = SubResource("SphereMesh_cmcmu")
