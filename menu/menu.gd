@@ -29,20 +29,26 @@ func _ready() -> void:
 	else:
 		$"Actions & Info/WinStar".visible = false
 	
-	Music.play()
+
 	update_main()
 	settings_text.visible = false
-	controlstext_text.visible = true
+	#controlstext_text.visible = true
 	if not SaveManager.save_data.first_time_playing:
+		Music.play()
 		if not Universal.played_once:
 			animation_player.play("titlecard")
 		else:
-			animation_player.play("finish")
+			if SaveManager.save_data.beat_game and not SaveManager.save_data.first_win:
+				animation_player.play("titlecard")
+				SaveManager.save_data.first_win = true
+			else:
+				animation_player.play("finish")
+
 	else:
 		print("FIRST TIME")
 		SaveManager.save_data.first_time_playing = false
 		SaveManager.write_to_save()
-		animation_player.play("finish")
+		animation_player.play("finish_flash")
 
 # update the menu whenever the player does an action
 func update_main() -> void:
@@ -155,6 +161,7 @@ func _input(event: InputEvent) -> void:
 			settings_text.visible = false
 			menu_text.visible = true
 			title_text.visible = true
+			SaveManager.write_to_save()
 			menu_state = "MAIN"
 	
 	#release up and down (this is done for controller, otherwise it repeatedly goes up/down when moving stick)

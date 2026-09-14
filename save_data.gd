@@ -8,3 +8,4 @@ class_name SaveData extends Resource
 @export var beat_game := false
 @export var volume: float = 0.3
 @export var shaders := true
+@export var first_win := false

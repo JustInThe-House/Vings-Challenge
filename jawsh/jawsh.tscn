@@ -17,9 +17,6 @@ material = SubResource("StandardMaterial3D_wtokj")
 
 [sub_resource type="SphereShape3D" id="SphereShape3D_14aab"]
 
-[sub_resource type="SphereShape3D" id="SphereShape3D_mlfnx"]
-radius = 0.001
-
 [node name="Jawsh" type="RigidBody3D" unique_id=208343381]
 physics_material_override = SubResource("PhysicsMaterial_mlfnx")
 gravity_scale = 4.678
@@ -33,13 +30,7 @@ mesh = SubResource("SphereMesh_cmcmu")
 shape = SubResource("SphereShape3D_14aab")
 
 [node name="SpringArmPivot" parent="." unique_id=377660430 instance=ExtResource("3_mlfnx")]
-
-[node name="SpringArm3D" parent="SpringArmPivot" index="0" unique_id=320587476]
-shape = SubResource("SphereShape3D_mlfnx")
-spring_length = 6.0
-
-[node name="Camera3D" parent="SpringArmPivot/SpringArm3D" index="0" unique_id=898324505]
-current = true
+top_level = true
 
 [node name="OnGroundCheck" type="RayCast3D" parent="." unique_id=1524855557]
 top_level = true
@@ -57,6 +48,6 @@ one_shot = true
 top_level = true
 current = true
 script = ExtResource("5_ejn7s")
-camera = NodePath("../SpringArmPivot/SpringArm3D/Camera3D")
+camera = NodePath("../SpringArmPivot/Camera3D")
 
 [editable path="SpringArmPivot"]

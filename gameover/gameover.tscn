@@ -139,5 +139,6 @@ speed_scale = 2.0
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=358555144]
 stream = ExtResource("3_d573a")
+volume_db = -2.0
 
 [connection signal="animation_finished" from="AnimationPlayer" to="." method="_on_animation_player_animation_finished"]

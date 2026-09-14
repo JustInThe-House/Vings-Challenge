@@ -12,7 +12,10 @@ config_version=5
 
 config/name="Ving's Challenge"
 run/main_scene="uid://dg1tism7k5m81"
+config/use_custom_user_dir=true
+config/custom_user_dir_name="VinG's Challenge"
 config/features=PackedStringArray("4.7", "Forward Plus")
+boot_splash/image="uid://jv7tdi2n2j2s"
 config/icon="uid://bi66fauwvb4m8"
 
 [audio]
@@ -28,17 +31,16 @@ Controls="*uid://cvcgqqqvtd0lb"
 Universal="*uid://rp7qtk605l25"
 DiscordRPCLoader="*uid://23cef2bvaryu"
 
-[debug]
-
-settings/stdout/print_fps=true
-
 [display]
 
 window/size/viewport_width=1280
 window/size/viewport_height=720
-window/size/mode=4
 window/size/resizable=false
 window/stretch/mode="canvas_items"
+
+[editor]
+
+movie_writer/movie_file="C:/Users/justi/Videos/Godot/output.ogv"
 
 [editor_plugins]
 
@@ -122,6 +124,11 @@ fullscreen={
 "events": [Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":-1,"window_id":0,"alt_pressed":true,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":0,"physical_keycode":4194309,"key_label":0,"unicode":0,"location":0,"echo":false,"script":null)
 ]
 }
+quit={
+"deadzone": 0.2,
+"events": [Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":-1,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":0,"physical_keycode":4194305,"key_label":0,"unicode":0,"location":0,"echo":false,"script":null)
+]
+}
 
 [physics]
 
@@ -135,7 +142,6 @@ jolt_physics_3d/queries/use_enhanced_internal_edge_removal=true
 jolt_physics_3d/collisions/collision_margin_fraction=0.0
 3d/default_linear_damp=0.0
 3d/default_angular_damp=0.0
-3d/solver/solver_iterations=400
 
 [rendering]
 

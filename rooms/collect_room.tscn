@@ -1,12 +1,13 @@
 [gd_scene format=3 uid="uid://cki4qi7ubw672"]
 
 [ext_resource type="Script" uid="uid://dbdck4kir0r47" path="res://rooms/collect_room.gd" id="1_xkuw5"]
-[ext_resource type="MeshLibrary" uid="uid://b4koq7uqw0e8w" path="res://tilesets/retro.tres" id="3_fv8q0"]
 [ext_resource type="Texture2D" uid="uid://jv7tdi2n2j2s" path="res://images/spoopy_edited.png" id="4_m0767"]
 [ext_resource type="PackedScene" uid="uid://tpedlxwfyd3t" path="res://jawsh/jawsh.tscn" id="5_48vym"]
 [ext_resource type="PackedScene" uid="uid://cdtmwdfvfj3cg" path="res://ving/ving.tscn" id="6_lwnle"]
 [ext_resource type="PackedScene" uid="uid://u25vubh1fgmg" path="res://ving doll/ving_doll.tscn" id="7_71awx"]
+[ext_resource type="PackedScene" uid="uid://dxop7c2ewomca" path="res://tilesets/retro_tile.tscn" id="7_nmqhj"]
 [ext_resource type="Shader" uid="uid://dsc1555ndnkeb" path="res://utilities/crt.gdshader" id="7_xkuw5"]
+[ext_resource type="PackedScene" uid="uid://772lksnd8320" path="res://tilesets/retro_cube.tscn" id="9_fv8q0"]
 
 [sub_resource type="Environment" id="Environment_cxv18"]
 fog_enabled = true
@@ -17,153 +18,6 @@ fog_density = 1.0
 fog_depth_curve = 0.32987857
 fog_depth_begin = 0.0
 fog_depth_end = 60.0
-
-[sub_resource type="BoxShape3D" id="BoxShape3D_g4v7s"]
-size = Vector3(64, 1, 36)
-
-[sub_resource type="BoxShape3D" id="BoxShape3D_wr40r"]
-size = Vector3(4, 1, 36)
-
-[sub_resource type="BoxShape3D" id="BoxShape3D_xkuw5"]
-size = Vector3(20, 1, 4)
-
-[sub_resource type="BoxShape3D" id="BoxShape3D_nmqhj"]
-size = Vector3(12, 1, 12)
-
-[sub_resource type="BoxShape3D" id="BoxShape3D_fv8q0"]
-size = Vector3(12, 1, 12)
-
-[sub_resource type="BoxShape3D" id="BoxShape3D_m0767"]
-size = Vector3(12, 1, 12)
-
-[sub_resource type="BoxShape3D" id="BoxShape3D_48vym"]
-size = Vector3(12, 1, 12)
-
-[sub_resource type="BoxShape3D" id="BoxShape3D_lwnle"]
-size = Vector3(12, 1, 12)
-
-[sub_resource type="BoxShape3D" id="BoxShape3D_71awx"]
-size = Vector3(8, 1, 4)
-
-[sub_resource type="BoxShape3D" id="BoxShape3D_jkovd"]
-size = Vector3(12, 1, 12)
-
-[sub_resource type="BoxShape3D" id="BoxShape3D_btpqy"]
-size = Vector3(4, 1, 20)
-
-[sub_resource type="BoxShape3D" id="BoxShape3D_tbxqe"]
-size = Vector3(16, 1, 16)
-
-[sub_resource type="BoxShape3D" id="BoxShape3D_pyph3"]
-size = Vector3(8, 1, 4)
-
-[sub_resource type="BoxShape3D" id="BoxShape3D_7ymk5"]
-size = Vector3(12, 1, 4)
-
-[sub_resource type="BoxShape3D" id="BoxShape3D_xg8bu"]
-size = Vector3(16, 1, 4)
-
-[sub_resource type="BoxShape3D" id="BoxShape3D_dy4nq"]
-size = Vector3(4, 1, 4)
-
-[sub_resource type="BoxShape3D" id="BoxShape3D_metit"]
-size = Vector3(4, 1, 4)
-
-[sub_resource type="BoxShape3D" id="BoxShape3D_rq5s1"]
-size = Vector3(4, 1, 88)
-
-[sub_resource type="BoxShape3D" id="BoxShape3D_c704u"]
-size = Vector3(12, 1, 4)
-
-[sub_resource type="BoxShape3D" id="BoxShape3D_p4cwx"]
-size = Vector3(12, 1, 4)
-
-[sub_resource type="BoxShape3D" id="BoxShape3D_gvrvm"]
-size = Vector3(12, 1, 4)
-
-[sub_resource type="BoxShape3D" id="BoxShape3D_x01pb"]
-size = Vector3(4, 1, 64)
-
-[sub_resource type="BoxShape3D" id="BoxShape3D_vo37d"]
-size = Vector3(4, 1, 60)
-
-[sub_resource type="BoxShape3D" id="BoxShape3D_18pqd"]
-size = Vector3(28, 1, 8)
-
-[sub_resource type="BoxShape3D" id="BoxShape3D_eg21p"]
-size = Vector3(28, 1, 8)
-
-[sub_resource type="BoxShape3D" id="BoxShape3D_vauw5"]
-size = Vector3(12, 1, 8)
-
-[sub_resource type="BoxShape3D" id="BoxShape3D_u4hh1"]
-size = Vector3(24, 1, 4)
-
-[sub_resource type="BoxShape3D" id="BoxShape3D_ivhrq"]
-size = Vector3(4, 1, 36)
-
-[sub_resource type="BoxShape3D" id="BoxShape3D_h21o5"]
-size = Vector3(28, 1, 4)
-
-[sub_resource type="BoxShape3D" id="BoxShape3D_est6e"]
-size = Vector3(16, 1, 4)
-
-[sub_resource type="BoxShape3D" id="BoxShape3D_5as3f"]
-size = Vector3(4, 1, 4)
-
-[sub_resource type="BoxShape3D" id="BoxShape3D_gr2yq"]
-size = Vector3(4, 1, 4)
-
-[sub_resource type="BoxShape3D" id="BoxShape3D_h08nt"]
-size = Vector3(32, 1, 4)
-
-[sub_resource type="BoxShape3D" id="BoxShape3D_xuroh"]
-size = Vector3(24, 1, 4)
-
-[sub_resource type="BoxShape3D" id="BoxShape3D_akeef"]
-size = Vector3(4, 1, 12)
-
-[sub_resource type="BoxShape3D" id="BoxShape3D_4mqq3"]
-size = Vector3(4, 1, 36)
-
-[sub_resource type="BoxShape3D" id="BoxShape3D_nu7u0"]
-size = Vector3(4, 1, 8)
-
-[sub_resource type="BoxShape3D" id="BoxShape3D_5rwmq"]
-size = Vector3(4, 1, 4)
-
-[sub_resource type="BoxShape3D" id="BoxShape3D_lohg6"]
-size = Vector3(12, 1, 4)
-
-[sub_resource type="BoxShape3D" id="BoxShape3D_l2sce"]
-size = Vector3(12, 1, 4)
-
-[sub_resource type="BoxShape3D" id="BoxShape3D_iiukg"]
-size = Vector3(12, 1, 4)
-
-[sub_resource type="BoxShape3D" id="BoxShape3D_xulia"]
-size = Vector3(12, 1, 4)
-
-[sub_resource type="BoxShape3D" id="BoxShape3D_0clfq"]
-size = Vector3(12, 1, 4)
-
-[sub_resource type="BoxShape3D" id="BoxShape3D_muoil"]
-size = Vector3(12, 1, 4)
-
-[sub_resource type="BoxShape3D" id="BoxShape3D_t0pr2"]
-size = Vector3(12, 1, 4)
-
-[sub_resource type="BoxShape3D" id="BoxShape3D_3wrg1"]
-size = Vector3(12, 1, 4)
-
-[sub_resource type="BoxShape3D" id="BoxShape3D_bfo38"]
-size = Vector3(12, 1, 4)
-
-[sub_resource type="BoxShape3D" id="BoxShape3D_1bgop"]
-size = Vector3(8, 1, 4)
-
-[sub_resource type="BoxShape3D" id="BoxShape3D_v8f6e"]
-size = Vector3(24, 1, 4)
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_nmqhj"]
 shader = ExtResource("7_xkuw5")
@@ -187,16 +41,8 @@ layers = 4
 shadow_enabled = true
 directional_shadow_max_distance = 1.0
 
-[node name="Gridmap" type="GridMap" parent="." unique_id=1842066050]
-mesh_library = ExtResource("3_fv8q0")
-cell_size = Vector3(4, 1, 4)
-data = {
-"cells": PackedInt32Array(131078, 5, 393218, 131081, 6, 393218, 393222, 5, 393218, 131080, 6, 393218, 131082, 6, 393218, 131075, 7, 393218, 131075, 8, 393218, 131075, 9, 393218, 131076, 9, 393218, 131077, 9, 393218, 131077, 8, 393218, 131077, 7, 393218, 131076, 7, 393218, 393221, 5, 393218, 393220, 5, 393218, 393219, 5, 393218, 393218, 5, 393218, 655362, 8, 393218, 655362, 7, 393218, 655363, 7, 393218, 655363, 8, 393218, 655366, 7, 393218, 655365, 7, 393218, 655365, 8, 393218, 655366, 8, 393218, 393224, 8, 393218, 393225, 8, 393218, 131085, 4, 393218, 131085, 5, 393218, 131085, 6, 393218, 131085, 7, 393218, 131085, 8, 393218, 0, 65534, 1, 131076, 8, 2, 11, 65529, 1, 10, 65529, 1, 9, 65529, 1, 8, 65529, 1, 7, 65529, 1, 6, 65529, 1, 5, 65529, 1, 5, 65528, 1, 4, 65528, 1, 3, 65528, 1, 3, 65529, 1, 3, 65530, 1, 4, 65530, 1, 5, 65530, 1, 4, 65529, 1, 2, 65529, 1, 6, 65526, 1, 6, 65525, 1, 6, 65524, 1, 5, 65524, 1, 4, 65524, 1, 4, 65525, 1, 4, 65526, 1, 5, 65526, 1, 5, 65525, 1, 3, 65524, 1, 2, 65524, 1, 1, 65524, 1, 1, 65525, 1, 1, 65526, 1, 0, 65526, 1, 65535, 65526, 1, 65535, 65525, 1, 65535, 65524, 1, 0, 65524, 1, 0, 65528, 1, 0, 65529, 1, 65535, 65529, 1, 65535, 65528, 1, 65534, 65528, 1, 65534, 65529, 1, 65534, 65530, 1, 65535, 65530, 1, 0, 65530, 1, 0, 65533, 1, 0, 65532, 1, 65535, 65532, 1, 65534, 65532, 1, 65534, 65533, 1, 65534, 65534, 1, 65535, 65534, 1, 65535, 65533, 1, 65532, 65528, 1, 65532, 65527, 1, 65532, 65526, 1, 65531, 65526, 1, 65531, 65527, 1, 65530, 65527, 1, 65530, 65528, 1, 65531, 65528, 1, 65530, 65526, 1, 65531, 65530, 1, 65531, 65531, 1, 65531, 65532, 1, 65531, 65533, 1, 65531, 65534, 1, 65531, 65535, 1, 65532, 65535, 1, 65530, 65535, 1, 65529, 65535, 1, 65529, 0, 1, 65530, 0, 1, 65531, 0, 1, 65532, 0, 1, 65532, 1, 1, 65531, 1, 1, 65530, 1, 1, 65529, 1, 1, 65529, 2, 1, 65530, 2, 1, 65531, 2, 1, 65532, 2, 1, 65533, 2, 1, 65534, 2, 1, 65535, 2, 1, 65535, 3, 1, 0, 3, 1, 0, 4, 1, 0, 5, 1, 0, 2, 1, 1, 2, 1, 2, 2, 1, 3, 2, 1, 4, 2, 1, 5, 2, 1, 6, 2, 1, 7, 2, 1, 8, 2, 1, 9, 2, 1, 11, 65530, 1, 11, 65531, 1, 11, 65532, 1, 11, 65533, 1, 11, 65534, 1, 11, 65535, 1, 11, 0, 1, 11, 1, 1, 11, 2, 1, 10, 2, 1, 12, 2, 1, 13, 2, 1, 14, 2, 1, 14, 3, 1, 14, 4, 1, 13, 4, 1, 13, 3, 1, 12, 3, 1, 11, 3, 1, 10, 3, 1, 9, 3, 1, 8, 3, 1, 7, 3, 1, 6, 3, 1, 5, 3, 1, 4, 3, 1, 3, 3, 1, 2, 3, 1, 1, 3, 1, 1, 4, 1, 2, 4, 1, 3, 5, 1, 4, 5, 1, 5, 5, 1, 6, 5, 1, 7, 5, 1, 7, 4, 1, 6, 4, 1, 5, 4, 1, 4, 4, 1, 5, 6, 1, 6, 6, 1, 7, 6, 1, 8, 6, 1, 9, 5, 1, 8, 4, 1, 8, 5, 1, 9, 4, 1, 10, 5, 1, 11, 4, 1, 10, 4, 1, 11, 5, 1, 12, 4, 1, 13, 5, 1, 14, 5, 1, 14, 6, 1, 14, 7, 1, 14, 8, 1, 14, 9, 1, 14, 10, 1, 13, 10, 1, 13, 9, 1, 13, 8, 1, 12, 8, 1, 12, 7, 1, 12, 6, 1, 12, 5, 1, 12, 9, 1, 12, 10, 1, 11, 10, 1, 10, 10, 1, 9, 10, 1, 9, 9, 1, 8, 9, 1, 10, 9, 1, 10, 8, 1, 11, 8, 1, 11, 7, 1, 10, 7, 1, 9, 7, 1, 11, 6, 1, 10, 6, 1, 9, 8, 1, 11, 9, 1, 9, 6, 1, 7, 7, 1, 8, 7, 1, 8, 8, 1, 5, 7, 1, 6, 7, 1, 3, 4, 1, 65535, 4, 1, 65535, 5, 1, 65535, 6, 1, 65535, 7, 1, 65535, 8, 1, 0, 9, 1, 0, 10, 1, 65535, 10, 1, 1, 10, 1, 2, 10, 1, 3, 10, 1, 4, 10, 1, 5, 10, 1, 6, 10, 1, 7, 10, 1, 8, 10, 1, 7, 9, 1, 6, 9, 1, 5, 9, 1, 4, 9, 1, 4, 8, 1, 3, 8, 1, 3, 7, 1, 4, 7, 1, 4, 6, 1, 2, 5, 1, 2, 6, 1, 1, 5, 1, 1, 6, 1, 0, 6, 1, 0, 7, 1, 0, 8, 1, 65535, 9, 1, 1, 9, 1, 2, 9, 1, 2, 8, 1, 2, 7, 1, 1, 7, 1, 1, 8, 1, 5, 8, 1, 6, 8, 1, 3, 6, 1, 7, 8, 1, 65533, 5, 1, 65532, 5, 1, 65531, 5, 1, 65530, 5, 1, 65529, 5, 1, 65528, 5, 1, 65527, 5, 1, 65527, 6, 1, 65528, 6, 1, 65529, 6, 1, 65530, 6, 1, 65531, 6, 1, 65532, 6, 1, 65533, 6, 1, 65533, 9, 1, 65532, 9, 1, 65531, 9, 1, 65530, 9, 1, 65529, 9, 1, 65528, 9, 1, 65527, 9, 1, 65527, 10, 1, 65528, 10, 1, 65529, 10, 1, 65530, 10, 1, 65531, 10, 1, 65532, 10, 1, 65533, 10, 1, 65528, 0, 1, 65527, 0, 1, 65526, 0, 1, 65526, 65535, 1, 65526, 65534, 1, 65525, 65534, 1, 65524, 65534, 1, 65524, 65535, 1, 65524, 0, 1, 65525, 0, 1, 65523, 0, 1, 65522, 0, 1, 65522, 65535, 1, 65522, 65534, 1, 65523, 65534, 1, 65530, 65530, 1, 65529, 65530, 1, 65528, 65530, 1, 65527, 65530, 1, 65526, 65530, 1, 65525, 65530, 1, 65524, 65530, 1, 65524, 65526, 1, 65524, 65527, 1, 65524, 65528, 1, 65524, 65529, 1, 65523, 65526, 1, 65522, 65526, 1, 65521, 65526, 1, 65520, 65526, 1, 65519, 65526, 1, 65519, 65527, 1, 65519, 65528, 1, 65519, 65529, 1, 65519, 65530, 1, 65520, 65530, 1, 65521, 65530, 1, 65522, 65530, 1, 65523, 65530, 1, 65522, 65531, 1, 65522, 65532, 1, 65522, 65533, 1, 65519, 65531, 1, 65519, 65532, 1, 65519, 65533, 1, 65519, 65534, 1, 65519, 65535, 1, 65519, 0, 1, 65520, 0, 1, 65521, 0, 1, 65518, 0, 1, 65517, 0, 1, 65517, 65535, 1, 65517, 65534, 1, 65518, 65534, 1, 65516, 65534, 1, 65515, 65534, 1, 65514, 65534, 1, 65514, 65535, 1, 65514, 0, 1, 65513, 0, 1, 65512, 0, 1, 65513, 65535, 1, 65513, 65534, 1, 65512, 65535, 1, 65511, 65535, 1, 65511, 65534, 1, 65511, 65533, 1, 65511, 65532, 1, 65511, 65531, 1, 65511, 65530, 1, 65511, 65529, 1, 65512, 65529, 1, 65513, 65529, 1, 65514, 65529, 1, 65515, 65527, 1, 65516, 65527, 1, 65517, 65527, 1, 65518, 65527, 1, 65515, 65528, 1, 65515, 65529, 1, 65514, 65527, 1, 65513, 65527, 1, 65513, 65528, 1, 65512, 65527, 1, 65511, 65527, 1, 65511, 65528, 1, 65514, 1, 1, 65514, 2, 1, 65514, 3, 1, 65514, 4, 1, 65511, 4, 1, 65512, 4, 1, 65513, 4, 1, 65515, 4, 1, 65516, 4, 1, 65517, 4, 1, 65518, 4, 1, 65519, 4, 1, 65520, 4, 1, 65521, 4, 1, 65522, 4, 1, 65523, 4, 1, 65524, 4, 1, 65525, 4, 1, 65522, 1, 1, 65522, 2, 1, 65522, 3, 1, 65522, 5, 1, 65522, 6, 1, 65522, 7, 1, 65522, 8, 1, 65523, 8, 1, 65524, 8, 1, 65525, 8, 1, 65522, 11, 1, 65522, 10, 1, 65522, 9, 1, 65522, 15, 1, 65522, 14, 1, 65522, 13, 1, 65522, 12, 1, 65525, 12, 1, 65524, 12, 1, 65523, 12, 1, 65521, 12, 1, 65520, 12, 1, 65519, 12, 1, 65518, 15, 1, 65518, 14, 1, 65518, 13, 1, 65518, 12, 1, 65517, 12, 1, 65516, 12, 1, 65515, 12, 1, 65514, 15, 1, 65514, 14, 1, 65514, 13, 1, 65514, 12, 1, 65513, 12, 1, 65512, 12, 1, 65511, 12, 1, 65514, 11, 1, 65514, 10, 1, 65514, 9, 1, 65514, 8, 1, 65513, 8, 1, 65512, 8, 1, 65511, 8, 1, 65515, 8, 1, 65516, 8, 1, 65517, 8, 1, 65518, 8, 1, 65518, 9, 1, 65518, 10, 1, 65518, 11, 1, 65519, 8, 1, 65520, 8, 1, 65521, 8, 1, 65518, 7, 1, 65518, 6, 1, 65518, 5, 1, 65514, 7, 1, 65514, 6, 1, 65514, 5, 1, 65518, 3, 1, 65518, 2, 1, 65518, 1, 1, 0, 65525, 1)
-}
-metadata/_editor_floor_ = Vector3(0, 0, 0)
-
 [node name="Sky" type="Sprite3D" parent="." unique_id=991813916]
-transform = Transform3D(50, 0, 0, 0, -2.1855694e-06, -50, 0, 50, -2.1855694e-06, 0, 200, 0)
+transform = Transform3D(-1.5298986e-06, 35, -1.5298986e-06, 0, -1.5298986e-06, -35, -35, -1.5298986e-06, 6.687399e-14, -22, 32, 0)
 texture = ExtResource("4_m0767")
 
 [node name="Jawsh" parent="." unique_id=208343381 instance=ExtResource("5_48vym")]
@@ -513,10 +359,10 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 42, 5.5, 26)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18, 2, -26)
 
 [node name="VingDoll192" parent="Dolls" unique_id=863136880 instance=ExtResource("7_71awx")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18, 5.5, 38)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16, 5.5, 36)
 
 [node name="VingDoll193" parent="Dolls" unique_id=1353530487 instance=ExtResource("7_71awx")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22, 5.5, 34)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20, 5.5, 36)
 
 [node name="VingDoll194" parent="Dolls" unique_id=1038494117 instance=ExtResource("7_71awx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 46, 2, -26)
@@ -525,7 +371,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 46, 2, -26)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 46, 2, -10)
 
 [node name="VingDoll197" parent="Dolls" unique_id=15273597 instance=ExtResource("7_71awx")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18, 5.5, 30)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20, 5.5, 32)
 
 [node name="VingDoll199" parent="Dolls" unique_id=959029778 instance=ExtResource("7_71awx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 58, 2, 18)
@@ -668,9 +514,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 2, -10)
 [node name="VingDoll255" parent="Dolls" unique_id=870286932 instance=ExtResource("7_71awx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 13.5, 32)
 
-[node name="VingDoll256" parent="Dolls" unique_id=539862447 instance=ExtResource("7_71awx")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18, 5.5, 34)
-
 [node name="VingDoll258" parent="Dolls" unique_id=1733464920 instance=ExtResource("7_71awx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 58, 2, 34)
 
@@ -720,7 +563,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -66, 2, -14)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -66, 2, 18)
 
 [node name="VingDoll271" parent="Dolls" unique_id=745287092 instance=ExtResource("7_71awx")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 5.5, 34)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16, 5.5, 32)
 
 [node name="VingDoll272" parent="Dolls" unique_id=595183589 instance=ExtResource("7_71awx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 46, 2, -14)
@@ -773,253 +616,1408 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18, 2, 40)
 [node name="VingDoll76" parent="Dolls" unique_id=1887626760 instance=ExtResource("7_71awx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -70, 2, 34)
 
-[node name="Collisions" type="StaticBody3D" parent="." unique_id=689859672]
-input_ray_pickable = false
+[node name="Collisions" type="StaticBody3D" parent="." unique_id=317153551]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Collisions" unique_id=356909177]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 28, 0.5, 26)
-shape = SubResource("BoxShape3D_g4v7s")
-debug_color = Color(1, 0.003921569, 0.09411765, 1)
+[node name="RetroTile" parent="Collisions" unique_id=570993727 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0.5, -6)
 
-[node name="CollisionShape3D2" type="CollisionShape3D" parent="Collisions" unique_id=912083030]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 46, 0.5, -10)
-shape = SubResource("BoxShape3D_wr40r")
-debug_color = Color(1, 0.003921569, 0.09411765, 1)
+[node name="RetroTile2" parent="Collisions" unique_id=902264861 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0.5, -6)
 
-[node name="CollisionShape3D3" type="CollisionShape3D" parent="Collisions" unique_id=1093073474]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 34, 0.5, -26)
-shape = SubResource("BoxShape3D_xkuw5")
-debug_color = Color(1, 0.003921569, 0.09411765, 1)
+[node name="RetroTile3" parent="Collisions" unique_id=958380831 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 0.5, -6)
 
-[node name="CollisionShape3D4" type="CollisionShape3D" parent="Collisions" unique_id=1446602931]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18, 0.5, -26)
-shape = SubResource("BoxShape3D_nmqhj")
-debug_color = Color(1, 0.003921569, 0.09411765, 1)
+[node name="RetroTile4" parent="Collisions" unique_id=509821218 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 0.5, -10)
 
-[node name="CollisionShape3D5" type="CollisionShape3D" parent="Collisions" unique_id=1078844656]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0.5, -26)
-shape = SubResource("BoxShape3D_fv8q0")
-debug_color = Color(1, 0.003921569, 0.09411765, 1)
-
-[node name="CollisionShape3D6" type="CollisionShape3D" parent="Collisions" unique_id=902531510]
+[node name="RetroTile5" parent="Collisions" unique_id=288049144 instance=ExtResource("7_nmqhj")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0.5, -10)
-shape = SubResource("BoxShape3D_m0767")
-debug_color = Color(1, 0.003921569, 0.09411765, 1)
 
-[node name="CollisionShape3D7" type="CollisionShape3D" parent="Collisions" unique_id=1304981379]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0.5, -42)
-shape = SubResource("BoxShape3D_48vym")
-debug_color = Color(1, 0.003921569, 0.09411765, 1)
+[node name="RetroTile6" parent="Collisions" unique_id=2094896256 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0.5, -10)
 
-[node name="CollisionShape3D8" type="CollisionShape3D" parent="Collisions" unique_id=1228437233]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22, 0.5, -42)
-shape = SubResource("BoxShape3D_lwnle")
-debug_color = Color(1, 0.003921569, 0.09411765, 1)
+[node name="RetroTile7" parent="Collisions" unique_id=1515496659 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 0.5, -14)
 
-[node name="CollisionShape3D9" type="CollisionShape3D" parent="Collisions" unique_id=159330279]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 0.5, -46)
-shape = SubResource("BoxShape3D_71awx")
-debug_color = Color(1, 0.003921569, 0.09411765, 1)
+[node name="RetroTile8" parent="Collisions" unique_id=1543254922 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0.5, -14)
 
-[node name="CollisionShape3D10" type="CollisionShape3D" parent="Collisions" unique_id=1443686610]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18, 0.5, -34)
-shape = SubResource("BoxShape3D_jkovd")
-debug_color = Color(1, 0.003921569, 0.09411765, 1)
+[node name="RetroTile9" parent="Collisions" unique_id=1286847307 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0.5, -14)
 
-[node name="CollisionShape3D11" type="CollisionShape3D" parent="Collisions" unique_id=1402778695]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18, 0.5, -14)
-shape = SubResource("BoxShape3D_btpqy")
-debug_color = Color(1, 0.003921569, 0.09411765, 1)
+[node name="RetroTile72" parent="Collisions" unique_id=292292542 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14, 0.5, 6)
 
-[node name="CollisionShape3D12" type="CollisionShape3D" parent="Collisions" unique_id=98223976]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20, 0.5, 4)
-shape = SubResource("BoxShape3D_tbxqe")
-debug_color = Color(1, 0.003921569, 0.09411765, 1)
+[node name="RetroTile73" parent="Collisions" unique_id=1632064410 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18, 0.5, 6)
 
-[node name="CollisionShape3D13" type="CollisionShape3D" parent="Collisions" unique_id=1230226507]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 0.5, 10)
-shape = SubResource("BoxShape3D_pyph3")
-debug_color = Color(1, 0.003921569, 0.09411765, 1)
+[node name="RetroTile74" parent="Collisions" unique_id=400327059 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -22, 0.5, 6)
 
-[node name="CollisionShape3D14" type="CollisionShape3D" parent="Collisions" unique_id=1680112276]
+[node name="RetroTile81" parent="Collisions" unique_id=2071491954 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14, 0.5, 10)
+
+[node name="RetroTile99" parent="Collisions" unique_id=725599528 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0.5, 10)
+
+[node name="RetroTile100" parent="Collisions" unique_id=828669767 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 0.5, 10)
+
+[node name="RetroTile101" parent="Collisions" unique_id=1582158845 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0.5, 10)
+
+[node name="RetroTile102" parent="Collisions" unique_id=2070634468 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0.5, 10)
+
+[node name="RetroTile103" parent="Collisions" unique_id=1886369283 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0.5, 10)
+
+[node name="RetroTile104" parent="Collisions" unique_id=1995250852 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0.5, 14)
+
+[node name="RetroTile105" parent="Collisions" unique_id=1550273082 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0.5, 14)
+
+[node name="RetroTile106" parent="Collisions" unique_id=1105974670 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0.5, 14)
+
+[node name="RetroTile107" parent="Collisions" unique_id=1225778376 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0.5, 18)
+
+[node name="RetroTile108" parent="Collisions" unique_id=1598859989 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0.5, 18)
+
+[node name="RetroTile109" parent="Collisions" unique_id=1773119184 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0.5, 18)
+
+[node name="RetroTile204" parent="Collisions" unique_id=1829793219 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0.5, 22)
+
+[node name="RetroTile205" parent="Collisions" unique_id=260952711 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0.5, 22)
+
+[node name="RetroTile206" parent="Collisions" unique_id=2114096915 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0.5, 22)
+
+[node name="RetroTile207" parent="Collisions" unique_id=1268103108 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0.5, 26)
+
+[node name="RetroTile208" parent="Collisions" unique_id=47502070 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0.5, 26)
+
+[node name="RetroTile209" parent="Collisions" unique_id=1252299491 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0.5, 26)
+
+[node name="RetroTile210" parent="Collisions" unique_id=1315916590 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0.5, 30)
+
+[node name="RetroTile211" parent="Collisions" unique_id=1503440911 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0.5, 30)
+
+[node name="RetroTile212" parent="Collisions" unique_id=1559459997 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0.5, 30)
+
+[node name="RetroTile213" parent="Collisions" unique_id=603673946 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0.5, 34)
+
+[node name="RetroTile214" parent="Collisions" unique_id=700156909 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0.5, 34)
+
+[node name="RetroTile215" parent="Collisions" unique_id=806049686 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0.5, 34)
+
+[node name="RetroTile82" parent="Collisions" unique_id=2132694705 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18, 0.5, 10)
+
+[node name="RetroTile83" parent="Collisions" unique_id=182140505 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -22, 0.5, 10)
+
+[node name="RetroTile75" parent="Collisions" unique_id=1517768778 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -22, 0.5, 2)
+
+[node name="RetroTile76" parent="Collisions" unique_id=1693278543 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18, 0.5, 2)
+
+[node name="RetroTile77" parent="Collisions" unique_id=2057744983 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14, 0.5, 2)
+
+[node name="RetroTile78" parent="Collisions" unique_id=541789386 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -22, 0.5, -2)
+
+[node name="RetroTile84" parent="Collisions" unique_id=1714101744 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -26, 0.5, 6)
+
+[node name="RetroTile85" parent="Collisions" unique_id=1069988366 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -26, 0.5, 10)
+
+[node name="RetroTile377" parent="Collisions" unique_id=1839983934 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0.5, 26)
+
+[node name="RetroTile378" parent="Collisions" unique_id=1742762764 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14, 0.5, 26)
+
+[node name="RetroTile379" parent="Collisions" unique_id=1684206353 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18, 0.5, 26)
+
+[node name="RetroTile380" parent="Collisions" unique_id=666120947 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -22, 0.5, 26)
+
+[node name="RetroTile381" parent="Collisions" unique_id=23368407 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0.5, 22)
+
+[node name="RetroTile382" parent="Collisions" unique_id=2144987629 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14, 0.5, 22)
+
+[node name="RetroTile383" parent="Collisions" unique_id=1793679620 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18, 0.5, 22)
+
+[node name="RetroTile384" parent="Collisions" unique_id=194588473 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -22, 0.5, 22)
+
+[node name="RetroTile385" parent="Collisions" unique_id=1957828885 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -26, 0.5, 26)
+
+[node name="RetroTile386" parent="Collisions" unique_id=1873574156 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -30, 0.5, 26)
+
+[node name="RetroTile387" parent="Collisions" unique_id=1727000742 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34, 0.5, 26)
+
+[node name="RetroTile388" parent="Collisions" unique_id=143325279 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -26, 0.5, 22)
+
+[node name="RetroTile389" parent="Collisions" unique_id=639922396 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -30, 0.5, 22)
+
+[node name="RetroTile390" parent="Collisions" unique_id=262188238 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34, 0.5, 22)
+
+[node name="RetroTile391" parent="Collisions" unique_id=1111013408 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0.5, 42)
+
+[node name="RetroTile392" parent="Collisions" unique_id=1558836536 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14, 0.5, 42)
+
+[node name="RetroTile393" parent="Collisions" unique_id=1696628569 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18, 0.5, 42)
+
+[node name="RetroTile394" parent="Collisions" unique_id=1854879853 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -22, 0.5, 42)
+
+[node name="RetroTile395" parent="Collisions" unique_id=2042791656 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0.5, 38)
+
+[node name="RetroTile396" parent="Collisions" unique_id=730204054 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14, 0.5, 38)
+
+[node name="RetroTile397" parent="Collisions" unique_id=1973644294 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18, 0.5, 38)
+
+[node name="RetroTile398" parent="Collisions" unique_id=818360088 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -22, 0.5, 38)
+
+[node name="RetroTile399" parent="Collisions" unique_id=82857660 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -26, 0.5, 42)
+
+[node name="RetroTile400" parent="Collisions" unique_id=1823076952 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -30, 0.5, 42)
+
+[node name="RetroTile401" parent="Collisions" unique_id=833078385 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34, 0.5, 42)
+
+[node name="RetroTile402" parent="Collisions" unique_id=1068971410 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -26, 0.5, 38)
+
+[node name="RetroTile403" parent="Collisions" unique_id=567762509 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -30, 0.5, 38)
+
+[node name="RetroTile404" parent="Collisions" unique_id=504987731 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34, 0.5, 38)
+
+[node name="RetroTile86" parent="Collisions" unique_id=472439517 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -26, 0.5, 2)
+
+[node name="RetroTile110" parent="Collisions" unique_id=1244350833 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -30, 0.5, 2)
+
+[node name="RetroTile111" parent="Collisions" unique_id=121055559 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34, 0.5, 2)
+
+[node name="RetroTile112" parent="Collisions" unique_id=1240777908 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -38, 0.5, 2)
+
+[node name="RetroTile405" parent="Collisions" unique_id=1803294615 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -42, 0.5, 2)
+
+[node name="RetroTile406" parent="Collisions" unique_id=281674973 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -46, 0.5, 2)
+
+[node name="RetroTile407" parent="Collisions" unique_id=667297950 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -50, 0.5, 2)
+
+[node name="RetroTile408" parent="Collisions" unique_id=1636235026 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -54, 0.5, 2)
+
+[node name="RetroTile409" parent="Collisions" unique_id=443508240 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -58, 0.5, 2)
+
+[node name="RetroTile410" parent="Collisions" unique_id=1097027816 instance=ExtResource("7_nmqhj")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -62, 0.5, 2)
-shape = SubResource("BoxShape3D_7ymk5")
-debug_color = Color(1, 0.003921569, 0.09411765, 1)
 
-[node name="CollisionShape3D15" type="CollisionShape3D" parent="Collisions" unique_id=238707412]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -44, 0.5, -6)
-shape = SubResource("BoxShape3D_xg8bu")
-debug_color = Color(1, 0.003921569, 0.09411765, 1)
+[node name="RetroTile411" parent="Collisions" unique_id=1735253869 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -66, 0.5, 2)
 
-[node name="CollisionShape3D16" type="CollisionShape3D" parent="Collisions" unique_id=1482567]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -38, 0.5, -2)
-shape = SubResource("BoxShape3D_dy4nq")
-debug_color = Color(1, 0.003921569, 0.09411765, 1)
+[node name="RetroTile412" parent="Collisions" unique_id=476067135 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -70, 0.5, 2)
 
-[node name="CollisionShape3D17" type="CollisionShape3D" parent="Collisions" unique_id=1962712933]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -46, 0.5, -2)
-shape = SubResource("BoxShape3D_metit")
-debug_color = Color(1, 0.003921569, 0.09411765, 1)
+[node name="RetroTile413" parent="Collisions" unique_id=1318411182 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -74, 0.5, 2)
 
-[node name="CollisionShape3D18" type="CollisionShape3D" parent="Collisions" unique_id=1714293878]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -54, 0.5, 20)
-shape = SubResource("BoxShape3D_rq5s1")
-debug_color = Color(1, 0.003921569, 0.09411765, 1)
+[node name="RetroTile414" parent="Collisions" unique_id=700616895 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -66, 0.5, -6)
 
-[node name="CollisionShape3D19" type="CollisionShape3D" parent="Collisions" unique_id=95632237]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -46, 0.5, 50)
-shape = SubResource("BoxShape3D_c704u")
-debug_color = Color(1, 0.003921569, 0.09411765, 1)
+[node name="RetroTile420" parent="Collisions" unique_id=2083875472 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -66, 0.5, -2)
 
-[node name="CollisionShape3D20" type="CollisionShape3D" parent="Collisions" unique_id=562874998]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -46, 0.5, 34)
-shape = SubResource("BoxShape3D_p4cwx")
-debug_color = Color(1, 0.003921569, 0.09411765, 1)
+[node name="RetroTile421" parent="Collisions" unique_id=1789768489 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -66, 0.5, -10)
 
-[node name="CollisionShape3D21" type="CollisionShape3D" parent="Collisions" unique_id=666600312]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -46, 0.5, 18)
-shape = SubResource("BoxShape3D_gvrvm")
-debug_color = Color(1, 0.003921569, 0.09411765, 1)
+[node name="RetroTile422" parent="Collisions" unique_id=1926438807 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -66, 0.5, -14)
 
-[node name="CollisionShape3D22" type="CollisionShape3D" parent="Collisions" unique_id=621854693]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -70, 0.5, 32)
-shape = SubResource("BoxShape3D_x01pb")
-debug_color = Color(1, 0.003921569, 0.09411765, 1)
-
-[node name="CollisionShape3D23" type="CollisionShape3D" parent="Collisions" unique_id=461383557]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -86, 0.5, 34)
-shape = SubResource("BoxShape3D_vo37d")
-debug_color = Color(1, 0.003921569, 0.09411765, 1)
-
-[node name="CollisionShape3D24" type="CollisionShape3D" parent="Collisions" unique_id=111391166]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -22, 0.5, 24)
-shape = SubResource("BoxShape3D_18pqd")
-debug_color = Color(1, 0.003921569, 0.09411765, 1)
-
-[node name="CollisionShape3D25" type="CollisionShape3D" parent="Collisions" unique_id=289370121]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -22, 0.5, 40)
-shape = SubResource("BoxShape3D_eg21p")
-debug_color = Color(1, 0.003921569, 0.09411765, 1)
-
-[node name="CollisionShape3D26" type="CollisionShape3D" parent="Collisions" unique_id=1791198106]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -90, 0.5, 0)
-shape = SubResource("BoxShape3D_vauw5")
-debug_color = Color(1, 0.003921569, 0.09411765, 1)
-
-[node name="CollisionShape3D27" type="CollisionShape3D" parent="Collisions" unique_id=1903194344]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -80, 0.5, -6)
-shape = SubResource("BoxShape3D_u4hh1")
-debug_color = Color(1, 0.003921569, 0.09411765, 1)
-
-[node name="CollisionShape3D28" type="CollisionShape3D" parent="Collisions" unique_id=1559937723]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -98, 0.5, -18)
-shape = SubResource("BoxShape3D_ivhrq")
-debug_color = Color(1, 0.003921569, 0.09411765, 1)
-
-[node name="CollisionShape3D29" type="CollisionShape3D" parent="Collisions" unique_id=497284910]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -82, 0.5, -34)
-shape = SubResource("BoxShape3D_h21o5")
-debug_color = Color(1, 0.003921569, 0.09411765, 1)
-
-[node name="CollisionShape3D30" type="CollisionShape3D" parent="Collisions" unique_id=1794760771]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -88, 0.5, -26)
-shape = SubResource("BoxShape3D_est6e")
-debug_color = Color(1, 0.003921569, 0.09411765, 1)
-
-[node name="CollisionShape3D31" type="CollisionShape3D" parent="Collisions" unique_id=1610039606]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -90, 0.5, -30)
-shape = SubResource("BoxShape3D_5as3f")
-debug_color = Color(1, 0.003921569, 0.09411765, 1)
-
-[node name="CollisionShape3D32" type="CollisionShape3D" parent="Collisions" unique_id=1152508983]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -82, 0.5, -30)
-shape = SubResource("BoxShape3D_gr2yq")
-debug_color = Color(1, 0.003921569, 0.09411765, 1)
-
-[node name="CollisionShape3D33" type="CollisionShape3D" parent="Collisions" unique_id=817243894]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -36, 0.5, -22)
-shape = SubResource("BoxShape3D_h08nt")
-debug_color = Color(1, 0.003921569, 0.09411765, 1)
-
-[node name="CollisionShape3D34" type="CollisionShape3D" parent="Collisions" unique_id=1179188533]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -56, 0.5, -38)
-shape = SubResource("BoxShape3D_xuroh")
-debug_color = Color(1, 0.003921569, 0.09411765, 1)
-
-[node name="CollisionShape3D35" type="CollisionShape3D" parent="Collisions" unique_id=93010253]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -46, 0.5, -30)
-shape = SubResource("BoxShape3D_akeef")
-debug_color = Color(1, 0.003921569, 0.09411765, 1)
-
-[node name="CollisionShape3D36" type="CollisionShape3D" parent="Collisions" unique_id=210988945]
+[node name="RetroTile423" parent="Collisions" unique_id=1883225355 instance=ExtResource("7_nmqhj")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -66, 0.5, -18)
-shape = SubResource("BoxShape3D_4mqq3")
-debug_color = Color(1, 0.003921569, 0.09411765, 1)
 
-[node name="CollisionShape3D37" type="CollisionShape3D" parent="Collisions" unique_id=2047444235]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -74, 0.5, 0)
-shape = SubResource("BoxShape3D_nu7u0")
-debug_color = Color(1, 0.003921569, 0.09411765, 1)
+[node name="RetroTile415" parent="Collisions" unique_id=347959719 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -70, 0.5, -6)
 
-[node name="CollisionShape3D38" type="CollisionShape3D" parent="Collisions" unique_id=2052411700]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 0.5, -26)
-shape = SubResource("BoxShape3D_5rwmq")
-debug_color = Color(1, 0.003921569, 0.09411765, 1)
+[node name="RetroTile416" parent="Collisions" unique_id=354490337 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -74, 0.5, -6)
 
-[node name="CollisionShape3D39" type="CollisionShape3D" parent="Collisions" unique_id=1138071832]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -62, 0.5, 50)
-shape = SubResource("BoxShape3D_lohg6")
-debug_color = Color(1, 0.003921569, 0.09411765, 1)
+[node name="RetroTile424" parent="Collisions" unique_id=190265932 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -74, 0.5, -2)
 
-[node name="CollisionShape3D40" type="CollisionShape3D" parent="Collisions" unique_id=243640476]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -78, 0.5, 50)
-shape = SubResource("BoxShape3D_l2sce")
-debug_color = Color(1, 0.003921569, 0.09411765, 1)
+[node name="RetroTile417" parent="Collisions" unique_id=1209796581 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -46, 0.5, -6)
 
-[node name="CollisionShape3D41" type="CollisionShape3D" parent="Collisions" unique_id=1709357763]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -94, 0.5, 50)
-shape = SubResource("BoxShape3D_iiukg")
-debug_color = Color(1, 0.003921569, 0.09411765, 1)
+[node name="RetroTile418" parent="Collisions" unique_id=584975902 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -50, 0.5, -6)
 
-[node name="CollisionShape3D42" type="CollisionShape3D" parent="Collisions" unique_id=1118786521]
+[node name="RetroTile419" parent="Collisions" unique_id=1139492761 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -54, 0.5, -6)
+
+[node name="RetroTile427" parent="Collisions" unique_id=1494711232 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -54, 0.5, -2)
+
+[node name="RetroTile428" parent="Collisions" unique_id=1682708525 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -46, 0.5, -2)
+
+[node name="RetroTile429" parent="Collisions" unique_id=147459763 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -38, 0.5, -2)
+
+[node name="RetroTile430" parent="Collisions" unique_id=1907152993 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -38, 0.5, -6)
+
+[node name="RetroTile431" parent="Collisions" unique_id=1402264423 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -42, 0.5, -6)
+
+[node name="RetroTile432" parent="Collisions" unique_id=837723015 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -54, 0.5, -10)
+
+[node name="RetroTile433" parent="Collisions" unique_id=2134958876 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -54, 0.5, -14)
+
+[node name="RetroTile434" parent="Collisions" unique_id=1131027118 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -54, 0.5, -18)
+
+[node name="RetroTile87" parent="Collisions" unique_id=1117319289 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -26, 0.5, -2)
+
+[node name="RetroTile79" parent="Collisions" unique_id=821091750 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18, 0.5, -2)
+
+[node name="RetroTile88" parent="Collisions" unique_id=1774064409 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18, 0.5, -6)
+
+[node name="RetroTile89" parent="Collisions" unique_id=720289041 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18, 0.5, -10)
+
+[node name="RetroTile90" parent="Collisions" unique_id=1178665035 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18, 0.5, -14)
+
+[node name="RetroTile91" parent="Collisions" unique_id=1301197744 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18, 0.5, -18)
+
+[node name="RetroTile92" parent="Collisions" unique_id=246074424 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18, 0.5, -22)
+
+[node name="RetroTile93" parent="Collisions" unique_id=583516492 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -22, 0.5, -22)
+
+[node name="RetroTile94" parent="Collisions" unique_id=532401956 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -26, 0.5, -22)
+
+[node name="RetroTile95" parent="Collisions" unique_id=1208466439 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -30, 0.5, -22)
+
+[node name="RetroTile96" parent="Collisions" unique_id=1889097966 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34, 0.5, -22)
+
+[node name="RetroTile97" parent="Collisions" unique_id=249537242 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -38, 0.5, -22)
+
+[node name="RetroTile98" parent="Collisions" unique_id=1654769288 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -42, 0.5, -22)
+
+[node name="RetroTile248" parent="Collisions" unique_id=338510188 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -46, 0.5, -22)
+
+[node name="RetroTile254" parent="Collisions" unique_id=2069581564 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -46, 0.5, -26)
+
+[node name="RetroTile255" parent="Collisions" unique_id=88152034 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -46, 0.5, -30)
+
+[node name="RetroTile256" parent="Collisions" unique_id=262248208 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -46, 0.5, -34)
+
+[node name="RetroTile263" parent="Collisions" unique_id=1734151107 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -66, 0.5, -26)
+
+[node name="RetroTile264" parent="Collisions" unique_id=1599531659 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -66, 0.5, -30)
+
+[node name="RetroTile265" parent="Collisions" unique_id=1038888336 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -66, 0.5, -34)
+
+[node name="RetroTile266" parent="Collisions" unique_id=1977717101 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -70, 0.5, -34)
+
+[node name="RetroTile267" parent="Collisions" unique_id=365413522 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -74, 0.5, -34)
+
+[node name="RetroTile268" parent="Collisions" unique_id=1104445467 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -78, 0.5, -34)
+
+[node name="RetroTile269" parent="Collisions" unique_id=1253405679 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -82, 0.5, -34)
+
+[node name="RetroTile270" parent="Collisions" unique_id=871099416 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -86, 0.5, -34)
+
+[node name="RetroTile271" parent="Collisions" unique_id=1784158670 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -90, 0.5, -34)
+
+[node name="RetroTile272" parent="Collisions" unique_id=820689250 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -94, 0.5, -34)
+
+[node name="RetroTile273" parent="Collisions" unique_id=549291764 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -98, 0.5, -34)
+
+[node name="RetroTile274" parent="Collisions" unique_id=1346214178 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -82, 0.5, -26)
+
+[node name="RetroTile279" parent="Collisions" unique_id=1554236432 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -82, 0.5, -30)
+
+[node name="RetroTile280" parent="Collisions" unique_id=738706272 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -90, 0.5, -30)
+
+[node name="RetroTile281" parent="Collisions" unique_id=832613495 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -98, 0.5, -30)
+
+[node name="RetroTile282" parent="Collisions" unique_id=1818642907 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -98, 0.5, -22)
+
+[node name="RetroTile283" parent="Collisions" unique_id=581998709 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -98, 0.5, -18)
+
+[node name="RetroTile284" parent="Collisions" unique_id=1779251154 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -98, 0.5, -14)
+
+[node name="RetroTile285" parent="Collisions" unique_id=1442371446 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -98, 0.5, -10)
+
+[node name="RetroTile286" parent="Collisions" unique_id=2031914158 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -98, 0.5, -6)
+
+[node name="RetroTile287" parent="Collisions" unique_id=525730056 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -98, 0.5, -2)
+
+[node name="RetroTile288" parent="Collisions" unique_id=1275996114 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -94, 0.5, -2)
+
+[node name="RetroTile289" parent="Collisions" unique_id=1892195758 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -94, 0.5, 2)
+
+[node name="RetroTile275" parent="Collisions" unique_id=2129729961 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -86, 0.5, -26)
+
+[node name="RetroTile276" parent="Collisions" unique_id=1717747014 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -90, 0.5, -26)
+
+[node name="RetroTile290" parent="Collisions" unique_id=840130610 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -90, 0.5, -6)
+
+[node name="RetroTile291" parent="Collisions" unique_id=1752166991 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -90, 0.5, -2)
+
+[node name="RetroTile292" parent="Collisions" unique_id=419552522 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -90, 0.5, 2)
+
+[node name="RetroTile293" parent="Collisions" unique_id=915105727 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -86, 0.5, -6)
+
+[node name="RetroTile425" parent="Collisions" unique_id=1399105526 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -82, 0.5, -6)
+
+[node name="RetroTile426" parent="Collisions" unique_id=199459575 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -78, 0.5, -6)
+
+[node name="RetroTile294" parent="Collisions" unique_id=434481031 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -86, 0.5, -2)
+
+[node name="RetroTile295" parent="Collisions" unique_id=1717969355 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -86, 0.5, 2)
+
+[node name="RetroTile296" parent="Collisions" unique_id=1274445352 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -86, 0.5, 6)
+
+[node name="RetroTile297" parent="Collisions" unique_id=1434192723 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -86, 0.5, 10)
+
+[node name="RetroTile298" parent="Collisions" unique_id=518310851 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -86, 0.5, 14)
+
+[node name="RetroTile299" parent="Collisions" unique_id=1610299742 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -86, 0.5, 18)
+
+[node name="RetroTile300" parent="Collisions" unique_id=1118408731 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -86, 0.5, 22)
+
+[node name="RetroTile301" parent="Collisions" unique_id=1322748937 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -86, 0.5, 26)
+
+[node name="RetroTile302" parent="Collisions" unique_id=605643351 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -86, 0.5, 30)
+
+[node name="RetroTile303" parent="Collisions" unique_id=1992669903 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -86, 0.5, 34)
+
+[node name="RetroTile304" parent="Collisions" unique_id=1195123746 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -86, 0.5, 38)
+
+[node name="RetroTile305" parent="Collisions" unique_id=1055871685 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -86, 0.5, 42)
+
+[node name="RetroTile306" parent="Collisions" unique_id=1940768747 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -86, 0.5, 46)
+
+[node name="RetroTile307" parent="Collisions" unique_id=269391570 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -86, 0.5, 50)
+
+[node name="RetroTile308" parent="Collisions" unique_id=2007181567 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -86, 0.5, 54)
+
+[node name="RetroTile309" parent="Collisions" unique_id=270584829 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -86, 0.5, 58)
+
+[node name="RetroTile310" parent="Collisions" unique_id=1419011649 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -86, 0.5, 62)
+
+[node name="RetroTile311" parent="Collisions" unique_id=1745329026 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -70, 0.5, 6)
+
+[node name="RetroTile312" parent="Collisions" unique_id=947141789 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -70, 0.5, 10)
+
+[node name="RetroTile313" parent="Collisions" unique_id=1476404087 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -70, 0.5, 14)
+
+[node name="RetroTile314" parent="Collisions" unique_id=2080443104 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -70, 0.5, 18)
+
+[node name="RetroTile315" parent="Collisions" unique_id=1190381739 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -70, 0.5, 22)
+
+[node name="RetroTile316" parent="Collisions" unique_id=2133088521 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -70, 0.5, 26)
+
+[node name="RetroTile317" parent="Collisions" unique_id=815151119 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -70, 0.5, 30)
+
+[node name="RetroTile318" parent="Collisions" unique_id=973446414 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -70, 0.5, 34)
+
+[node name="RetroTile319" parent="Collisions" unique_id=1228125549 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -70, 0.5, 38)
+
+[node name="RetroTile320" parent="Collisions" unique_id=1178253729 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -70, 0.5, 42)
+
+[node name="RetroTile321" parent="Collisions" unique_id=1484759125 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -70, 0.5, 46)
+
+[node name="RetroTile322" parent="Collisions" unique_id=469019084 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -70, 0.5, 50)
+
+[node name="RetroTile323" parent="Collisions" unique_id=3536115 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -70, 0.5, 54)
+
+[node name="RetroTile324" parent="Collisions" unique_id=1989825234 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -70, 0.5, 58)
+
+[node name="RetroTile325" parent="Collisions" unique_id=243414105 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -70, 0.5, 62)
+
+[node name="RetroTile326" parent="Collisions" unique_id=1602763791 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -54, 0.5, 6)
+
+[node name="RetroTile327" parent="Collisions" unique_id=1900960772 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -54, 0.5, 10)
+
+[node name="RetroTile328" parent="Collisions" unique_id=476781737 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -54, 0.5, 14)
+
+[node name="RetroTile329" parent="Collisions" unique_id=1909168858 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -54, 0.5, 18)
+
+[node name="RetroTile330" parent="Collisions" unique_id=367025479 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -54, 0.5, 22)
+
+[node name="RetroTile331" parent="Collisions" unique_id=1651420787 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -54, 0.5, 26)
+
+[node name="RetroTile332" parent="Collisions" unique_id=246975335 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -54, 0.5, 30)
+
+[node name="RetroTile333" parent="Collisions" unique_id=1161482823 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -54, 0.5, 34)
+
+[node name="RetroTile341" parent="Collisions" unique_id=60308404 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -50, 0.5, 34)
+
+[node name="RetroTile342" parent="Collisions" unique_id=1837800504 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -46, 0.5, 34)
+
+[node name="RetroTile343" parent="Collisions" unique_id=1068764322 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -42, 0.5, 34)
+
+[node name="RetroTile344" parent="Collisions" unique_id=765198182 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -66, 0.5, 34)
+
+[node name="RetroTile345" parent="Collisions" unique_id=1831527254 instance=ExtResource("7_nmqhj")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -62, 0.5, 34)
-shape = SubResource("BoxShape3D_xulia")
-debug_color = Color(1, 0.003921569, 0.09411765, 1)
 
-[node name="CollisionShape3D43" type="CollisionShape3D" parent="Collisions" unique_id=186471078]
+[node name="RetroTile346" parent="Collisions" unique_id=771436219 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -58, 0.5, 34)
+
+[node name="RetroTile347" parent="Collisions" unique_id=837247693 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -82, 0.5, 34)
+
+[node name="RetroTile348" parent="Collisions" unique_id=1458954272 instance=ExtResource("7_nmqhj")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -78, 0.5, 34)
-shape = SubResource("BoxShape3D_0clfq")
-debug_color = Color(1, 0.003921569, 0.09411765, 1)
 
-[node name="CollisionShape3D44" type="CollisionShape3D" parent="Collisions" unique_id=154130485]
+[node name="RetroTile349" parent="Collisions" unique_id=1184691379 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -74, 0.5, 34)
+
+[node name="RetroTile350" parent="Collisions" unique_id=1630077413 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -98, 0.5, 34)
+
+[node name="RetroTile351" parent="Collisions" unique_id=1073523651 instance=ExtResource("7_nmqhj")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -94, 0.5, 34)
-shape = SubResource("BoxShape3D_muoil")
-debug_color = Color(1, 0.003921569, 0.09411765, 1)
 
-[node name="CollisionShape3D45" type="CollisionShape3D" parent="Collisions" unique_id=1404077669]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -62, 0.5, 18)
-shape = SubResource("BoxShape3D_t0pr2")
-debug_color = Color(1, 0.003921569, 0.09411765, 1)
+[node name="RetroTile352" parent="Collisions" unique_id=512748117 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -90, 0.5, 34)
 
-[node name="CollisionShape3D46" type="CollisionShape3D" parent="Collisions" unique_id=2087421344]
+[node name="RetroTile353" parent="Collisions" unique_id=1171182000 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -82, 0.5, 18)
+
+[node name="RetroTile354" parent="Collisions" unique_id=606138623 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -66, 0.5, 18)
+
+[node name="RetroTile368" parent="Collisions" unique_id=1618233099 instance=ExtResource("7_nmqhj")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -78, 0.5, 18)
-shape = SubResource("BoxShape3D_3wrg1")
-debug_color = Color(1, 0.003921569, 0.09411765, 1)
 
-[node name="CollisionShape3D47" type="CollisionShape3D" parent="Collisions" unique_id=1242428430]
+[node name="RetroTile369" parent="Collisions" unique_id=1665389714 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -62, 0.5, 18)
+
+[node name="RetroTile370" parent="Collisions" unique_id=1176516801 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -74, 0.5, 18)
+
+[node name="RetroTile371" parent="Collisions" unique_id=101499547 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -58, 0.5, 18)
+
+[node name="RetroTile372" parent="Collisions" unique_id=686506342 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -46, 0.5, 18)
+
+[node name="RetroTile373" parent="Collisions" unique_id=1973600901 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -42, 0.5, 18)
+
+[node name="RetroTile374" parent="Collisions" unique_id=908786725 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -90, 0.5, 18)
+
+[node name="RetroTile375" parent="Collisions" unique_id=1832739716 instance=ExtResource("7_nmqhj")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -94, 0.5, 18)
-shape = SubResource("BoxShape3D_bfo38")
-debug_color = Color(1, 0.003921569, 0.09411765, 1)
 
-[node name="CollisionShape3D48" type="CollisionShape3D" parent="Collisions" unique_id=230206592]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -60, 0.5, -22)
-shape = SubResource("BoxShape3D_1bgop")
-debug_color = Color(1, 0.003921569, 0.09411765, 1)
+[node name="RetroTile376" parent="Collisions" unique_id=957102028 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -98, 0.5, 18)
 
-[node name="CollisionShape3D49" type="CollisionShape3D" parent="Collisions" unique_id=1645138072]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -40, 0.5, 2)
-shape = SubResource("BoxShape3D_v8f6e")
-debug_color = Color(1, 0.003921569, 0.09411765, 1)
+[node name="RetroTile355" parent="Collisions" unique_id=1465265361 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -50, 0.5, 18)
+
+[node name="RetroTile356" parent="Collisions" unique_id=553461648 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -50, 0.5, 50)
+
+[node name="RetroTile357" parent="Collisions" unique_id=1943761632 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -46, 0.5, 50)
+
+[node name="RetroTile358" parent="Collisions" unique_id=1189678100 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -42, 0.5, 50)
+
+[node name="RetroTile359" parent="Collisions" unique_id=1412776937 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -66, 0.5, 50)
+
+[node name="RetroTile360" parent="Collisions" unique_id=349839123 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -62, 0.5, 50)
+
+[node name="RetroTile361" parent="Collisions" unique_id=860852497 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -58, 0.5, 50)
+
+[node name="RetroTile362" parent="Collisions" unique_id=539081804 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -82, 0.5, 50)
+
+[node name="RetroTile363" parent="Collisions" unique_id=1217716014 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -78, 0.5, 50)
+
+[node name="RetroTile364" parent="Collisions" unique_id=2097707568 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -74, 0.5, 50)
+
+[node name="RetroTile365" parent="Collisions" unique_id=1561840276 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -98, 0.5, 50)
+
+[node name="RetroTile366" parent="Collisions" unique_id=198870010 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -94, 0.5, 50)
+
+[node name="RetroTile367" parent="Collisions" unique_id=201522404 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -90, 0.5, 50)
+
+[node name="RetroTile334" parent="Collisions" unique_id=1726007092 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -54, 0.5, 38)
+
+[node name="RetroTile335" parent="Collisions" unique_id=122397952 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -54, 0.5, 42)
+
+[node name="RetroTile336" parent="Collisions" unique_id=529068147 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -54, 0.5, 46)
+
+[node name="RetroTile337" parent="Collisions" unique_id=495084669 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -54, 0.5, 50)
+
+[node name="RetroTile338" parent="Collisions" unique_id=51698139 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -54, 0.5, 54)
+
+[node name="RetroTile339" parent="Collisions" unique_id=1278605920 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -54, 0.5, 58)
+
+[node name="RetroTile340" parent="Collisions" unique_id=810744966 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -54, 0.5, 62)
+
+[node name="RetroTile277" parent="Collisions" unique_id=532823703 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -94, 0.5, -26)
+
+[node name="RetroTile278" parent="Collisions" unique_id=1082217980 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -98, 0.5, -26)
+
+[node name="RetroTile257" parent="Collisions" unique_id=709295348 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -46, 0.5, -38)
+
+[node name="RetroTile249" parent="Collisions" unique_id=141962485 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -50, 0.5, -22)
+
+[node name="RetroTile250" parent="Collisions" unique_id=272831320 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -54, 0.5, -22)
+
+[node name="RetroTile251" parent="Collisions" unique_id=1199458075 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -58, 0.5, -22)
+
+[node name="RetroTile252" parent="Collisions" unique_id=1564935685 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -62, 0.5, -22)
+
+[node name="RetroTile253" parent="Collisions" unique_id=1157200208 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -66, 0.5, -22)
+
+[node name="RetroTile258" parent="Collisions" unique_id=1072890010 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -50, 0.5, -38)
+
+[node name="RetroTile259" parent="Collisions" unique_id=1309686957 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -54, 0.5, -38)
+
+[node name="RetroTile260" parent="Collisions" unique_id=2079771855 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -58, 0.5, -38)
+
+[node name="RetroTile261" parent="Collisions" unique_id=1988696929 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -62, 0.5, -38)
+
+[node name="RetroTile262" parent="Collisions" unique_id=1465265524 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -66, 0.5, -38)
+
+[node name="RetroTile80" parent="Collisions" unique_id=62383878 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14, 0.5, -2)
+
+[node name="RetroTile10" parent="Collisions" unique_id=1669150106 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 0.5, -22)
+
+[node name="RetroTile11" parent="Collisions" unique_id=232998147 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0.5, -22)
+
+[node name="RetroTile12" parent="Collisions" unique_id=1536103718 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0.5, -22)
+
+[node name="RetroTile13" parent="Collisions" unique_id=1479952032 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 0.5, -26)
+
+[node name="RetroTile14" parent="Collisions" unique_id=277380935 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0.5, -26)
+
+[node name="RetroTile15" parent="Collisions" unique_id=539224476 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0.5, -26)
+
+[node name="RetroTile16" parent="Collisions" unique_id=927969237 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 0.5, -30)
+
+[node name="RetroTile17" parent="Collisions" unique_id=1261932234 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0.5, -30)
+
+[node name="RetroTile18" parent="Collisions" unique_id=803164822 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0.5, -30)
+
+[node name="RetroTile19" parent="Collisions" unique_id=215604660 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 0.5, -22)
+
+[node name="RetroTile20" parent="Collisions" unique_id=1717243574 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18, 0.5, -22)
+
+[node name="RetroTile21" parent="Collisions" unique_id=1571172340 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22, 0.5, -22)
+
+[node name="RetroTile22" parent="Collisions" unique_id=1369426541 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 0.5, -26)
+
+[node name="RetroTile37" parent="Collisions" unique_id=1827797430 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 0.5, -26)
+
+[node name="RetroTile23" parent="Collisions" unique_id=1837074631 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18, 0.5, -26)
+
+[node name="RetroTile24" parent="Collisions" unique_id=21486050 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22, 0.5, -26)
+
+[node name="RetroTile58" parent="Collisions" unique_id=1371947578 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 26, 0.5, -26)
+
+[node name="RetroTile59" parent="Collisions" unique_id=633876525 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 30, 0.5, -26)
+
+[node name="RetroTile60" parent="Collisions" unique_id=261106827 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 34, 0.5, -26)
+
+[node name="RetroTile61" parent="Collisions" unique_id=1873345763 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 38, 0.5, -26)
+
+[node name="RetroTile62" parent="Collisions" unique_id=1445758633 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 42, 0.5, -26)
+
+[node name="RetroTile63" parent="Collisions" unique_id=1230799161 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 46, 0.5, -26)
+
+[node name="RetroTile64" parent="Collisions" unique_id=996111630 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 46, 0.5, -22)
+
+[node name="RetroTile65" parent="Collisions" unique_id=247815850 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 46, 0.5, -18)
+
+[node name="RetroTile66" parent="Collisions" unique_id=1149085499 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 46, 0.5, -14)
+
+[node name="RetroTile67" parent="Collisions" unique_id=2100647438 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 46, 0.5, -10)
+
+[node name="RetroTile68" parent="Collisions" unique_id=560608872 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 46, 0.5, -6)
+
+[node name="RetroTile69" parent="Collisions" unique_id=375289822 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 46, 0.5, -2)
+
+[node name="RetroTile70" parent="Collisions" unique_id=1742339941 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 46, 0.5, 2)
+
+[node name="RetroTile71" parent="Collisions" unique_id=680004539 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 46, 0.5, 6)
+
+[node name="RetroTile113" parent="Collisions" unique_id=1317260367 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 58, 0.5, 10)
+
+[node name="RetroTile114" parent="Collisions" unique_id=438076252 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 58, 0.5, 14)
+
+[node name="RetroTile115" parent="Collisions" unique_id=906539782 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 58, 0.5, 18)
+
+[node name="RetroTile116" parent="Collisions" unique_id=269237680 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 58, 0.5, 22)
+
+[node name="RetroTile117" parent="Collisions" unique_id=899715631 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 58, 0.5, 26)
+
+[node name="RetroTile118" parent="Collisions" unique_id=401429282 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 58, 0.5, 30)
+
+[node name="RetroTile119" parent="Collisions" unique_id=77713638 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 58, 0.5, 34)
+
+[node name="RetroTile120" parent="Collisions" unique_id=362432494 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 54, 0.5, 10)
+
+[node name="RetroTile121" parent="Collisions" unique_id=612035467 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 54, 0.5, 14)
+
+[node name="RetroTile122" parent="Collisions" unique_id=6754736 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 54, 0.5, 18)
+
+[node name="RetroTile123" parent="Collisions" unique_id=396006782 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 54, 0.5, 22)
+
+[node name="RetroTile124" parent="Collisions" unique_id=1707927237 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 54, 0.5, 26)
+
+[node name="RetroTile125" parent="Collisions" unique_id=1365711557 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 54, 0.5, 30)
+
+[node name="RetroTile126" parent="Collisions" unique_id=1622282445 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 54, 0.5, 34)
+
+[node name="RetroTile127" parent="Collisions" unique_id=1024399232 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 50, 0.5, 10)
+
+[node name="RetroTile128" parent="Collisions" unique_id=1816529018 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 50, 0.5, 14)
+
+[node name="RetroTile129" parent="Collisions" unique_id=590306052 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 50, 0.5, 18)
+
+[node name="RetroTile130" parent="Collisions" unique_id=701315655 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 50, 0.5, 22)
+
+[node name="RetroTile131" parent="Collisions" unique_id=1744283021 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 50, 0.5, 26)
+
+[node name="RetroTile132" parent="Collisions" unique_id=1149658918 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 50, 0.5, 30)
+
+[node name="RetroTile133" parent="Collisions" unique_id=1718625043 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 50, 0.5, 34)
+
+[node name="RetroTile134" parent="Collisions" unique_id=151105359 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 46, 0.5, 10)
+
+[node name="RetroTile135" parent="Collisions" unique_id=669800916 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 46, 0.5, 14)
+
+[node name="RetroTile136" parent="Collisions" unique_id=2132159038 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 46, 0.5, 18)
+
+[node name="RetroTile137" parent="Collisions" unique_id=932037376 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 46, 0.5, 22)
+
+[node name="RetroTile138" parent="Collisions" unique_id=1227344694 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 46, 0.5, 26)
+
+[node name="RetroTile139" parent="Collisions" unique_id=2128841735 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 46, 0.5, 30)
+
+[node name="RetroTile140" parent="Collisions" unique_id=1755925902 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 46, 0.5, 34)
+
+[node name="RetroTile141" parent="Collisions" unique_id=1631521124 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 42, 0.5, 10)
+
+[node name="RetroTile142" parent="Collisions" unique_id=1426701118 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 42, 0.5, 14)
+
+[node name="RetroTile143" parent="Collisions" unique_id=440029221 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 42, 0.5, 18)
+
+[node name="RetroTile144" parent="Collisions" unique_id=27656324 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 42, 0.5, 22)
+
+[node name="RetroTile145" parent="Collisions" unique_id=1395758097 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 42, 0.5, 26)
+
+[node name="RetroTile146" parent="Collisions" unique_id=1112719645 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 42, 0.5, 30)
+
+[node name="RetroTile147" parent="Collisions" unique_id=614890547 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 42, 0.5, 34)
+
+[node name="RetroTile148" parent="Collisions" unique_id=830404683 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 38, 0.5, 10)
+
+[node name="RetroTile149" parent="Collisions" unique_id=628122393 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 38, 0.5, 14)
+
+[node name="RetroTile150" parent="Collisions" unique_id=1360096620 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 38, 0.5, 18)
+
+[node name="RetroTile151" parent="Collisions" unique_id=671720080 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 38, 0.5, 22)
+
+[node name="RetroTile152" parent="Collisions" unique_id=1365264919 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 38, 0.5, 26)
+
+[node name="RetroTile153" parent="Collisions" unique_id=192284733 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 38, 0.5, 30)
+
+[node name="RetroTile154" parent="Collisions" unique_id=1044201574 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 38, 0.5, 34)
+
+[node name="RetroTile155" parent="Collisions" unique_id=1365203362 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 34, 0.5, 10)
+
+[node name="RetroTile156" parent="Collisions" unique_id=336205713 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 34, 0.5, 14)
+
+[node name="RetroTile157" parent="Collisions" unique_id=108636781 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 34, 0.5, 18)
+
+[node name="RetroTile158" parent="Collisions" unique_id=369245827 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 34, 0.5, 22)
+
+[node name="RetroTile159" parent="Collisions" unique_id=1816752751 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 34, 0.5, 26)
+
+[node name="RetroTile160" parent="Collisions" unique_id=2113159224 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 34, 0.5, 30)
+
+[node name="RetroTile161" parent="Collisions" unique_id=319934249 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 34, 0.5, 34)
+
+[node name="RetroTile162" parent="Collisions" unique_id=562204017 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 30, 0.5, 10)
+
+[node name="RetroTile163" parent="Collisions" unique_id=1138550883 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 30, 0.5, 14)
+
+[node name="RetroTile164" parent="Collisions" unique_id=449653539 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 30, 0.5, 18)
+
+[node name="RetroTile165" parent="Collisions" unique_id=842239844 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 30, 0.5, 22)
+
+[node name="RetroTile166" parent="Collisions" unique_id=1752788766 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 30, 0.5, 26)
+
+[node name="RetroTile167" parent="Collisions" unique_id=1571669355 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 30, 0.5, 30)
+
+[node name="RetroTile168" parent="Collisions" unique_id=2044387175 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 30, 0.5, 34)
+
+[node name="RetroTile169" parent="Collisions" unique_id=1247759284 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 26, 0.5, 10)
+
+[node name="RetroTile170" parent="Collisions" unique_id=675997148 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 26, 0.5, 14)
+
+[node name="RetroTile171" parent="Collisions" unique_id=1981679431 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 26, 0.5, 18)
+
+[node name="RetroTile172" parent="Collisions" unique_id=484276374 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 26, 0.5, 22)
+
+[node name="RetroTile173" parent="Collisions" unique_id=1968565734 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 26, 0.5, 26)
+
+[node name="RetroTile174" parent="Collisions" unique_id=2075117098 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 26, 0.5, 30)
+
+[node name="RetroTile175" parent="Collisions" unique_id=1959582352 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 26, 0.5, 34)
+
+[node name="RetroTile176" parent="Collisions" unique_id=588692164 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22, 0.5, 10)
+
+[node name="RetroTile177" parent="Collisions" unique_id=1705740990 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22, 0.5, 14)
+
+[node name="RetroTile178" parent="Collisions" unique_id=777763954 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22, 0.5, 18)
+
+[node name="RetroTile179" parent="Collisions" unique_id=1512904467 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22, 0.5, 22)
+
+[node name="RetroTile180" parent="Collisions" unique_id=1212079852 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22, 0.5, 26)
+
+[node name="RetroTile181" parent="Collisions" unique_id=1113377324 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22, 0.5, 30)
+
+[node name="RetroTile182" parent="Collisions" unique_id=2015589790 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22, 0.5, 34)
+
+[node name="RetroTile183" parent="Collisions" unique_id=573982231 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18, 0.5, 10)
+
+[node name="RetroTile184" parent="Collisions" unique_id=33116129 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18, 0.5, 14)
+
+[node name="RetroTile185" parent="Collisions" unique_id=696743980 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18, 0.5, 18)
+
+[node name="RetroTile186" parent="Collisions" unique_id=270274069 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18, 0.5, 22)
+
+[node name="RetroTile187" parent="Collisions" unique_id=273391879 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18, 0.5, 26)
+
+[node name="RetroTile188" parent="Collisions" unique_id=582207600 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18, 0.5, 30)
+
+[node name="RetroTile189" parent="Collisions" unique_id=1735941869 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18, 0.5, 34)
+
+[node name="RetroTile190" parent="Collisions" unique_id=972197641 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 0.5, 10)
+
+[node name="RetroTile191" parent="Collisions" unique_id=401423855 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 0.5, 14)
+
+[node name="RetroTile192" parent="Collisions" unique_id=1420756618 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 0.5, 18)
+
+[node name="RetroTile193" parent="Collisions" unique_id=1171206994 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 0.5, 22)
+
+[node name="RetroTile194" parent="Collisions" unique_id=2070122373 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 0.5, 26)
+
+[node name="RetroTile195" parent="Collisions" unique_id=415371249 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 0.5, 30)
+
+[node name="RetroTile196" parent="Collisions" unique_id=129759419 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 0.5, 34)
+
+[node name="RetroTile197" parent="Collisions" unique_id=2011024287 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 0.5, 10)
+
+[node name="RetroTile198" parent="Collisions" unique_id=864767984 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 0.5, 14)
+
+[node name="RetroTile199" parent="Collisions" unique_id=290607276 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 0.5, 18)
+
+[node name="RetroTile200" parent="Collisions" unique_id=874646561 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 0.5, 22)
+
+[node name="RetroTile201" parent="Collisions" unique_id=108538026 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 0.5, 26)
+
+[node name="RetroTile202" parent="Collisions" unique_id=899729260 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 0.5, 30)
+
+[node name="RetroTile203" parent="Collisions" unique_id=1050682774 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 0.5, 34)
+
+[node name="RetroTile216" parent="Collisions" unique_id=1863941098 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0.5, 38)
+
+[node name="RetroTile217" parent="Collisions" unique_id=686164234 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0.5, 38)
+
+[node name="RetroTile218" parent="Collisions" unique_id=1630912034 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0.5, 38)
+
+[node name="RetroTile219" parent="Collisions" unique_id=753430527 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0.5, 42)
+
+[node name="RetroTile220" parent="Collisions" unique_id=1057862635 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0.5, 42)
+
+[node name="RetroTile221" parent="Collisions" unique_id=960822667 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0.5, 42)
+
+[node name="RetroTile222" parent="Collisions" unique_id=715941610 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 58, 0.5, 38)
+
+[node name="RetroTile223" parent="Collisions" unique_id=1786200232 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 58, 0.5, 42)
+
+[node name="RetroTile224" parent="Collisions" unique_id=669459707 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 54, 0.5, 38)
+
+[node name="RetroTile225" parent="Collisions" unique_id=2125356041 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 54, 0.5, 42)
+
+[node name="RetroTile226" parent="Collisions" unique_id=1239989953 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 50, 0.5, 38)
+
+[node name="RetroTile227" parent="Collisions" unique_id=583217373 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 50, 0.5, 42)
+
+[node name="RetroTile228" parent="Collisions" unique_id=1505038718 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 46, 0.5, 38)
+
+[node name="RetroTile229" parent="Collisions" unique_id=301333134 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 46, 0.5, 42)
+
+[node name="RetroTile230" parent="Collisions" unique_id=204860725 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 42, 0.5, 38)
+
+[node name="RetroTile231" parent="Collisions" unique_id=1636926245 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 42, 0.5, 42)
+
+[node name="RetroTile232" parent="Collisions" unique_id=1515599974 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 38, 0.5, 38)
+
+[node name="RetroTile233" parent="Collisions" unique_id=371442337 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 38, 0.5, 42)
+
+[node name="RetroTile234" parent="Collisions" unique_id=1877647252 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 34, 0.5, 38)
+
+[node name="RetroTile235" parent="Collisions" unique_id=745562327 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 34, 0.5, 42)
+
+[node name="RetroTile236" parent="Collisions" unique_id=1451317636 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 30, 0.5, 38)
+
+[node name="RetroTile237" parent="Collisions" unique_id=1480949234 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 30, 0.5, 42)
+
+[node name="RetroTile238" parent="Collisions" unique_id=227139527 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 26, 0.5, 38)
+
+[node name="RetroTile239" parent="Collisions" unique_id=1525169658 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 26, 0.5, 42)
+
+[node name="RetroTile240" parent="Collisions" unique_id=1955554513 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22, 0.5, 38)
+
+[node name="RetroTile241" parent="Collisions" unique_id=1295594102 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22, 0.5, 42)
+
+[node name="RetroTile242" parent="Collisions" unique_id=948092127 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18, 0.5, 38)
+
+[node name="RetroTile243" parent="Collisions" unique_id=1029909819 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18, 0.5, 42)
+
+[node name="RetroTile244" parent="Collisions" unique_id=10380547 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 0.5, 38)
+
+[node name="RetroTile245" parent="Collisions" unique_id=694129267 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 0.5, 42)
+
+[node name="RetroTile246" parent="Collisions" unique_id=329222224 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 0.5, 38)
+
+[node name="RetroTile247" parent="Collisions" unique_id=714451773 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 0.5, 42)
+
+[node name="RetroTile25" parent="Collisions" unique_id=1121200356 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 0.5, -30)
+
+[node name="RetroTile26" parent="Collisions" unique_id=2031400773 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18, 0.5, -30)
+
+[node name="RetroTile27" parent="Collisions" unique_id=1222399611 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22, 0.5, -30)
+
+[node name="RetroTile28" parent="Collisions" unique_id=804416557 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -22, 0.5, -30)
+
+[node name="RetroTile29" parent="Collisions" unique_id=606531167 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18, 0.5, -30)
+
+[node name="RetroTile30" parent="Collisions" unique_id=1714371093 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14, 0.5, -30)
+
+[node name="RetroTile31" parent="Collisions" unique_id=335409912 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -22, 0.5, -34)
+
+[node name="RetroTile32" parent="Collisions" unique_id=1858527546 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18, 0.5, -34)
+
+[node name="RetroTile33" parent="Collisions" unique_id=1147430576 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14, 0.5, -34)
+
+[node name="RetroTile34" parent="Collisions" unique_id=1157949120 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -22, 0.5, -38)
+
+[node name="RetroTile35" parent="Collisions" unique_id=329861158 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18, 0.5, -38)
+
+[node name="RetroTile36" parent="Collisions" unique_id=2093516673 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14, 0.5, -38)
+
+[node name="RetroTile38" parent="Collisions" unique_id=64737255 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0.5, -38)
+
+[node name="RetroTile39" parent="Collisions" unique_id=745960484 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0.5, -38)
+
+[node name="RetroTile40" parent="Collisions" unique_id=1202960603 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0.5, -38)
+
+[node name="RetroTile41" parent="Collisions" unique_id=930838058 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0.5, -42)
+
+[node name="RetroTile42" parent="Collisions" unique_id=2028839953 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0.5, -42)
+
+[node name="RetroTile43" parent="Collisions" unique_id=263505988 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0.5, -42)
+
+[node name="RetroTile44" parent="Collisions" unique_id=1438462288 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0.5, -46)
+
+[node name="RetroTile45" parent="Collisions" unique_id=1772629223 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0.5, -46)
+
+[node name="RetroTile46" parent="Collisions" unique_id=849976306 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0.5, -46)
+
+[node name="RetroTile47" parent="Collisions" unique_id=495222848 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18, 0.5, -38)
+
+[node name="RetroTile48" parent="Collisions" unique_id=1311663675 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22, 0.5, -38)
+
+[node name="RetroTile49" parent="Collisions" unique_id=193810365 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 26, 0.5, -38)
+
+[node name="RetroTile50" parent="Collisions" unique_id=1062749630 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18, 0.5, -42)
+
+[node name="RetroTile51" parent="Collisions" unique_id=1896914889 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22, 0.5, -42)
+
+[node name="RetroTile52" parent="Collisions" unique_id=1366491837 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 26, 0.5, -42)
+
+[node name="RetroTile53" parent="Collisions" unique_id=617697331 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18, 0.5, -46)
+
+[node name="RetroTile56" parent="Collisions" unique_id=2039337803 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 0.5, -46)
+
+[node name="RetroTile57" parent="Collisions" unique_id=845709350 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 0.5, -46)
+
+[node name="RetroTile54" parent="Collisions" unique_id=716426817 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22, 0.5, -46)
+
+[node name="RetroTile55" parent="Collisions" unique_id=463110632 instance=ExtResource("7_nmqhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 26, 0.5, -46)
+
+[node name="RetroCube" parent="Collisions" unique_id=1811667951 instance=ExtResource("9_fv8q0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 34, 2.5, 26)
+
+[node name="RetroCube2" parent="Collisions" unique_id=212574661 instance=ExtResource("9_fv8q0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 38, 2.5, 26)
+
+[node name="RetroCube9" parent="Collisions" unique_id=411138152 instance=ExtResource("9_fv8q0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 34, 6.5, 34)
+
+[node name="RetroCube10" parent="Collisions" unique_id=134539538 instance=ExtResource("9_fv8q0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 38, 6.5, 34)
+
+[node name="RetroCube3" parent="Collisions" unique_id=987785145 instance=ExtResource("9_fv8q0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 42, 2.5, 26)
+
+[node name="RetroCube11" parent="Collisions" unique_id=1025455889 instance=ExtResource("9_fv8q0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18, 6.5, 22)
+
+[node name="RetroCube12" parent="Collisions" unique_id=1661268650 instance=ExtResource("9_fv8q0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22, 6.5, 22)
+
+[node name="RetroCube14" parent="Collisions" unique_id=1870233325 instance=ExtResource("9_fv8q0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 6.5, 22)
+
+[node name="RetroCube15" parent="Collisions" unique_id=2094740140 instance=ExtResource("9_fv8q0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 6.5, 22)
+
+[node name="RetroCube16" parent="Collisions" unique_id=239603073 instance=ExtResource("9_fv8q0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 10.5, 34)
+
+[node name="RetroCube17" parent="Collisions" unique_id=184963438 instance=ExtResource("9_fv8q0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 10.5, 34)
+
+[node name="RetroCube18" parent="Collisions" unique_id=1169557860 instance=ExtResource("9_fv8q0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 10.5, 30)
+
+[node name="RetroCube19" parent="Collisions" unique_id=1501704689 instance=ExtResource("9_fv8q0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 10.5, 30)
+
+[node name="RetroCube20" parent="Collisions" unique_id=458663442 instance=ExtResource("9_fv8q0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22, 10.5, 30)
+
+[node name="RetroCube21" parent="Collisions" unique_id=802585156 instance=ExtResource("9_fv8q0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 26, 10.5, 30)
+
+[node name="RetroCube22" parent="Collisions" unique_id=1474116064 instance=ExtResource("9_fv8q0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22, 10.5, 34)
+
+[node name="RetroCube25" parent="Collisions" unique_id=2133447991 instance=ExtResource("9_fv8q0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22, 2.5, 34)
+
+[node name="RetroCube26" parent="Collisions" unique_id=883818644 instance=ExtResource("9_fv8q0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22, 2.5, 38)
+
+[node name="RetroCube27" parent="Collisions" unique_id=242080798 instance=ExtResource("9_fv8q0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22, 2.5, 30)
+
+[node name="RetroCube28" parent="Collisions" unique_id=1893436558 instance=ExtResource("9_fv8q0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18, 2.5, 30)
+
+[node name="RetroCube29" parent="Collisions" unique_id=680063697 instance=ExtResource("9_fv8q0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 2.5, 30)
+
+[node name="RetroCube30" parent="Collisions" unique_id=884410220 instance=ExtResource("9_fv8q0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 2.5, 34)
+
+[node name="RetroCube31" parent="Collisions" unique_id=522530328 instance=ExtResource("9_fv8q0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18, 2.5, 34)
+
+[node name="RetroCube32" parent="Collisions" unique_id=488977478 instance=ExtResource("9_fv8q0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18, 2.5, 38)
+
+[node name="RetroCube33" parent="Collisions" unique_id=926824274 instance=ExtResource("9_fv8q0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 2.5, 38)
+
+[node name="RetroCube23" parent="Collisions" unique_id=323783220 instance=ExtResource("9_fv8q0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 26, 10.5, 34)
+
+[node name="RetroCube13" parent="Collisions" unique_id=263279836 instance=ExtResource("9_fv8q0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 26, 6.5, 22)
+
+[node name="RetroCube24" parent="Collisions" unique_id=1581969550 instance=ExtResource("9_fv8q0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 26, 2.5, 22)
+
+[node name="RetroCube4" parent="Collisions" unique_id=1476211393 instance=ExtResource("9_fv8q0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 54, 2.5, 26)
+
+[node name="RetroCube5" parent="Collisions" unique_id=496097670 instance=ExtResource("9_fv8q0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 54, 2.5, 22)
+
+[node name="RetroCube6" parent="Collisions" unique_id=1030173870 instance=ExtResource("9_fv8q0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 54, 2.5, 18)
+
+[node name="RetroCube7" parent="Collisions" unique_id=1809614873 instance=ExtResource("9_fv8q0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 54, 2.5, 30)
+
+[node name="RetroCube8" parent="Collisions" unique_id=1541614938 instance=ExtResource("9_fv8q0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 54, 2.5, 34)
 
 [node name="CRT" type="ColorRect" parent="." unique_id=1656920956]
 material = SubResource("ShaderMaterial_nmqhj")
@@ -1030,6 +2028,3 @@ grow_horizontal = 2
 grow_vertical = 2
 mouse_filter = 2
 color = Color(1, 1, 1, 0)
-
-[editable path="Jawsh"]
-[editable path="Jawsh/SpringArmPivot"]

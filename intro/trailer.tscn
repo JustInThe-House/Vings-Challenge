@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://d4ki5tfc6aqmd"]
 
 [ext_resource type="AudioStream" uid="uid://bdmrqrhul4mv" path="res://music/sine_wave.wav" id="1_4rnlp"]
+[ext_resource type="Script" uid="uid://bp558b12bmttw" path="res://intro/trailer.gd" id="1_xy4o6"]
 [ext_resource type="AudioStream" uid="uid://i3lvjx5q4j30" path="res://music/look.wav" id="2_pqv5n"]
 [ext_resource type="Texture2D" uid="uid://tm6d1p0utrnm" path="res://jawsh/icon.svg" id="3_8ntu2"]
 [ext_resource type="Texture2D" uid="uid://bi66fauwvb4m8" path="res://ving/ving.png" id="4_xy4o6"]
@@ -9,93 +10,101 @@
 length = 0.001
 tracks/0/type = "value"
 tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("Flash:color")
+tracks/0/enabled = false
+tracks/0/path = NodePath("SineWave:playing")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Color(1, 1, 1, 0)]
+"update": 1,
+"values": [false]
 }
 tracks/1/type = "value"
 tracks/1/imported = false
 tracks/1/enabled = true
-tracks/1/path = NodePath("SineWave:playing")
+tracks/1/path = NodePath("SineWave:pitch_scale")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [false]
+"update": 0,
+"values": [1.0]
 }
 tracks/2/type = "value"
 tracks/2/imported = false
 tracks/2/enabled = true
-tracks/2/path = NodePath("SineWave:pitch_scale")
+tracks/2/path = NodePath("Look:playing")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [1.0]
+"update": 1,
+"values": [false]
 }
 tracks/3/type = "value"
 tracks/3/imported = false
 tracks/3/enabled = true
-tracks/3/path = NodePath("AudioStreamPlayer:playing")
+tracks/3/path = NodePath("SubViewportContainer:position")
 tracks/3/interp = 1
 tracks/3/loop_wrap = true
 tracks/3/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [false]
+"update": 0,
+"values": [Vector2(540, -360)]
 }
 tracks/4/type = "value"
 tracks/4/imported = false
 tracks/4/enabled = true
-tracks/4/path = NodePath("SubViewportContainer:position")
+tracks/4/path = NodePath("SubViewportContainer/SubViewport/MeshInstance3D:rotation")
 tracks/4/interp = 1
 tracks/4/loop_wrap = true
 tracks/4/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [Vector2(540, -360)]
+"values": [Vector3(0, 0, 0)]
 }
 tracks/5/type = "value"
 tracks/5/imported = false
 tracks/5/enabled = true
-tracks/5/path = NodePath("SubViewportContainer/SubViewport/MeshInstance3D:rotation")
+tracks/5/path = NodePath("Sprite2D:modulate")
 tracks/5/interp = 1
 tracks/5/loop_wrap = true
 tracks/5/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [Vector3(0, 0, 0)]
+"values": [Color(1, 1, 1, 0)]
 }
 tracks/6/type = "value"
 tracks/6/imported = false
 tracks/6/enabled = true
-tracks/6/path = NodePath("SubViewportContainer/SubViewport/MeshInstance3D:visible")
+tracks/6/path = NodePath("Sprite2D:scale")
 tracks/6/interp = 1
 tracks/6/loop_wrap = true
 tracks/6/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [false]
+"update": 0,
+"values": [Vector2(0.75, 0.75)]
 }
 
 [sub_resource type="Animation" id="Animation_pqv5n"]
 resource_name = "trailer"
-length = 7.000003698411956
+length = 5.9666667
 markers = [{
+"color": Color(1, 1, 1, 1),
+"name": &"stop looking around, ving starts fading in",
+"time": 4.1666665
+}, {
+"color": Color(1, 1, 1, 1),
+"name": &"white flash, end trailer",
+"time": 6.0333333
+}, {
 "color": Color(1, 1, 1, 1),
 "name": &"fall complete",
 "time": 1.5
@@ -105,100 +114,106 @@ markers = [{
 "time": 2.9333334
 }, {
 "color": Color(1, 1, 1, 1),
-"name": &"stop looking around, ving starts fading in",
-"time": 4.1666665
-}, {
-"color": Color(1, 1, 1, 1),
 "name": &"jawsh starts turning around, afterwards vings moves fast in",
 "time": 5.2
-}, {
-"color": Color(1, 1, 1, 1),
-"name": &"white flash, end trailer",
-"time": 6.0333333
 }]
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("Flash:color")
+tracks/0/path = NodePath("SineWave:playing")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(5.966666, 6.0333333, 6.966666),
-"transitions": PackedFloat32Array(1, 1, 1),
-"update": 0,
-"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+"times": PackedFloat32Array(0, 1.5000001),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [true, false]
 }
 tracks/1/type = "value"
 tracks/1/imported = false
 tracks/1/enabled = true
-tracks/1/path = NodePath("SineWave:playing")
-tracks/1/interp = 1
+tracks/1/path = NodePath("SineWave:pitch_scale")
+tracks/1/interp = 2
 tracks/1/loop_wrap = true
 tracks/1/keys = {
 "times": PackedFloat32Array(0, 1.5000001),
-"transitions": PackedFloat32Array(1, 1),
-"update": 1,
-"values": [true, false]
+"transitions": PackedFloat32Array(2.0000007, 1),
+"update": 0,
+"values": [8.0, 1.0]
 }
 tracks/2/type = "value"
 tracks/2/imported = false
 tracks/2/enabled = true
-tracks/2/path = NodePath("SineWave:pitch_scale")
-tracks/2/interp = 2
+tracks/2/path = NodePath("Look:playing")
+tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/keys = {
-"times": PackedFloat32Array(0, 1.5000001),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [8.0, 1.0]
-}
-tracks/3/type = "value"
-tracks/3/imported = false
-tracks/3/enabled = true
-tracks/3/path = NodePath("AudioStreamPlayer:playing")
-tracks/3/interp = 1
-tracks/3/loop_wrap = true
-tracks/3/keys = {
-"times": PackedFloat32Array(2.9333332, 4.1),
+"times": PackedFloat32Array(2.9333334, 4.2),
 "transitions": PackedFloat32Array(1, 1),
 "update": 1,
 "values": [true, true]
 }
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("SubViewportContainer:position")
+tracks/3/interp = 2
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 1.4666667, 1.5666667, 1.6666666, 5.666667, 5.766667, 5.866667),
+"transitions": PackedFloat32Array(3.7321322, 0.4999997, 0.5176323, 1e-05, 0.4999997, 0.5176323, 1),
+"update": 0,
+"values": [Vector2(540, -360), Vector2(540, 483), Vector2(540, 458), Vector2(540, 493), Vector2(540, 483), Vector2(540, 468), Vector2(540, 493)]
+}
 tracks/4/type = "value"
 tracks/4/imported = false
 tracks/4/enabled = true
-tracks/4/path = NodePath("SubViewportContainer:position")
+tracks/4/path = NodePath("SubViewportContainer/SubViewport/MeshInstance3D:rotation")
 tracks/4/interp = 2
 tracks/4/loop_wrap = true
 tracks/4/keys = {
-"times": PackedFloat32Array(0, 1.5000001),
-"transitions": PackedFloat32Array(1, 1),
+"times": PackedFloat32Array(1.6000001, 2.0333333, 2.4, 2.7666667, 3.1666667, 4.033334, 4.4666667, 5.3333335, 5.566667, 5.733333, 5.9666667),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1.6817936, 1),
 "update": 0,
-"values": [Vector2(540, -360), Vector2(540, 493)]
+"values": [Vector3(0.034906585, -0.034906585, 0), Vector3(-0.017453292, 0.036651913, 0.0034906585), Vector3(0.034906585, -0.034906585, 0), Vector3(-0.017453292, 0.036651913, 0.0034906585), Vector3(0.13784711, -0.5205243, -0.010717849), Vector3(0, 0, 0), Vector3(0.13788101, 0.5201081, 0.010471975), Vector3(0.15533431, 0.5201081, 0.010471975), Vector3(0.15533431, 0.45029494, 0.010471975), Vector3(0.15533431, 0.45029494, 0.010471975), Vector3(-0.12566371, 3.1415927, 0.059341196)]
 }
 tracks/5/type = "value"
 tracks/5/imported = false
 tracks/5/enabled = true
-tracks/5/path = NodePath("SubViewportContainer/SubViewport/MeshInstance3D:rotation")
-tracks/5/interp = 2
+tracks/5/path = NodePath("Sprite2D:modulate")
+tracks/5/interp = 1
 tracks/5/loop_wrap = true
 tracks/5/keys = {
-"times": PackedFloat32Array(2.8333333, 3.1666667, 4.033334, 4.4666667, 5.5666666, 5.9333334),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"times": PackedFloat32Array(4.4666667, 5.133333, 5.2000003, 5.3333335),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
 "update": 0,
-"values": [Vector3(0, 0, 0), Vector3(0.13784711, -0.5205243, -0.010717849), Vector3(0, 0, 0), Vector3(0.13788101, 0.5201081, 0.010471975), Vector3(0.15533431, 0.5201081, 0.010471975), Vector3(-0.12566371, 3.1415927, 0.059341196)]
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 0.5), Color(1, 1, 1, 0.5), Color(1, 1, 1, 0.84300005)]
 }
 tracks/6/type = "value"
 tracks/6/imported = false
 tracks/6/enabled = true
-tracks/6/path = NodePath("SubViewportContainer/SubViewport/MeshInstance3D:visible")
+tracks/6/path = NodePath("Sprite2D:scale")
 tracks/6/interp = 1
 tracks/6/loop_wrap = true
 tracks/6/keys = {
-"times": PackedFloat32Array(0, 6.033334),
-"transitions": PackedFloat32Array(1, 1),
-"update": 1,
-"values": [true, false]
+"times": PackedFloat32Array(5.5666666, 5.9666667),
+"transitions": PackedFloat32Array(3.0314329, 1),
+"update": 0,
+"values": [Vector2(0.75, 0.75), Vector2(1.75, 1.75)]
+}
+tracks/7/type = "method"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath(".")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(5.3333335),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": [],
+"method": &"play_music"
+}]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_xxu3t"]
@@ -214,6 +229,7 @@ albedo_texture = ExtResource("3_8ntu2")
 material = SubResource("StandardMaterial3D_yf5fn")
 
 [node name="Trailer" type="Node2D" unique_id=1094880753]
+script = ExtResource("1_xy4o6")
 
 [node name="ColorRect" type="ColorRect" parent="." unique_id=572688054]
 offset_right = 1280.0
@@ -222,14 +238,20 @@ color = Color(0, 0, 0, 1)
 
 [node name="SineWave" type="AudioStreamPlayer" parent="." unique_id=1800401384]
 stream = ExtResource("1_4rnlp")
-volume_db = -17.338
-
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=210502674]
-stream = ExtResource("2_pqv5n")
 volume_db = -12.0
+
+[node name="Look" type="AudioStreamPlayer" parent="." unique_id=210502674]
+stream = ExtResource("2_pqv5n")
+volume_db = -2.0
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=892748055]
 libraries/ = SubResource("AnimationLibrary_xxu3t")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=102817734]
+modulate = Color(1, 1, 1, 0)
+position = Vector2(642, 379)
+scale = Vector2(0.75, 0.75)
+texture = ExtResource("4_xy4o6")
 
 [node name="SubViewportContainer" type="SubViewportContainer" parent="." unique_id=726463669]
 offset_left = 540.0
@@ -246,6 +268,7 @@ render_target_update_mode = 4
 
 [node name="Camera3D" type="Camera3D" parent="SubViewportContainer/SubViewport" unique_id=1321030188]
 transform = Transform3D(-0.99999994, 0, -8.742277e-08, 0, 1, 0, 8.742277e-08, 0, -0.99999994, 3.5742673e-08, 0, -2.0411515)
+current = true
 fov = 45.0
 
 [node name="OmniLight3D" type="OmniLight3D" parent="SubViewportContainer/SubViewport" unique_id=1806758107]
@@ -254,14 +277,6 @@ omni_attenuation = 0.0
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="SubViewportContainer/SubViewport" unique_id=719777026]
 transform = Transform3D(1.0000001, 0, 0, 0, 1.0000001, 0, 0, 0, 1, 0, 0, 0)
-visible = false
 mesh = SubResource("SphereMesh_g4v7s")
 
-[node name="Sprite2D" type="Sprite2D" parent="." unique_id=102817734]
-position = Vector2(638, 308)
-texture = ExtResource("4_xy4o6")
-
-[node name="Flash" type="ColorRect" parent="." unique_id=735019282]
-offset_right = 1280.0
-offset_bottom = 720.0
-color = Color(1, 1, 1, 0)
+[connection signal="animation_finished" from="AnimationPlayer" to="." method="_on_animation_player_animation_finished"]

@@ -29,7 +29,7 @@ func _input(event: InputEvent) -> void:
 	elif event.is_action_pressed("volume_down", true):
 		change_volume(-0.01)
 
-# this makes it so you can tab out of game.
+# this lets you can tab out of game.
 func _notification(what: int) -> void:
 	match what:
 		MainLoop.NOTIFICATION_APPLICATION_FOCUS_OUT:
