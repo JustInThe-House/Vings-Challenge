@@ -17,7 +17,6 @@ func _ready() -> void:
 	Music.seek(57.8)
 	total_dolls = dolls.get_child_count()
 	dolls_left = total_dolls
-	print(total_dolls)
 	await get_tree().create_timer(1.5).timeout
 	Music.pitch_scale = 1.3
 	# pause music, play scary scream, then play music pitched up
@@ -26,6 +25,7 @@ func _ready() -> void:
 	var run_title = preload("res://rooms/ui_run.tscn").instantiate()
 	run_title.position.y = 720.0
 	add_child(run_title)
+	move_child(run_title, 6)
 	
 
 func _process(delta: float) -> void:

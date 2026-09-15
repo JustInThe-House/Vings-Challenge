@@ -10,6 +10,7 @@ var CAN_MOVE := true
 @onready var camera_pivot := $SpringArmPivot
 @onready var jump_timer := $JumpTimer
 @onready var ground_check := $OnGroundCheck
+@onready var jump_buffer := $JumpBuffer
 
 
 func _physics_process(delta: float) -> void:
@@ -50,7 +51,10 @@ func _physics_process(delta: float) -> void:
 	
 		# jump
 		var is_on_floor = ground_check.is_colliding()
-		if Input.is_action_just_pressed("jump") and not Input.is_action_pressed("fullscreen") and is_on_floor and jump_timer.is_stopped():
+		if Input.is_action_just_pressed("jump"):
+			jump_buffer.start()
+			
+		if not jump_buffer.is_stopped() and not Input.is_action_pressed("fullscreen") and is_on_floor and jump_timer.is_stopped():
 			# physics
 			apply_central_force(Vector3.UP*JUMP_POWER)
 			jump_timer.start()
@@ -60,7 +64,7 @@ func _physics_process(delta: float) -> void:
 		
 		#cooldown for jump
 		if jump_timer.time_left > 0:
-			if !is_on_floor and jump_timer.paused == false:
+			if !is_on_floor and not jump_timer.paused:
 				jump_timer.paused = true
-			elif is_on_floor and jump_timer.paused == true:
+			elif is_on_floor and jump_timer.paused:
 				jump_timer.paused = false

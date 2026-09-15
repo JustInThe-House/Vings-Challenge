@@ -1,9 +1,8 @@
 extends Control
 
-
 @export var speed: float = 5.0
 
-func _physics_process(delta: float) -> void:
+func _process(delta: float) -> void:
 	position.y -= delta * speed
 	pass
 

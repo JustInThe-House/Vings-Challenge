@@ -17,6 +17,9 @@ material = SubResource("StandardMaterial3D_wtokj")
 
 [sub_resource type="SphereShape3D" id="SphereShape3D_14aab"]
 
+[sub_resource type="SphereShape3D" id="SphereShape3D_fltcq"]
+radius = 0.35
+
 [node name="Jawsh" type="RigidBody3D" unique_id=208343381]
 physics_material_override = SubResource("PhysicsMaterial_mlfnx")
 gravity_scale = 4.678
@@ -24,6 +27,7 @@ angular_damp = 6.0
 script = ExtResource("1_flrai")
 
 [node name="Model" type="MeshInstance3D" parent="." unique_id=829259342]
+cast_shadow = 0
 mesh = SubResource("SphereMesh_cmcmu")
 
 [node name="Collision" type="CollisionShape3D" parent="." unique_id=1059162590]
@@ -31,17 +35,23 @@ shape = SubResource("SphereShape3D_14aab")
 
 [node name="SpringArmPivot" parent="." unique_id=377660430 instance=ExtResource("3_mlfnx")]
 top_level = true
+shape = null
+margin = 0.04
 
-[node name="OnGroundCheck" type="RayCast3D" parent="." unique_id=1524855557]
+[node name="OnGroundCheck" type="ShapeCast3D" parent="." unique_id=1482921836]
 top_level = true
-target_position = Vector3(0, -0.55, 0)
-hit_from_inside = true
+shape = SubResource("SphereShape3D_fltcq")
+target_position = Vector3(0, -0.19, 0)
 collide_with_areas = true
 debug_shape_custom_color = Color(0.93624073, 0.2503544, 7.70092e-07, 1)
 script = ExtResource("4_wsjaa")
 
 [node name="JumpTimer" type="Timer" parent="." unique_id=395493187]
-wait_time = 0.18
+wait_time = 0.13
+one_shot = true
+
+[node name="JumpBuffer" type="Timer" parent="." unique_id=1681426268]
+wait_time = 0.1
 one_shot = true
 
 [node name="AudioListener3D" type="AudioListener3D" parent="." unique_id=1777506621 node_paths=PackedStringArray("camera")]

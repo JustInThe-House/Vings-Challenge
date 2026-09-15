@@ -5,7 +5,6 @@ var can_end: bool = false
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	Music.stop()
-	#$AnimationPlayer.active = true
 	$AnimationPlayer.current_animation = "jumpscare"
 	await get_tree().create_timer(1.0).timeout
 	can_end = true

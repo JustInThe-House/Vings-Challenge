@@ -1,4 +1,6 @@
-extends RayCast3D
+extends ShapeCast3D
 
-func _physics_process(_delta: float) -> void:
-	global_transform.origin = $"..".global_transform.origin
+@onready var base := $".."
+
+func _process(_delta: float) -> void:
+	global_transform.origin = base.global_transform.origin

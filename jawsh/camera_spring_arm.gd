@@ -1,6 +1,6 @@
 extends SpringArm3D
 @export var sensitivity = 0.005
-@export var spring_arm_length: float = 5.0
+@export var spring_arm_length: float = 5.5
 const extra_pad_sensitivity_x = 720
 const extra_pad_sensitivity_y = extra_pad_sensitivity_x * 0.5
 var frozen := false

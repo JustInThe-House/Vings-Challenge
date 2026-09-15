@@ -19,6 +19,11 @@ fog_depth_curve = 0.32987857
 fog_depth_begin = 0.0
 fog_depth_end = 60.0
 
+[sub_resource type="LabelSettings" id="LabelSettings_nmqhj"]
+font_size = 32
+font_color = Color(0, 1, 0, 1)
+outline_color = Color(0, 1, 0, 1)
+
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_nmqhj"]
 shader = ExtResource("7_xkuw5")
 shader_parameter/scanlines_1 = 500.0
@@ -51,6 +56,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20, 1.5, 4)
 
 [node name="Ving" parent="." unique_id=277050341 node_paths=PackedStringArray("player") instance=ExtResource("6_lwnle")]
 unique_name_in_owner = true
+process_mode = 4
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -41, 4, 251)
 speed = 7.5
 player = NodePath("../Jawsh")
@@ -196,8 +202,8 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 26, 2, 10)
 [node name="VingDoll67" parent="Dolls" unique_id=1902627155 instance=ExtResource("7_71awx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22, 2, 10)
 
-[node name="VingDoll68" parent="Dolls" unique_id=1404931249 instance=ExtResource("7_71awx")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18, 2, 10)
+[node name="VingDoll73" parent="Dolls" unique_id=1026774453 instance=ExtResource("7_71awx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 2, 10)
 
 [node name="VingDoll69" parent="Dolls" unique_id=239557639 instance=ExtResource("7_71awx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 2, 10)
@@ -205,20 +211,20 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 2, 10)
 [node name="VingDoll70" parent="Dolls" unique_id=1791739042 instance=ExtResource("7_71awx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 2, 10)
 
+[node name="VingDoll68" parent="Dolls" unique_id=1404931249 instance=ExtResource("7_71awx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18, 2, 10)
+
 [node name="VingDoll71" parent="Dolls" unique_id=1568814162 instance=ExtResource("7_71awx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 2, 10)
-
-[node name="VingDoll72" parent="Dolls" unique_id=1874097397 instance=ExtResource("7_71awx")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 2, 10)
-
-[node name="VingDoll73" parent="Dolls" unique_id=1026774453 instance=ExtResource("7_71awx")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 2, 10)
 
 [node name="VingDoll74" parent="Dolls" unique_id=526622218 instance=ExtResource("7_71awx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 2, 10)
 
 [node name="VingDoll75" parent="Dolls" unique_id=372299633 instance=ExtResource("7_71awx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 2, 10)
+
+[node name="VingDoll72" parent="Dolls" unique_id=1874097397 instance=ExtResource("7_71awx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 2, 10)
 
 [node name="VingDoll77" parent="Dolls" unique_id=1955120618 instance=ExtResource("7_71awx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18, 2, -18)
@@ -328,12 +334,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 46, 2, 10)
 [node name="VingDoll179" parent="Dolls" unique_id=1043219477 instance=ExtResource("7_71awx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 42, 2, 10)
 
-[node name="VingDoll180" parent="Dolls" unique_id=774044629 instance=ExtResource("7_71awx")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 38, 2, 10)
-
-[node name="VingDoll181" parent="Dolls" unique_id=1869248256 instance=ExtResource("7_71awx")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 34, 2, 10)
-
 [node name="VingDoll182" parent="Dolls" unique_id=767536461 instance=ExtResource("7_71awx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 46, 2, 6)
 
@@ -357,6 +357,12 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 42, 5.5, 26)
 
 [node name="VingDoll189" parent="Dolls" unique_id=795794641 instance=ExtResource("7_71awx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18, 2, -26)
+
+[node name="VingDoll181" parent="Dolls" unique_id=1869248256 instance=ExtResource("7_71awx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 34, 2, 10)
+
+[node name="VingDoll180" parent="Dolls" unique_id=774044629 instance=ExtResource("7_71awx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 38, 2, 10)
 
 [node name="VingDoll192" parent="Dolls" unique_id=863136880 instance=ExtResource("7_71awx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16, 5.5, 36)
@@ -433,11 +439,11 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -86, 2, 2)
 [node name="VingDoll221" parent="Dolls" unique_id=2062936136 instance=ExtResource("7_71awx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -90, 2, 2)
 
-[node name="VingDoll222" parent="Dolls" unique_id=1842849210 instance=ExtResource("7_71awx")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -94, 2, 2)
-
 [node name="VingDoll223" parent="Dolls" unique_id=2002711687 instance=ExtResource("7_71awx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -86, 2, -2)
+
+[node name="VingDoll222" parent="Dolls" unique_id=1842849210 instance=ExtResource("7_71awx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -94, 2, 2)
 
 [node name="VingDoll224" parent="Dolls" unique_id=1319351839 instance=ExtResource("7_71awx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -90, 2, -2)
@@ -617,6 +623,8 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18, 2, 40)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -70, 2, 34)
 
 [node name="Collisions" type="StaticBody3D" parent="." unique_id=317153551]
+metadata/_edit_group_ = true
+metadata/_edit_lock_ = true
 
 [node name="RetroTile" parent="Collisions" unique_id=570993727 instance=ExtResource("7_nmqhj")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0.5, -6)
@@ -2018,6 +2026,12 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 54, 2.5, 30)
 
 [node name="RetroCube8" parent="Collisions" unique_id=1541614938 instance=ExtResource("9_fv8q0")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 54, 2.5, 34)
+
+[node name="DollsLeft" type="Label" parent="." unique_id=137719357]
+offset_right = 40.0
+offset_bottom = 23.0
+text = "Dolls Left:"
+label_settings = SubResource("LabelSettings_nmqhj")
 
 [node name="CRT" type="ColorRect" parent="." unique_id=1656920956]
 material = SubResource("ShaderMaterial_nmqhj")

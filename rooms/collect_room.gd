@@ -5,17 +5,18 @@ extends Node3D
 @onready var camera_springarm := $Jawsh/SpringArmPivot
 @onready var ving := %Ving
 var dolls_collected: float = 0
-var total_dolls: float
-var dolls_left: float
+var total_dolls: int
+var dolls_left: int
 var gameover_fall: bool = false
 @onready var CRT: ColorRect = $CRT
+@onready var dolls_left_text := $DollsLeft
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	Music.play()
 	total_dolls = dolls.get_child_count()
 	dolls_left = total_dolls
-	print(total_dolls)
+	dolls_left_text.text = "Dolls Left: " + str(dolls_left)
 	
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -32,9 +33,9 @@ func _process(_delta: float) -> void:
 	if dolls_left != dolls_left_actual:
 		if dolls_left_actual == 0:
 			get_tree().change_scene_to_file("res://run_room.tscn")
-		print(dolls_left_actual)
 		ving.fury = 1.0 - (dolls_left_actual/total_dolls)
 	dolls_left = dolls_left_actual
+	dolls_left_text.text = "Dolls Left: " + str(dolls_left)
 	
 	var distance: float = jawsh.position.distance_to(ving.position)
 	if distance < 80.0 and SaveManager.save_data.shaders:

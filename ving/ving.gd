@@ -19,17 +19,15 @@ func _ready() -> void:
 		position.z = player.position.z + distance_radius*sin(theta)
 
 func _process(delta: float) -> void:
-	# MAKE THIS AN EMIT
 	scream_timer += delta * (1 + fury * 1.5)
 	if scream_timer > 1.25: # was 1
 		scream_timer = 0.0
 		scream.pitch_scale = (speed / 10.0) * (1 + fury * 0.5)
 		scream.play()
-
-func _physics_process(delta: float) -> void:
+		
+	# move ving toward player. to make controller at least playable, make it slower
 	if player != null:
-		# move ving toward player. to make controller at least playable, make it slower
-		global_position = global_position.move_toward(player.global_position, delta * speed * (1 + fury * 0.5) * (1 - float(Universal.on_controller) * 0.2))
+		global_position = global_position.move_toward(player.global_position, delta * speed * (1 + fury * 0.48) * (1 - float(Universal.on_controller) * 0.2))
 
 func _on_body_entered(_body: RigidBody3D) -> void:
 	get_tree().change_scene_to_file("res://gameover/gameover.tscn")

@@ -32,7 +32,7 @@ func _ready() -> void:
 
 	update_main()
 	settings_text.visible = false
-	#controlstext_text.visible = true
+	controlstext_text.visible = true # hide for trailer
 	if not SaveManager.save_data.first_time_playing:
 		Music.play()
 		if not Universal.played_once:

@@ -100,7 +100,7 @@ chase = true
 color = Color(0.45043758, 0, 0.6843325, 0.69500005)
 
 [node name="Ving10" parent="Vings" unique_id=524189082 node_paths=PackedStringArray("player") instance=ExtResource("6_yeh0e")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 650)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 652)
 player = NodePath("../../Jawsh")
 chase = true
 color = Color(0.83396184, 0, 0.6843325, 0.73300004)
@@ -120,6 +120,7 @@ chase = true
 color = Color(0, 0.5127158, 0.49121526, 0.69500005)
 
 [node name="Collisions" type="StaticBody3D" parent="." unique_id=1752381125]
+metadata/_edit_group_ = true
 
 [node name="RetroTile" parent="Collisions" unique_id=570993727 instance=ExtResource("7_0dsp7")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0.5, 0)

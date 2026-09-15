@@ -19,4 +19,5 @@ shape = SubResource("BoxShape3D_53udr")
 debug_color = Color(1, 0, 0, 1)
 
 [node name="retro_cube" type="MeshInstance3D" parent="." unique_id=807986070]
+cast_shadow = 0
 mesh = SubResource("BoxMesh_7iceh")

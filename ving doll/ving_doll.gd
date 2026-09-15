@@ -4,7 +4,7 @@ func _ready() -> void:
 	rotation.y = randf_range(0,2*PI)
 	pass
 	
-func _physics_process(delta: float) -> void:
+func _process(delta: float) -> void:
 	rotation.y += PI * 0.5 * delta
 	pass
 

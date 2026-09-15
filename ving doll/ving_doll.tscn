@@ -11,6 +11,7 @@ script = ExtResource("1_al00h")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=1765326569]
 transform = Transform3D(18, 0, 0, 0, -7.86805e-07, 18, 0, -18, -7.86805e-07, 0, 0.22418678, -0.028792828)
+cast_shadow = 0
 mesh = ExtResource("2_22pcg")
 
 [node name="CollisionShape3D2" type="CollisionShape3D" parent="." unique_id=1480383797]
