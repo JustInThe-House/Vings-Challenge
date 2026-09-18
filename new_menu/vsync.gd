@@ -11,5 +11,5 @@ func press_button(_event: InputEvent) -> void:
 		DisplayServer.window_set_vsync_mode(DisplayServer.VSYNC_ENABLED)
 	text = "Vsync: " + ("ON" if DisplayServer.window_get_vsync_mode() == 1 else "OFF")
 
-func back_button(event: InputEvent) -> void:
+func back_button(_event: InputEvent) -> void:
 	%Back.pressed.emit()

@@ -10,5 +10,5 @@ func press_button(_event: InputEvent) -> void:
 		SaveManager.save_data.shaders = true
 	text = "Shaders: " + ("OFF" if not SaveManager.save_data.shaders else "ON")
 
-func back_button(event: InputEvent) -> void:
+func back_button(_event: InputEvent) -> void:
 	%Back.pressed.emit()

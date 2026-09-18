@@ -24,6 +24,8 @@ font_size = 32
 font_color = Color(0, 1, 0, 1)
 outline_color = Color(0, 1, 0, 1)
 
+[sub_resource type="WorldBoundaryShape3D" id="WorldBoundaryShape3D_nmqhj"]
+
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_nmqhj"]
 shader = ExtResource("7_xkuw5")
 shader_parameter/scanlines_1 = 500.0
@@ -56,10 +58,10 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20, 1.5, 4)
 
 [node name="Ving" parent="." unique_id=277050341 node_paths=PackedStringArray("player") instance=ExtResource("6_lwnle")]
 unique_name_in_owner = true
-process_mode = 4
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -41, 4, 251)
 speed = 7.5
 player = NodePath("../Jawsh")
+random_spawn = true
 
 [node name="Dolls" type="Node3D" parent="." unique_id=1342605683]
 unique_name_in_owner = true
@@ -2075,6 +2077,12 @@ offset_bottom = 23.0
 text = "Dolls Left:"
 label_settings = SubResource("LabelSettings_nmqhj")
 
+[node name="DeathBarrier" type="Area3D" parent="." unique_id=119926872]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -5, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="DeathBarrier" unique_id=1401423584]
+shape = SubResource("WorldBoundaryShape3D_nmqhj")
+
 [node name="CRT" type="ColorRect" parent="." unique_id=1656920956]
 material = SubResource("ShaderMaterial_nmqhj")
 anchors_preset = 15
@@ -2084,3 +2092,5 @@ grow_horizontal = 2
 grow_vertical = 2
 mouse_filter = 2
 color = Color(1, 1, 1, 0)
+
+[connection signal="body_entered" from="DeathBarrier" to="." method="_on_death_barrier_body_entered"]

@@ -12,7 +12,7 @@ func _process(delta: float) -> void:
 		Music.stream = load("res://music/Ving's Challenge.ogg")
 		SaveManager.save_data.beat_game = true
 		SaveManager.write_to_save()
-		get_tree().change_scene_to_file("res://menu/menu.tscn")
+		get_tree().change_scene_to_file(Universal.main_menu_scene)
 
 
 func _on_animation_player_animation_finished(anim_name: StringName) -> void:

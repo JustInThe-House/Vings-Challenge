@@ -9,7 +9,6 @@ func _ready() -> void:
 	await get_tree().create_timer(1.0).timeout
 	can_end = true
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta: float) -> void:
-	if (Input.is_action_just_pressed("jump") or Input.is_action_just_pressed("back")) and can_end:
-		get_tree().change_scene_to_file("res://menu/menu.tscn")
+func _input(event: InputEvent) -> void:
+	if (event.is_action_pressed("jump") or event.is_action_pressed("back")) and can_end:
+		get_tree().change_scene_to_file(Universal.main_menu_scene)

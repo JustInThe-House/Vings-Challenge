@@ -11,5 +11,5 @@ func press_button(_event: InputEvent) -> void:
 		Engine.max_fps = 0
 	text = "60 FPS Cap: " + ("OFF" if Engine.max_fps == 0 else "ON")
 
-func back_button(event: InputEvent) -> void:
+func back_button(_event: InputEvent) -> void:
 	%Back.pressed.emit()

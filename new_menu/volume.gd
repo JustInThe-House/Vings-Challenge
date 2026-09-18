@@ -15,6 +15,6 @@ func _process(delta: float) -> void:
 			Universal.change_volume(-0.01 * delta * 10.0)
 		text = "Volume: " + str(int(round(Universal.volume_perc * 100))) + "%" 
 
-func back_button(event: InputEvent) -> void:
+func back_button(_event: InputEvent) -> void:
 	%Back.pressed.emit()
 	

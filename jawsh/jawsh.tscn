@@ -56,7 +56,6 @@ margin = 0.04
 top_level = true
 shape = SubResource("SphereShape3D_fltcq")
 target_position = Vector3(0, -0.19, 0)
-collide_with_areas = true
 debug_shape_custom_color = Color(0.93624073, 0.2503544, 7.70092e-07, 1)
 script = ExtResource("4_wsjaa")
 

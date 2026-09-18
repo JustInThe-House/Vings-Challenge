@@ -29,14 +29,6 @@ func _ready() -> void:
 	
 
 func _process(delta: float) -> void:
-	if jawsh.global_position.y < -5.0:
-		if gameover_fall != true:
-			gameover_fall = true
-			UtilsSound.play_sound("res://gameover/death.wav", 2.0)
-			jawsh.gravity_scale = 12.0
-			camera_springarm.frozen = true
-	if jawsh.global_position.y < -80.0:
-		get_tree().change_scene_to_file("res://gameover/gameover.tscn")
 	var dolls_left_actual: float = dolls.get_child_count()
 	if dolls_left != dolls_left_actual:
 		if dolls_left_actual == 0:
@@ -51,3 +43,14 @@ func _notification(what: int) -> void:
 
 func on_predelete() -> void:
 	Music.pitch_scale = 1.0
+
+
+func _on_death_barrier_body_entered(body: Node3D) -> void:
+	if body == jawsh:
+		UtilsSound.play_sound("res://gameover/death.wav", 2.0)
+		jawsh.gravity_scale = 12.0
+		camera_springarm.frozen = true
+		await get_tree().create_timer(1.1, true, true, false).timeout
+		# for some reason doing it based on physics time was the answer? 
+		# i guess, since the timer creation is based on collision (jawsh and death barrier)
+		get_tree().change_scene_to_file(Universal.game_over_scene)

@@ -5,6 +5,9 @@ var MasterAudioVolume: float = AudioServer.get_bus_volume_db(AudioServer.get_bus
 var volume_perc: float = 0.6
 var played_once: bool = false
 var on_controller: bool = false
+var main_menu_scene: String = "res://new_menu/menu.tscn" # "res://menu/menu.tscn"
+
+var game_over_scene: String = "res://gameover/gameover.tscn"
 
 func _init() -> void:
 	if OS.is_debug_build():
