@@ -7,14 +7,249 @@
 [ext_resource type="FontFile" uid="uid://crfpfiph0a5jr" path="res://Comic Sans MS Bold.ttf" id="3_88u1e"]
 [ext_resource type="Script" uid="uid://bm74r6d1y5d5s" path="res://menu/trailer_part.gd" id="4_ncxkj"]
 [ext_resource type="Script" uid="uid://f0ked1idfsgc" path="res://menu/win_star_outline.gd" id="5_028l1"]
-[ext_resource type="Script" uid="uid://cooh3bgcdntm" path="res://new_menu/menu_button.gd" id="7_pmohl"]
+[ext_resource type="Script" uid="uid://srfebxlggwdl" path="res://new_menu/controls_text.gd" id="8_j4d3i"]
 [ext_resource type="Script" uid="uid://be5jbn7v64sel" path="res://new_menu/play.gd" id="8_ncxkj"]
+[ext_resource type="Script" uid="uid://defqxtokn2si" path="res://new_menu/settings.gd" id="9_028l1"]
+[ext_resource type="Script" uid="uid://dslxsf5gtjycb" path="res://new_menu/exit.gd" id="9_ncxkj"]
+[ext_resource type="Script" uid="uid://d1oughiqwl5q4" path="res://new_menu/main_menu.gd" id="9_pgjo5"]
+[ext_resource type="Script" uid="uid://cc3vfsbpt03m8" path="res://new_menu/controls.gd" id="10_1hfxg"]
+[ext_resource type="Script" uid="uid://bheohntyr3wyb" path="res://new_menu/settings_menu.gd" id="14_8tq60"]
+[ext_resource type="Script" uid="uid://dtrfo42o2jelb" path="res://new_menu/volume.gd" id="15_fcpow"]
+[ext_resource type="Script" uid="uid://bjvb7nk036awh" path="res://new_menu/vsync.gd" id="16_8tq60"]
+[ext_resource type="Script" uid="uid://clg5ifmkmmn2c" path="res://new_menu/fps_cap.gd" id="17_o3pjc"]
+[ext_resource type="Script" uid="uid://6ulcod7q5irg" path="res://new_menu/shaders.gd" id="18_guho4"]
+[ext_resource type="Script" uid="uid://degr85ucdjdkh" path="res://new_menu/back.gd" id="19_fcpow"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_jx70r"]
 font_size = 63
 font_color = Color(0, 1, 0, 1)
 
-[node name="NewMainMenu" type="Control" unique_id=1745207742]
+[sub_resource type="Animation" id="Animation_juveg"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Title:position")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-437, -550)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Actions & Info:position")
+tracks/1/interp = 2
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 550)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Node2D:position")
+tracks/2/interp = 2
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-1440, 0)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Flash:color")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_3vbpa"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Node2D:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Title:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-437, -294)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Actions & Info:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 0)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Node2D/Parallax2D:autoscroll")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(120, 80)]
+}
+
+[sub_resource type="Animation" id="Animation_bpqio"]
+resource_name = "finish_flash"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Node2D:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Title:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-437, -294)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Actions & Info:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 0)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Node2D/Parallax2D:autoscroll")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(120, 80)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Flash:color")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(2.9281719, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_aycgx"]
+resource_name = "titlecard_returning"
+length = 4.333336892667785
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Node2D:position")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(1.6666666, 4.2666664),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(-1440, 0), Vector2(0, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Title:position")
+tracks/1/interp = 2
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0.53333336, 1.1333334),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(-437, -550), Vector2(-437, -294)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Actions & Info:position")
+tracks/2/interp = 2
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(1.9999998, 4.2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(0, 550), Vector2(0, 0)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Node2D/Parallax2D:autoscroll")
+tracks/3/interp = 0
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 4.166667),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(-10, 80), Vector2(120, 80)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_fcpow"]
+_data = {
+&"RESET": SubResource("Animation_juveg"),
+&"finish": SubResource("Animation_3vbpa"),
+&"finish_flash": SubResource("Animation_bpqio"),
+&"titlecard": SubResource("Animation_aycgx")
+}
+
+[node name="NewMainMenu" type="Control" unique_id=619658871]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -40,7 +275,7 @@ color = Color(0, 0, 0, 1)
 metadata/_edit_lock_ = true
 
 [node name="Node2D" type="Node2D" parent="." unique_id=1804945086]
-position = Vector2(-800, 360)
+position = Vector2(-1440, 0)
 
 [node name="Parallax2D" type="Parallax2D" parent="Node2D" unique_id=1565731752]
 scroll_offset = Vector2(-28.34, 62.975)
@@ -69,11 +304,13 @@ script = ExtResource("2_pmohl")
 
 [node name="Camera3D" type="Camera3D" parent="Node2D/Parallax2D/SubViewportContainer/SubViewport" unique_id=1018916288]
 transform = Transform3D(0.7071068, 0.3535534, -0.61237246, 0, 0.8660254, 0.50000006, 0.7071068, -0.3535534, 0.61237246, -0.75, 0.75, 0.75)
+current = true
 
 [node name="OmniLight3D" type="OmniLight3D" parent="Node2D/Parallax2D/SubViewportContainer/SubViewport" unique_id=490197128]
 transform = Transform3D(0.7071068, 0.3535534, -0.61237246, 0, 0.8660254, 0.50000006, 0.7071068, -0.3535534, 0.61237246, -1, 1, 1)
 
 [node name="Actions & Info" type="Node2D" parent="." unique_id=39404602]
+position = Vector2(0, 550)
 
 [node name="Trailer Part" type="Label" parent="Actions & Info" unique_id=1045231616]
 visible = false
@@ -114,10 +351,11 @@ polygon = PackedVector2Array(-23.443024, -80.29827, 2.9353027, 0.06915283, 89.83
 uv = PackedVector2Array(-12.62262, -74.21881, 16.126953, 4.5763855, 98.11658, 4.5763855, 13.9973755, 53.55719, 40.61737, 117.44519, -26.465027, 58.881195, -76.51062, 115.3156, -63.733032, 48.2332, -154.24103, 8.835587, -64.79785, 6.7059937)
 
 [node name="Credits" type="Label" parent="Actions & Info" unique_id=1533966352]
-offset_left = 340.0
-offset_top = 190.0
-offset_right = 637.00037
-offset_bottom = 397.00006
+propagate_maximum_size = true
+offset_left = 976.0
+offset_top = 550.0
+offset_right = 1273.0
+offset_bottom = 757.0
 theme_override_constants/line_spacing = -2
 theme_override_fonts/font = ExtResource("3_88u1e")
 theme_override_font_sizes/font_size = 30
@@ -129,7 +367,6 @@ Swaglexoid
 horizontal_alignment = 1
 
 [node name="ControlsText" type="Label" parent="Actions & Info" unique_id=1669372822]
-unique_name_in_owner = true
 offset_left = -216.0
 offset_top = -104.0
 offset_right = 580.0
@@ -145,53 +382,147 @@ Confirm/Jump: Space/Enter/A
 Back: Shift/B
 (Controller sucks)"
 horizontal_alignment = 1
+script = ExtResource("8_j4d3i")
 
-[node name="MenuText" type="VBoxContainer" parent="Actions & Info" unique_id=141748417]
+[node name="MainMenu" type="VBoxContainer" parent="Actions & Info" unique_id=141748417]
 offset_left = 729.0
 offset_top = 127.0
 offset_right = 1018.0
 offset_bottom = 549.0
 theme_override_constants/separation = -2
+script = ExtResource("9_pgjo5")
 
-[node name="Play" type="Button" parent="Actions & Info/MenuText" unique_id=1224134852]
+[node name="Play" type="Button" parent="Actions & Info/MainMenu" unique_id=1224134852 node_paths=PackedStringArray("focus_up", "focus_down")]
 layout_mode = 2
-focus_neighbor_top = NodePath("../Exit")
-focus_neighbor_bottom = NodePath("../Controls")
+mouse_filter = 2
 theme = ExtResource("1_ufjxo")
 text = "Play"
 flat = true
 script = ExtResource("8_ncxkj")
+focus_up = NodePath("../Exit")
+focus_down = NodePath("../Controls")
 metadata/_custom_type_script = "uid://cooh3bgcdntm"
 
-[node name="Controls" type="Button" parent="Actions & Info/MenuText" unique_id=1991594738]
+[node name="Controls" type="Button" parent="Actions & Info/MainMenu" unique_id=1991594738 node_paths=PackedStringArray("focus_up", "focus_down")]
 layout_mode = 2
-focus_neighbor_top = NodePath("../Play")
-focus_neighbor_bottom = NodePath("../Settings")
-focus_mode = 0
+mouse_filter = 2
 theme = ExtResource("1_ufjxo")
 text = "Controls"
 flat = true
-script = ExtResource("7_pmohl")
+script = ExtResource("10_1hfxg")
+focus_up = NodePath("../Play")
+focus_down = NodePath("../Settings")
 metadata/_custom_type_script = "uid://cooh3bgcdntm"
 
-[node name="Settings" type="Button" parent="Actions & Info/MenuText" unique_id=630214938]
+[node name="Settings" type="Button" parent="Actions & Info/MainMenu" unique_id=630214938 node_paths=PackedStringArray("focus_up", "focus_down")]
 layout_mode = 2
-focus_neighbor_top = NodePath("../Controls")
-focus_neighbor_bottom = NodePath("../Exit")
-focus_mode = 0
+mouse_filter = 2
 theme = ExtResource("1_ufjxo")
 text = "Settings"
 flat = true
-script = ExtResource("7_pmohl")
+script = ExtResource("9_028l1")
+focus_up = NodePath("../Controls")
+focus_down = NodePath("../Exit")
 metadata/_custom_type_script = "uid://cooh3bgcdntm"
 
-[node name="Exit" type="Button" parent="Actions & Info/MenuText" unique_id=1276312024]
+[node name="Exit" type="Button" parent="Actions & Info/MainMenu" unique_id=1276312024 node_paths=PackedStringArray("focus_up", "focus_down")]
 layout_mode = 2
-focus_neighbor_top = NodePath("../Settings")
-focus_neighbor_bottom = NodePath("../Play")
-focus_mode = 0
+mouse_filter = 2
 theme = ExtResource("1_ufjxo")
 text = "Exit"
 flat = true
-script = ExtResource("7_pmohl")
+script = ExtResource("9_ncxkj")
+focus_up = NodePath("../Settings")
+focus_down = NodePath("../Play")
 metadata/_custom_type_script = "uid://cooh3bgcdntm"
+
+[node name="SettingsMenu" type="VBoxContainer" parent="." unique_id=2041721182]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+alignment = 1
+script = ExtResource("14_8tq60")
+
+[node name="Volume" type="Button" parent="SettingsMenu" unique_id=728727972 node_paths=PackedStringArray("focus_up", "focus_down")]
+layout_mode = 2
+mouse_filter = 2
+theme = ExtResource("1_ufjxo")
+text = "Volume"
+flat = true
+script = ExtResource("15_fcpow")
+focus_up = NodePath("../Back")
+focus_down = NodePath("../Vsync")
+metadata/_custom_type_script = "uid://cooh3bgcdntm"
+
+[node name="Vsync" type="Button" parent="SettingsMenu" unique_id=194653266 node_paths=PackedStringArray("focus_up", "focus_down")]
+layout_mode = 2
+mouse_filter = 2
+theme = ExtResource("1_ufjxo")
+text = "Vsync"
+flat = true
+script = ExtResource("16_8tq60")
+focus_up = NodePath("../Volume")
+focus_down = NodePath("../FPSCap")
+metadata/_custom_type_script = "uid://cooh3bgcdntm"
+
+[node name="FPSCap" type="Button" parent="SettingsMenu" unique_id=2061444368 node_paths=PackedStringArray("focus_up", "focus_down")]
+layout_mode = 2
+mouse_filter = 2
+theme = ExtResource("1_ufjxo")
+text = "FPS Cap"
+flat = true
+script = ExtResource("17_o3pjc")
+focus_up = NodePath("../Vsync")
+focus_down = NodePath("../Shaders")
+metadata/_custom_type_script = "uid://cooh3bgcdntm"
+
+[node name="Shaders" type="Button" parent="SettingsMenu" unique_id=2040512252 node_paths=PackedStringArray("focus_up", "focus_down")]
+layout_mode = 2
+mouse_filter = 2
+theme = ExtResource("1_ufjxo")
+text = "Shaders"
+flat = true
+script = ExtResource("18_guho4")
+focus_up = NodePath("../FPSCap")
+focus_down = NodePath("../Back")
+metadata/_custom_type_script = "uid://cooh3bgcdntm"
+
+[node name="Back" type="Button" parent="SettingsMenu" unique_id=1662957655 node_paths=PackedStringArray("focus_up", "focus_down")]
+unique_name_in_owner = true
+layout_mode = 2
+mouse_filter = 2
+theme = ExtResource("1_ufjxo")
+text = "Back"
+flat = true
+script = ExtResource("19_fcpow")
+focus_up = NodePath("../Shaders")
+focus_down = NodePath("../Volume")
+metadata/_custom_type_script = "uid://cooh3bgcdntm"
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=152157065]
+libraries/ = SubResource("AnimationLibrary_fcpow")
+
+[node name="Flash" type="ColorRect" parent="." unique_id=933858443]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -640.0
+offset_top = -360.0
+offset_right = 640.0
+offset_bottom = 360.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(1, 1, 1, 0)
+
+[connection signal="focus_exited" from="Actions & Info/MainMenu/Controls" to="Actions & Info/ControlsText" method="_on_controls_focus_exited"]
+[connection signal="pressed" from="Actions & Info/MainMenu/Controls" to="Actions & Info/ControlsText" method="_on_controls_pressed"]
+[connection signal="pressed" from="Actions & Info/MainMenu/Settings" to="Actions & Info/MainMenu" method="_on_settings_pressed"]
+[connection signal="pressed" from="Actions & Info/MainMenu/Settings" to="SettingsMenu" method="_on_settings_pressed"]
+[connection signal="pressed" from="SettingsMenu/Back" to="Actions & Info/MainMenu" method="_on_back_pressed"]
+[connection signal="pressed" from="SettingsMenu/Back" to="SettingsMenu" method="_on_back_pressed"]

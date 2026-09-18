@@ -2,11 +2,12 @@
 
 [ext_resource type="FontFile" uid="uid://crfpfiph0a5jr" path="res://Comic Sans MS Bold.ttf" id="1_61wfl"]
 
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_61wfl"]
+
 [resource]
 default_font = ExtResource("1_61wfl")
 default_font_size = 70
-/colors/font_color = Color(0, 0.4392157, 0, 1)
-/colors/outline_color = Color(0, 1, 0, 1)
-/styles/settings = null
 Button/colors/font_color = Color(0, 0.4392157, 0, 1)
+Button/colors/font_focus_color = Color(0, 0.4392157, 0, 1)
 Button/colors/font_outline_color = Color(0, 1, 0, 1)
+Button/styles/focus = SubResource("StyleBoxEmpty_61wfl")

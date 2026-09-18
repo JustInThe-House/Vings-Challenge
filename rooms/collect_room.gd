@@ -16,7 +16,8 @@ func _ready() -> void:
 	Music.play()
 	total_dolls = dolls.get_child_count()
 	dolls_left = total_dolls
-	dolls_left_text.text = "Dolls Left: " + str(dolls_left)
+	# REFACTOR TO BE CALLED PLUSHIES
+	dolls_left_text.text = "Plushies Left: " + str(dolls_left)
 	
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -35,7 +36,7 @@ func _process(_delta: float) -> void:
 			get_tree().change_scene_to_file("res://run_room.tscn")
 		ving.fury = 1.0 - (dolls_left_actual/total_dolls)
 	dolls_left = dolls_left_actual
-	dolls_left_text.text = "Dolls Left: " + str(dolls_left)
+	dolls_left_text.text = "Plushies Left: " + str(dolls_left)
 	
 	var distance: float = jawsh.position.distance_to(ving.position)
 	if distance < 80.0 and SaveManager.save_data.shaders:
