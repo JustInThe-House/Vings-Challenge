@@ -2,8 +2,8 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://d4nqrmjyaia37"
-path.s3tc="res://.godot/imported/retro.png-56dc0615618010f629f3441ec0a9ef0d.s3tc.ctex"
+uid="uid://b1v82nwfds06c"
+path.s3tc="res://.godot/imported/neutral.png-f4c6f308d9ff314c4ea1b116130bdcf0.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://tilesets/retro.png"
-dest_files=["res://.godot/imported/retro.png-56dc0615618010f629f3441ec0a9ef0d.s3tc.ctex"]
+source_file="res://jawsh/neutral.png"
+dest_files=["res://.godot/imported/neutral.png-f4c6f308d9ff314c4ea1b116130bdcf0.s3tc.ctex"]
 
 [params]
 

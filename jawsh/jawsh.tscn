@@ -1,7 +1,8 @@
 [gd_scene format=3 uid="uid://tpedlxwfyd3t"]
 
 [ext_resource type="Script" uid="uid://wkrundivu03f" path="res://jawsh/jawsh.gd" id="1_flrai"]
-[ext_resource type="Texture2D" uid="uid://tm6d1p0utrnm" path="res://jawsh/icon.svg" id="1_mlfnx"]
+[ext_resource type="Texture2D" uid="uid://b1v82nwfds06c" path="res://jawsh/neutral.png" id="2_ejn7s"]
+[ext_resource type="Shader" uid="uid://ol4thaciu3t5" path="res://jawsh/outline.gdshader" id="3_fltcq"]
 [ext_resource type="PackedScene" uid="uid://bgmm2wr21g6pr" path="res://jawsh/spring_arm_camera.tscn" id="3_mlfnx"]
 [ext_resource type="Script" uid="uid://buyipha42ddfg" path="res://jawsh/on_ground_check.gd" id="4_wsjaa"]
 [ext_resource type="Script" uid="uid://d4asrld2slig0" path="res://jawsh/audio_listener_3d.gd" id="5_ejn7s"]
@@ -9,8 +10,20 @@
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_mlfnx"]
 bounce = 0.34
 
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_254a5"]
+render_priority = 0
+shader = ExtResource("3_fltcq")
+shader_parameter/outline_thickness = -0.04
+shader_parameter/speed = 2.0
+shader_parameter/noise_scale = 4.0
+shader_parameter/alpha = 1.0
+
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_wtokj"]
-albedo_texture = ExtResource("1_mlfnx")
+next_pass = SubResource("ShaderMaterial_254a5")
+albedo_texture = ExtResource("2_ejn7s")
+uv1_offset = Vector3(0, -0.01, 0)
+uv1_triplanar_sharpness = 1.9318715e-05
+texture_filter = 2
 
 [sub_resource type="SphereMesh" id="SphereMesh_cmcmu"]
 material = SubResource("StandardMaterial3D_wtokj")

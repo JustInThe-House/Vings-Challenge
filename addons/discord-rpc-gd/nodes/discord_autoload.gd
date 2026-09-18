@@ -9,11 +9,11 @@ extends Node
 func _ready() -> void:
 	DiscordRPC.app_id = 1529508561351344279 # Application ID
 	DiscordRPC.details = "Made by Kino Productions"
-	DiscordRPC.state = "what is this thing"
+	DiscordRPC.state = "Running from VinG"
 	DiscordRPC.large_image = "drega" # Image key from "Art Assets"
-	DiscordRPC.large_image_text = "holy shit"
+	DiscordRPC.large_image_text = "wow"
 	DiscordRPC.small_image = "drega" # Image key from "Art Assets"
-	DiscordRPC.small_image_text = "its dream"
+	DiscordRPC.small_image_text = "its ving"
 
 	DiscordRPC.start_timestamp = int(Time.get_unix_time_from_system()) # "02:46 elapsed"
 	#DiscordRPC.end_timestamp = int(Time.get_unix_time_from_system()) + 3600 # +1 hour in unix time / "01:00:00 remaining"
