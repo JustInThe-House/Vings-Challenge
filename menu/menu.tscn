@@ -8,6 +8,7 @@
 [ext_resource type="Script" uid="uid://b7lt6ewkcevc1" path="res://menu/title.gd" id="5_juveg"]
 [ext_resource type="Script" uid="uid://bm74r6d1y5d5s" path="res://menu/trailer_part.gd" id="6_s4hbh"]
 [ext_resource type="Script" uid="uid://f0ked1idfsgc" path="res://menu/win_star_outline.gd" id="6_v6yed"]
+[ext_resource type="LabelSettings" uid="uid://bd7f3lvgy6k8u" path="res://new_menu/settings_label.tres" id="8_6fswf"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_juveg"]
 font_size = 118
@@ -16,16 +17,6 @@ font_color = Color(0, 0.439, 0, 1)
 [sub_resource type="LabelSettings" id="LabelSettings_aycgx"]
 font_size = 63
 font_color = Color(0, 1, 0, 1)
-
-[sub_resource type="LabelSettings" id="LabelSettings_s4hbh"]
-font_size = 70
-font_color = Color(0, 0.439, 0, 1)
-outline_color = Color(0, 1, 0, 1)
-
-[sub_resource type="LabelSettings" id="LabelSettings_6fswf"]
-font_size = 70
-font_color = Color(0, 0.439, 0, 1)
-outline_color = Color(0, 1, 0, 1)
 
 [sub_resource type="LabelSettings" id="LabelSettings_bc54p"]
 font_size = 70
@@ -58,6 +49,11 @@ font_color = Color(0, 0.439, 0, 1)
 outline_color = Color(0, 1, 0, 1)
 
 [sub_resource type="LabelSettings" id="LabelSettings_bpqio"]
+font_size = 70
+font_color = Color(0, 0.439, 0, 1)
+outline_color = Color(0, 1, 0, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_o0hb3"]
 font_size = 70
 font_color = Color(0, 0.439, 0, 1)
 outline_color = Color(0, 1, 0, 1)
@@ -444,7 +440,7 @@ theme_override_constants/separation = -2
 layout_mode = 2
 theme_override_fonts/font = ExtResource("2_6nwqt")
 text = "Play"
-label_settings = SubResource("LabelSettings_s4hbh")
+label_settings = ExtResource("8_6fswf")
 horizontal_alignment = 1
 script = ExtResource("3_6nwqt")
 OUTLINE_SPACING = 3
@@ -454,7 +450,7 @@ unique_name_in_owner = true
 layout_mode = 2
 theme_override_fonts/font = ExtResource("2_6nwqt")
 text = "Controls"
-label_settings = SubResource("LabelSettings_6fswf")
+label_settings = SubResource("LabelSettings_bc54p")
 horizontal_alignment = 1
 script = ExtResource("3_6nwqt")
 OUTLINE_SPACING = 3
@@ -463,7 +459,7 @@ OUTLINE_SPACING = 3
 layout_mode = 2
 theme_override_fonts/font = ExtResource("2_6nwqt")
 text = "Settings"
-label_settings = SubResource("LabelSettings_bc54p")
+label_settings = SubResource("LabelSettings_043lm")
 horizontal_alignment = 1
 script = ExtResource("3_6nwqt")
 OUTLINE_SPACING = 3
@@ -472,7 +468,7 @@ OUTLINE_SPACING = 3
 layout_mode = 2
 theme_override_fonts/font = ExtResource("2_6nwqt")
 text = "Exit"
-label_settings = SubResource("LabelSettings_043lm")
+label_settings = SubResource("LabelSettings_iesyu")
 horizontal_alignment = 1
 script = ExtResource("3_6nwqt")
 OUTLINE_SPACING = 3
@@ -512,7 +508,7 @@ unique_name_in_owner = true
 layout_mode = 2
 theme_override_fonts/font = ExtResource("2_6nwqt")
 text = "Volume: 30%"
-label_settings = SubResource("LabelSettings_iesyu")
+label_settings = SubResource("LabelSettings_iuxab")
 horizontal_alignment = 1
 script = ExtResource("3_6nwqt")
 OUTLINE_SPACING = 3
@@ -522,7 +518,7 @@ unique_name_in_owner = true
 layout_mode = 2
 theme_override_fonts/font = ExtResource("2_6nwqt")
 text = "Vsync"
-label_settings = SubResource("LabelSettings_iuxab")
+label_settings = SubResource("LabelSettings_dmxns")
 horizontal_alignment = 1
 script = ExtResource("3_6nwqt")
 OUTLINE_SPACING = 3
@@ -532,7 +528,7 @@ unique_name_in_owner = true
 layout_mode = 2
 theme_override_fonts/font = ExtResource("2_6nwqt")
 text = "60 FPS Cap"
-label_settings = SubResource("LabelSettings_dmxns")
+label_settings = SubResource("LabelSettings_3vbpa")
 horizontal_alignment = 1
 script = ExtResource("3_6nwqt")
 OUTLINE_SPACING = 3
@@ -542,7 +538,7 @@ unique_name_in_owner = true
 layout_mode = 2
 theme_override_fonts/font = ExtResource("2_6nwqt")
 text = "Settings"
-label_settings = SubResource("LabelSettings_3vbpa")
+label_settings = SubResource("LabelSettings_bpqio")
 horizontal_alignment = 1
 script = ExtResource("3_6nwqt")
 OUTLINE_SPACING = 3
@@ -551,7 +547,7 @@ OUTLINE_SPACING = 3
 layout_mode = 2
 theme_override_fonts/font = ExtResource("2_6nwqt")
 text = "Back"
-label_settings = SubResource("LabelSettings_bpqio")
+label_settings = SubResource("LabelSettings_o0hb3")
 horizontal_alignment = 1
 script = ExtResource("3_6nwqt")
 OUTLINE_SPACING = 3

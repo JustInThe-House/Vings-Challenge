@@ -36,8 +36,9 @@ radius = 0.35
 [node name="Jawsh" type="RigidBody3D" unique_id=208343381]
 physics_material_override = SubResource("PhysicsMaterial_mlfnx")
 gravity_scale = 4.678
-angular_damp = 6.0
+angular_damp = 8.0
 script = ExtResource("1_flrai")
+roll_speed = 300.0
 
 [node name="Model" type="MeshInstance3D" parent="." unique_id=829259342]
 cast_shadow = 0

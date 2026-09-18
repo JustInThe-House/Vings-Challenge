@@ -17,35 +17,14 @@ func _physics_process(delta: float) -> void:
 	#ball roll movement. Must be relative to the camera.
 	var input_dir: Vector2 = Input.get_vector("move_left", "move_right", "move_up", "move_down")
 	if CAN_MOVE:
-		if not Universal.on_controller:
-			#allows for fast, good feeling diagonals in keyboard mode
-			if Input.is_action_pressed("move_up"):
-				angular_velocity.x -= roll_speed * delta * cos(camera.global_rotation.y)
-				angular_velocity.z += roll_speed * delta * sin(camera.global_rotation.y)
-			elif Input.is_action_pressed("move_down"):
-				angular_velocity.x += roll_speed * delta * cos(camera.global_rotation.y)
-				angular_velocity.z -= roll_speed * delta * sin(camera.global_rotation.y)
-			if Input.is_action_pressed("move_left"):
-				angular_velocity.z += roll_speed * delta * cos(camera.global_rotation.y)
-				angular_velocity.x += roll_speed * delta * sin(camera.global_rotation.y)
-			elif Input.is_action_pressed("move_right"):
-				angular_velocity.z -= roll_speed * delta * cos(camera.global_rotation.y)
-				angular_velocity.x -= roll_speed * delta * sin(camera.global_rotation.y)
-		else:
-			# allows for controllability in controller mode. somehow slows diagonal movement? idk, its fine
-			if input_dir.y != 0.0:
-				angular_velocity.x += input_dir.y * roll_speed * delta * cos(camera.global_rotation.y)
-				angular_velocity.z -= input_dir.y * roll_speed * delta * sin(camera.global_rotation.y)
-			if input_dir.x != 0.0:
-				angular_velocity.x -= input_dir.x * roll_speed * delta * sin(camera.global_rotation.y)
-				angular_velocity.z -= input_dir.x * roll_speed * delta * cos(camera.global_rotation.y)
-			if input_dir.x == 0.0 and input_dir.y == 0.0:
-				angular_velocity.z = move_toward(angular_velocity.z, 0.0, delta)
-				angular_velocity.x = move_toward(angular_velocity.x, 0.0, delta)
-		
-		# limit max rolling speed
-		angular_velocity.x = clamp(angular_velocity.x, -MAX_ROLL_SPEED, MAX_ROLL_SPEED)
-		angular_velocity.z = clamp(angular_velocity.z, -MAX_ROLL_SPEED, MAX_ROLL_SPEED)
+		if input_dir.y != 0.0:
+			angular_velocity.x += input_dir.y * roll_speed * delta * cos(camera.global_rotation.y)
+			angular_velocity.z -= input_dir.y * roll_speed * delta * sin(camera.global_rotation.y)
+		if input_dir.x != 0.0:
+			angular_velocity.x -= input_dir.x * roll_speed * delta * sin(camera.global_rotation.y)
+			angular_velocity.z -= input_dir.x * roll_speed * delta * cos(camera.global_rotation.y)
+		# may make it so you are slower to move in a direction when starting. this is so you dont immediately go fast, 
+		#AND on controller you dont quickly move in a different direction because you cant hold your finger perfectly straight
 		#print(angular_velocity)
 
 	

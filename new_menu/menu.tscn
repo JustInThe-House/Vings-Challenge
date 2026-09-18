@@ -1,0 +1,197 @@
+[gd_scene format=3 uid="uid://46rn7i2lp30l"]
+
+[ext_resource type="Script" uid="uid://b2g6scueirri0" path="res://new_menu/menu.gd" id="1_88u1e"]
+[ext_resource type="ArrayMesh" uid="uid://do6uqwp4sc66i" path="res://ving doll/Cube_008.res" id="1_bjtf3"]
+[ext_resource type="Theme" uid="uid://dl24m3jg7tisc" path="res://new_menu/menu_theme.tres" id="1_ufjxo"]
+[ext_resource type="Script" uid="uid://i2lxwg26ruwe" path="res://menu/ving_doll.gd" id="2_pmohl"]
+[ext_resource type="FontFile" uid="uid://crfpfiph0a5jr" path="res://Comic Sans MS Bold.ttf" id="3_88u1e"]
+[ext_resource type="Script" uid="uid://bm74r6d1y5d5s" path="res://menu/trailer_part.gd" id="4_ncxkj"]
+[ext_resource type="Script" uid="uid://f0ked1idfsgc" path="res://menu/win_star_outline.gd" id="5_028l1"]
+[ext_resource type="Script" uid="uid://cooh3bgcdntm" path="res://new_menu/menu_button.gd" id="7_pmohl"]
+[ext_resource type="Script" uid="uid://be5jbn7v64sel" path="res://new_menu/play.gd" id="8_ncxkj"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_jx70r"]
+font_size = 63
+font_color = Color(0, 1, 0, 1)
+
+[node name="NewMainMenu" type="Control" unique_id=1745207742]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_88u1e")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1896191533]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -640.0
+offset_top = -360.0
+offset_right = 640.0
+offset_bottom = 360.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 1)
+metadata/_edit_lock_ = true
+
+[node name="Node2D" type="Node2D" parent="." unique_id=1804945086]
+position = Vector2(-800, 360)
+
+[node name="Parallax2D" type="Parallax2D" parent="Node2D" unique_id=1565731752]
+scroll_offset = Vector2(-28.34, 62.975)
+repeat_size = Vector2(240, 160)
+autoscroll = Vector2(120, 80)
+repeat_times = 6
+follow_viewport = false
+
+[node name="SubViewportContainer" type="SubViewportContainer" parent="Node2D/Parallax2D" unique_id=451006671]
+offset_left = -208.0
+offset_top = 1.0
+offset_right = 264.0
+offset_bottom = 159.0
+stretch = true
+
+[node name="SubViewport" type="SubViewport" parent="Node2D/Parallax2D/SubViewportContainer" unique_id=2010181500]
+transparent_bg = true
+handle_input_locally = false
+size = Vector2i(472, 158)
+render_target_update_mode = 4
+
+[node name="VingDoll" type="MeshInstance3D" parent="Node2D/Parallax2D/SubViewportContainer/SubViewport" unique_id=2077450482]
+transform = Transform3D(18, 0, 0, 0, -7.86805e-07, 18, 0, -18, -7.86805e-07, 0, 0.22418678, -0.028792828)
+mesh = ExtResource("1_bjtf3")
+script = ExtResource("2_pmohl")
+
+[node name="Camera3D" type="Camera3D" parent="Node2D/Parallax2D/SubViewportContainer/SubViewport" unique_id=1018916288]
+transform = Transform3D(0.7071068, 0.3535534, -0.61237246, 0, 0.8660254, 0.50000006, 0.7071068, -0.3535534, 0.61237246, -0.75, 0.75, 0.75)
+
+[node name="OmniLight3D" type="OmniLight3D" parent="Node2D/Parallax2D/SubViewportContainer/SubViewport" unique_id=490197128]
+transform = Transform3D(0.7071068, 0.3535534, -0.61237246, 0, 0.8660254, 0.50000006, 0.7071068, -0.3535534, 0.61237246, -1, 1, 1)
+
+[node name="Actions & Info" type="Node2D" parent="." unique_id=39404602]
+
+[node name="Trailer Part" type="Label" parent="Actions & Info" unique_id=1045231616]
+visible = false
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -676.0
+offset_top = 12.000122
+offset_right = 642.0
+offset_bottom = 111.00012
+grow_horizontal = 2
+grow_vertical = 2
+pivot_offset = Vector2(720, 0)
+theme_override_fonts/font = ExtResource("3_88u1e")
+text = "Play on https://justinthehouse.itch.io/"
+label_settings = SubResource("LabelSettings_jx70r")
+horizontal_alignment = 1
+script = ExtResource("4_ncxkj")
+
+[node name="WinStar" type="Node2D" parent="Actions & Info" unique_id=1056330392]
+
+[node name="StarOutline" type="Polygon2D" parent="Actions & Info/WinStar" unique_id=1583047104]
+position = Vector2(-96, 167.40503)
+scale = Vector2(1.245, 1.245)
+skew = -0.087266445
+color = Color(0, 1, 0, 1)
+polygon = PackedVector2Array(-23.443024, -80.29827, 2.9353027, 0.06915283, 89.83978, 0.51670074, 17.768982, 64.61727, 25.041687, 132.25371, -25.140198, 83.52638, -76.86151, 130.11186, -68.77661, 58.799088, -147.78436, -0.97104263, -52.26477, 0.06915283)
+uv = PackedVector2Array(-12.62262, -74.21881, 16.126953, 4.5763855, 98.11658, 4.5763855, 13.9973755, 53.55719, 40.61737, 117.44519, -26.465027, 58.881195, -76.51062, 115.3156, -63.733032, 48.2332, -154.24103, 8.835587, -64.79785, 6.7059937)
+script = ExtResource("5_028l1")
+
+[node name="StarBase" type="Polygon2D" parent="Actions & Info/WinStar" unique_id=626767622]
+position = Vector2(-111.40503, 172.80005)
+scale = Vector2(0.7, 0.7)
+color = Color(0, 0.439, 0, 1)
+polygon = PackedVector2Array(-23.443024, -80.29827, 2.9353027, 0.06915283, 89.83978, 0.51670074, 17.768982, 64.61727, 25.041687, 132.25371, -25.140198, 83.52638, -76.86151, 130.11186, -68.77661, 58.799088, -147.78436, -0.97104263, -52.26477, 0.06915283)
+uv = PackedVector2Array(-12.62262, -74.21881, 16.126953, 4.5763855, 98.11658, 4.5763855, 13.9973755, 53.55719, 40.61737, 117.44519, -26.465027, 58.881195, -76.51062, 115.3156, -63.733032, 48.2332, -154.24103, 8.835587, -64.79785, 6.7059937)
+
+[node name="Credits" type="Label" parent="Actions & Info" unique_id=1533966352]
+offset_left = 340.0
+offset_top = 190.0
+offset_right = 637.00037
+offset_bottom = 397.00006
+theme_override_constants/line_spacing = -2
+theme_override_fonts/font = ExtResource("3_88u1e")
+theme_override_font_sizes/font_size = 30
+text = "Created by
+JustInTheHouse
+Models & Sprites by
+Swaglexoid
+"
+horizontal_alignment = 1
+
+[node name="ControlsText" type="Label" parent="Actions & Info" unique_id=1669372822]
+unique_name_in_owner = true
+offset_left = -216.0
+offset_top = -104.0
+offset_right = 580.0
+offset_bottom = 228.0
+theme = ExtResource("1_ufjxo")
+theme_override_colors/font_color = Color(0, 0.439, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 1, 0, 1)
+theme_override_constants/outline_size = 4
+theme_override_font_sizes/font_size = 45
+text = "Move: WASD/OKL;/Left Stick
+Camera: Mouse/Right Stick
+Confirm/Jump: Space/Enter/A
+Back: Shift/B
+(Controller sucks)"
+horizontal_alignment = 1
+
+[node name="MenuText" type="VBoxContainer" parent="Actions & Info" unique_id=141748417]
+offset_left = 729.0
+offset_top = 127.0
+offset_right = 1018.0
+offset_bottom = 549.0
+theme_override_constants/separation = -2
+
+[node name="Play" type="Button" parent="Actions & Info/MenuText" unique_id=1224134852]
+layout_mode = 2
+focus_neighbor_top = NodePath("../Exit")
+focus_neighbor_bottom = NodePath("../Controls")
+theme = ExtResource("1_ufjxo")
+text = "Play"
+flat = true
+script = ExtResource("8_ncxkj")
+metadata/_custom_type_script = "uid://cooh3bgcdntm"
+
+[node name="Controls" type="Button" parent="Actions & Info/MenuText" unique_id=1991594738]
+layout_mode = 2
+focus_neighbor_top = NodePath("../Play")
+focus_neighbor_bottom = NodePath("../Settings")
+focus_mode = 0
+theme = ExtResource("1_ufjxo")
+text = "Controls"
+flat = true
+script = ExtResource("7_pmohl")
+metadata/_custom_type_script = "uid://cooh3bgcdntm"
+
+[node name="Settings" type="Button" parent="Actions & Info/MenuText" unique_id=630214938]
+layout_mode = 2
+focus_neighbor_top = NodePath("../Controls")
+focus_neighbor_bottom = NodePath("../Exit")
+focus_mode = 0
+theme = ExtResource("1_ufjxo")
+text = "Settings"
+flat = true
+script = ExtResource("7_pmohl")
+metadata/_custom_type_script = "uid://cooh3bgcdntm"
+
+[node name="Exit" type="Button" parent="Actions & Info/MenuText" unique_id=1276312024]
+layout_mode = 2
+focus_neighbor_top = NodePath("../Settings")
+focus_neighbor_bottom = NodePath("../Play")
+focus_mode = 0
+theme = ExtResource("1_ufjxo")
+text = "Exit"
+flat = true
+script = ExtResource("7_pmohl")
+metadata/_custom_type_script = "uid://cooh3bgcdntm"
