@@ -1,13 +1,21 @@
 [gd_resource type="Theme" format=3 uid="uid://dl24m3jg7tisc"]
 
-[ext_resource type="FontFile" uid="uid://crfpfiph0a5jr" path="res://Comic Sans MS Bold.ttf" id="1_61wfl"]
+[ext_resource type="FontFile" uid="uid://bbnj7pnyjtedq" path="res://PlaypenSans-VariableFont_wght.ttf" id="1_61wfl"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_61wfl"]
 
+[sub_resource type="FontVariation" id="FontVariation_68678"]
+base_font = ExtResource("1_61wfl")
+variation_opentype = {
+2003265652: 800
+}
+variation_embolden = 0.5
+
 [resource]
-default_font = ExtResource("1_61wfl")
+default_font = SubResource("FontVariation_68678")
 default_font_size = 70
 Button/colors/font_color = Color(0, 0.4392157, 0, 1)
 Button/colors/font_focus_color = Color(0, 0.4392157, 0, 1)
 Button/colors/font_outline_color = Color(0, 1, 0, 1)
 Button/styles/focus = SubResource("StyleBoxEmpty_61wfl")
+Label/colors/font_color = Color(0, 0.4392157, 0, 1)

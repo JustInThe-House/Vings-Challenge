@@ -5,7 +5,7 @@ var MasterAudioVolume: float = AudioServer.get_bus_volume_db(AudioServer.get_bus
 var volume_perc: float = 0.6
 var played_once: bool = false
 var on_controller: bool = false
-var main_menu_scene: String = "res://new_menu/menu.tscn" # "res://menu/menu.tscn"
+var main_menu_scene: String = "res://menu/menu.tscn"
 
 var game_over_scene: String = "res://gameover/gameover.tscn"
 
@@ -31,6 +31,12 @@ func _input(event: InputEvent) -> void:
 		change_volume(0.01)
 	elif event.is_action_pressed("volume_down", true):
 		change_volume(-0.01)
+	
+	# other universal controls, not specifically set to a controller
+	if event.is_action_pressed("fullscreen"):
+		Universal.set_fullscreen()
+	elif event.is_action_pressed("quit"):
+		get_tree().quit()
 
 # this lets you can tab out of game.
 func _notification(what: int) -> void:

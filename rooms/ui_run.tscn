@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://cst3is2p2vex6"]
 
 [ext_resource type="Script" uid="uid://d0eriq8dqnwg2" path="res://rooms/ui_run.gd" id="1_p3xrv"]
+[ext_resource type="Theme" uid="uid://dl24m3jg7tisc" path="res://menu/menu_theme.tres" id="2_kvy0t"]
 
 [node name="UI" type="Control" unique_id=1563677572]
 layout_mode = 3
@@ -29,7 +30,7 @@ offset_right = 638.0
 offset_bottom = 360.5
 grow_horizontal = 2
 grow_vertical = 2
-theme_override_colors/font_color = Color(0, 0.439, 0, 1)
+theme = ExtResource("2_kvy0t")
 theme_override_font_sizes/font_size = 100
 text = "RUN!!!!!!!!!!
 

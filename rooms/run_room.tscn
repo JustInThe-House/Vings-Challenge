@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://4u02w7of4bq4"]
 
-[ext_resource type="Script" uid="uid://cgest2ft2fb3k" path="res://run_room.gd" id="1_yeh0e"]
+[ext_resource type="Script" uid="uid://cgest2ft2fb3k" path="res://rooms/run_room.gd" id="1_yeh0e"]
 [ext_resource type="PackedScene" uid="uid://tpedlxwfyd3t" path="res://jawsh/jawsh.tscn" id="2_ik565"]
 [ext_resource type="Shader" uid="uid://dsc1555ndnkeb" path="res://utilities/crt.gdshader" id="2_yeh0e"]
 [ext_resource type="PackedScene" uid="uid://u25vubh1fgmg" path="res://ving doll/ving_doll.tscn" id="3_ik565"]
@@ -16,6 +16,12 @@ fog_density = 1.0
 fog_depth_curve = 0.32987857
 fog_depth_begin = 0.0
 fog_depth_end = 120.0
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_yf5fn"]
+albedo_color = Color(1.0161765, 1.0156895, 0, 1)
+metallic = 1.0
+normal_enabled = true
+normal_scale = 16.0
 
 [sub_resource type="WorldBoundaryShape3D" id="WorldBoundaryShape3D_yeh0e"]
 
@@ -50,6 +56,9 @@ unique_name_in_owner = true
 
 [node name="VingDoll" parent="Dolls" unique_id=919709208 instance=ExtResource("3_ik565")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 2, 344)
+
+[node name="MeshInstance3D" parent="Dolls/VingDoll" index="0" unique_id=1765326569]
+material_overlay = SubResource("StandardMaterial3D_yf5fn")
 
 [node name="Vings" type="Node3D" parent="." unique_id=578859053]
 
@@ -561,6 +570,7 @@ color = Color(1, 1, 1, 0)
 
 [connection signal="body_entered" from="DeathBarrier" to="." method="_on_death_barrier_body_entered"]
 
+[editable path="Dolls/VingDoll"]
 [editable path="Vings/Ving"]
 [editable path="Vings/Ving2"]
 [editable path="Vings/Ving4"]

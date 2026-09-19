@@ -2,13 +2,13 @@
 
 importer="font_data_dynamic"
 type="FontFile"
-uid="uid://crfpfiph0a5jr"
-path="res://.godot/imported/Comic Sans MS Bold.ttf-e2f0316ea4838177aa6da17dc4cd96fa.fontdata"
+uid="uid://bbnj7pnyjtedq"
+path="res://.godot/imported/PlaypenSans-VariableFont_wght.ttf-d0274d82694d9e0b61a5b3b76f08fc53.fontdata"
 
 [deps]
 
-source_file="res://Comic Sans MS Bold.ttf"
-dest_files=["res://.godot/imported/Comic Sans MS Bold.ttf-e2f0316ea4838177aa6da17dc4cd96fa.fontdata"]
+source_file="res://PlaypenSans-VariableFont_wght.ttf"
+dest_files=["res://.godot/imported/PlaypenSans-VariableFont_wght.ttf-d0274d82694d9e0b61a5b3b76f08fc53.fontdata"]
 
 [params]
 
@@ -22,7 +22,7 @@ msdf_size=48
 allow_system_fallback=true
 force_autohinter=false
 modulate_color_glyphs=false
-hinting=1
+hinting=3
 subpixel_positioning=4
 keep_rounding_remainders=true
 oversampling=0.0

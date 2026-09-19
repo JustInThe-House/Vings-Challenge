@@ -22,11 +22,11 @@ func _ready() -> void:
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(_delta: float) -> void:
-	var dolls_left_actual: float = dolls.get_child_count()
+	var dolls_left_actual: int = dolls.get_child_count()
 	if dolls_left != dolls_left_actual:
 		if dolls_left_actual == 0:
-			get_tree().change_scene_to_file("res://run_room.tscn")
-		ving.fury = 1.0 - (dolls_left_actual/total_dolls)
+			get_tree().change_scene_to_file("res://rooms/run_room.tscn")
+		ving.fury = 1.0 - (dolls_left_actual/float(total_dolls))
 	dolls_left = dolls_left_actual
 	dolls_left_text.text = "Plushies Left: " + str(dolls_left)
 	

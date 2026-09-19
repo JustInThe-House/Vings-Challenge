@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://c4p3x5axrxdhd" path="res://gameover/gameover.gd" id="1_iywfi"]
 [ext_resource type="Texture2D" uid="uid://bi66fauwvb4m8" path="res://ving/ving.png" id="2_d573a"]
+[ext_resource type="Theme" uid="uid://dl24m3jg7tisc" path="res://menu/menu_theme.tres" id="3_b0b8a"]
 [ext_resource type="AudioStream" uid="uid://cmahhx4hrkcj8" path="res://ving/ving_scream_new.wav" id="3_d573a"]
 
 [sub_resource type="Animation" id="Animation_2mkfd"]
@@ -125,11 +126,11 @@ texture = ExtResource("2_d573a")
 [node name="YouDie" type="Label" parent="." unique_id=316941554]
 modulate = Color(1, 1, 1, 0)
 layout_mode = 0
-offset_left = -225.0
-offset_top = -355.0
-offset_right = 225.0
-offset_bottom = -180.0
-theme_override_colors/font_color = Color(0, 0.4392157, 0, 1)
+offset_left = -241.0
+offset_top = -366.0
+offset_right = 227.0
+offset_bottom = -172.0
+theme = ExtResource("3_b0b8a")
 theme_override_font_sizes/font_size = 128
 text = "you die"
 

@@ -1,31 +1,38 @@
 [gd_scene format=3 uid="uid://46rn7i2lp30l"]
 
-[ext_resource type="Script" uid="uid://b2g6scueirri0" path="res://new_menu/menu.gd" id="1_88u1e"]
-[ext_resource type="ArrayMesh" uid="uid://do6uqwp4sc66i" path="res://ving doll/Cube_008.res" id="1_bjtf3"]
-[ext_resource type="Theme" uid="uid://dl24m3jg7tisc" path="res://new_menu/menu_theme.tres" id="1_ufjxo"]
-[ext_resource type="Script" uid="uid://i2lxwg26ruwe" path="res://menu/ving_doll.gd" id="2_pmohl"]
-[ext_resource type="FontFile" uid="uid://crfpfiph0a5jr" path="res://Comic Sans MS Bold.ttf" id="3_88u1e"]
-[ext_resource type="Script" uid="uid://bm74r6d1y5d5s" path="res://menu/trailer_part.gd" id="4_ncxkj"]
-[ext_resource type="Script" uid="uid://b7lt6ewkcevc1" path="res://menu/title.gd" id="5_0kji3"]
-[ext_resource type="Script" uid="uid://f0ked1idfsgc" path="res://menu/win_star_outline.gd" id="5_028l1"]
-[ext_resource type="Script" uid="uid://srfebxlggwdl" path="res://new_menu/controls_text.gd" id="8_j4d3i"]
-[ext_resource type="Script" uid="uid://be5jbn7v64sel" path="res://new_menu/play.gd" id="8_ncxkj"]
-[ext_resource type="Script" uid="uid://defqxtokn2si" path="res://new_menu/settings.gd" id="9_028l1"]
-[ext_resource type="Script" uid="uid://dslxsf5gtjycb" path="res://new_menu/exit.gd" id="9_ncxkj"]
-[ext_resource type="Script" uid="uid://d1oughiqwl5q4" path="res://new_menu/main_menu.gd" id="9_pgjo5"]
-[ext_resource type="Script" uid="uid://cc3vfsbpt03m8" path="res://new_menu/controls.gd" id="10_1hfxg"]
-[ext_resource type="Script" uid="uid://bheohntyr3wyb" path="res://new_menu/settings_menu.gd" id="14_8tq60"]
-[ext_resource type="Script" uid="uid://dtrfo42o2jelb" path="res://new_menu/volume.gd" id="15_fcpow"]
-[ext_resource type="Script" uid="uid://bjvb7nk036awh" path="res://new_menu/vsync.gd" id="16_8tq60"]
-[ext_resource type="Script" uid="uid://clg5ifmkmmn2c" path="res://new_menu/fps_cap.gd" id="17_o3pjc"]
-[ext_resource type="Script" uid="uid://6ulcod7q5irg" path="res://new_menu/shaders.gd" id="18_guho4"]
-[ext_resource type="Script" uid="uid://degr85ucdjdkh" path="res://new_menu/back.gd" id="19_fcpow"]
+[ext_resource type="Script" uid="uid://b2g6scueirri0" path="res://menu/menu.gd" id="1_p0n8t"]
+[ext_resource type="ArrayMesh" uid="uid://do6uqwp4sc66i" path="res://ving doll/Cube_008.res" id="2_tmd6c"]
+[ext_resource type="Script" uid="uid://i2lxwg26ruwe" path="res://menu/ving_doll.gd" id="3_h81yq"]
+[ext_resource type="Script" uid="uid://bm74r6d1y5d5s" path="res://menu/trailer_part.gd" id="4_eorms"]
+[ext_resource type="Script" uid="uid://f0ked1idfsgc" path="res://menu/win_star_outline.gd" id="5_t2dg8"]
+[ext_resource type="Theme" uid="uid://dl24m3jg7tisc" path="res://menu/menu_theme.tres" id="6_b4h5o"]
+[ext_resource type="Script" uid="uid://srfebxlggwdl" path="res://menu/controls_text.gd" id="7_dbvex"]
+[ext_resource type="Script" uid="uid://d1oughiqwl5q4" path="res://menu/main_menu.gd" id="8_uysh8"]
+[ext_resource type="Script" uid="uid://be5jbn7v64sel" path="res://menu/play.gd" id="9_pm5mm"]
+[ext_resource type="Script" uid="uid://cc3vfsbpt03m8" path="res://menu/controls.gd" id="10_dxffa"]
+[ext_resource type="Script" uid="uid://defqxtokn2si" path="res://menu/settings.gd" id="11_e0uss"]
+[ext_resource type="Script" uid="uid://dslxsf5gtjycb" path="res://menu/exit.gd" id="12_42cyn"]
+[ext_resource type="Script" uid="uid://bheohntyr3wyb" path="res://menu/settings_menu.gd" id="13_6s3j4"]
+[ext_resource type="Script" uid="uid://dtrfo42o2jelb" path="res://menu/volume.gd" id="14_ndece"]
+[ext_resource type="Script" uid="uid://bjvb7nk036awh" path="res://menu/vsync.gd" id="15_6q5d0"]
+[ext_resource type="Script" uid="uid://clg5ifmkmmn2c" path="res://menu/fps_cap.gd" id="16_lrfri"]
+[ext_resource type="Script" uid="uid://6ulcod7q5irg" path="res://menu/shaders.gd" id="17_bu6d0"]
+[ext_resource type="Script" uid="uid://degr85ucdjdkh" path="res://menu/back.gd" id="18_s34wi"]
+[ext_resource type="FontFile" uid="uid://bbnj7pnyjtedq" path="res://PlaypenSans-VariableFont_wght.ttf" id="19_sy1yj"]
+[ext_resource type="Script" uid="uid://b7lt6ewkcevc1" path="res://menu/title.gd" id="20_x2kxn"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_jx70r"]
 font_size = 63
 font_color = Color(0, 1, 0, 1)
 
+[sub_resource type="FontVariation" id="FontVariation_yf5fn"]
+base_font = ExtResource("19_sy1yj")
+variation_opentype = {
+2003265652: 800
+}
+
 [sub_resource type="LabelSettings" id="LabelSettings_0jun2"]
+font = SubResource("FontVariation_yf5fn")
 font_size = 110
 font_color = Color(0, 0.439, 0, 1)
 
@@ -261,7 +268,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("1_88u1e")
+script = ExtResource("1_p0n8t")
 
 [node name="ColorRect" type="ColorRect" parent="." unique_id=1896191533]
 layout_mode = 1
@@ -304,8 +311,8 @@ render_target_update_mode = 4
 
 [node name="VingDoll" type="MeshInstance3D" parent="Node2D/Parallax2D/SubViewportContainer/SubViewport" unique_id=2077450482]
 transform = Transform3D(18, 0, 0, 0, -7.86805e-07, 18, 0, -18, -7.86805e-07, 0, 0.22418678, -0.028792828)
-mesh = ExtResource("1_bjtf3")
-script = ExtResource("2_pmohl")
+mesh = ExtResource("2_tmd6c")
+script = ExtResource("3_h81yq")
 
 [node name="Camera3D" type="Camera3D" parent="Node2D/Parallax2D/SubViewportContainer/SubViewport" unique_id=1018916288]
 transform = Transform3D(0.7071068, 0.3535534, -0.61237246, 0, 0.8660254, 0.50000006, 0.7071068, -0.3535534, 0.61237246, -0.75, 0.75, 0.75)
@@ -339,11 +346,10 @@ offset_bottom = 111.00012
 grow_horizontal = 2
 grow_vertical = 2
 pivot_offset = Vector2(720, 0)
-theme_override_fonts/font = ExtResource("3_88u1e")
 text = "Play on https://justinthehouse.itch.io/"
 label_settings = SubResource("LabelSettings_jx70r")
 horizontal_alignment = 1
-script = ExtResource("4_ncxkj")
+script = ExtResource("4_eorms")
 
 [node name="WinStar" type="Node2D" parent="Actions & Info" unique_id=1056330392]
 position = Vector2(640, 360)
@@ -355,7 +361,7 @@ skew = -0.087266445
 color = Color(0, 1, 0, 1)
 polygon = PackedVector2Array(-23.443024, -80.29827, 2.9353027, 0.06915283, 89.83978, 0.51670074, 17.768982, 64.61727, 25.041687, 132.25371, -25.140198, 83.52638, -76.86151, 130.11186, -68.77661, 58.799088, -147.78436, -0.97104263, -52.26477, 0.06915283)
 uv = PackedVector2Array(-12.62262, -74.21881, 16.126953, 4.5763855, 98.11658, 4.5763855, 13.9973755, 53.55719, 40.61737, 117.44519, -26.465027, 58.881195, -76.51062, 115.3156, -63.733032, 48.2332, -154.24103, 8.835587, -64.79785, 6.7059937)
-script = ExtResource("5_028l1")
+script = ExtResource("5_t2dg8")
 
 [node name="StarBase" type="Polygon2D" parent="Actions & Info/WinStar" unique_id=626767622]
 position = Vector2(-111.40503, 172.80005)
@@ -367,12 +373,13 @@ uv = PackedVector2Array(-12.62262, -74.21881, 16.126953, 4.5763855, 98.11658, 4.
 [node name="Credits" type="Label" parent="Actions & Info" unique_id=1533966352]
 propagate_maximum_size = true
 layout_mode = 0
-offset_left = 976.0
-offset_top = 550.0
-offset_right = 1273.0
-offset_bottom = 757.0
+offset_left = 970.0
+offset_top = 540.0
+offset_right = 1274.0
+offset_bottom = 767.0
+theme = ExtResource("6_b4h5o")
+theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_constants/line_spacing = -2
-theme_override_fonts/font = ExtResource("3_88u1e")
 theme_override_font_sizes/font_size = 30
 text = "Created by
 JustInTheHouse
@@ -383,22 +390,22 @@ horizontal_alignment = 1
 
 [node name="ControlsText" type="Label" parent="Actions & Info" unique_id=1669372822]
 layout_mode = 0
-offset_left = 424.0
-offset_top = 256.0
-offset_right = 1220.0
-offset_bottom = 588.0
-theme = ExtResource("1_ufjxo")
+offset_left = 416.0
+offset_top = 236.0
+offset_right = 1211.9988
+offset_bottom = 598.0
+theme = ExtResource("6_b4h5o")
 theme_override_colors/font_color = Color(0, 0.439, 0, 1)
 theme_override_colors/font_outline_color = Color(0, 1, 0, 1)
-theme_override_constants/outline_size = 4
-theme_override_font_sizes/font_size = 45
+theme_override_constants/outline_size = 6
+theme_override_font_sizes/font_size = 46
 text = "Move: WASD/OKL;/Left Stick
 Camera: Mouse/Right Stick
 Confirm/Jump: Space/Enter/A
 Back: Shift/B
 (Controller sucks)"
 horizontal_alignment = 1
-script = ExtResource("8_j4d3i")
+script = ExtResource("7_dbvex")
 
 [node name="MainMenu" type="VBoxContainer" parent="Actions & Info" unique_id=141748417]
 layout_mode = 0
@@ -407,16 +414,16 @@ offset_top = 220.0
 offset_right = 404.0
 offset_bottom = 642.00104
 theme_override_constants/separation = -2
-script = ExtResource("9_pgjo5")
+script = ExtResource("8_uysh8")
 metadata/_edit_group_ = true
 
 [node name="Play" type="Button" parent="Actions & Info/MainMenu" unique_id=1224134852 node_paths=PackedStringArray("focus_up", "focus_down")]
 layout_mode = 2
 mouse_filter = 2
-theme = ExtResource("1_ufjxo")
+theme = ExtResource("6_b4h5o")
 text = "Play"
 flat = true
-script = ExtResource("8_ncxkj")
+script = ExtResource("9_pm5mm")
 focus_up = NodePath("../Exit")
 focus_down = NodePath("../Controls")
 metadata/_custom_type_script = "uid://cooh3bgcdntm"
@@ -424,10 +431,10 @@ metadata/_custom_type_script = "uid://cooh3bgcdntm"
 [node name="Controls" type="Button" parent="Actions & Info/MainMenu" unique_id=1991594738 node_paths=PackedStringArray("focus_up", "focus_down")]
 layout_mode = 2
 mouse_filter = 2
-theme = ExtResource("1_ufjxo")
+theme = ExtResource("6_b4h5o")
 text = "Controls"
 flat = true
-script = ExtResource("10_1hfxg")
+script = ExtResource("10_dxffa")
 focus_up = NodePath("../Play")
 focus_down = NodePath("../Settings")
 metadata/_custom_type_script = "uid://cooh3bgcdntm"
@@ -435,10 +442,10 @@ metadata/_custom_type_script = "uid://cooh3bgcdntm"
 [node name="Settings" type="Button" parent="Actions & Info/MainMenu" unique_id=630214938 node_paths=PackedStringArray("focus_up", "focus_down")]
 layout_mode = 2
 mouse_filter = 2
-theme = ExtResource("1_ufjxo")
+theme = ExtResource("6_b4h5o")
 text = "Settings"
 flat = true
-script = ExtResource("9_028l1")
+script = ExtResource("11_e0uss")
 focus_up = NodePath("../Controls")
 focus_down = NodePath("../Exit")
 metadata/_custom_type_script = "uid://cooh3bgcdntm"
@@ -446,10 +453,10 @@ metadata/_custom_type_script = "uid://cooh3bgcdntm"
 [node name="Exit" type="Button" parent="Actions & Info/MainMenu" unique_id=1276312024 node_paths=PackedStringArray("focus_up", "focus_down")]
 layout_mode = 2
 mouse_filter = 2
-theme = ExtResource("1_ufjxo")
+theme = ExtResource("6_b4h5o")
 text = "Exit"
 flat = true
-script = ExtResource("9_ncxkj")
+script = ExtResource("12_42cyn")
 focus_up = NodePath("../Settings")
 focus_down = NodePath("../Play")
 metadata/_custom_type_script = "uid://cooh3bgcdntm"
@@ -462,16 +469,16 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 alignment = 1
-script = ExtResource("14_8tq60")
+script = ExtResource("13_6s3j4")
 metadata/_edit_group_ = true
 
 [node name="Volume" type="Button" parent="SettingsMenu" unique_id=728727972 node_paths=PackedStringArray("focus_up", "focus_down")]
 layout_mode = 2
 mouse_filter = 2
-theme = ExtResource("1_ufjxo")
+theme = ExtResource("6_b4h5o")
 text = "Volume"
 flat = true
-script = ExtResource("15_fcpow")
+script = ExtResource("14_ndece")
 focus_up = NodePath("../Back")
 focus_down = NodePath("../Vsync")
 metadata/_custom_type_script = "uid://cooh3bgcdntm"
@@ -479,10 +486,10 @@ metadata/_custom_type_script = "uid://cooh3bgcdntm"
 [node name="Vsync" type="Button" parent="SettingsMenu" unique_id=194653266 node_paths=PackedStringArray("focus_up", "focus_down")]
 layout_mode = 2
 mouse_filter = 2
-theme = ExtResource("1_ufjxo")
+theme = ExtResource("6_b4h5o")
 text = "Vsync"
 flat = true
-script = ExtResource("16_8tq60")
+script = ExtResource("15_6q5d0")
 focus_up = NodePath("../Volume")
 focus_down = NodePath("../FPSCap")
 metadata/_custom_type_script = "uid://cooh3bgcdntm"
@@ -490,10 +497,10 @@ metadata/_custom_type_script = "uid://cooh3bgcdntm"
 [node name="FPSCap" type="Button" parent="SettingsMenu" unique_id=2061444368 node_paths=PackedStringArray("focus_up", "focus_down")]
 layout_mode = 2
 mouse_filter = 2
-theme = ExtResource("1_ufjxo")
+theme = ExtResource("6_b4h5o")
 text = "FPS Cap"
 flat = true
-script = ExtResource("17_o3pjc")
+script = ExtResource("16_lrfri")
 focus_up = NodePath("../Vsync")
 focus_down = NodePath("../Shaders")
 metadata/_custom_type_script = "uid://cooh3bgcdntm"
@@ -501,10 +508,10 @@ metadata/_custom_type_script = "uid://cooh3bgcdntm"
 [node name="Shaders" type="Button" parent="SettingsMenu" unique_id=2040512252 node_paths=PackedStringArray("focus_up", "focus_down")]
 layout_mode = 2
 mouse_filter = 2
-theme = ExtResource("1_ufjxo")
+theme = ExtResource("6_b4h5o")
 text = "Shaders"
 flat = true
-script = ExtResource("18_guho4")
+script = ExtResource("17_bu6d0")
 focus_up = NodePath("../FPSCap")
 focus_down = NodePath("../Back")
 metadata/_custom_type_script = "uid://cooh3bgcdntm"
@@ -513,10 +520,10 @@ metadata/_custom_type_script = "uid://cooh3bgcdntm"
 unique_name_in_owner = true
 layout_mode = 2
 mouse_filter = 2
-theme = ExtResource("1_ufjxo")
+theme = ExtResource("6_b4h5o")
 text = "Back"
 flat = true
-script = ExtResource("19_fcpow")
+script = ExtResource("18_s34wi")
 focus_up = NodePath("../Shaders")
 focus_down = NodePath("../Volume")
 metadata/_custom_type_script = "uid://cooh3bgcdntm"
@@ -529,15 +536,15 @@ anchor_right = 0.5
 offset_left = -460.0
 offset_top = -190.0
 offset_right = 482.0
-offset_bottom = -24.0
+offset_bottom = -23.0
 grow_horizontal = 2
 pivot_offset_ratio = Vector2(0.5, 0.5)
-theme_override_fonts/font = ExtResource("3_88u1e")
+theme = ExtResource("6_b4h5o")
 theme_override_font_sizes/font_size = 108
 text = "VinG's Challenge"
 label_settings = SubResource("LabelSettings_0jun2")
 horizontal_alignment = 1
-script = ExtResource("5_0kji3")
+script = ExtResource("20_x2kxn")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=152157065]
 libraries/ = SubResource("AnimationLibrary_fcpow")
@@ -565,3 +572,4 @@ metadata/_edit_lock_ = true
 [connection signal="pressed" from="Actions & Info/MainMenu/Settings" to="Title" method="_on_settings_pressed"]
 [connection signal="pressed" from="SettingsMenu/Back" to="Actions & Info/MainMenu" method="_on_back_pressed"]
 [connection signal="pressed" from="SettingsMenu/Back" to="SettingsMenu" method="_on_back_pressed"]
+[connection signal="pressed" from="SettingsMenu/Back" to="Title" method="_on_back_pressed"]

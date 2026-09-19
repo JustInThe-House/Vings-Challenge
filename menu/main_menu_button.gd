@@ -17,7 +17,7 @@ class_name MainMenuButton extends Button
 var outline_time := 0.0
 @export var outline_speed := 6.0
 @export var outline_variance := 6.0
-@export var outline_base := 38.0
+@export var outline_base := 31.0
 @export_group("")
 
 #if extending, need to use super()

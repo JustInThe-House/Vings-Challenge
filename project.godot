@@ -27,7 +27,6 @@ buses/default_bus_layout="uid://djd1kiqcdm4q8"
 SaveManager="*uid://dvqurh47wd711"
 UtilsSound="*uid://be278fm3m73ei"
 Music="*uid://cbpudgdyro7t6"
-Controls="*uid://cvcgqqqvtd0lb"
 Universal="*uid://rp7qtk605l25"
 DiscordRPCLoader="*uid://23cef2bvaryu"
 
