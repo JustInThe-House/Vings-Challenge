@@ -1,0 +1,24 @@
+[gd_resource type="Theme" format=3 uid="uid://dfccbaokxpppi"]
+
+[ext_resource type="FontFile" uid="uid://bbnj7pnyjtedq" path="res://PlaypenSans-VariableFont_wght.ttf" id="1_jc70c"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_61wfl"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_g4v7s"]
+
+[sub_resource type="FontVariation" id="FontVariation_68678"]
+base_font = ExtResource("1_jc70c")
+variation_opentype = {
+2003265652: 800
+}
+variation_embolden = 0.5
+
+[resource]
+default_font = SubResource("FontVariation_68678")
+default_font_size = 64
+Button/colors/font_color = Color(0, 0.4392157, 0, 1)
+Button/colors/font_focus_color = Color(0, 0.4392157, 0, 1)
+Button/colors/font_outline_color = Color(0, 1, 0, 1)
+Button/styles/focus = SubResource("StyleBoxEmpty_61wfl")
+Button/styles/normal = SubResource("StyleBoxEmpty_g4v7s")
+Label/colors/font_color = Color(0, 0.4392157, 0, 1)

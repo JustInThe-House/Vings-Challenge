@@ -1,0 +1,109 @@
+[gd_scene format=3 uid="uid://hvww5qrnugkn"]
+
+[ext_resource type="Script" uid="uid://blq7vxgldm2gv" path="res://menu/pause/pause_menu.gd" id="1_04uu7"]
+[ext_resource type="Theme" uid="uid://dfccbaokxpppi" path="res://menu/pause_menu_theme.tres" id="1_fuf1y"]
+[ext_resource type="Script" uid="uid://cooh3bgcdntm" path="res://menu/main_menu_button.gd" id="2_4u03m"]
+[ext_resource type="Texture2D" uid="uid://bi66fauwvb4m8" path="res://ving/ving.png" id="2_xm4lc"]
+[ext_resource type="Script" uid="uid://fln0fofqityj" path="res://menu/pause/restart.gd" id="3_04uu7"]
+[ext_resource type="Script" uid="uid://gcexklskawhi" path="res://menu/pause/v_box_container.gd" id="3_f3dd2"]
+[ext_resource type="Script" uid="uid://dr60yvcf5wda2" path="res://menu/pause/menu.gd" id="4_4u03m"]
+[ext_resource type="Script" uid="uid://dslxsf5gtjycb" path="res://menu/exit.gd" id="4_f3dd2"]
+
+[node name="PauseMenu" type="Control" unique_id=1239628080]
+editor_description = "maybe fade music too"
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_04uu7")
+
+[node name="MarginContainer" type="MarginContainer" parent="." unique_id=1656688256]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = 45.0
+offset_bottom = 45.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 420
+theme_override_constants/margin_top = 20
+theme_override_constants/margin_right = 420
+theme_override_constants/margin_bottom = 120
+
+[node name="ColorRect" type="ColorRect" parent="MarginContainer" unique_id=1678985837]
+layout_mode = 2
+color = Color(0, 0, 0, 1)
+metadata/_edit_lock_ = true
+
+[node name="ReferenceRect" type="ReferenceRect" parent="MarginContainer" unique_id=1229078628]
+layout_mode = 2
+mouse_filter = 2
+border_color = Color(0, 1, 0, 1)
+border_width = 5.0
+editor_only = false
+
+[node name="TextureRect" type="TextureRect" parent="MarginContainer" unique_id=1938203333]
+modulate = Color(1, 1, 1, 0.32941177)
+layout_mode = 2
+texture = ExtResource("2_xm4lc")
+expand_mode = 1
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer" unique_id=284476552]
+layout_mode = 2
+theme = ExtResource("1_fuf1y")
+alignment = 1
+script = ExtResource("3_f3dd2")
+
+[node name="Paused" type="Label" parent="MarginContainer/VBoxContainer" unique_id=825407094]
+layout_mode = 2
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 15
+theme_override_font_sizes/font_size = 100
+text = "Paused"
+horizontal_alignment = 1
+
+[node name="Resume" type="Button" parent="MarginContainer/VBoxContainer" unique_id=143649041 node_paths=PackedStringArray("focus_up", "focus_down")]
+layout_mode = 2
+mouse_filter = 2
+text = "Resume"
+script = ExtResource("2_4u03m")
+focus_up = NodePath("../Quit")
+focus_down = NodePath("../Restart")
+outline_variance = 4.0
+outline_base = 15.0
+metadata/_custom_type_script = "uid://cooh3bgcdntm"
+
+[node name="Restart" type="Button" parent="MarginContainer/VBoxContainer" unique_id=1972856709 node_paths=PackedStringArray("focus_up", "focus_down")]
+layout_mode = 2
+mouse_filter = 2
+text = "Restart"
+script = ExtResource("3_04uu7")
+focus_up = NodePath("../Resume")
+focus_down = NodePath("../Menu")
+outline_variance = 4.0
+outline_base = 15.0
+metadata/_custom_type_script = "uid://cooh3bgcdntm"
+
+[node name="Menu" type="Button" parent="MarginContainer/VBoxContainer" unique_id=1067103753 node_paths=PackedStringArray("focus_up", "focus_down")]
+layout_mode = 2
+mouse_filter = 2
+text = "Menu"
+script = ExtResource("4_4u03m")
+focus_up = NodePath("../Restart")
+focus_down = NodePath("../Quit")
+outline_variance = 4.0
+outline_base = 15.0
+metadata/_custom_type_script = "uid://cooh3bgcdntm"
+
+[node name="Quit" type="Button" parent="MarginContainer/VBoxContainer" unique_id=2053688815 node_paths=PackedStringArray("focus_up", "focus_down")]
+layout_mode = 2
+mouse_filter = 2
+text = "Quit"
+script = ExtResource("4_f3dd2")
+focus_up = NodePath("../Menu")
+focus_down = NodePath("../Resume")
+outline_variance = 4.0
+outline_base = 15.0

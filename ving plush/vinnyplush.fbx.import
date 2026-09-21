@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://bipsi6y3wf82x"
-path="res://.godot/imported/vinnyplush.fbx-9ced2ce44bce7f6eba5f787f0fcde450.scn"
+path="res://.godot/imported/vinnyplush.fbx-3e1d864149136b662f8f371f1c871d2f.scn"
 
 [deps]
 
-source_file="res://ving doll/vinnyplush.fbx"
-dest_files=["res://.godot/imported/vinnyplush.fbx-9ced2ce44bce7f6eba5f787f0fcde450.scn"]
+source_file="res://ving plush/vinnyplush.fbx"
+dest_files=["res://.godot/imported/vinnyplush.fbx-3e1d864149136b662f8f371f1c871d2f.scn"]
 
 [params]
 
@@ -47,7 +47,7 @@ _subresources={
 "generate/shadow_meshes": 0,
 "lods/normal_merge_angle": 20.0,
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://ving doll/Cube_008.res",
+"save_to_file/fallback_path": "res://ving plush/Cube_008.res",
 "save_to_file/path": "uid://do6uqwp4sc66i"
 }
 }

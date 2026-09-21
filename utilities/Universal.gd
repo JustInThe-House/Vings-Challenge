@@ -26,7 +26,7 @@ func change_volume(increment: float = 0.01):
 	print(linear_to_db(volume_perc))
 
 #volume settings. probably best way to do it, though could be done with a signal
-func _input(event: InputEvent) -> void:
+func _unhandled_input(event: InputEvent) -> void:
 	if event.is_action_pressed("volume_up", true):
 		change_volume(0.01)
 	elif event.is_action_pressed("volume_down", true):

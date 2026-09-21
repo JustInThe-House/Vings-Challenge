@@ -1,11 +1,11 @@
 extends Node3D
 
 @onready var jawsh := %Jawsh
-@onready var dolls := %Dolls
+@onready var plushies := %Plushies
 @onready var camera_springarm := $Jawsh/SpringArmPivot
-var dolls_collected: float = 0
-var total_dolls: float
-var dolls_left: float
+var plushies_collected: float = 0
+var total_plushies: float
+var plushies_left: float
 var gameover_fall: bool = false
 @onready var CRT: ColorRect = $CRT
 
@@ -15,8 +15,8 @@ func _ready() -> void:
 	jawsh.CAN_MOVE = false
 	Music.play()
 	Music.seek(57.8)
-	total_dolls = dolls.get_child_count()
-	dolls_left = total_dolls
+	total_plushies = plushies.get_child_count()
+	plushies_left = total_plushies
 	await get_tree().create_timer(1.5).timeout
 	Music.pitch_scale = 1.3
 	# pause music, play scary scream, then play music pitched up
@@ -29,12 +29,12 @@ func _ready() -> void:
 	
 
 func _process(delta: float) -> void:
-	var dolls_left_actual: float = dolls.get_child_count()
-	if dolls_left != dolls_left_actual:
-		if dolls_left_actual == 0:
+	var plushies_left_actual: float = plushies.get_child_count()
+	if plushies_left != plushies_left_actual:
+		if plushies_left_actual == 0:
 			get_tree().change_scene_to_file("res://youwin/youwin.tscn")
-		print(dolls_left_actual)
-	dolls_left = dolls_left_actual
+		print(plushies_left_actual)
+	plushies_left = plushies_left_actual
 	
 func _notification(what: int) -> void:
 	match what:

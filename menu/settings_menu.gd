@@ -14,11 +14,6 @@ func _on_settings_pressed() -> void:
 	visible = true
 	last_focus.grab_focus.call_deferred()
 
-#func _gui_input(event: InputEvent) -> void:
-	#if event.is_action_pressed("back"):
-		#menu_off()
-		
-
 func _on_back_pressed() -> void:
 	menu_off()
 

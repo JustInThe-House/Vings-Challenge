@@ -16,12 +16,14 @@ func _ready() -> void:
 		Music.play()
 		if not Universal.played_once:
 			animation_player.play("titlecard")
+			$"Actions & Info/ControlsText".visible = true
 		else:
 			if SaveManager.save_data.beat_game and not SaveManager.save_data.first_win:
 				animation_player.play("titlecard")
 				SaveManager.save_data.first_win = true
 			else:
 				animation_player.play("finish")
+			$"Actions & Info/ControlsText".visible = false
 
 	else:
 		print("FIRST TIME")

@@ -3,12 +3,12 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://drslo8mxx6m87"
-path="res://.godot/imported/doll_collect.wav-e463cb785afc72803236c9f90dd8737f.sample"
+path="res://.godot/imported/doll_collect.wav-6af9e036f6245d0e5a34964ebb829764.sample"
 
 [deps]
 
-source_file="res://ving doll/doll_collect.wav"
-dest_files=["res://.godot/imported/doll_collect.wav-e463cb785afc72803236c9f90dd8737f.sample"]
+source_file="res://ving plush/doll_collect.wav"
+dest_files=["res://.godot/imported/doll_collect.wav-6af9e036f6245d0e5a34964ebb829764.sample"]
 
 [params]
 

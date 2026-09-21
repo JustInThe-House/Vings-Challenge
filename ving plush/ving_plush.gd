@@ -9,5 +9,5 @@ func _process(delta: float) -> void:
 	pass
 
 func _on_body_entered(_body: Node3D) -> void:
-	UtilsSound.play_sound("res://ving doll/doll_collect.wav", -10.0)
+	UtilsSound.play_sound("res://ving plush/doll_collect.wav", -10.0)
 	queue_free()

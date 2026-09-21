@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://jv7tdi2n2j2s" path="res://images/spoopy_edited.png" id="4_m0767"]
 [ext_resource type="PackedScene" uid="uid://tpedlxwfyd3t" path="res://jawsh/jawsh.tscn" id="5_48vym"]
 [ext_resource type="PackedScene" uid="uid://cdtmwdfvfj3cg" path="res://ving/ving.tscn" id="6_lwnle"]
-[ext_resource type="PackedScene" uid="uid://u25vubh1fgmg" path="res://ving doll/ving_doll.tscn" id="7_71awx"]
+[ext_resource type="PackedScene" uid="uid://u25vubh1fgmg" path="res://ving plush/ving_plush.tscn" id="7_71awx"]
 [ext_resource type="PackedScene" uid="uid://dxop7c2ewomca" path="res://tilesets/retro_tile.tscn" id="7_nmqhj"]
 [ext_resource type="Shader" uid="uid://dsc1555ndnkeb" path="res://utilities/crt.gdshader" id="7_xkuw5"]
 [ext_resource type="PackedScene" uid="uid://772lksnd8320" path="res://tilesets/retro_cube.tscn" id="9_fv8q0"]
@@ -63,607 +63,607 @@ speed = 7.5
 player = NodePath("../Jawsh")
 random_spawn = true
 
-[node name="Dolls" type="Node3D" parent="." unique_id=1342605683]
+[node name="Plushies" type="Node3D" parent="." unique_id=1342605683]
 unique_name_in_owner = true
 
-[node name="VingDoll4" parent="Dolls" unique_id=1186859985 instance=ExtResource("7_71awx")]
+[node name="VingDoll4" parent="Plushies" unique_id=1186859985 instance=ExtResource("7_71awx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 2, -26)
 
-[node name="VingDoll5" parent="Dolls" unique_id=1790098664 instance=ExtResource("7_71awx")]
+[node name="VingDoll5" parent="Plushies" unique_id=1790098664 instance=ExtResource("7_71awx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18, 2, -10)
 
-[node name="VingDoll6" parent="Dolls" unique_id=486349320 instance=ExtResource("7_71awx")]
+[node name="VingDoll6" parent="Plushies" unique_id=486349320 instance=ExtResource("7_71awx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18, 2, -14)
 
-[node name="VingDoll7" parent="Dolls" unique_id=1642514686 instance=ExtResource("7_71awx")]
+[node name="VingDoll7" parent="Plushies" unique_id=1642514686 instance=ExtResource("7_71awx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18, 2, -6)
 
-[node name="VingDoll9" parent="Dolls" unique_id=709177873 instance=ExtResource("7_71awx")]
+[node name="VingDoll9" parent="Plushies" unique_id=709177873 instance=ExtResource("7_71awx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18, 2, -22)
 
-[node name="VingDoll10" parent="Dolls" unique_id=981418844 instance=ExtResource("7_71awx")]
+[node name="VingDoll10" parent="Plushies" unique_id=981418844 instance=ExtResource("7_71awx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -22, 2, -22)
 
-[node name="VingDoll12" parent="Dolls" unique_id=98600257 instance=ExtResource("7_71awx")]
+[node name="VingDoll12" parent="Plushies" unique_id=98600257 instance=ExtResource("7_71awx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -30, 2, -22)
 
-[node name="VingDoll13" parent="Dolls" unique_id=1606766754 instance=ExtResource("7_71awx")]
+[node name="VingDoll13" parent="Plushies" unique_id=1606766754 instance=ExtResource("7_71awx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34, 2, -22)
 
-[node name="VingDoll14" parent="Dolls" unique_id=1834324609 instance=ExtResource("7_71awx")]
+[node name="VingDoll14" parent="Plushies" unique_id=1834324609 instance=ExtResource("7_71awx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -38, 2, -22)
 
-[node name="VingDoll15" parent="Dolls" unique_id=529494083 instance=ExtResource("7_71awx")]
+[node name="VingDoll15" parent="Plushies" unique_id=529494083 instance=ExtResource("7_71awx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -42, 2, -22)
 
-[node name="VingDoll16" parent="Dolls" unique_id=1500949769 instance=ExtResource("7_71awx")]
+[node name="VingDoll16" parent="Plushies" unique_id=1500949769 instance=ExtResource("7_71awx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -46, 2, -22)
 
-[node name="VingDoll17" parent="Dolls" unique_id=1178250006 instance=ExtResource("7_71awx")]
+[node name="VingDoll17" parent="Plushies" unique_id=1178250006 instance=ExtResource("7_71awx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -50, 2, -22)
 
-[node name="VingDoll18" parent="Dolls" unique_id=800115739 instance=ExtResource("7_71awx")]
+[node name="VingDoll18" parent="Plushies" unique_id=800115739 instance=ExtResource("7_71awx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -54, 2, -22)
 
-[node name="VingDoll19" parent="Dolls" unique_id=291645835 instance=ExtResource("7_71awx")]
+[node name="VingDoll19" parent="Plushies" unique_id=291645835 instance=ExtResource("7_71awx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -58, 2, -22)
 
-[node name="VingDoll20" parent="Dolls" unique_id=118992349 instance=ExtResource("7_71awx")]
+[node name="VingDoll20" parent="Plushies" unique_id=118992349 instance=ExtResource("7_71awx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -30, 2, 2)
 
-[node name="VingDoll21" parent="Dolls" unique_id=2067055362 instance=ExtResource("7_71awx")]
+[node name="VingDoll21" parent="Plushies" unique_id=2067055362 instance=ExtResource("7_71awx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34, 2, 2)
 
-[node name="VingDoll22" parent="Dolls" unique_id=1322327595 instance=ExtResource("7_71awx")]
+[node name="VingDoll22" parent="Plushies" unique_id=1322327595 instance=ExtResource("7_71awx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -38, 2, 2)
 
-[node name="VingDoll23" parent="Dolls" unique_id=1445827405 instance=ExtResource("7_71awx")]
+[node name="VingDoll23" parent="Plushies" unique_id=1445827405 instance=ExtResource("7_71awx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -42, 2, 2)
 
-[node name="VingDoll24" parent="Dolls" unique_id=1155406558 instance=ExtResource("7_71awx")]
+[node name="VingDoll24" parent="Plushies" unique_id=1155406558 instance=ExtResource("7_71awx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -46, 2, 2)
 
-[node name="VingDoll25" parent="Dolls" unique_id=1347625223 instance=ExtResource("7_71awx")]
+[node name="VingDoll25" parent="Plushies" unique_id=1347625223 instance=ExtResource("7_71awx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -50, 2, 2)
 
-[node name="VingDoll32" parent="Dolls" unique_id=11523727 instance=ExtResource("7_71awx")]
+[node name="VingDoll32" parent="Plushies" unique_id=11523727 instance=ExtResource("7_71awx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -38, 2, -6)
 
-[node name="VingDoll33" parent="Dolls" unique_id=1731886196 instance=ExtResource("7_71awx")]
+[node name="VingDoll33" parent="Plushies" unique_id=1731886196 instance=ExtResource("7_71awx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -42, 2, -6)
 
-[node name="VingDoll34" parent="Dolls" unique_id=1718844128 instance=ExtResource("7_71awx")]
+[node name="VingDoll34" parent="Plushies" unique_id=1718844128 instance=ExtResource("7_71awx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -46, 2, -6)
 
-[node name="VingDoll35" parent="Dolls" unique_id=1646667183 instance=ExtResource("7_71awx")]
+[node name="VingDoll35" parent="Plushies" unique_id=1646667183 instance=ExtResource("7_71awx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -50, 2, -6)
 
-[node name="VingDoll36" parent="Dolls" unique_id=1725485131 instance=ExtResource("7_71awx")]
+[node name="VingDoll36" parent="Plushies" unique_id=1725485131 instance=ExtResource("7_71awx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -54, 2, -6)
 
-[node name="VingDoll37" parent="Dolls" unique_id=1652649612 instance=ExtResource("7_71awx")]
+[node name="VingDoll37" parent="Plushies" unique_id=1652649612 instance=ExtResource("7_71awx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -54, 2, 2)
 
-[node name="VingDoll58" parent="Dolls" unique_id=1541488259 instance=ExtResource("7_71awx")]
+[node name="VingDoll58" parent="Plushies" unique_id=1541488259 instance=ExtResource("7_71awx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 30, 2, 10)
 
-[node name="VingDoll149" parent="Dolls" unique_id=509208758 instance=ExtResource("7_71awx")]
+[node name="VingDoll149" parent="Plushies" unique_id=509208758 instance=ExtResource("7_71awx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18, 2, -34)
 
-[node name="VingDoll26" parent="Dolls" unique_id=720552922 instance=ExtResource("7_71awx")]
+[node name="VingDoll26" parent="Plushies" unique_id=720552922 instance=ExtResource("7_71awx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -58, 2, 2)
 
-[node name="VingDoll27" parent="Dolls" unique_id=1264418391 instance=ExtResource("7_71awx")]
+[node name="VingDoll27" parent="Plushies" unique_id=1264418391 instance=ExtResource("7_71awx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -62, 2, 2)
 
-[node name="VingDoll38" parent="Dolls" unique_id=1883931556 instance=ExtResource("7_71awx")]
+[node name="VingDoll38" parent="Plushies" unique_id=1883931556 instance=ExtResource("7_71awx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -66, 2, 2)
 
-[node name="VingDoll31" parent="Dolls" unique_id=901229993 instance=ExtResource("7_71awx")]
+[node name="VingDoll31" parent="Plushies" unique_id=901229993 instance=ExtResource("7_71awx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -54, 2, 18)
 
-[node name="VingDoll39" parent="Dolls" unique_id=1449577856 instance=ExtResource("7_71awx")]
+[node name="VingDoll39" parent="Plushies" unique_id=1449577856 instance=ExtResource("7_71awx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -70, 2, 18)
 
-[node name="VingDoll44" parent="Dolls" unique_id=919709208 instance=ExtResource("7_71awx")]
+[node name="VingDoll44" parent="Plushies" unique_id=919709208 instance=ExtResource("7_71awx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -70, 2, 14)
 
-[node name="VingDoll45" parent="Dolls" unique_id=214466507 instance=ExtResource("7_71awx")]
+[node name="VingDoll45" parent="Plushies" unique_id=214466507 instance=ExtResource("7_71awx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -70, 2, 10)
 
-[node name="VingDoll53" parent="Dolls" unique_id=1804547813 instance=ExtResource("7_71awx")]
+[node name="VingDoll53" parent="Plushies" unique_id=1804547813 instance=ExtResource("7_71awx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -70, 2, 6)
 
-[node name="VingDoll40" parent="Dolls" unique_id=1105127485 instance=ExtResource("7_71awx")]
+[node name="VingDoll40" parent="Plushies" unique_id=1105127485 instance=ExtResource("7_71awx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -74, 2, 18)
 
-[node name="VingDoll41" parent="Dolls" unique_id=1199478421 instance=ExtResource("7_71awx")]
+[node name="VingDoll41" parent="Plushies" unique_id=1199478421 instance=ExtResource("7_71awx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -78, 2, 18)
 
-[node name="VingDoll42" parent="Dolls" unique_id=747994427 instance=ExtResource("7_71awx")]
+[node name="VingDoll42" parent="Plushies" unique_id=747994427 instance=ExtResource("7_71awx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -82, 2, 18)
 
-[node name="VingDoll43" parent="Dolls" unique_id=46474190 instance=ExtResource("7_71awx")]
+[node name="VingDoll43" parent="Plushies" unique_id=46474190 instance=ExtResource("7_71awx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -86, 2, 18)
 
-[node name="VingDoll48" parent="Dolls" unique_id=1797605199 instance=ExtResource("7_71awx")]
+[node name="VingDoll48" parent="Plushies" unique_id=1797605199 instance=ExtResource("7_71awx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -54, 2, 30)
 
-[node name="VingDoll59" parent="Dolls" unique_id=1463731161 instance=ExtResource("7_71awx")]
+[node name="VingDoll59" parent="Plushies" unique_id=1463731161 instance=ExtResource("7_71awx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -54, 2, 50)
 
-[node name="VingDoll61" parent="Dolls" unique_id=1916018542 instance=ExtResource("7_71awx")]
+[node name="VingDoll61" parent="Plushies" unique_id=1916018542 instance=ExtResource("7_71awx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -58, 2, 50)
 
-[node name="VingDoll62" parent="Dolls" unique_id=936338654 instance=ExtResource("7_71awx")]
+[node name="VingDoll62" parent="Plushies" unique_id=936338654 instance=ExtResource("7_71awx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -62, 2, 50)
 
-[node name="VingDoll63" parent="Dolls" unique_id=425342981 instance=ExtResource("7_71awx")]
+[node name="VingDoll63" parent="Plushies" unique_id=425342981 instance=ExtResource("7_71awx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -66, 2, 50)
 
-[node name="VingDoll64" parent="Dolls" unique_id=1603218645 instance=ExtResource("7_71awx")]
+[node name="VingDoll64" parent="Plushies" unique_id=1603218645 instance=ExtResource("7_71awx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -70, 2, 50)
 
-[node name="VingDoll65" parent="Dolls" unique_id=1010908666 instance=ExtResource("7_71awx")]
+[node name="VingDoll65" parent="Plushies" unique_id=1010908666 instance=ExtResource("7_71awx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -74, 2, 50)
 
-[node name="VingDoll66" parent="Dolls" unique_id=127776870 instance=ExtResource("7_71awx")]
+[node name="VingDoll66" parent="Plushies" unique_id=127776870 instance=ExtResource("7_71awx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 26, 2, 10)
 
-[node name="VingDoll67" parent="Dolls" unique_id=1902627155 instance=ExtResource("7_71awx")]
+[node name="VingDoll67" parent="Plushies" unique_id=1902627155 instance=ExtResource("7_71awx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22, 2, 10)
 
-[node name="VingDoll73" parent="Dolls" unique_id=1026774453 instance=ExtResource("7_71awx")]
+[node name="VingDoll73" parent="Plushies" unique_id=1026774453 instance=ExtResource("7_71awx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 2, 10)
 
-[node name="VingDoll69" parent="Dolls" unique_id=239557639 instance=ExtResource("7_71awx")]
+[node name="VingDoll69" parent="Plushies" unique_id=239557639 instance=ExtResource("7_71awx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 2, 10)
 
-[node name="VingDoll70" parent="Dolls" unique_id=1791739042 instance=ExtResource("7_71awx")]
+[node name="VingDoll70" parent="Plushies" unique_id=1791739042 instance=ExtResource("7_71awx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 2, 10)
 
-[node name="VingDoll68" parent="Dolls" unique_id=1404931249 instance=ExtResource("7_71awx")]
+[node name="VingDoll68" parent="Plushies" unique_id=1404931249 instance=ExtResource("7_71awx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18, 2, 10)
 
-[node name="VingDoll71" parent="Dolls" unique_id=1568814162 instance=ExtResource("7_71awx")]
+[node name="VingDoll71" parent="Plushies" unique_id=1568814162 instance=ExtResource("7_71awx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 2, 10)
 
-[node name="VingDoll74" parent="Dolls" unique_id=526622218 instance=ExtResource("7_71awx")]
+[node name="VingDoll74" parent="Plushies" unique_id=526622218 instance=ExtResource("7_71awx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 2, 10)
 
-[node name="VingDoll75" parent="Dolls" unique_id=372299633 instance=ExtResource("7_71awx")]
+[node name="VingDoll75" parent="Plushies" unique_id=372299633 instance=ExtResource("7_71awx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 2, 10)
 
-[node name="VingDoll72" parent="Dolls" unique_id=1874097397 instance=ExtResource("7_71awx")]
+[node name="VingDoll72" parent="Plushies" unique_id=1874097397 instance=ExtResource("7_71awx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 2, 10)
 
-[node name="VingDoll77" parent="Dolls" unique_id=1955120618 instance=ExtResource("7_71awx")]
+[node name="VingDoll77" parent="Plushies" unique_id=1955120618 instance=ExtResource("7_71awx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18, 2, -18)
 
-[node name="VingDoll94" parent="Dolls" unique_id=1277941655 instance=ExtResource("7_71awx")]
+[node name="VingDoll94" parent="Plushies" unique_id=1277941655 instance=ExtResource("7_71awx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -54, 2, 42)
 
-[node name="VingDoll95" parent="Dolls" unique_id=422608844 instance=ExtResource("7_71awx")]
+[node name="VingDoll95" parent="Plushies" unique_id=422608844 instance=ExtResource("7_71awx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -54, 2, 38)
 
-[node name="VingDoll81" parent="Dolls" unique_id=2103783051 instance=ExtResource("7_71awx")]
+[node name="VingDoll81" parent="Plushies" unique_id=2103783051 instance=ExtResource("7_71awx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -54, 2, 34)
 
-[node name="VingDoll83" parent="Dolls" unique_id=1385045716 instance=ExtResource("7_71awx")]
+[node name="VingDoll83" parent="Plushies" unique_id=1385045716 instance=ExtResource("7_71awx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -86, 2, 30)
 
-[node name="VingDoll98" parent="Dolls" unique_id=1852107138 instance=ExtResource("7_71awx")]
+[node name="VingDoll98" parent="Plushies" unique_id=1852107138 instance=ExtResource("7_71awx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -86, 2, 42)
 
-[node name="VingDoll99" parent="Dolls" unique_id=688875324 instance=ExtResource("7_71awx")]
+[node name="VingDoll99" parent="Plushies" unique_id=688875324 instance=ExtResource("7_71awx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -86, 2, 38)
 
-[node name="VingDoll84" parent="Dolls" unique_id=1207564662 instance=ExtResource("7_71awx")]
+[node name="VingDoll84" parent="Plushies" unique_id=1207564662 instance=ExtResource("7_71awx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -86, 2, 34)
 
-[node name="VingDoll85" parent="Dolls" unique_id=649998188 instance=ExtResource("7_71awx")]
+[node name="VingDoll85" parent="Plushies" unique_id=649998188 instance=ExtResource("7_71awx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -86, 2, 46)
 
-[node name="VingDoll90" parent="Dolls" unique_id=200391912 instance=ExtResource("7_71awx")]
+[node name="VingDoll90" parent="Plushies" unique_id=200391912 instance=ExtResource("7_71awx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -78, 2, 50)
 
-[node name="VingDoll91" parent="Dolls" unique_id=646659472 instance=ExtResource("7_71awx")]
+[node name="VingDoll91" parent="Plushies" unique_id=646659472 instance=ExtResource("7_71awx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -82, 2, 50)
 
-[node name="VingDoll104" parent="Dolls" unique_id=252926031 instance=ExtResource("7_71awx")]
+[node name="VingDoll104" parent="Plushies" unique_id=252926031 instance=ExtResource("7_71awx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -86, 2, 50)
 
-[node name="VingDoll110" parent="Dolls" unique_id=1540644844 instance=ExtResource("7_71awx")]
+[node name="VingDoll110" parent="Plushies" unique_id=1540644844 instance=ExtResource("7_71awx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -62, 2, 18)
 
-[node name="VingDoll117" parent="Dolls" unique_id=2105752636 instance=ExtResource("7_71awx")]
+[node name="VingDoll117" parent="Plushies" unique_id=2105752636 instance=ExtResource("7_71awx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -54, 2, 46)
 
-[node name="VingDoll119" parent="Dolls" unique_id=1572222963 instance=ExtResource("7_71awx")]
+[node name="VingDoll119" parent="Plushies" unique_id=1572222963 instance=ExtResource("7_71awx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -54, 2, 26)
 
-[node name="VingDoll120" parent="Dolls" unique_id=48832848 instance=ExtResource("7_71awx")]
+[node name="VingDoll120" parent="Plushies" unique_id=48832848 instance=ExtResource("7_71awx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -54, 2, 22)
 
-[node name="VingDoll123" parent="Dolls" unique_id=1257566851 instance=ExtResource("7_71awx")]
+[node name="VingDoll123" parent="Plushies" unique_id=1257566851 instance=ExtResource("7_71awx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -86, 2, 26)
 
-[node name="VingDoll124" parent="Dolls" unique_id=491778156 instance=ExtResource("7_71awx")]
+[node name="VingDoll124" parent="Plushies" unique_id=491778156 instance=ExtResource("7_71awx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -58, 2, 18)
 
-[node name="VingDoll125" parent="Dolls" unique_id=1054496571 instance=ExtResource("7_71awx")]
+[node name="VingDoll125" parent="Plushies" unique_id=1054496571 instance=ExtResource("7_71awx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -46, 2, -26)
 
-[node name="VingDoll157" parent="Dolls" unique_id=1462402875 instance=ExtResource("7_71awx")]
+[node name="VingDoll157" parent="Plushies" unique_id=1462402875 instance=ExtResource("7_71awx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -46, 2, -38)
 
-[node name="VingDoll158" parent="Dolls" unique_id=2017027112 instance=ExtResource("7_71awx")]
+[node name="VingDoll158" parent="Plushies" unique_id=2017027112 instance=ExtResource("7_71awx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -66, 2, -30)
 
-[node name="VingDoll159" parent="Dolls" unique_id=564336981 instance=ExtResource("7_71awx")]
+[node name="VingDoll159" parent="Plushies" unique_id=564336981 instance=ExtResource("7_71awx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -46, 2, -34)
 
-[node name="VingDoll126" parent="Dolls" unique_id=357306192 instance=ExtResource("7_71awx")]
+[node name="VingDoll126" parent="Plushies" unique_id=357306192 instance=ExtResource("7_71awx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -46, 2, -30)
 
-[node name="VingDoll127" parent="Dolls" unique_id=1392221104 instance=ExtResource("7_71awx")]
+[node name="VingDoll127" parent="Plushies" unique_id=1392221104 instance=ExtResource("7_71awx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -50, 2, -38)
 
-[node name="VingDoll129" parent="Dolls" unique_id=1413504395 instance=ExtResource("7_71awx")]
+[node name="VingDoll129" parent="Plushies" unique_id=1413504395 instance=ExtResource("7_71awx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -54, 2, -38)
 
-[node name="VingDoll130" parent="Dolls" unique_id=1307605320 instance=ExtResource("7_71awx")]
+[node name="VingDoll130" parent="Plushies" unique_id=1307605320 instance=ExtResource("7_71awx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -58, 2, -38)
 
-[node name="VingDoll131" parent="Dolls" unique_id=1054196654 instance=ExtResource("7_71awx")]
+[node name="VingDoll131" parent="Plushies" unique_id=1054196654 instance=ExtResource("7_71awx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -62, 2, -38)
 
-[node name="VingDoll163" parent="Dolls" unique_id=724615911 instance=ExtResource("7_71awx")]
+[node name="VingDoll163" parent="Plushies" unique_id=724615911 instance=ExtResource("7_71awx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -66, 2, -38)
 
-[node name="VingDoll167" parent="Dolls" unique_id=869958207 instance=ExtResource("7_71awx")]
+[node name="VingDoll167" parent="Plushies" unique_id=869958207 instance=ExtResource("7_71awx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -82, 2, -26)
 
-[node name="VingDoll168" parent="Dolls" unique_id=461659462 instance=ExtResource("7_71awx")]
+[node name="VingDoll168" parent="Plushies" unique_id=461659462 instance=ExtResource("7_71awx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -86, 2, -26)
 
-[node name="VingDoll169" parent="Dolls" unique_id=1291135737 instance=ExtResource("7_71awx")]
+[node name="VingDoll169" parent="Plushies" unique_id=1291135737 instance=ExtResource("7_71awx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -66, 2, -34)
 
-[node name="VingDoll170" parent="Dolls" unique_id=93989279 instance=ExtResource("7_71awx")]
+[node name="VingDoll170" parent="Plushies" unique_id=93989279 instance=ExtResource("7_71awx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -70, 2, -34)
 
-[node name="VingDoll171" parent="Dolls" unique_id=1209024961 instance=ExtResource("7_71awx")]
+[node name="VingDoll171" parent="Plushies" unique_id=1209024961 instance=ExtResource("7_71awx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -74, 2, -34)
 
-[node name="VingDoll172" parent="Dolls" unique_id=115604829 instance=ExtResource("7_71awx")]
+[node name="VingDoll172" parent="Plushies" unique_id=115604829 instance=ExtResource("7_71awx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -78, 2, -34)
 
-[node name="VingDoll178" parent="Dolls" unique_id=1591019017 instance=ExtResource("7_71awx")]
+[node name="VingDoll178" parent="Plushies" unique_id=1591019017 instance=ExtResource("7_71awx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 46, 2, 10)
 
-[node name="VingDoll179" parent="Dolls" unique_id=1043219477 instance=ExtResource("7_71awx")]
+[node name="VingDoll179" parent="Plushies" unique_id=1043219477 instance=ExtResource("7_71awx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 42, 2, 10)
 
-[node name="VingDoll182" parent="Dolls" unique_id=767536461 instance=ExtResource("7_71awx")]
+[node name="VingDoll182" parent="Plushies" unique_id=767536461 instance=ExtResource("7_71awx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 46, 2, 6)
 
-[node name="VingDoll183" parent="Dolls" unique_id=2117465276 instance=ExtResource("7_71awx")]
+[node name="VingDoll183" parent="Plushies" unique_id=2117465276 instance=ExtResource("7_71awx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 46, 2, -2)
 
-[node name="VingDoll184" parent="Dolls" unique_id=1896606345 instance=ExtResource("7_71awx")]
+[node name="VingDoll184" parent="Plushies" unique_id=1896606345 instance=ExtResource("7_71awx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 46, 2, 2)
 
-[node name="VingDoll185" parent="Dolls" unique_id=1312953745 instance=ExtResource("7_71awx")]
+[node name="VingDoll185" parent="Plushies" unique_id=1312953745 instance=ExtResource("7_71awx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 46, 2, -6)
 
-[node name="VingDoll186" parent="Dolls" unique_id=1188220193 instance=ExtResource("7_71awx")]
+[node name="VingDoll186" parent="Plushies" unique_id=1188220193 instance=ExtResource("7_71awx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 2, -42)
 
-[node name="VingDoll198" parent="Dolls" unique_id=666814966 instance=ExtResource("7_71awx")]
+[node name="VingDoll198" parent="Plushies" unique_id=666814966 instance=ExtResource("7_71awx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 2, -46)
 
-[node name="VingDoll214" parent="Dolls" unique_id=892590335 instance=ExtResource("7_71awx")]
+[node name="VingDoll214" parent="Plushies" unique_id=892590335 instance=ExtResource("7_71awx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 2, -46)
 
-[node name="VingDoll187" parent="Dolls" unique_id=849511675 instance=ExtResource("7_71awx")]
+[node name="VingDoll187" parent="Plushies" unique_id=849511675 instance=ExtResource("7_71awx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 26, 2, -26)
 
-[node name="VingDoll188" parent="Dolls" unique_id=1094329137 instance=ExtResource("7_71awx")]
+[node name="VingDoll188" parent="Plushies" unique_id=1094329137 instance=ExtResource("7_71awx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 42, 5.5, 26)
 
-[node name="VingDoll189" parent="Dolls" unique_id=795794641 instance=ExtResource("7_71awx")]
+[node name="VingDoll189" parent="Plushies" unique_id=795794641 instance=ExtResource("7_71awx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18, 2, -26)
 
-[node name="VingDoll191" parent="Dolls" unique_id=1450012135 instance=ExtResource("7_71awx")]
+[node name="VingDoll191" parent="Plushies" unique_id=1450012135 instance=ExtResource("7_71awx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 38, 2, 22)
 
-[node name="VingDoll196" parent="Dolls" unique_id=768359112 instance=ExtResource("7_71awx")]
+[node name="VingDoll196" parent="Plushies" unique_id=768359112 instance=ExtResource("7_71awx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 34, 2, 22)
 
-[node name="VingDoll181" parent="Dolls" unique_id=1869248256 instance=ExtResource("7_71awx")]
+[node name="VingDoll181" parent="Plushies" unique_id=1869248256 instance=ExtResource("7_71awx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 34, 2, 10)
 
-[node name="VingDoll180" parent="Dolls" unique_id=774044629 instance=ExtResource("7_71awx")]
+[node name="VingDoll180" parent="Plushies" unique_id=774044629 instance=ExtResource("7_71awx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 38, 2, 10)
 
-[node name="VingDoll192" parent="Dolls" unique_id=863136880 instance=ExtResource("7_71awx")]
+[node name="VingDoll192" parent="Plushies" unique_id=863136880 instance=ExtResource("7_71awx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16, 5.5, 36)
 
-[node name="VingDoll193" parent="Dolls" unique_id=1353530487 instance=ExtResource("7_71awx")]
+[node name="VingDoll193" parent="Plushies" unique_id=1353530487 instance=ExtResource("7_71awx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20, 5.5, 36)
 
-[node name="VingDoll194" parent="Dolls" unique_id=1038494117 instance=ExtResource("7_71awx")]
+[node name="VingDoll194" parent="Plushies" unique_id=1038494117 instance=ExtResource("7_71awx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 46, 2, -26)
 
-[node name="VingDoll195" parent="Dolls" unique_id=325240277 instance=ExtResource("7_71awx")]
+[node name="VingDoll195" parent="Plushies" unique_id=325240277 instance=ExtResource("7_71awx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 46, 2, -10)
 
-[node name="VingDoll197" parent="Dolls" unique_id=15273597 instance=ExtResource("7_71awx")]
+[node name="VingDoll197" parent="Plushies" unique_id=15273597 instance=ExtResource("7_71awx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20, 5.5, 32)
 
-[node name="VingDoll199" parent="Dolls" unique_id=959029778 instance=ExtResource("7_71awx")]
+[node name="VingDoll199" parent="Plushies" unique_id=959029778 instance=ExtResource("7_71awx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 58, 2, 18)
 
-[node name="VingDoll200" parent="Dolls" unique_id=1321654254 instance=ExtResource("7_71awx")]
+[node name="VingDoll200" parent="Plushies" unique_id=1321654254 instance=ExtResource("7_71awx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22, 2, -42)
 
-[node name="VingDoll201" parent="Dolls" unique_id=1030007916 instance=ExtResource("7_71awx")]
+[node name="VingDoll201" parent="Plushies" unique_id=1030007916 instance=ExtResource("7_71awx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -38, 2, -2)
 
-[node name="VingDoll202" parent="Dolls" unique_id=1874125287 instance=ExtResource("7_71awx")]
+[node name="VingDoll202" parent="Plushies" unique_id=1874125287 instance=ExtResource("7_71awx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -46, 2, -2)
 
-[node name="VingDoll203" parent="Dolls" unique_id=1891367110 instance=ExtResource("7_71awx")]
+[node name="VingDoll203" parent="Plushies" unique_id=1891367110 instance=ExtResource("7_71awx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -54, 2, -2)
 
-[node name="VingDoll204" parent="Dolls" unique_id=447827641 instance=ExtResource("7_71awx")]
+[node name="VingDoll204" parent="Plushies" unique_id=447827641 instance=ExtResource("7_71awx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -54, 2, 6)
 
-[node name="VingDoll205" parent="Dolls" unique_id=1206052944 instance=ExtResource("7_71awx")]
+[node name="VingDoll205" parent="Plushies" unique_id=1206052944 instance=ExtResource("7_71awx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -54, 2, 14)
 
-[node name="VingDoll206" parent="Dolls" unique_id=165284977 instance=ExtResource("7_71awx")]
+[node name="VingDoll206" parent="Plushies" unique_id=165284977 instance=ExtResource("7_71awx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -54, 2, 10)
 
-[node name="VingDoll207" parent="Dolls" unique_id=1237751678 instance=ExtResource("7_71awx")]
+[node name="VingDoll207" parent="Plushies" unique_id=1237751678 instance=ExtResource("7_71awx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -70, 2, 2)
 
-[node name="VingDoll208" parent="Dolls" unique_id=1059135289 instance=ExtResource("7_71awx")]
+[node name="VingDoll208" parent="Plushies" unique_id=1059135289 instance=ExtResource("7_71awx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -74, 2, 2)
 
-[node name="VingDoll209" parent="Dolls" unique_id=1445852482 instance=ExtResource("7_71awx")]
+[node name="VingDoll209" parent="Plushies" unique_id=1445852482 instance=ExtResource("7_71awx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -66, 2, -6)
 
-[node name="VingDoll210" parent="Dolls" unique_id=994274733 instance=ExtResource("7_71awx")]
+[node name="VingDoll210" parent="Plushies" unique_id=994274733 instance=ExtResource("7_71awx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -70, 2, -6)
 
-[node name="VingDoll211" parent="Dolls" unique_id=1779587690 instance=ExtResource("7_71awx")]
+[node name="VingDoll211" parent="Plushies" unique_id=1779587690 instance=ExtResource("7_71awx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -74, 2, -6)
 
-[node name="VingDoll212" parent="Dolls" unique_id=433079164 instance=ExtResource("7_71awx")]
+[node name="VingDoll212" parent="Plushies" unique_id=433079164 instance=ExtResource("7_71awx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -74, 2, -2)
 
-[node name="VingDoll213" parent="Dolls" unique_id=1092987028 instance=ExtResource("7_71awx")]
+[node name="VingDoll213" parent="Plushies" unique_id=1092987028 instance=ExtResource("7_71awx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -66, 2, -2)
 
-[node name="VingDoll11" parent="Dolls" unique_id=1000323403 instance=ExtResource("7_71awx")]
+[node name="VingDoll11" parent="Plushies" unique_id=1000323403 instance=ExtResource("7_71awx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -26, 2, -22)
 
-[node name="VingDoll49" parent="Dolls" unique_id=1295447007 instance=ExtResource("7_71awx")]
+[node name="VingDoll49" parent="Plushies" unique_id=1295447007 instance=ExtResource("7_71awx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -62, 2, -22)
 
-[node name="VingDoll50" parent="Dolls" unique_id=583849730 instance=ExtResource("7_71awx")]
+[node name="VingDoll50" parent="Plushies" unique_id=583849730 instance=ExtResource("7_71awx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -66, 2, -22)
 
-[node name="VingDoll220" parent="Dolls" unique_id=384873322 instance=ExtResource("7_71awx")]
+[node name="VingDoll220" parent="Plushies" unique_id=384873322 instance=ExtResource("7_71awx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -86, 2, 2)
 
-[node name="VingDoll221" parent="Dolls" unique_id=2062936136 instance=ExtResource("7_71awx")]
+[node name="VingDoll221" parent="Plushies" unique_id=2062936136 instance=ExtResource("7_71awx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -90, 2, 2)
 
-[node name="VingDoll223" parent="Dolls" unique_id=2002711687 instance=ExtResource("7_71awx")]
+[node name="VingDoll223" parent="Plushies" unique_id=2002711687 instance=ExtResource("7_71awx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -86, 2, -2)
 
-[node name="VingDoll222" parent="Dolls" unique_id=1842849210 instance=ExtResource("7_71awx")]
+[node name="VingDoll222" parent="Plushies" unique_id=1842849210 instance=ExtResource("7_71awx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -94, 2, 2)
 
-[node name="VingDoll224" parent="Dolls" unique_id=1319351839 instance=ExtResource("7_71awx")]
+[node name="VingDoll224" parent="Plushies" unique_id=1319351839 instance=ExtResource("7_71awx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -90, 2, -2)
 
-[node name="VingDoll225" parent="Dolls" unique_id=1132035688 instance=ExtResource("7_71awx")]
+[node name="VingDoll225" parent="Plushies" unique_id=1132035688 instance=ExtResource("7_71awx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -94, 2, -2)
 
-[node name="VingDoll226" parent="Dolls" unique_id=2028767740 instance=ExtResource("7_71awx")]
+[node name="VingDoll226" parent="Plushies" unique_id=2028767740 instance=ExtResource("7_71awx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -86, 2, 6)
 
-[node name="VingDoll227" parent="Dolls" unique_id=790346783 instance=ExtResource("7_71awx")]
+[node name="VingDoll227" parent="Plushies" unique_id=790346783 instance=ExtResource("7_71awx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -86, 2, 14)
 
-[node name="VingDoll228" parent="Dolls" unique_id=133751162 instance=ExtResource("7_71awx")]
+[node name="VingDoll228" parent="Plushies" unique_id=133751162 instance=ExtResource("7_71awx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -86, 2, 10)
 
-[node name="VingDoll229" parent="Dolls" unique_id=535293165 instance=ExtResource("7_71awx")]
+[node name="VingDoll229" parent="Plushies" unique_id=535293165 instance=ExtResource("7_71awx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -98, 2, -2)
 
-[node name="VingDoll232" parent="Dolls" unique_id=350428204 instance=ExtResource("7_71awx")]
+[node name="VingDoll232" parent="Plushies" unique_id=350428204 instance=ExtResource("7_71awx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -86, 2, 22)
 
-[node name="VingDoll233" parent="Dolls" unique_id=218078104 instance=ExtResource("7_71awx")]
+[node name="VingDoll233" parent="Plushies" unique_id=218078104 instance=ExtResource("7_71awx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -82, 2, -6)
 
-[node name="VingDoll234" parent="Dolls" unique_id=439821830 instance=ExtResource("7_71awx")]
+[node name="VingDoll234" parent="Plushies" unique_id=439821830 instance=ExtResource("7_71awx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -86, 2, -6)
 
-[node name="VingDoll235" parent="Dolls" unique_id=528916346 instance=ExtResource("7_71awx")]
+[node name="VingDoll235" parent="Plushies" unique_id=528916346 instance=ExtResource("7_71awx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -90, 2, -6)
 
-[node name="VingDoll237" parent="Dolls" unique_id=2112304008 instance=ExtResource("7_71awx")]
+[node name="VingDoll237" parent="Plushies" unique_id=2112304008 instance=ExtResource("7_71awx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -98, 2, -6)
 
-[node name="VingDoll239" parent="Dolls" unique_id=1890864093 instance=ExtResource("7_71awx")]
+[node name="VingDoll239" parent="Plushies" unique_id=1890864093 instance=ExtResource("7_71awx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -78, 2, -6)
 
-[node name="VingDoll240" parent="Dolls" unique_id=1426218518 instance=ExtResource("7_71awx")]
+[node name="VingDoll240" parent="Plushies" unique_id=1426218518 instance=ExtResource("7_71awx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -82, 2, -34)
 
-[node name="VingDoll241" parent="Dolls" unique_id=2102136241 instance=ExtResource("7_71awx")]
+[node name="VingDoll241" parent="Plushies" unique_id=2102136241 instance=ExtResource("7_71awx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -86, 2, -34)
 
-[node name="VingDoll242" parent="Dolls" unique_id=1543959776 instance=ExtResource("7_71awx")]
+[node name="VingDoll242" parent="Plushies" unique_id=1543959776 instance=ExtResource("7_71awx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -90, 2, -34)
 
-[node name="VingDoll243" parent="Dolls" unique_id=2038556743 instance=ExtResource("7_71awx")]
+[node name="VingDoll243" parent="Plushies" unique_id=2038556743 instance=ExtResource("7_71awx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -94, 2, -34)
 
-[node name="VingDoll244" parent="Dolls" unique_id=1408878611 instance=ExtResource("7_71awx")]
+[node name="VingDoll244" parent="Plushies" unique_id=1408878611 instance=ExtResource("7_71awx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -98, 2, -34)
 
-[node name="VingDoll245" parent="Dolls" unique_id=1622485618 instance=ExtResource("7_71awx")]
+[node name="VingDoll245" parent="Plushies" unique_id=1622485618 instance=ExtResource("7_71awx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -90, 2, -26)
 
-[node name="VingDoll246" parent="Dolls" unique_id=942600316 instance=ExtResource("7_71awx")]
+[node name="VingDoll246" parent="Plushies" unique_id=942600316 instance=ExtResource("7_71awx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -94, 2, -26)
 
-[node name="VingDoll247" parent="Dolls" unique_id=2114452415 instance=ExtResource("7_71awx")]
+[node name="VingDoll247" parent="Plushies" unique_id=2114452415 instance=ExtResource("7_71awx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -98, 2, -26)
 
-[node name="VingDoll248" parent="Dolls" unique_id=1162649756 instance=ExtResource("7_71awx")]
+[node name="VingDoll248" parent="Plushies" unique_id=1162649756 instance=ExtResource("7_71awx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -82, 2, -30)
 
-[node name="VingDoll249" parent="Dolls" unique_id=704536614 instance=ExtResource("7_71awx")]
+[node name="VingDoll249" parent="Plushies" unique_id=704536614 instance=ExtResource("7_71awx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -90, 2, -30)
 
-[node name="VingDoll250" parent="Dolls" unique_id=354915556 instance=ExtResource("7_71awx")]
+[node name="VingDoll250" parent="Plushies" unique_id=354915556 instance=ExtResource("7_71awx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -98, 2, -30)
 
-[node name="VingDoll28" parent="Dolls" unique_id=1830616080 instance=ExtResource("7_71awx")]
+[node name="VingDoll28" parent="Plushies" unique_id=1830616080 instance=ExtResource("7_71awx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 2, -10)
 
-[node name="VingDoll255" parent="Dolls" unique_id=870286932 instance=ExtResource("7_71awx")]
+[node name="VingDoll255" parent="Plushies" unique_id=870286932 instance=ExtResource("7_71awx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 13.5, 32)
 
-[node name="VingDoll258" parent="Dolls" unique_id=1733464920 instance=ExtResource("7_71awx")]
+[node name="VingDoll258" parent="Plushies" unique_id=1733464920 instance=ExtResource("7_71awx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 58, 2, 34)
 
-[node name="VingDoll259" parent="Dolls" unique_id=44260538 instance=ExtResource("7_71awx")]
+[node name="VingDoll259" parent="Plushies" unique_id=44260538 instance=ExtResource("7_71awx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 58, 2, 30)
 
-[node name="VingDoll260" parent="Dolls" unique_id=2130407711 instance=ExtResource("7_71awx")]
+[node name="VingDoll260" parent="Plushies" unique_id=2130407711 instance=ExtResource("7_71awx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 58, 2, 26)
 
-[node name="VingDoll261" parent="Dolls" unique_id=1877244233 instance=ExtResource("7_71awx")]
+[node name="VingDoll261" parent="Plushies" unique_id=1877244233 instance=ExtResource("7_71awx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 58, 2, 22)
 
-[node name="VingDoll215" parent="Dolls" unique_id=1344735293 instance=ExtResource("7_71awx")]
+[node name="VingDoll215" parent="Plushies" unique_id=1344735293 instance=ExtResource("7_71awx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 42, 2, 22)
 
-[node name="VingDoll264" parent="Dolls" unique_id=236782719 instance=ExtResource("7_71awx")]
+[node name="VingDoll264" parent="Plushies" unique_id=236782719 instance=ExtResource("7_71awx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 50, 2, 10)
 
-[node name="VingDoll265" parent="Dolls" unique_id=468693804 instance=ExtResource("7_71awx")]
+[node name="VingDoll265" parent="Plushies" unique_id=468693804 instance=ExtResource("7_71awx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 54, 2, 10)
 
-[node name="VingDoll281" parent="Dolls" unique_id=334977582 instance=ExtResource("7_71awx")]
+[node name="VingDoll281" parent="Plushies" unique_id=334977582 instance=ExtResource("7_71awx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 58, 2, 14)
 
-[node name="VingDoll282" parent="Dolls" unique_id=1912504772 instance=ExtResource("7_71awx")]
+[node name="VingDoll282" parent="Plushies" unique_id=1912504772 instance=ExtResource("7_71awx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 58, 2, 10)
 
-[node name="VingDoll262" parent="Dolls" unique_id=775504660 instance=ExtResource("7_71awx")]
+[node name="VingDoll262" parent="Plushies" unique_id=775504660 instance=ExtResource("7_71awx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -98, 2, -18)
 
-[node name="VingDoll263" parent="Dolls" unique_id=1869254582 instance=ExtResource("7_71awx")]
+[node name="VingDoll263" parent="Plushies" unique_id=1869254582 instance=ExtResource("7_71awx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -98, 2, -22)
 
-[node name="VingDoll266" parent="Dolls" unique_id=1564185474 instance=ExtResource("7_71awx")]
+[node name="VingDoll266" parent="Plushies" unique_id=1564185474 instance=ExtResource("7_71awx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -98, 2, -10)
 
-[node name="VingDoll267" parent="Dolls" unique_id=6499782 instance=ExtResource("7_71awx")]
+[node name="VingDoll267" parent="Plushies" unique_id=6499782 instance=ExtResource("7_71awx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -98, 2, -14)
 
-[node name="VingDoll268" parent="Dolls" unique_id=627123516 instance=ExtResource("7_71awx")]
+[node name="VingDoll268" parent="Plushies" unique_id=627123516 instance=ExtResource("7_71awx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -66, 2, -26)
 
-[node name="VingDoll46" parent="Dolls" unique_id=1145892140 instance=ExtResource("7_71awx")]
+[node name="VingDoll46" parent="Plushies" unique_id=1145892140 instance=ExtResource("7_71awx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -54, 2, -18)
 
-[node name="VingDoll47" parent="Dolls" unique_id=1336825719 instance=ExtResource("7_71awx")]
+[node name="VingDoll47" parent="Plushies" unique_id=1336825719 instance=ExtResource("7_71awx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -54, 2, -10)
 
-[node name="VingDoll269" parent="Dolls" unique_id=854724265 instance=ExtResource("7_71awx")]
+[node name="VingDoll269" parent="Plushies" unique_id=854724265 instance=ExtResource("7_71awx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -54, 2, -14)
 
-[node name="VingDoll51" parent="Dolls" unique_id=1083823500 instance=ExtResource("7_71awx")]
+[node name="VingDoll51" parent="Plushies" unique_id=1083823500 instance=ExtResource("7_71awx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -66, 2, -18)
 
-[node name="VingDoll52" parent="Dolls" unique_id=1880190737 instance=ExtResource("7_71awx")]
+[node name="VingDoll52" parent="Plushies" unique_id=1880190737 instance=ExtResource("7_71awx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -66, 2, -10)
 
-[node name="VingDoll270" parent="Dolls" unique_id=2035931853 instance=ExtResource("7_71awx")]
+[node name="VingDoll270" parent="Plushies" unique_id=2035931853 instance=ExtResource("7_71awx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -66, 2, -14)
 
-[node name="VingDoll133" parent="Dolls" unique_id=1901147434 instance=ExtResource("7_71awx")]
+[node name="VingDoll133" parent="Plushies" unique_id=1901147434 instance=ExtResource("7_71awx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -66, 2, 18)
 
-[node name="VingDoll271" parent="Dolls" unique_id=745287092 instance=ExtResource("7_71awx")]
+[node name="VingDoll271" parent="Plushies" unique_id=745287092 instance=ExtResource("7_71awx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16, 5.5, 32)
 
-[node name="VingDoll272" parent="Dolls" unique_id=595183589 instance=ExtResource("7_71awx")]
+[node name="VingDoll272" parent="Plushies" unique_id=595183589 instance=ExtResource("7_71awx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 46, 2, -14)
 
-[node name="VingDoll273" parent="Dolls" unique_id=1801169767 instance=ExtResource("7_71awx")]
+[node name="VingDoll273" parent="Plushies" unique_id=1801169767 instance=ExtResource("7_71awx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 34, 2, -26)
 
-[node name="VingDoll274" parent="Dolls" unique_id=636742703 instance=ExtResource("7_71awx")]
+[node name="VingDoll274" parent="Plushies" unique_id=636742703 instance=ExtResource("7_71awx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 30, 2, -26)
 
-[node name="VingDoll275" parent="Dolls" unique_id=163973466 instance=ExtResource("7_71awx")]
+[node name="VingDoll275" parent="Plushies" unique_id=163973466 instance=ExtResource("7_71awx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 38, 2, -26)
 
-[node name="VingDoll276" parent="Dolls" unique_id=1157435294 instance=ExtResource("7_71awx")]
+[node name="VingDoll276" parent="Plushies" unique_id=1157435294 instance=ExtResource("7_71awx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 46, 2, -18)
 
-[node name="VingDoll277" parent="Dolls" unique_id=1185152719 instance=ExtResource("7_71awx")]
+[node name="VingDoll277" parent="Plushies" unique_id=1185152719 instance=ExtResource("7_71awx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 42, 2, -26)
 
-[node name="VingDoll278" parent="Dolls" unique_id=1946074588 instance=ExtResource("7_71awx")]
+[node name="VingDoll278" parent="Plushies" unique_id=1946074588 instance=ExtResource("7_71awx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 46, 2, -22)
 
-[node name="VingDoll279" parent="Dolls" unique_id=1174786952 instance=ExtResource("7_71awx")]
+[node name="VingDoll279" parent="Plushies" unique_id=1174786952 instance=ExtResource("7_71awx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 38, 5.5, 26)
 
-[node name="VingDoll280" parent="Dolls" unique_id=1570908933 instance=ExtResource("7_71awx")]
+[node name="VingDoll280" parent="Plushies" unique_id=1570908933 instance=ExtResource("7_71awx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 34, 5.5, 26)
 
-[node name="VingDoll190" parent="Dolls" unique_id=1130501649 instance=ExtResource("7_71awx")]
+[node name="VingDoll190" parent="Plushies" unique_id=1130501649 instance=ExtResource("7_71awx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22, 2, -26)
 
-[node name="VingDoll134" parent="Dolls" unique_id=2127501999 instance=ExtResource("7_71awx")]
+[node name="VingDoll134" parent="Plushies" unique_id=2127501999 instance=ExtResource("7_71awx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -24, 2, 24)
 
-[node name="VingDoll140" parent="Dolls" unique_id=930159653 instance=ExtResource("7_71awx")]
+[node name="VingDoll140" parent="Plushies" unique_id=930159653 instance=ExtResource("7_71awx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -28, 2, 24)
 
-[node name="VingDoll135" parent="Dolls" unique_id=1624883180 instance=ExtResource("7_71awx")]
+[node name="VingDoll135" parent="Plushies" unique_id=1624883180 instance=ExtResource("7_71awx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20, 2, 24)
 
-[node name="VingDoll136" parent="Dolls" unique_id=539928419 instance=ExtResource("7_71awx")]
+[node name="VingDoll136" parent="Plushies" unique_id=539928419 instance=ExtResource("7_71awx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16, 2, 24)
 
-[node name="VingDoll137" parent="Dolls" unique_id=1796130031 instance=ExtResource("7_71awx")]
+[node name="VingDoll137" parent="Plushies" unique_id=1796130031 instance=ExtResource("7_71awx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -24, 2, 40)
 
-[node name="VingDoll141" parent="Dolls" unique_id=1859469374 instance=ExtResource("7_71awx")]
+[node name="VingDoll141" parent="Plushies" unique_id=1859469374 instance=ExtResource("7_71awx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -28, 2, 40)
 
-[node name="VingDoll138" parent="Dolls" unique_id=409046315 instance=ExtResource("7_71awx")]
+[node name="VingDoll138" parent="Plushies" unique_id=409046315 instance=ExtResource("7_71awx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20, 2, 40)
 
-[node name="VingDoll139" parent="Dolls" unique_id=1019590392 instance=ExtResource("7_71awx")]
+[node name="VingDoll139" parent="Plushies" unique_id=1019590392 instance=ExtResource("7_71awx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16, 2, 40)
 
-[node name="VingDoll76" parent="Dolls" unique_id=1887626760 instance=ExtResource("7_71awx")]
+[node name="VingDoll76" parent="Plushies" unique_id=1887626760 instance=ExtResource("7_71awx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -70, 2, 34)
 
 [node name="Collisions" type="StaticBody3D" parent="." unique_id=317153551]
@@ -2071,7 +2071,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 54, 2.5, 30)
 [node name="RetroCube8" parent="Collisions" unique_id=1541614938 instance=ExtResource("9_fv8q0")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 54, 2.5, 34)
 
-[node name="DollsLeft" type="Label" parent="." unique_id=137719357]
+[node name="PlushiesLeft" type="Label" parent="." unique_id=137719357]
 offset_right = 40.0
 offset_bottom = 23.0
 text = "Dolls Left:"

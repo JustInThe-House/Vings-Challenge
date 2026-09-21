@@ -2,7 +2,6 @@ extends RigidBody3D
 
 @export var roll_speed: float = 200.0
 @export var sensitivity = 0.005
-const MAX_ROLL_SPEED := 35.0
 @export var JUMP_POWER := 1200.0
 var CAN_MOVE := true
 
@@ -11,7 +10,6 @@ var CAN_MOVE := true
 @onready var jump_timer := $JumpTimer
 @onready var ground_check := $OnGroundCheck
 @onready var jump_buffer := $JumpBuffer
-
 
 func _physics_process(delta: float) -> void:
 	#ball roll movement. Must be relative to the camera.

@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://46rn7i2lp30l"]
 
 [ext_resource type="Script" uid="uid://b2g6scueirri0" path="res://menu/menu.gd" id="1_p0n8t"]
-[ext_resource type="ArrayMesh" uid="uid://do6uqwp4sc66i" path="res://ving doll/Cube_008.res" id="2_tmd6c"]
+[ext_resource type="ArrayMesh" uid="uid://do6uqwp4sc66i" path="res://ving plush/Cube_008.res" id="2_tmd6c"]
 [ext_resource type="Script" uid="uid://i2lxwg26ruwe" path="res://menu/ving_doll.gd" id="3_h81yq"]
 [ext_resource type="Script" uid="uid://bm74r6d1y5d5s" path="res://menu/trailer_part.gd" id="4_eorms"]
 [ext_resource type="Script" uid="uid://f0ked1idfsgc" path="res://menu/win_star_outline.gd" id="5_t2dg8"]
@@ -20,6 +20,7 @@
 [ext_resource type="Script" uid="uid://degr85ucdjdkh" path="res://menu/back.gd" id="18_s34wi"]
 [ext_resource type="FontFile" uid="uid://bbnj7pnyjtedq" path="res://PlaypenSans-VariableFont_wght.ttf" id="19_sy1yj"]
 [ext_resource type="Script" uid="uid://b7lt6ewkcevc1" path="res://menu/title.gd" id="20_x2kxn"]
+[ext_resource type="Script" uid="uid://bkwd3bxi6nd0q" path="res://menu/text_gradient_noise.gd" id="21_tmd6c"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_jx70r"]
 font_size = 63
@@ -35,6 +36,22 @@ variation_opentype = {
 font = SubResource("FontVariation_yf5fn")
 font_size = 110
 font_color = Color(0, 0.439, 0, 1)
+
+[sub_resource type="Gradient" id="Gradient_h81yq"]
+interpolation_mode = 2
+offsets = PackedFloat32Array(0, 0.2482639, 1)
+colors = PackedColorArray(0, 0.439, 0, 1, 0, 0.45031792, 0, 1, 0, 1, 0, 1)
+
+[sub_resource type="FastNoiseLite" id="FastNoiseLite_tmd6c"]
+noise_type = 5
+frequency = 0.1667
+
+[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_p0n8t"]
+width = 110
+height = 21
+noise = SubResource("FastNoiseLite_tmd6c")
+color_ramp = SubResource("Gradient_h81yq")
+seamless = true
 
 [sub_resource type="Animation" id="Animation_juveg"]
 length = 0.001
@@ -292,7 +309,7 @@ position = Vector2(-800, 360)
 [node name="Parallax2D" type="Parallax2D" parent="Node2D" unique_id=1565731752]
 scroll_offset = Vector2(-28.34, 62.975)
 repeat_size = Vector2(240, 160)
-autoscroll = Vector2(-10, 80)
+autoscroll = Vector2(120, 80)
 repeat_times = 6
 follow_viewport = false
 
@@ -352,7 +369,7 @@ horizontal_alignment = 1
 script = ExtResource("4_eorms")
 
 [node name="WinStar" type="Node2D" parent="Actions & Info" unique_id=1056330392]
-position = Vector2(640, 360)
+position = Vector2(600, 420)
 
 [node name="StarOutline" type="Polygon2D" parent="Actions & Info/WinStar" unique_id=1583047104]
 position = Vector2(-96, 167.40503)
@@ -529,6 +546,7 @@ focus_down = NodePath("../Volume")
 metadata/_custom_type_script = "uid://cooh3bgcdntm"
 
 [node name="Title" type="Label" parent="." unique_id=707727752]
+clip_children = 2
 layout_mode = 1
 anchors_preset = 5
 anchor_left = 0.5
@@ -545,6 +563,18 @@ text = "VinG's Challenge"
 label_settings = SubResource("LabelSettings_0jun2")
 horizontal_alignment = 1
 script = ExtResource("20_x2kxn")
+
+[node name="TextGradientNoise" type="TextureRect" parent="Title" unique_id=1882749137]
+modulate = Color(1, 1, 1, 0.39215687)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = SubResource("NoiseTexture2D_p0n8t")
+script = ExtResource("21_tmd6c")
+metadata/_edit_lock_ = true
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=152157065]
 libraries/ = SubResource("AnimationLibrary_fcpow")
