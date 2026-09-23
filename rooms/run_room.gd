@@ -54,3 +54,9 @@ func _on_death_barrier_body_entered(body: Node3D) -> void:
 		# for some reason doing it based on physics time was the answer? 
 		# i guess, since the timer creation is based on collision (jawsh and death barrier)
 		get_tree().change_scene_to_file(Universal.game_over_scene)
+
+func _unhandled_input(event: InputEvent) -> void:
+	if event.is_action_pressed("pause"):
+		var pause_menu = preload("res://menu/pause/pause_menu.tscn").instantiate()
+		Universal.game_paused.emit()
+		add_child(pause_menu)

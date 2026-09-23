@@ -1,0 +1,9 @@
+[gd_resource type="AudioBusLayout" format=3 uid="uid://q0ho7ugfufhy"]
+
+[sub_resource type="AudioEffectBandPassFilter" id="AudioEffectBandPassFilter_easn7"]
+resource_name = "BandPassFilter"
+
+[resource]
+bus/0/volume_db = -0.09049988
+bus/0/effect/0/effect = SubResource("AudioEffectBandPassFilter_easn7")
+bus/0/effect/0/enabled = true

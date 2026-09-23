@@ -9,6 +9,9 @@ var main_menu_scene: String = "res://menu/menu.tscn"
 
 var game_over_scene: String = "res://gameover/gameover.tscn"
 
+signal game_paused
+signal game_unpaused
+
 func _init() -> void:
 	if OS.is_debug_build():
 		DisplayServer.window_set_mode(DisplayServer.WINDOW_MODE_WINDOWED)

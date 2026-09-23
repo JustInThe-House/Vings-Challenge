@@ -11,6 +11,7 @@ var CAN_MOVE := true
 @onready var ground_check := $OnGroundCheck
 @onready var jump_buffer := $JumpBuffer
 
+
 func _physics_process(delta: float) -> void:
 	#ball roll movement. Must be relative to the camera.
 	var input_dir: Vector2 = Input.get_vector("move_left", "move_right", "move_up", "move_down")

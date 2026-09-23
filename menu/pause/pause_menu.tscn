@@ -2,14 +2,15 @@
 
 [ext_resource type="Script" uid="uid://blq7vxgldm2gv" path="res://menu/pause/pause_menu.gd" id="1_04uu7"]
 [ext_resource type="Theme" uid="uid://dfccbaokxpppi" path="res://menu/pause_menu_theme.tres" id="1_fuf1y"]
-[ext_resource type="Script" uid="uid://cooh3bgcdntm" path="res://menu/main_menu_button.gd" id="2_4u03m"]
 [ext_resource type="Texture2D" uid="uid://bi66fauwvb4m8" path="res://ving/ving.png" id="2_xm4lc"]
 [ext_resource type="Script" uid="uid://fln0fofqityj" path="res://menu/pause/restart.gd" id="3_04uu7"]
 [ext_resource type="Script" uid="uid://gcexklskawhi" path="res://menu/pause/v_box_container.gd" id="3_f3dd2"]
 [ext_resource type="Script" uid="uid://dr60yvcf5wda2" path="res://menu/pause/menu.gd" id="4_4u03m"]
 [ext_resource type="Script" uid="uid://dslxsf5gtjycb" path="res://menu/exit.gd" id="4_f3dd2"]
+[ext_resource type="Script" uid="uid://b4a2qelr5oilo" path="res://menu/pause/resume.gd" id="5_xm4lc"]
 
 [node name="PauseMenu" type="Control" unique_id=1239628080]
+process_mode = 2
 editor_description = "maybe fade music too"
 layout_mode = 3
 anchors_preset = 15
@@ -69,7 +70,7 @@ horizontal_alignment = 1
 layout_mode = 2
 mouse_filter = 2
 text = "Resume"
-script = ExtResource("2_4u03m")
+script = ExtResource("5_xm4lc")
 focus_up = NodePath("../Quit")
 focus_down = NodePath("../Restart")
 outline_variance = 4.0

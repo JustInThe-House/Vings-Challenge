@@ -3,4 +3,5 @@
 [ext_resource type="Script" uid="uid://2lm10ma04xdt" path="res://utilities/Music.gd" id="1_vv1ti"]
 
 [node name="Music" type="AudioStreamPlayer" unique_id=1313649259]
+process_mode = 3
 script = ExtResource("1_vv1ti")
