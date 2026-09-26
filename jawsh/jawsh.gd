@@ -11,7 +11,6 @@ var CAN_MOVE := true
 @onready var ground_check := $OnGroundCheck
 @onready var jump_buffer := $JumpBuffer
 
-
 func _physics_process(delta: float) -> void:
 	#ball roll movement. Must be relative to the camera.
 	var input_dir: Vector2 = Input.get_vector("move_left", "move_right", "move_up", "move_down")
@@ -29,9 +28,6 @@ func _physics_process(delta: float) -> void:
 	
 		# jump
 		var is_on_floor = ground_check.is_colliding()
-		if Input.is_action_just_pressed("jump"):
-			jump_buffer.start()
-			
 		if not jump_buffer.is_stopped() and not Input.is_action_pressed("fullscreen") and is_on_floor and jump_timer.is_stopped():
 			# physics
 			apply_central_force(Vector3.UP*JUMP_POWER)
@@ -46,3 +42,9 @@ func _physics_process(delta: float) -> void:
 				jump_timer.paused = true
 			elif is_on_floor and jump_timer.paused:
 				jump_timer.paused = false
+	
+func _unhandled_input(event: InputEvent) -> void:
+	# done this way so you dont sometimes jump when starting/after pausing
+	if CAN_MOVE:
+		if event.is_action_pressed("jump"):
+			jump_buffer.start()

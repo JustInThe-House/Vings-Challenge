@@ -9,8 +9,12 @@ var main_menu_scene: String = "res://menu/menu.tscn"
 
 var game_over_scene: String = "res://gameover/gameover.tscn"
 
+var loading_screen := preload("res://loading screen/loading_screen.tscn")
+var next_scene: String = "res://rooms/collect_room.tscn"
+
 signal game_paused
 signal game_unpaused
+
 
 func _init() -> void:
 	if OS.is_debug_build():
@@ -21,6 +25,14 @@ func _ready() -> void:
 	volume_perc = SaveManager.save_data.volume
 	AudioServer.set_bus_volume_db(MasterAudioIndex, linear_to_db(volume_perc))
 	Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
+	
+	
+	
+	var presence := DiscordRichPresence.new()
+	presence.app_id = "1529508561351344279"
+	add_child(presence)
+	presence.set_activity({"details": "Made by Kino Productions", "state": "Running from VinG", "assets": {"large_image":"drega", "small_image":"drega", "large_text":"wow", "small_text":"its dream"}})
+	#see the readme to know how to add timestamp, state, etc
 
 
 func change_volume(increment: float = 0.01):

@@ -33,7 +33,6 @@ func _process(delta: float) -> void:
 	if plushies_left != plushies_left_actual:
 		if plushies_left_actual == 0:
 			get_tree().change_scene_to_file("res://youwin/youwin.tscn")
-		print(plushies_left_actual)
 	plushies_left = plushies_left_actual
 	
 func _notification(what: int) -> void:
@@ -56,7 +55,7 @@ func _on_death_barrier_body_entered(body: Node3D) -> void:
 		get_tree().change_scene_to_file(Universal.game_over_scene)
 
 func _unhandled_input(event: InputEvent) -> void:
-	if event.is_action_pressed("pause"):
+	if jawsh.CAN_MOVE and event.is_action_pressed("pause"):
 		var pause_menu = preload("res://menu/pause/pause_menu.tscn").instantiate()
 		Universal.game_paused.emit()
 		add_child(pause_menu)

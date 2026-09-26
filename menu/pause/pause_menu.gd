@@ -2,6 +2,7 @@ extends Control
 
 func _ready() -> void:
 	$MarginContainer/VBoxContainer/Resume.grab_focus.call_deferred()
+	UtilsSound.play_sound("res://menu/ui_move.wav", -3.0)
 
 func _notification(what: int) -> void:
 	match what:
