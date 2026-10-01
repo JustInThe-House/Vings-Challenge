@@ -8,6 +8,7 @@ var frozen := false
 @onready var base := $".."
 
 func _ready() -> void:
+	top_level = true
 	spring_length = spring_arm_length
 	global_position = base.global_position
 

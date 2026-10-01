@@ -1,5 +1,7 @@
 extends Node
 
+# Autoload for... everything, essentially. Any autoload not specific to somethings gets put here, just to have it somewhere.
+
 var MasterAudioIndex: int = AudioServer.get_bus_index("Master")
 var MasterAudioVolume: float = AudioServer.get_bus_volume_db(AudioServer.get_bus_index("Master"))
 var volume_perc: float = 0.6
@@ -26,13 +28,11 @@ func _ready() -> void:
 	AudioServer.set_bus_volume_db(MasterAudioIndex, linear_to_db(volume_perc))
 	Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
 	
-	
-	
 	var presence := DiscordRichPresence.new()
 	presence.app_id = "1529508561351344279"
 	add_child(presence)
 	presence.set_activity({"details": "Made by Kino Productions", "state": "Running from VinG", "assets": {"large_image":"drega", "small_image":"drega", "large_text":"wow", "small_text":"its dream"}})
-	#see the readme to know how to add timestamp, state, etc
+	#see the readme to know how to add timestamp, state, assets, etc
 
 
 func change_volume(increment: float = 0.01):
@@ -41,7 +41,7 @@ func change_volume(increment: float = 0.01):
 	print(linear_to_db(volume_perc))
 
 #volume settings. probably best way to do it, though could be done with a signal
-func _unhandled_input(event: InputEvent) -> void:
+func _input(event: InputEvent) -> void:
 	if event.is_action_pressed("volume_up", true):
 		change_volume(0.01)
 	elif event.is_action_pressed("volume_down", true):

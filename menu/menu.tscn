@@ -420,7 +420,7 @@ text = "Move: WASD/OKL;/Left Stick
 Camera: Mouse/Right Stick
 Confirm/Jump: Space/Enter/A
 Back: Shift/B
-(Controller sucks)"
+Pause: P/Plus"
 horizontal_alignment = 1
 script = ExtResource("7_dbvex")
 

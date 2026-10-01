@@ -26,7 +26,7 @@ func _process(delta: float) -> void:
 		
 	# move ving toward player. to make controller at least playable, make it slower
 	if player:
-		global_position = global_position.move_toward(player.global_position, delta * speed * (1 + fury * 0.5) * (1 - float(Universal.on_controller) * 0.2))
+		global_position = global_position.move_toward(player.global_position, delta * speed * (1 + fury * 0.5) * (1 - float(Universal.on_controller) * 0.17))
 
 func _on_body_entered(_body: RigidBody3D) -> void:
 	get_tree().change_scene_to_file(Universal.game_over_scene)

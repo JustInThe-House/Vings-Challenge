@@ -28,7 +28,7 @@ func _physics_process(delta: float) -> void:
 	
 		# jump
 		var is_on_floor = ground_check.is_colliding()
-		if not jump_buffer.is_stopped() and not Input.is_action_pressed("fullscreen") and is_on_floor and jump_timer.is_stopped():
+		if not jump_buffer.is_stopped() and is_on_floor and jump_timer.is_stopped():
 			# physics
 			apply_central_force(Vector3.UP*JUMP_POWER)
 			jump_timer.start()
@@ -46,5 +46,5 @@ func _physics_process(delta: float) -> void:
 func _unhandled_input(event: InputEvent) -> void:
 	# done this way so you dont sometimes jump when starting/after pausing
 	if CAN_MOVE:
-		if event.is_action_pressed("jump"):
+		if event.is_action_pressed("jump") and not event.is_action_pressed("fullscreen"):
 			jump_buffer.start()
