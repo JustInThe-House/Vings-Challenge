@@ -2,7 +2,6 @@
 
 [ext_resource type="Script" uid="uid://wkrundivu03f" path="res://jawsh/jawsh.gd" id="1_flrai"]
 [ext_resource type="Texture2D" uid="uid://b1v82nwfds06c" path="res://jawsh/neutral.png" id="2_ejn7s"]
-[ext_resource type="Shader" uid="uid://ol4thaciu3t5" path="res://jawsh/outline.gdshader" id="3_fltcq"]
 [ext_resource type="PackedScene" uid="uid://bgmm2wr21g6pr" path="res://jawsh/spring_arm_camera.tscn" id="3_mlfnx"]
 [ext_resource type="Script" uid="uid://buyipha42ddfg" path="res://jawsh/on_ground_check.gd" id="4_wsjaa"]
 [ext_resource type="Script" uid="uid://d4asrld2slig0" path="res://jawsh/audio_listener_3d.gd" id="5_ejn7s"]
@@ -10,23 +9,32 @@
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_mlfnx"]
 bounce = 0.34
 
-[sub_resource type="ShaderMaterial" id="ShaderMaterial_254a5"]
-render_priority = 0
-shader = ExtResource("3_fltcq")
-shader_parameter/outline_thickness = -0.04
-shader_parameter/speed = 2.0
-shader_parameter/noise_scale = 4.0
-shader_parameter/alpha = 1.0
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_cjuaq"]
+render_priority = 1
+transparency = 1
+shading_mode = 0
+albedo_color = Color(0, 0, 0, 1)
+grow = true
+grow_amount = 0.07
+stencil_mode = 3
+stencil_flags = 1
+stencil_compare = 5
+metadata/_stencil_owned = true
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_wtokj"]
-next_pass = SubResource("ShaderMaterial_254a5")
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_nmqhj"]
+next_pass = SubResource("StandardMaterial3D_cjuaq")
 albedo_texture = ExtResource("2_ejn7s")
-uv1_offset = Vector3(0, -0.01, 0)
-uv1_triplanar_sharpness = 1.9318715e-05
-texture_filter = 2
+stencil_mode = 1
+stencil_flags = 2
+stencil_outline_thickness = 0.07
 
-[sub_resource type="SphereMesh" id="SphereMesh_cmcmu"]
-material = SubResource("StandardMaterial3D_wtokj")
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_fltcq"]
+next_pass = SubResource("StandardMaterial3D_nmqhj")
+stencil_mode = 2
+stencil_flags = 2
+
+[sub_resource type="SphereMesh" id="SphereMesh_7up0r"]
+material = SubResource("StandardMaterial3D_fltcq")
 
 [sub_resource type="SphereShape3D" id="SphereShape3D_14aab"]
 
@@ -40,9 +48,9 @@ angular_damp = 8.0
 script = ExtResource("1_flrai")
 roll_speed = 300.0
 
-[node name="Model" type="MeshInstance3D" parent="." unique_id=829259342]
+[node name="Model" type="MeshInstance3D" parent="." unique_id=1125394401]
 cast_shadow = 0
-mesh = SubResource("SphereMesh_cmcmu")
+mesh = SubResource("SphereMesh_7up0r")
 
 [node name="Collision" type="CollisionShape3D" parent="." unique_id=1059162590]
 shape = SubResource("SphereShape3D_14aab")
