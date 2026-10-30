@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://bi66fauwvb4m8" path="res://ving/ving.png" id="2_hqvw6"]
 [ext_resource type="Theme" uid="uid://dl24m3jg7tisc" path="res://menu/menu_theme.tres" id="3_j1xa0"]
 [ext_resource type="AudioStream" uid="uid://uadex2ulpbwt" path="res://youwin/win.mp3" id="3_vq6yk"]
-[ext_resource type="Texture2D" uid="uid://trbh807j0l0o" path="res://youwin/Smile_Open_4.webp" id="4_vq6yk"]
+[ext_resource type="Texture2D" uid="uid://trbh807j0l0o" path="res://youwin/Smile.webp" id="4_vq6yk"]
 
 [sub_resource type="Animation" id="Animation_2mkfd"]
 length = 0.001
@@ -169,7 +169,7 @@ stream = ExtResource("3_vq6yk")
 [node name="smile" type="Sprite2D" parent="." unique_id=339383872]
 texture_filter = 2
 position = Vector2(4, 452)
-scale = Vector2(4.5, 4.5)
+scale = Vector2(2, 2)
 texture = ExtResource("4_vq6yk")
 
 [connection signal="animation_finished" from="AnimationPlayer" to="." method="_on_animation_player_animation_finished"]
