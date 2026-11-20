@@ -2,8 +2,7 @@ extends Node
 
 # Autoload for... everything, essentially. Any autoload not specific to somethings gets put here, just to have it somewhere.
 
-var MasterAudioIndex: int = AudioServer.get_bus_index("Master")
-var MasterAudioVolume: float = AudioServer.get_bus_volume_db(AudioServer.get_bus_index("Master"))
+var master_audio_index: int = AudioServer.get_bus_index("Master")
 var volume_perc: float = 0.6
 var played_once: bool = false
 var on_controller: bool = false
@@ -17,28 +16,23 @@ var next_scene: String = "res://rooms/collect_room.tscn"
 signal game_paused
 signal game_unpaused
 
-
-func _init() -> void:
-	if OS.is_debug_build():
-		DisplayServer.window_set_mode(DisplayServer.WINDOW_MODE_WINDOWED)
-	pass
-
 func _ready() -> void:
 	volume_perc = SaveManager.save_data.volume
-	AudioServer.set_bus_volume_db(MasterAudioIndex, linear_to_db(volume_perc))
+	AudioServer.set_bus_volume_db(master_audio_index, linear_to_db(volume_perc))
 	Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
 	
 	var presence := DiscordRichPresence.new()
 	presence.app_id = "1529508561351344279"
 	add_child(presence)
-	presence.set_activity({"details": "Made by Kino Productions", "state": "Running from VinG", "assets": {"large_image":"drega", "small_image":"drega", "large_text":"wow", "small_text":"its dream"}})
+	presence.set_activity({"details": "Made by Kino Productions", "state": "Running from VinG", "assets": {"large_image":"chef", "small_image":"noway", "large_text":"its jawsh", "small_text":"noway"}})
 	#see the readme to know how to add timestamp, state, assets, etc
 
 
 func change_volume(increment: float = 0.01):
 	volume_perc = clamp(volume_perc + increment, 0, 1)
-	AudioServer.set_bus_volume_db(MasterAudioIndex, linear_to_db(volume_perc))
-	print(linear_to_db(volume_perc))
+	AudioServer.set_bus_volume_db(master_audio_index, linear_to_db(volume_perc))
+	#print(linear_to_db(volume_perc))
+	#print(AudioServer.get_bus_volume_db(master_audio_index))
 
 #volume settings. probably best way to do it, though could be done with a signal
 func _input(event: InputEvent) -> void:

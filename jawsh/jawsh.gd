@@ -23,18 +23,14 @@ func _physics_process(delta: float) -> void:
 			angular_velocity.z -= input_dir.x * roll_speed * delta * cos(camera.global_rotation.y)
 		# may make it so you are slower to move in a direction when starting. this is so you dont immediately go fast, 
 		#AND on controller you dont quickly move in a different direction because you cant hold your finger perfectly straight
-		#print(angular_velocity)
-
 	
 		# jump
 		var is_on_floor = ground_check.is_colliding()
 		if not jump_buffer.is_stopped() and is_on_floor and jump_timer.is_stopped():
 			# physics
 			apply_central_force(Vector3.UP*JUMP_POWER)
-			jump_timer.start()
-			
-			# sound effect
 			UtilsSound.play_sound("res://jawsh/jump.wav", -10.0)
+			jump_timer.start()
 		
 		#cooldown for jump
 		if jump_timer.time_left > 0:

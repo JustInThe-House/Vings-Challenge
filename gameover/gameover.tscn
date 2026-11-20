@@ -2,15 +2,20 @@
 
 [ext_resource type="Script" uid="uid://c4p3x5axrxdhd" path="res://gameover/gameover.gd" id="1_iywfi"]
 [ext_resource type="Texture2D" uid="uid://bi66fauwvb4m8" path="res://ving/ving.png" id="2_d573a"]
+[ext_resource type="Shader" uid="uid://dvx8h02r40ese" path="res://utilities/noise.gdshader" id="2_evmff"]
 [ext_resource type="Theme" uid="uid://dl24m3jg7tisc" path="res://menu/menu_theme.tres" id="3_b0b8a"]
 [ext_resource type="AudioStream" uid="uid://cmahhx4hrkcj8" path="res://ving/ving_scream_new.wav" id="3_d573a"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_sdku7"]
+shader = ExtResource("2_evmff")
+shader_parameter/intensity = 0.70000001043084
 
 [sub_resource type="Animation" id="Animation_2mkfd"]
 length = 0.001
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("Sprite2D:scale")
+tracks/0/path = NodePath("Ving:scale")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
@@ -50,7 +55,7 @@ length = 4.3333335
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("Sprite2D:scale")
+tracks/0/path = NodePath("Ving:scale")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
@@ -95,31 +100,22 @@ layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = 640.0
-offset_top = 360.0
-offset_right = -640.0
-offset_bottom = -360.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_iywfi")
 
 [node name="ColorRect" type="ColorRect" parent="." unique_id=1803648199]
 layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -640.0
-offset_top = -360.0
-offset_right = 640.0
-offset_bottom = 360.0
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 color = Color(0, 0, 0, 1)
 
-[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1822283170]
-position = Vector2(0, 15)
+[node name="Ving" type="Sprite2D" parent="." unique_id=1822283170]
+material = SubResource("ShaderMaterial_sdku7")
+position = Vector2(640, 436)
 scale = Vector2(1e-05, 1e-05)
 texture = ExtResource("2_d573a")
 
@@ -130,6 +126,8 @@ offset_left = -241.0
 offset_top = -366.0
 offset_right = 227.0
 offset_bottom = -172.0
+offset_transform_enabled = true
+offset_transform_position = Vector2(640, 360)
 theme = ExtResource("3_b0b8a")
 theme_override_font_sizes/font_size = 128
 text = "you die"

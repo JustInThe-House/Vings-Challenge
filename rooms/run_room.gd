@@ -4,8 +4,9 @@ extends Node3D
 @onready var plushies := %Plushies
 @onready var camera_springarm := $Jawsh/SpringArmPivot
 var plushies_collected: float = 0
-var total_plushies: float
-var plushies_left: float
+var total_plushies: int
+var plushies_left: int
+@onready var plushies_left_text := $PlushiesLeft
 var gameover_fall: bool = false
 @onready var CRT: ColorRect = $CRT
 
@@ -26,6 +27,7 @@ func _ready() -> void:
 	run_title.position.y = 720.0
 	add_child(run_title)
 	move_child(run_title, 6)
+	plushies_left_text.text = "Plushies Left: " + str(plushies_left)
 	
 
 func _process(delta: float) -> void:
@@ -34,6 +36,7 @@ func _process(delta: float) -> void:
 		if plushies_left_actual == 0:
 			get_tree().change_scene_to_file("res://youwin/youwin.tscn")
 	plushies_left = plushies_left_actual
+	plushies_left_text.text = "Plushies Left: " + str(plushies_left)
 	
 func _notification(what: int) -> void:
 	match what:

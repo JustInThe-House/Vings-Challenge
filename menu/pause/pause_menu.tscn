@@ -25,13 +25,15 @@ layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+offset_left = -70.0
 offset_top = 45.0
+offset_right = 70.0
 offset_bottom = 45.0
 grow_horizontal = 2
 grow_vertical = 2
-theme_override_constants/margin_left = 420
+theme_override_constants/margin_left = 500
 theme_override_constants/margin_top = 20
-theme_override_constants/margin_right = 420
+theme_override_constants/margin_right = 500
 theme_override_constants/margin_bottom = 120
 
 [node name="ColorRect" type="ColorRect" parent="MarginContainer" unique_id=1678985837]
@@ -49,8 +51,12 @@ editor_only = false
 [node name="TextureRect" type="TextureRect" parent="MarginContainer" unique_id=1938203333]
 modulate = Color(1, 1, 1, 0.32941177)
 layout_mode = 2
+offset_transform_enabled = true
+offset_transform_position = Vector2(0, 29.31)
+offset_transform_scale = Vector2(1.5, 1.5)
 texture = ExtResource("2_xm4lc")
-expand_mode = 1
+expand_mode = 5
+stretch_mode = 5
 
 [node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer" unique_id=284476552]
 layout_mode = 2

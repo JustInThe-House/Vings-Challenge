@@ -5,6 +5,9 @@ var can_end: bool = false
 func _ready() -> void:
 	Music.stop()
 	$AnimationPlayer.current_animation = "youwin"
+	if not SaveManager.save_data.shaders:
+		$Ving.material = null
+		$smile.material = null
 	
 
 func _process(delta: float) -> void:

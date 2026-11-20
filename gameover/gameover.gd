@@ -5,9 +5,12 @@ var can_end: bool = false
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	Music.stop()
+	if not SaveManager.save_data.shaders:
+		$Ving.material = null
 	$AnimationPlayer.current_animation = "jumpscare"
 	await get_tree().create_timer(1.0).timeout
 	can_end = true
+
 
 func _unhandled_input(event: InputEvent) -> void:
 	if (event.is_action_pressed("jump") or event.is_action_pressed("back")) and can_end:

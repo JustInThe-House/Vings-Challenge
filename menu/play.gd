@@ -8,3 +8,5 @@ func press_button(event: InputEvent) -> void:
 	Universal.played_once = true
 	Universal.next_scene = "res://rooms/collect_room.tscn"
 	get_tree().change_scene_to_packed(Universal.loading_screen)
+	#get_tree().change_scene_to_file("res://rooms/collect_room.tscn")
+	

@@ -22,7 +22,12 @@
 [ext_resource type="Script" uid="uid://b7lt6ewkcevc1" path="res://menu/title.gd" id="20_x2kxn"]
 [ext_resource type="Script" uid="uid://bkwd3bxi6nd0q" path="res://menu/text_gradient_noise.gd" id="21_tmd6c"]
 
+[sub_resource type="FontVariation" id="FontVariation_wof8q"]
+base_font = ExtResource("19_sy1yj")
+variation_embolden = 1.4
+
 [sub_resource type="LabelSettings" id="LabelSettings_jx70r"]
+font = SubResource("FontVariation_wof8q")
 font_size = 63
 font_color = Color(0, 1, 0, 1)
 
@@ -400,7 +405,7 @@ theme_override_constants/line_spacing = -2
 theme_override_font_sizes/font_size = 30
 text = "Created by
 JustInTheHouse
-VinG doll model by
+Sprites & Models by
 Swaglexoid
 "
 horizontal_alignment = 1

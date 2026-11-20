@@ -27,6 +27,7 @@ func _ready() -> void:
 
 	else:
 		print("FIRST TIME")
+		#$"Actions & Info/ControlsText".visible = false
 		SaveManager.save_data.first_time_playing = false
 		SaveManager.write_to_save()
 		animation_player.play("finish_flash")

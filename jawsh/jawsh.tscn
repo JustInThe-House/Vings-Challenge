@@ -30,6 +30,7 @@ stencil_outline_thickness = 0.07
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_fltcq"]
 next_pass = SubResource("StandardMaterial3D_nmqhj")
+albedo_texture = ExtResource("2_ejn7s")
 stencil_mode = 2
 stencil_flags = 2
 
