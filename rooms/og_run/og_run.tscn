@@ -1,0 +1,573 @@
+[gd_scene format=3 uid="uid://bkt7g7jpqwqm0"]
+
+[ext_resource type="PackedScene" uid="uid://b4kpknug5n8b5" path="res://rooms/room.tscn" id="1_oolrq"]
+[ext_resource type="Script" uid="uid://c8x3bdm5agxpp" path="res://rooms/og_run/og_run.gd" id="2_b7msr"]
+[ext_resource type="PackedScene" uid="uid://u25vubh1fgmg" path="res://ving plush/ving_plush.tscn" id="2_ogy5b"]
+[ext_resource type="PackedScene" uid="uid://blhtqre0ffqo7" path="res://youwin/youwin.tscn" id="3_aj7dx"]
+[ext_resource type="PackedScene" uid="uid://cdtmwdfvfj3cg" path="res://ving/ving.tscn" id="3_b7msr"]
+[ext_resource type="PackedScene" uid="uid://tpedlxwfyd3t" path="res://jawsh/jawsh.tscn" id="4_aj7dx"]
+[ext_resource type="PackedScene" uid="uid://bgg2lh1y175pr" path="res://events/death_zone/death_zone.tscn" id="5_561lo"]
+[ext_resource type="PackedScene" uid="uid://dxop7c2ewomca" path="res://tilesets/retro_tile.tscn" id="6_vsfqh"]
+
+[sub_resource type="Environment" id="Environment_aj7dx"]
+background_mode = 1
+background_color = Color(0.4509804, 0.4509804, 0.4509804, 1)
+fog_enabled = true
+fog_mode = 1
+fog_light_color = Color(0, 0, 0, 1)
+fog_light_energy = 0.0
+fog_density = 1.0
+fog_depth_curve = 0.32987857
+fog_depth_begin = 0.0
+fog_depth_end = 120.0
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_8ps3v"]
+albedo_color = Color(0, 1.0162731, 0, 1)
+metallic = 1.0
+normal_enabled = true
+normal_scale = 16.0
+clearcoat_enabled = true
+clearcoat_roughness = 1.0
+anisotropy_enabled = true
+
+[sub_resource type="WorldBoundaryShape3D" id="WorldBoundaryShape3D_qnajc"]
+
+[node name="OGRun" unique_id=667571701 instance=ExtResource("1_oolrq")]
+script = ExtResource("2_b7msr")
+next_scene = ExtResource("3_aj7dx")
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="Environment" parent_id_path=PackedInt32Array(1465366472) index="0" unique_id=1894665789]
+environment = SubResource("Environment_aj7dx")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="Environment" parent_id_path=PackedInt32Array(1465366472) index="1" unique_id=1557435639]
+transform = Transform3D(-0.10452834, 0.8946299, -0.43440896, 0, 0.4368018, 0.89955777, 0.9945219, 0.09402928, -0.045658167, 0, 0, 4)
+layers = 4
+shadow_enabled = true
+directional_shadow_max_distance = 1.0
+
+[node name="VingDoll" parent="Plushies" parent_id_path=PackedInt32Array(645504624) index="0" unique_id=919709208 instance=ExtResource("2_ogy5b")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 2, 344)
+
+[node name="MeshInstance3D" parent="Plushies/VingDoll" index="0" unique_id=1765326569]
+material_overlay = SubResource("StandardMaterial3D_8ps3v")
+
+[node name="Vings" type="Node3D" parent="Characters" parent_id_path=PackedInt32Array(86619700) index="0" unique_id=1100669024]
+
+[node name="Ving3" parent="Characters/Vings" index="0" unique_id=277050341 node_paths=PackedStringArray("player") instance=ExtResource("3_b7msr")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.8269196, 0, -95.27301)
+speed = 10.0
+player = NodePath("../../Jawsh")
+
+[node name="Ving" parent="Characters/Vings" index="1" unique_id=725661223 node_paths=PackedStringArray("player") instance=ExtResource("3_b7msr")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 111.12155, 0, -63.27301)
+speed = 10.0
+player = NodePath("../../Jawsh")
+metadata/_edit_group_ = true
+
+[node name="Sprite3D" parent="Characters/Vings/Ving" index="2" unique_id=1946103702]
+modulate = Color(0.9999632, 0.4816875, 0.43960226, 0.70980394)
+
+[node name="Ving2" parent="Characters/Vings" index="2" unique_id=1965516585 node_paths=PackedStringArray("player") instance=ExtResource("3_b7msr")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -124.35385, 0, 31.72699)
+speed = 10.0
+player = NodePath("../../Jawsh")
+metadata/_edit_group_ = true
+
+[node name="Sprite3D" parent="Characters/Vings/Ving2" index="2" unique_id=1946103702]
+modulate = Color(1, 0.58546525, 0.36680222, 0.654902)
+
+[node name="Ving4" parent="Characters/Vings" index="3" unique_id=1885114305 node_paths=PackedStringArray("player") instance=ExtResource("3_b7msr")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 171.29584, 0, 99.4447)
+speed = 10.15
+player = NodePath("../../Jawsh")
+metadata/_edit_group_ = true
+
+[node name="Sprite3D" parent="Characters/Vings/Ving4" index="2" unique_id=1946103702]
+modulate = Color(0.9529412, 0.85882354, 0, 0.68235296)
+
+[node name="Ving5" parent="Characters/Vings" index="4" unique_id=2025597336 node_paths=PackedStringArray("player") instance=ExtResource("3_b7msr")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 185.29584, 0, 350.8156)
+speed = 11.0
+player = NodePath("../../Jawsh")
+metadata/_edit_group_ = true
+
+[node name="Sprite3D" parent="Characters/Vings/Ving5" index="2" unique_id=1946103702]
+modulate = Color(0.43442386, 0.5471691, 1, 0.69411767)
+
+[node name="Ving6" parent="Characters/Vings" index="5" unique_id=379260562 node_paths=PackedStringArray("player") instance=ExtResource("3_b7msr")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -144.27951, 0, 161.04973)
+speed = 10.3
+player = NodePath("../../Jawsh")
+metadata/_edit_group_ = true
+
+[node name="Sprite3D" parent="Characters/Vings/Ving6" index="2" unique_id=1946103702]
+modulate = Color(0.3372549, 0.64705884, 0, 0.6666667)
+
+[node name="Ving7" parent="Characters/Vings" index="6" unique_id=689659981 node_paths=PackedStringArray("player") instance=ExtResource("3_b7msr")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -146.27951, 0, 406.8652)
+speed = 11.0
+player = NodePath("../../Jawsh")
+metadata/_edit_group_ = true
+
+[node name="Sprite3D" parent="Characters/Vings/Ving7" index="2" unique_id=1946103702]
+modulate = Color(0.7711976, 0.51224095, 1, 0.69411767)
+
+[node name="Ving10" parent="Characters/Vings" index="7" unique_id=1019417292 node_paths=PackedStringArray("player") instance=ExtResource("3_b7msr")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 652)
+player = NodePath("../../Jawsh")
+metadata/_edit_group_ = true
+
+[node name="Sprite3D" parent="Characters/Vings/Ving10" index="2" unique_id=1946103702]
+modulate = Color(1, 0.4847669, 0.86133176, 0.73333335)
+
+[node name="Ving8" parent="Characters/Vings" index="8" unique_id=204150801 node_paths=PackedStringArray("player") instance=ExtResource("3_b7msr")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -152.27951, 0, 254.04973)
+speed = 10.6
+player = NodePath("../../Jawsh")
+metadata/_edit_group_ = true
+
+[node name="Sprite3D" parent="Characters/Vings/Ving8" index="2" unique_id=1946103702]
+modulate = Color(2.887845e-06, 0.7233199, 0.992686, 0.64705884)
+
+[node name="Ving9" parent="Characters/Vings" index="9" unique_id=221592003 node_paths=PackedStringArray("player") instance=ExtResource("3_b7msr")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 181.29584, 0, 211.4447)
+speed = 10.45
+player = NodePath("../../Jawsh")
+metadata/_edit_group_ = true
+
+[node name="Sprite3D" parent="Characters/Vings/Ving9" index="2" unique_id=1946103702]
+modulate = Color(4.3317677e-06, 0.7380931, 0.7052809, 0.69411767)
+
+[node name="Jawsh" parent="Characters" parent_id_path=PackedInt32Array(86619700) index="1" unique_id=208343381 instance=ExtResource("4_aj7dx")]
+unique_name_in_owner = true
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 1.5, 0)
+
+[node name="DeathZone" parent="Objects" parent_id_path=PackedInt32Array(1611502452) index="0" unique_id=2143889982 instance=ExtResource("5_561lo")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Objects/DeathZone" index="0" unique_id=744642551]
+shape = SubResource("WorldBoundaryShape3D_qnajc")
+
+[node name="Collisions" type="StaticBody3D" parent="Tilesets" parent_id_path=PackedInt32Array(1299896088) index="0" unique_id=958734297]
+metadata/_edit_group_ = true
+
+[node name="RetroTile" parent="Tilesets/Collisions" index="0" unique_id=570993727 instance=ExtResource("6_vsfqh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0.5, 0)
+
+[node name="RetroTile2" parent="Tilesets/Collisions" index="1" unique_id=45305618 instance=ExtResource("6_vsfqh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0.5, 0)
+
+[node name="RetroTile3" parent="Tilesets/Collisions" index="2" unique_id=2004555944 instance=ExtResource("6_vsfqh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0.5, 0)
+
+[node name="RetroTile4" parent="Tilesets/Collisions" index="3" unique_id=1026758582 instance=ExtResource("6_vsfqh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 0.5, 0)
+
+[node name="RetroTile5" parent="Tilesets/Collisions" index="4" unique_id=1345065440 instance=ExtResource("6_vsfqh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 0.5, 0)
+
+[node name="RetroTile6" parent="Tilesets/Collisions" index="5" unique_id=1415677216 instance=ExtResource("6_vsfqh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18, 0.5, 0)
+
+[node name="RetroTile7" parent="Tilesets/Collisions" index="6" unique_id=1117773997 instance=ExtResource("6_vsfqh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22, 0.5, 0)
+
+[node name="RetroTile8" parent="Tilesets/Collisions" index="7" unique_id=1480546140 instance=ExtResource("6_vsfqh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 26, 0.5, 0)
+
+[node name="RetroTile9" parent="Tilesets/Collisions" index="8" unique_id=2049458792 instance=ExtResource("6_vsfqh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 26, 0.5, 4)
+
+[node name="RetroTile10" parent="Tilesets/Collisions" index="9" unique_id=1818091679 instance=ExtResource("6_vsfqh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 26, 0.5, 8)
+
+[node name="RetroTile11" parent="Tilesets/Collisions" index="10" unique_id=1627804715 instance=ExtResource("6_vsfqh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 26, 0.5, 12)
+
+[node name="RetroTile12" parent="Tilesets/Collisions" index="11" unique_id=2119078899 instance=ExtResource("6_vsfqh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 26, 0.5, 16)
+
+[node name="RetroTile13" parent="Tilesets/Collisions" index="12" unique_id=1895082990 instance=ExtResource("6_vsfqh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22, 0.5, 16)
+
+[node name="RetroTile14" parent="Tilesets/Collisions" index="13" unique_id=922219825 instance=ExtResource("6_vsfqh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18, 0.5, 16)
+
+[node name="RetroTile15" parent="Tilesets/Collisions" index="14" unique_id=1572889302 instance=ExtResource("6_vsfqh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 0.5, 16)
+
+[node name="RetroTile16" parent="Tilesets/Collisions" index="15" unique_id=732049543 instance=ExtResource("6_vsfqh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 0.5, 16)
+
+[node name="RetroTile17" parent="Tilesets/Collisions" index="16" unique_id=2130495850 instance=ExtResource("6_vsfqh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0.5, 16)
+
+[node name="RetroTile18" parent="Tilesets/Collisions" index="17" unique_id=1732895125 instance=ExtResource("6_vsfqh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0.5, 16)
+
+[node name="RetroTile19" parent="Tilesets/Collisions" index="18" unique_id=1406407283 instance=ExtResource("6_vsfqh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0.5, 16)
+
+[node name="RetroTile20" parent="Tilesets/Collisions" index="19" unique_id=1855077173 instance=ExtResource("6_vsfqh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 26, 0.5, 32)
+
+[node name="RetroTile31" parent="Tilesets/Collisions" index="20" unique_id=1136241664 instance=ExtResource("6_vsfqh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 26, 0.5, 36)
+
+[node name="RetroTile32" parent="Tilesets/Collisions" index="21" unique_id=589971566 instance=ExtResource("6_vsfqh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 26, 0.5, 40)
+
+[node name="RetroTile33" parent="Tilesets/Collisions" index="22" unique_id=438172768 instance=ExtResource("6_vsfqh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 26, 0.5, 44)
+
+[node name="RetroTile34" parent="Tilesets/Collisions" index="23" unique_id=2078269687 instance=ExtResource("6_vsfqh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 26, 0.5, 48)
+
+[node name="RetroTile35" parent="Tilesets/Collisions" index="24" unique_id=2091847087 instance=ExtResource("6_vsfqh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22, 0.5, 48)
+
+[node name="RetroTile36" parent="Tilesets/Collisions" index="25" unique_id=1769752530 instance=ExtResource("6_vsfqh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22, 0.5, 52)
+
+[node name="RetroTile37" parent="Tilesets/Collisions" index="26" unique_id=288144959 instance=ExtResource("6_vsfqh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22, 0.5, 56)
+
+[node name="RetroTile38" parent="Tilesets/Collisions" index="27" unique_id=1020380580 instance=ExtResource("6_vsfqh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 26, 0.5, 56)
+
+[node name="RetroTile39" parent="Tilesets/Collisions" index="28" unique_id=1819852668 instance=ExtResource("6_vsfqh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 26, 0.5, 60)
+
+[node name="RetroTile40" parent="Tilesets/Collisions" index="29" unique_id=1486896318 instance=ExtResource("6_vsfqh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 26, 0.5, 64)
+
+[node name="RetroTile41" parent="Tilesets/Collisions" index="30" unique_id=1553553793 instance=ExtResource("6_vsfqh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 30, 0.5, 64)
+
+[node name="RetroTile42" parent="Tilesets/Collisions" index="31" unique_id=280777432 instance=ExtResource("6_vsfqh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 30, 0.5, 68)
+
+[node name="RetroTile43" parent="Tilesets/Collisions" index="32" unique_id=1261831511 instance=ExtResource("6_vsfqh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 30, 0.5, 72)
+
+[node name="RetroTile44" parent="Tilesets/Collisions" index="33" unique_id=316882760 instance=ExtResource("6_vsfqh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 26, 0.5, 72)
+
+[node name="RetroTile45" parent="Tilesets/Collisions" index="34" unique_id=746476452 instance=ExtResource("6_vsfqh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 26, 0.5, 76)
+
+[node name="RetroTile46" parent="Tilesets/Collisions" index="35" unique_id=843758440 instance=ExtResource("6_vsfqh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 26, 0.5, 80)
+
+[node name="RetroTile47" parent="Tilesets/Collisions" index="36" unique_id=326498029 instance=ExtResource("6_vsfqh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22, 0.5, 80)
+
+[node name="RetroTile48" parent="Tilesets/Collisions" index="37" unique_id=269442441 instance=ExtResource("6_vsfqh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22, 0.5, 84)
+
+[node name="RetroTile49" parent="Tilesets/Collisions" index="38" unique_id=1448396591 instance=ExtResource("6_vsfqh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22, 0.5, 88)
+
+[node name="RetroTile50" parent="Tilesets/Collisions" index="39" unique_id=1206468202 instance=ExtResource("6_vsfqh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 26, 0.5, 88)
+
+[node name="RetroTile51" parent="Tilesets/Collisions" index="40" unique_id=1136985089 instance=ExtResource("6_vsfqh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 26, 0.5, 92)
+
+[node name="RetroTile52" parent="Tilesets/Collisions" index="41" unique_id=1376642403 instance=ExtResource("6_vsfqh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 26, 0.5, 96)
+
+[node name="RetroTile53" parent="Tilesets/Collisions" index="42" unique_id=1121908645 instance=ExtResource("6_vsfqh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 30, 0.5, 96)
+
+[node name="RetroTile54" parent="Tilesets/Collisions" index="43" unique_id=1319702154 instance=ExtResource("6_vsfqh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 30, 0.5, 100)
+
+[node name="RetroTile55" parent="Tilesets/Collisions" index="44" unique_id=99457570 instance=ExtResource("6_vsfqh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 30, 0.5, 104)
+
+[node name="RetroTile56" parent="Tilesets/Collisions" index="45" unique_id=617221450 instance=ExtResource("6_vsfqh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 26, 0.5, 104)
+
+[node name="RetroTile57" parent="Tilesets/Collisions" index="46" unique_id=1156346513 instance=ExtResource("6_vsfqh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 26, 0.5, 108)
+
+[node name="RetroTile58" parent="Tilesets/Collisions" index="47" unique_id=1952547561 instance=ExtResource("6_vsfqh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 26, 0.5, 112)
+
+[node name="RetroTile78" parent="Tilesets/Collisions" index="48" unique_id=809612165 instance=ExtResource("6_vsfqh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 34, 0.5, 152)
+
+[node name="RetroTile79" parent="Tilesets/Collisions" index="49" unique_id=2114634840 instance=ExtResource("6_vsfqh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 34, 0.5, 156)
+
+[node name="RetroTile80" parent="Tilesets/Collisions" index="50" unique_id=1008442135 instance=ExtResource("6_vsfqh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 34, 0.5, 160)
+
+[node name="RetroTile59" parent="Tilesets/Collisions" index="51" unique_id=1430610305 instance=ExtResource("6_vsfqh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22, 0.5, 112)
+
+[node name="RetroTile60" parent="Tilesets/Collisions" index="52" unique_id=1331088756 instance=ExtResource("6_vsfqh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22, 0.5, 116)
+
+[node name="RetroTile61" parent="Tilesets/Collisions" index="53" unique_id=759810180 instance=ExtResource("6_vsfqh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18, 0.5, 116)
+
+[node name="RetroTile62" parent="Tilesets/Collisions" index="54" unique_id=119152605 instance=ExtResource("6_vsfqh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18, 0.5, 120)
+
+[node name="RetroTile63" parent="Tilesets/Collisions" index="55" unique_id=949513768 instance=ExtResource("6_vsfqh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 0.5, 120)
+
+[node name="RetroTile64" parent="Tilesets/Collisions" index="56" unique_id=277414966 instance=ExtResource("6_vsfqh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 0.5, 124)
+
+[node name="RetroTile81" parent="Tilesets/Collisions" index="57" unique_id=458521580 instance=ExtResource("6_vsfqh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 30, 0.5, 160)
+
+[node name="RetroTile82" parent="Tilesets/Collisions" index="58" unique_id=1756094028 instance=ExtResource("6_vsfqh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 30, 0.5, 164)
+
+[node name="RetroTile83" parent="Tilesets/Collisions" index="59" unique_id=88190784 instance=ExtResource("6_vsfqh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 26, 0.5, 164)
+
+[node name="RetroTile84" parent="Tilesets/Collisions" index="60" unique_id=787379028 instance=ExtResource("6_vsfqh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 26, 0.5, 168)
+
+[node name="RetroTile85" parent="Tilesets/Collisions" index="61" unique_id=708813411 instance=ExtResource("6_vsfqh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22, 0.5, 168)
+
+[node name="RetroTile86" parent="Tilesets/Collisions" index="62" unique_id=1351265962 instance=ExtResource("6_vsfqh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22, 0.5, 172)
+
+[node name="RetroTile87" parent="Tilesets/Collisions" index="63" unique_id=658174547 instance=ExtResource("6_vsfqh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22, 0.5, 176)
+
+[node name="RetroTile88" parent="Tilesets/Collisions" index="64" unique_id=1725709612 instance=ExtResource("6_vsfqh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22, 0.5, 180)
+
+[node name="RetroTile89" parent="Tilesets/Collisions" index="65" unique_id=478099032 instance=ExtResource("6_vsfqh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22, 0.5, 188)
+
+[node name="RetroTile90" parent="Tilesets/Collisions" index="66" unique_id=1542510889 instance=ExtResource("6_vsfqh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22, 0.5, 192)
+
+[node name="RetroTile91" parent="Tilesets/Collisions" index="67" unique_id=826086749 instance=ExtResource("6_vsfqh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22, 0.5, 196)
+
+[node name="RetroTile92" parent="Tilesets/Collisions" index="68" unique_id=607854928 instance=ExtResource("6_vsfqh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18, 0.5, 188)
+
+[node name="RetroTile93" parent="Tilesets/Collisions" index="69" unique_id=423092566 instance=ExtResource("6_vsfqh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18, 0.5, 192)
+
+[node name="RetroTile94" parent="Tilesets/Collisions" index="70" unique_id=1411972022 instance=ExtResource("6_vsfqh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18, 0.5, 196)
+
+[node name="RetroTile95" parent="Tilesets/Collisions" index="71" unique_id=1913705467 instance=ExtResource("6_vsfqh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 0.5, 188)
+
+[node name="RetroTile96" parent="Tilesets/Collisions" index="72" unique_id=1097728777 instance=ExtResource("6_vsfqh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 0.5, 192)
+
+[node name="RetroTile97" parent="Tilesets/Collisions" index="73" unique_id=1196027880 instance=ExtResource("6_vsfqh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 0.5, 196)
+
+[node name="RetroTile98" parent="Tilesets/Collisions" index="74" unique_id=1384879041 instance=ExtResource("6_vsfqh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 34, 0.5, 204)
+
+[node name="RetroTile99" parent="Tilesets/Collisions" index="75" unique_id=1478190291 instance=ExtResource("6_vsfqh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 34, 0.5, 208)
+
+[node name="RetroTile100" parent="Tilesets/Collisions" index="76" unique_id=528365813 instance=ExtResource("6_vsfqh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 34, 0.5, 212)
+
+[node name="RetroTile101" parent="Tilesets/Collisions" index="77" unique_id=1061428444 instance=ExtResource("6_vsfqh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 30, 0.5, 204)
+
+[node name="RetroTile102" parent="Tilesets/Collisions" index="78" unique_id=1869072778 instance=ExtResource("6_vsfqh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 30, 0.5, 208)
+
+[node name="RetroTile103" parent="Tilesets/Collisions" index="79" unique_id=1940481970 instance=ExtResource("6_vsfqh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 30, 0.5, 212)
+
+[node name="RetroTile104" parent="Tilesets/Collisions" index="80" unique_id=236017823 instance=ExtResource("6_vsfqh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 26, 0.5, 204)
+
+[node name="RetroTile105" parent="Tilesets/Collisions" index="81" unique_id=593258793 instance=ExtResource("6_vsfqh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 26, 0.5, 208)
+
+[node name="RetroTile106" parent="Tilesets/Collisions" index="82" unique_id=1230543766 instance=ExtResource("6_vsfqh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 26, 0.5, 212)
+
+[node name="RetroTile107" parent="Tilesets/Collisions" index="83" unique_id=963990837 instance=ExtResource("6_vsfqh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18, 0.5, 220)
+
+[node name="RetroTile108" parent="Tilesets/Collisions" index="84" unique_id=1976558161 instance=ExtResource("6_vsfqh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18, 0.5, 224)
+
+[node name="RetroTile109" parent="Tilesets/Collisions" index="85" unique_id=729708726 instance=ExtResource("6_vsfqh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18, 0.5, 228)
+
+[node name="RetroTile110" parent="Tilesets/Collisions" index="86" unique_id=2069093090 instance=ExtResource("6_vsfqh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 0.5, 220)
+
+[node name="RetroTile111" parent="Tilesets/Collisions" index="87" unique_id=537270456 instance=ExtResource("6_vsfqh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 0.5, 224)
+
+[node name="RetroTile112" parent="Tilesets/Collisions" index="88" unique_id=451614680 instance=ExtResource("6_vsfqh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 0.5, 228)
+
+[node name="RetroTile116" parent="Tilesets/Collisions" index="89" unique_id=441658258 instance=ExtResource("6_vsfqh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 0.5, 232)
+
+[node name="RetroTile117" parent="Tilesets/Collisions" index="90" unique_id=1113791174 instance=ExtResource("6_vsfqh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 0.5, 236)
+
+[node name="RetroTile118" parent="Tilesets/Collisions" index="91" unique_id=1398524304 instance=ExtResource("6_vsfqh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 0.5, 244)
+
+[node name="RetroTile119" parent="Tilesets/Collisions" index="92" unique_id=1392681943 instance=ExtResource("6_vsfqh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 0.5, 248)
+
+[node name="RetroTile120" parent="Tilesets/Collisions" index="93" unique_id=127744229 instance=ExtResource("6_vsfqh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 0.5, 252)
+
+[node name="RetroTile121" parent="Tilesets/Collisions" index="94" unique_id=819726638 instance=ExtResource("6_vsfqh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 0.5, 256)
+
+[node name="RetroTile122" parent="Tilesets/Collisions" index="95" unique_id=1985085175 instance=ExtResource("6_vsfqh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 0.5, 266)
+
+[node name="RetroTile123" parent="Tilesets/Collisions" index="96" unique_id=620194062 instance=ExtResource("6_vsfqh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 0.5, 270)
+
+[node name="RetroTile124" parent="Tilesets/Collisions" index="97" unique_id=908960583 instance=ExtResource("6_vsfqh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 0.5, 274)
+
+[node name="RetroTile125" parent="Tilesets/Collisions" index="98" unique_id=50429773 instance=ExtResource("6_vsfqh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 0.5, 278)
+
+[node name="RetroTile126" parent="Tilesets/Collisions" index="99" unique_id=1288043077 instance=ExtResource("6_vsfqh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 0.5, 290)
+
+[node name="RetroTile127" parent="Tilesets/Collisions" index="100" unique_id=1266387704 instance=ExtResource("6_vsfqh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 0.5, 294)
+
+[node name="RetroTile128" parent="Tilesets/Collisions" index="101" unique_id=1138711917 instance=ExtResource("6_vsfqh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 0.5, 298)
+
+[node name="RetroTile129" parent="Tilesets/Collisions" index="102" unique_id=545650437 instance=ExtResource("6_vsfqh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 0.5, 302)
+
+[node name="RetroTile130" parent="Tilesets/Collisions" index="103" unique_id=1672187409 instance=ExtResource("6_vsfqh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 0.5, 316)
+
+[node name="RetroTile131" parent="Tilesets/Collisions" index="104" unique_id=136749427 instance=ExtResource("6_vsfqh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 0.5, 320)
+
+[node name="RetroTile132" parent="Tilesets/Collisions" index="105" unique_id=89908096 instance=ExtResource("6_vsfqh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 0.5, 324)
+
+[node name="RetroTile133" parent="Tilesets/Collisions" index="106" unique_id=954675186 instance=ExtResource("6_vsfqh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 0.5, 328)
+
+[node name="RetroTile134" parent="Tilesets/Collisions" index="107" unique_id=926546353 instance=ExtResource("6_vsfqh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 0.5, 332)
+
+[node name="RetroTile135" parent="Tilesets/Collisions" index="108" unique_id=2137070022 instance=ExtResource("6_vsfqh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 0.5, 336)
+
+[node name="RetroTile136" parent="Tilesets/Collisions" index="109" unique_id=741099068 instance=ExtResource("6_vsfqh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 0.5, 340)
+
+[node name="RetroTile137" parent="Tilesets/Collisions" index="110" unique_id=857822563 instance=ExtResource("6_vsfqh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 0.5, 344)
+
+[node name="RetroTile113" parent="Tilesets/Collisions" index="111" unique_id=735738006 instance=ExtResource("6_vsfqh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 0.5, 220)
+
+[node name="RetroTile114" parent="Tilesets/Collisions" index="112" unique_id=807386434 instance=ExtResource("6_vsfqh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 0.5, 224)
+
+[node name="RetroTile115" parent="Tilesets/Collisions" index="113" unique_id=373015865 instance=ExtResource("6_vsfqh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 0.5, 228)
+
+[node name="RetroTile65" parent="Tilesets/Collisions" index="114" unique_id=1742028937 instance=ExtResource("6_vsfqh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 0.5, 124)
+
+[node name="RetroTile66" parent="Tilesets/Collisions" index="115" unique_id=506075564 instance=ExtResource("6_vsfqh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 0.5, 128)
+
+[node name="RetroTile67" parent="Tilesets/Collisions" index="116" unique_id=2112472974 instance=ExtResource("6_vsfqh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 0.5, 132)
+
+[node name="RetroTile68" parent="Tilesets/Collisions" index="117" unique_id=1424822549 instance=ExtResource("6_vsfqh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 0.5, 132)
+
+[node name="RetroTile69" parent="Tilesets/Collisions" index="118" unique_id=1299861777 instance=ExtResource("6_vsfqh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 0.5, 136)
+
+[node name="RetroTile70" parent="Tilesets/Collisions" index="119" unique_id=444474243 instance=ExtResource("6_vsfqh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18, 0.5, 136)
+
+[node name="RetroTile71" parent="Tilesets/Collisions" index="120" unique_id=961315315 instance=ExtResource("6_vsfqh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18, 0.5, 140)
+
+[node name="RetroTile72" parent="Tilesets/Collisions" index="121" unique_id=6945337 instance=ExtResource("6_vsfqh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22, 0.5, 140)
+
+[node name="RetroTile73" parent="Tilesets/Collisions" index="122" unique_id=896837029 instance=ExtResource("6_vsfqh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22, 0.5, 144)
+
+[node name="RetroTile74" parent="Tilesets/Collisions" index="123" unique_id=318322868 instance=ExtResource("6_vsfqh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 26, 0.5, 144)
+
+[node name="RetroTile75" parent="Tilesets/Collisions" index="124" unique_id=1663134010 instance=ExtResource("6_vsfqh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 26, 0.5, 148)
+
+[node name="RetroTile76" parent="Tilesets/Collisions" index="125" unique_id=2029502401 instance=ExtResource("6_vsfqh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 30, 0.5, 148)
+
+[node name="RetroTile77" parent="Tilesets/Collisions" index="126" unique_id=1708346594 instance=ExtResource("6_vsfqh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 30, 0.5, 152)
+
+[node name="RetroTile21" parent="Tilesets/Collisions" index="127" unique_id=282871036 instance=ExtResource("6_vsfqh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22, 0.5, 32)
+
+[node name="RetroTile22" parent="Tilesets/Collisions" index="128" unique_id=1028028337 instance=ExtResource("6_vsfqh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18, 0.5, 32)
+
+[node name="RetroTile23" parent="Tilesets/Collisions" index="129" unique_id=838724393 instance=ExtResource("6_vsfqh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 0.5, 32)
+
+[node name="RetroTile24" parent="Tilesets/Collisions" index="130" unique_id=1292222137 instance=ExtResource("6_vsfqh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 0.5, 32)
+
+[node name="RetroTile25" parent="Tilesets/Collisions" index="131" unique_id=1486475408 instance=ExtResource("6_vsfqh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0.5, 32)
+
+[node name="RetroTile26" parent="Tilesets/Collisions" index="132" unique_id=1841943295 instance=ExtResource("6_vsfqh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0.5, 32)
+
+[node name="RetroTile27" parent="Tilesets/Collisions" index="133" unique_id=2146227148 instance=ExtResource("6_vsfqh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0.5, 32)
+
+[node name="RetroTile28" parent="Tilesets/Collisions" index="134" unique_id=1604548891 instance=ExtResource("6_vsfqh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0.5, 28)
+
+[node name="RetroTile29" parent="Tilesets/Collisions" index="135" unique_id=1321779042 instance=ExtResource("6_vsfqh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0.5, 24)
+
+[node name="RetroTile30" parent="Tilesets/Collisions" index="136" unique_id=1739387790 instance=ExtResource("6_vsfqh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0.5, 20)
+
+[editable path="Plushies/VingDoll"]
+[editable path="Characters/Vings/Ving"]
+[editable path="Characters/Vings/Ving2"]
+[editable path="Characters/Vings/Ving4"]
+[editable path="Characters/Vings/Ving5"]
+[editable path="Characters/Vings/Ving6"]
+[editable path="Characters/Vings/Ving7"]
+[editable path="Characters/Vings/Ving10"]
+[editable path="Characters/Vings/Ving8"]
+[editable path="Characters/Vings/Ving9"]

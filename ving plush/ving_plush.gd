@@ -8,6 +8,8 @@ func _process(delta: float) -> void:
 	rotation.y += PI * 0.5 * delta
 	pass
 
-func _on_body_entered(_body: Node3D) -> void:
-	UtilsSound.play_sound("res://ving plush/doll_collect.wav", -10.0)
-	queue_free()
+func _on_body_entered(body: Node3D) -> void:
+	if body.is_in_group("player"):
+		Game.plushie_collected.emit()
+		SoundManager.play_sound("res://ving plush/doll_collect.wav", -10.0)
+		queue_free()

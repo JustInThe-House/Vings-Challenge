@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://bgg2lh1y175pr"]
+
+[ext_resource type="Script" uid="uid://bvy3iceriqwf7" path="res://events/death_zone/death_zone.gd" id="1_7a0t3"]
+
+[node name="DeathZone" type="Area3D" unique_id=2143889982]
+monitorable = false
+script = ExtResource("1_7a0t3")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

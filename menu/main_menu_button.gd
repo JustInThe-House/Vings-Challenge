@@ -32,23 +32,23 @@ func _process(delta: float) -> void:
 func _gui_input(event: InputEvent) -> void:
 	if event.is_action_pressed("move_up") and focus_up and not manager.up_pressed:
 		focus_up.grab_focus.call_deferred()
-		UtilsSound.play_sound("res://menu/ui_move.wav", -3.0)
+		SoundManager.play_sound("res://menu/ui_move.wav", -3.0)
 		manager.up_pressed = true
 	elif event.is_action_pressed("move_down") and focus_down and not manager.down_pressed:
 		focus_down.grab_focus.call_deferred()
-		UtilsSound.play_sound("res://menu/ui_move.wav", -3.0)
+		SoundManager.play_sound("res://menu/ui_move.wav", -3.0)
 		manager.down_pressed = true
 	elif event.is_action_pressed("move_left") and focus_left and not manager.left_pressed:
 		focus_left.grab_focus.call_deferred()
-		UtilsSound.play_sound("res://menu/ui_move.wav", -3.0)
+		SoundManager.play_sound("res://menu/ui_move.wav", -3.0)
 		manager.left_pressed = true
 	elif event.is_action_pressed("move_right") and focus_right and not manager.right_pressed:
 		focus_right.grab_focus.call_deferred()
-		UtilsSound.play_sound("res://menu/ui_move.wav", -3.0)
+		SoundManager.play_sound("res://menu/ui_move.wav", -3.0)
 		manager.right_pressed = true
 	if event.is_action_pressed("jump"):
 		press_button(event)
-		UtilsSound.play_sound("res://menu/ui_confirm.wav", -3.0)
+		SoundManager.play_sound("res://menu/ui_confirm.wav", -3.0)
 	if event.is_action_pressed("back"):
 		back_button(event)
 	

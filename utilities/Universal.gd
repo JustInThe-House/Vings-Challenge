@@ -10,8 +10,8 @@ var main_menu_scene: String = "res://menu/menu.tscn"
 
 var game_over_scene: String = "res://gameover/gameover.tscn"
 
-var loading_screen := preload("res://loading screen/loading_screen.tscn")
-var next_scene: String = "res://rooms/collect_room.tscn"
+var loading_screen: PackedScene = preload("res://loading screen/loading_screen.tscn")
+var next_scene: String = "res://rooms/og_collect/og_collect.tscn"
 
 signal game_paused
 signal game_unpaused

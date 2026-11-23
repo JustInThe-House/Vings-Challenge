@@ -3,7 +3,6 @@ extends RigidBody3D
 @export var roll_speed: float = 200.0
 @export var sensitivity = 0.005
 @export var JUMP_POWER := 1200.0
-var CAN_MOVE := true
 
 @onready var camera := $SpringArmPivot/Camera3D
 @onready var camera_pivot := $SpringArmPivot
@@ -14,7 +13,7 @@ var CAN_MOVE := true
 func _physics_process(delta: float) -> void:
 	#ball roll movement. Must be relative to the camera.
 	var input_dir: Vector2 = Input.get_vector("move_left", "move_right", "move_up", "move_down")
-	if CAN_MOVE:
+	if Game.state == Game.GameState.ACTIVE:
 		if input_dir.y != 0.0:
 			angular_velocity.x += input_dir.y * roll_speed * delta * cos(camera.global_rotation.y)
 			angular_velocity.z -= input_dir.y * roll_speed * delta * sin(camera.global_rotation.y)
@@ -29,7 +28,7 @@ func _physics_process(delta: float) -> void:
 		if not jump_buffer.is_stopped() and is_on_floor and jump_timer.is_stopped():
 			# physics
 			apply_central_force(Vector3.UP*JUMP_POWER)
-			UtilsSound.play_sound("res://jawsh/jump.wav", -10.0)
+			SoundManager.play_sound("res://jawsh/jump.wav", -10.0)
 			jump_timer.start()
 		
 		#cooldown for jump
@@ -41,6 +40,6 @@ func _physics_process(delta: float) -> void:
 	
 func _unhandled_input(event: InputEvent) -> void:
 	# done this way so you dont sometimes jump when starting/after pausing
-	if CAN_MOVE:
+	if Game.state == Game.GameState.ACTIVE:
 		if event.is_action_pressed("jump") and not event.is_action_pressed("fullscreen"):
 			jump_buffer.start()

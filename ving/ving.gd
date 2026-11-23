@@ -1,10 +1,9 @@
 extends Area3D
 
 @export var speed: float
-@export var player: RigidBody3D
+@export var player: CollisionObject3D
 @export var random_spawn: bool = false
 
-@onready var sprite := $Sprite3D
 @onready var scream := $AudioStreamPlayer3D
 @onready var collision := $CollisionShape3D
 var fury: float = 0.0
