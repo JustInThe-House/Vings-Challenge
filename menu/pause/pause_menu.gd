@@ -1,7 +1,7 @@
 extends Control
 
 func _ready() -> void:
-	$MarginContainer/VBoxContainer/Resume.grab_focus.call_deferred()
+	$MarginContainer/VBoxContainer/PanelContainerDefault/Resume.grab_focus.call_deferred()
 	SoundManager.play_sound("res://menu/ui_move.wav", -3.0)
 
 func _notification(what: int) -> void:

@@ -1,0 +1,199 @@
+[gd_scene format=3 uid="uid://2vhyxlcuax51"]
+
+[ext_resource type="Script" uid="uid://bdgjox3b3hsn6" path="res://menu/main/level select/levels_menu.gd" id="1_bb4tl"]
+[ext_resource type="Script" uid="uid://c8jinqy00b0sn" path="res://panel_container_default.gd" id="2_sjyhn"]
+[ext_resource type="Theme" uid="uid://dl24m3jg7tisc" path="res://menu/menu_theme.tres" id="2_u8125"]
+[ext_resource type="Script" uid="uid://cooh3bgcdntm" path="res://menu/main/main_menu_button.gd" id="3_sjyhn"]
+
+[node name="LevelsMenu" type="GridContainer" unique_id=451293988]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+columns = 3
+script = ExtResource("1_bb4tl")
+metadata/_edit_group_ = true
+
+[node name="Football" type="PanelContainer" parent="." unique_id=1334507463]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+mouse_filter = 2
+script = ExtResource("2_sjyhn")
+metadata/_custom_type_script = "uid://c8jinqy00b0sn"
+
+[node name="Football" type="Button" parent="Football" unique_id=748803092 node_paths=PackedStringArray("focus_right", "focus_down")]
+layout_mode = 2
+offset_transform_enabled = true
+offset_transform_position = Vector2(0, 15)
+mouse_filter = 2
+theme = ExtResource("2_u8125")
+theme_override_font_sizes/font_size = 55
+text = "Football"
+flat = true
+script = ExtResource("3_sjyhn")
+focus_right = NodePath("../../Slide&Slip/Slide&Slip")
+focus_down = NodePath("../../GniV/GniV")
+metadata/_custom_type_script = "uid://cooh3bgcdntm"
+
+[node name="Slide&Slip" type="PanelContainer" parent="." unique_id=1916923601]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+mouse_filter = 2
+script = ExtResource("2_sjyhn")
+metadata/_custom_type_script = "uid://c8jinqy00b0sn"
+
+[node name="Slide&Slip" type="Button" parent="Slide&Slip" unique_id=653543632]
+layout_mode = 2
+offset_transform_enabled = true
+offset_transform_position = Vector2(0, 15)
+mouse_filter = 2
+theme = ExtResource("2_u8125")
+theme_override_font_sizes/font_size = 55
+text = "Slide & slip"
+flat = true
+script = ExtResource("3_sjyhn")
+metadata/_custom_type_script = "uid://cooh3bgcdntm"
+
+[node name="ThisLooksBad" type="PanelContainer" parent="." unique_id=654269043]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+mouse_filter = 2
+script = ExtResource("2_sjyhn")
+metadata/_custom_type_script = "uid://c8jinqy00b0sn"
+
+[node name="ThisLooksBad" type="Button" parent="ThisLooksBad" unique_id=830773701]
+layout_mode = 2
+offset_transform_enabled = true
+offset_transform_position = Vector2(0, 15)
+mouse_filter = 2
+theme = ExtResource("2_u8125")
+theme_override_font_sizes/font_size = 55
+text = "This looks bad"
+flat = true
+script = ExtResource("3_sjyhn")
+metadata/_custom_type_script = "uid://cooh3bgcdntm"
+
+[node name="GniV" type="PanelContainer" parent="." unique_id=1502264815]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+mouse_filter = 2
+script = ExtResource("2_sjyhn")
+metadata/_custom_type_script = "uid://c8jinqy00b0sn"
+
+[node name="GniV" type="Button" parent="GniV" unique_id=1207731586]
+layout_mode = 2
+offset_transform_enabled = true
+offset_transform_position = Vector2(0, 15)
+mouse_filter = 2
+theme = ExtResource("2_u8125")
+theme_override_font_sizes/font_size = 55
+text = "GniV"
+flat = true
+script = ExtResource("3_sjyhn")
+metadata/_custom_type_script = "uid://cooh3bgcdntm"
+
+[node name="Back" type="PanelContainer" parent="." unique_id=1073308853]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+mouse_filter = 2
+script = ExtResource("2_sjyhn")
+metadata/_custom_type_script = "uid://c8jinqy00b0sn"
+
+[node name="Back" type="Button" parent="Back" unique_id=1613306453]
+layout_mode = 2
+offset_transform_enabled = true
+offset_transform_position = Vector2(0, 15)
+mouse_filter = 2
+theme = ExtResource("2_u8125")
+theme_override_font_sizes/font_size = 55
+text = "Back"
+flat = true
+script = ExtResource("3_sjyhn")
+metadata/_custom_type_script = "uid://cooh3bgcdntm"
+
+[node name="Plapforming" type="PanelContainer" parent="." unique_id=1263135241]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+mouse_filter = 2
+script = ExtResource("2_sjyhn")
+metadata/_custom_type_script = "uid://c8jinqy00b0sn"
+
+[node name="Plapforming" type="Button" parent="Plapforming" unique_id=745700746]
+layout_mode = 2
+offset_transform_enabled = true
+offset_transform_position = Vector2(0, 15)
+mouse_filter = 2
+theme = ExtResource("2_u8125")
+theme_override_font_sizes/font_size = 55
+text = "Plapforming"
+flat = true
+script = ExtResource("3_sjyhn")
+metadata/_custom_type_script = "uid://cooh3bgcdntm"
+
+[node name="2xIsNothing" type="PanelContainer" parent="." unique_id=1322511131]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+mouse_filter = 2
+script = ExtResource("2_sjyhn")
+metadata/_custom_type_script = "uid://c8jinqy00b0sn"
+
+[node name="2xIsNothing" type="Button" parent="2xIsNothing" unique_id=2046571655]
+layout_mode = 2
+offset_transform_enabled = true
+offset_transform_position = Vector2(0, 15)
+mouse_filter = 2
+theme = ExtResource("2_u8125")
+theme_override_font_sizes/font_size = 55
+text = "2x is nothing"
+flat = true
+script = ExtResource("3_sjyhn")
+metadata/_custom_type_script = "uid://cooh3bgcdntm"
+
+[node name="SuperSpooky" type="PanelContainer" parent="." unique_id=21234792]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+mouse_filter = 2
+script = ExtResource("2_sjyhn")
+metadata/_custom_type_script = "uid://c8jinqy00b0sn"
+
+[node name="SuperSpooky" type="Button" parent="SuperSpooky" unique_id=602343943]
+layout_mode = 2
+offset_transform_enabled = true
+offset_transform_position = Vector2(0, 15)
+mouse_filter = 2
+theme = ExtResource("2_u8125")
+theme_override_font_sizes/font_size = 55
+text = "EndVinG"
+flat = true
+script = ExtResource("3_sjyhn")
+metadata/_custom_type_script = "uid://cooh3bgcdntm"
+
+[node name="EndVinG" type="PanelContainer" parent="." unique_id=317986229]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+mouse_filter = 2
+script = ExtResource("2_sjyhn")
+metadata/_custom_type_script = "uid://c8jinqy00b0sn"
+
+[node name="EndVinG" type="Button" parent="EndVinG" unique_id=1581091755]
+layout_mode = 2
+offset_transform_enabled = true
+offset_transform_position = Vector2(0, 15)
+mouse_filter = 2
+theme = ExtResource("2_u8125")
+theme_override_font_sizes/font_size = 55
+text = "EndVinG"
+flat = true
+script = ExtResource("3_sjyhn")
+metadata/_custom_type_script = "uid://cooh3bgcdntm"

@@ -11,6 +11,7 @@ config_version=5
 [application]
 
 config/name="VinG's Challenge"
+config/version="1.1"
 run/main_scene="uid://dg1tism7k5m81"
 config/use_custom_user_dir=true
 config/custom_user_dir_name="VinG's Challenge"
@@ -51,7 +52,7 @@ movie_writer/movie_file="C:/Users/justi/Videos/Godot/output.avi"
 
 [editor_plugins]
 
-enabled=PackedStringArray("res://addons/tilemap_layer_3d_cpp/plugin.cfg")
+enabled=PackedStringArray("res://addons/AsepriteWizard/plugin.cfg", "res://addons/tilemap_layer_3d_cpp/plugin.cfg")
 
 [global_group]
 
@@ -498,6 +499,8 @@ pause={
 
 [physics]
 
+common/physics_ticks_per_second=120
+common/max_physics_steps_per_frame=16
 3d/physics_engine="Jolt Physics"
 jolt_physics_3d/simulation/speculative_contact_distance=0.0
 jolt_physics_3d/queries/use_enhanced_internal_edge_removal=true

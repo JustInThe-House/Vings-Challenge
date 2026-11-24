@@ -1,26 +1,28 @@
 [gd_scene format=3 uid="uid://46rn7i2lp30l"]
 
-[ext_resource type="Script" uid="uid://b2g6scueirri0" path="res://menu/menu.gd" id="1_p0n8t"]
+[ext_resource type="Script" uid="uid://b2g6scueirri0" path="res://menu/main/menu.gd" id="1_tmd6c"]
 [ext_resource type="ArrayMesh" uid="uid://do6uqwp4sc66i" path="res://ving plush/Cube_008.res" id="2_tmd6c"]
 [ext_resource type="Script" uid="uid://i2lxwg26ruwe" path="res://menu/ving_doll.gd" id="3_h81yq"]
 [ext_resource type="Script" uid="uid://bm74r6d1y5d5s" path="res://menu/trailer_part.gd" id="4_eorms"]
 [ext_resource type="Script" uid="uid://f0ked1idfsgc" path="res://menu/win_star_outline.gd" id="5_t2dg8"]
 [ext_resource type="Theme" uid="uid://dl24m3jg7tisc" path="res://menu/menu_theme.tres" id="6_b4h5o"]
-[ext_resource type="Script" uid="uid://srfebxlggwdl" path="res://menu/controls_text.gd" id="7_dbvex"]
-[ext_resource type="Script" uid="uid://d1oughiqwl5q4" path="res://menu/main_menu.gd" id="8_uysh8"]
-[ext_resource type="Script" uid="uid://be5jbn7v64sel" path="res://menu/play.gd" id="9_pm5mm"]
-[ext_resource type="Script" uid="uid://cc3vfsbpt03m8" path="res://menu/controls.gd" id="10_dxffa"]
-[ext_resource type="Script" uid="uid://defqxtokn2si" path="res://menu/settings.gd" id="11_e0uss"]
-[ext_resource type="Script" uid="uid://dslxsf5gtjycb" path="res://menu/exit.gd" id="12_42cyn"]
-[ext_resource type="Script" uid="uid://bheohntyr3wyb" path="res://menu/settings_menu.gd" id="13_6s3j4"]
-[ext_resource type="Script" uid="uid://dtrfo42o2jelb" path="res://menu/volume.gd" id="14_ndece"]
-[ext_resource type="Script" uid="uid://bjvb7nk036awh" path="res://menu/vsync.gd" id="15_6q5d0"]
-[ext_resource type="Script" uid="uid://clg5ifmkmmn2c" path="res://menu/fps_cap.gd" id="16_lrfri"]
-[ext_resource type="Script" uid="uid://6ulcod7q5irg" path="res://menu/shaders.gd" id="17_bu6d0"]
-[ext_resource type="Script" uid="uid://degr85ucdjdkh" path="res://menu/back.gd" id="18_s34wi"]
+[ext_resource type="Script" uid="uid://srfebxlggwdl" path="res://menu/main/controls_text.gd" id="7_dbvex"]
+[ext_resource type="Script" uid="uid://d1oughiqwl5q4" path="res://menu/main/main_menu.gd" id="8_uysh8"]
+[ext_resource type="Script" uid="uid://b11x2ny6j8vlv" path="res://menu/main/controls.gd" id="10_dxffa"]
+[ext_resource type="Script" uid="uid://c8jinqy00b0sn" path="res://panel_container_default.gd" id="10_eorms"]
+[ext_resource type="Script" uid="uid://be5jbn7v64sel" path="res://menu/main/play.gd" id="10_h81yq"]
+[ext_resource type="Script" uid="uid://dslxsf5gtjycb" path="res://menu/main/exit.gd" id="12_42cyn"]
+[ext_resource type="Script" uid="uid://cooh3bgcdntm" path="res://menu/main/main_menu_button.gd" id="12_eorms"]
+[ext_resource type="Script" uid="uid://dtrfo42o2jelb" path="res://menu/main/settings/volume.gd" id="14_ndece"]
+[ext_resource type="Script" uid="uid://bheohntyr3wyb" path="res://menu/main/settings/settings_menu.gd" id="14_t2dg8"]
+[ext_resource type="Script" uid="uid://bjvb7nk036awh" path="res://menu/main/settings/vsync.gd" id="15_6q5d0"]
+[ext_resource type="Script" uid="uid://clg5ifmkmmn2c" path="res://menu/main/settings/fps_cap.gd" id="16_lrfri"]
+[ext_resource type="Script" uid="uid://6ulcod7q5irg" path="res://menu/main/settings/shaders.gd" id="17_bu6d0"]
+[ext_resource type="Script" uid="uid://degr85ucdjdkh" path="res://menu/main/settings/back.gd" id="18_s34wi"]
 [ext_resource type="FontFile" uid="uid://bbnj7pnyjtedq" path="res://PlaypenSans-VariableFont_wght.ttf" id="19_sy1yj"]
-[ext_resource type="Script" uid="uid://b7lt6ewkcevc1" path="res://menu/title.gd" id="20_x2kxn"]
-[ext_resource type="Script" uid="uid://bkwd3bxi6nd0q" path="res://menu/text_gradient_noise.gd" id="21_tmd6c"]
+[ext_resource type="Script" uid="uid://b7lt6ewkcevc1" path="res://menu/main/title.gd" id="20_b4h5o"]
+[ext_resource type="PackedScene" uid="uid://2vhyxlcuax51" path="res://menu/main/level select/levels_menu.tscn" id="20_h81yq"]
+[ext_resource type="Script" uid="uid://bkwd3bxi6nd0q" path="res://menu/main/text_gradient_noise.gd" id="21_dbvex"]
 
 [sub_resource type="FontVariation" id="FontVariation_wof8q"]
 base_font = ExtResource("19_sy1yj")
@@ -87,7 +89,7 @@ tracks/1/keys = {
 tracks/2/type = "value"
 tracks/2/imported = false
 tracks/2/enabled = true
-tracks/2/path = NodePath("Node2D:position")
+tracks/2/path = NodePath("PlushieBG:position")
 tracks/2/interp = 2
 tracks/2/loop_wrap = true
 tracks/2/keys = {
@@ -114,7 +116,7 @@ length = 0.001
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("Node2D:position")
+tracks/0/path = NodePath("PlushieBG:position")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
@@ -150,7 +152,7 @@ tracks/2/keys = {
 tracks/3/type = "value"
 tracks/3/imported = false
 tracks/3/enabled = true
-tracks/3/path = NodePath("Node2D/Parallax2D:autoscroll")
+tracks/3/path = NodePath("PlushieBG/Parallax2D:autoscroll")
 tracks/3/interp = 1
 tracks/3/loop_wrap = true
 tracks/3/keys = {
@@ -165,7 +167,7 @@ resource_name = "finish_flash"
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("Node2D:position")
+tracks/0/path = NodePath("PlushieBG:position")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
@@ -201,7 +203,7 @@ tracks/2/keys = {
 tracks/3/type = "value"
 tracks/3/imported = false
 tracks/3/enabled = true
-tracks/3/path = NodePath("Node2D/Parallax2D:autoscroll")
+tracks/3/path = NodePath("PlushieBG/Parallax2D:autoscroll")
 tracks/3/interp = 1
 tracks/3/loop_wrap = true
 tracks/3/keys = {
@@ -229,7 +231,7 @@ length = 4.333336892667785
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("Node2D:position")
+tracks/0/path = NodePath("PlushieBG:position")
 tracks/0/interp = 2
 tracks/0/loop_wrap = true
 tracks/0/keys = {
@@ -265,7 +267,7 @@ tracks/2/keys = {
 tracks/3/type = "value"
 tracks/3/imported = false
 tracks/3/enabled = true
-tracks/3/path = NodePath("Node2D/Parallax2D:autoscroll")
+tracks/3/path = NodePath("PlushieBG/Parallax2D:autoscroll")
 tracks/3/interp = 0
 tracks/3/loop_wrap = true
 tracks/3/keys = {
@@ -283,14 +285,14 @@ _data = {
 &"titlecard": SubResource("Animation_aycgx")
 }
 
-[node name="NewMainMenu" type="Control" unique_id=619658871]
+[node name="MainMenu" type="Control" unique_id=619658871]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("1_p0n8t")
+script = ExtResource("1_tmd6c")
 
 [node name="ColorRect" type="ColorRect" parent="." unique_id=1896191533]
 layout_mode = 1
@@ -308,39 +310,39 @@ grow_vertical = 2
 color = Color(0, 0, 0, 1)
 metadata/_edit_lock_ = true
 
-[node name="Node2D" type="Node2D" parent="." unique_id=1804945086]
+[node name="PlushieBG" type="Node2D" parent="." unique_id=1804945086]
 position = Vector2(-800, 360)
 
-[node name="Parallax2D" type="Parallax2D" parent="Node2D" unique_id=1565731752]
+[node name="Parallax2D" type="Parallax2D" parent="PlushieBG" unique_id=1565731752]
 scroll_offset = Vector2(-28.34, 62.975)
 repeat_size = Vector2(240, 160)
 autoscroll = Vector2(120, 80)
 repeat_times = 6
 follow_viewport = false
 
-[node name="SubViewportContainer" type="SubViewportContainer" parent="Node2D/Parallax2D" unique_id=451006671]
+[node name="SubViewportContainer" type="SubViewportContainer" parent="PlushieBG/Parallax2D" unique_id=451006671]
 offset_left = -208.0
 offset_top = 1.0
 offset_right = 264.0
 offset_bottom = 159.0
 stretch = true
 
-[node name="SubViewport" type="SubViewport" parent="Node2D/Parallax2D/SubViewportContainer" unique_id=2010181500]
+[node name="SubViewport" type="SubViewport" parent="PlushieBG/Parallax2D/SubViewportContainer" unique_id=2010181500]
 transparent_bg = true
 handle_input_locally = false
 size = Vector2i(472, 158)
 render_target_update_mode = 4
 
-[node name="VingDoll" type="MeshInstance3D" parent="Node2D/Parallax2D/SubViewportContainer/SubViewport" unique_id=2077450482]
+[node name="VingDoll" type="MeshInstance3D" parent="PlushieBG/Parallax2D/SubViewportContainer/SubViewport" unique_id=2077450482]
 transform = Transform3D(18, 0, 0, 0, -7.86805e-07, 18, 0, -18, -7.86805e-07, 0, 0.22418678, -0.028792828)
 mesh = ExtResource("2_tmd6c")
 script = ExtResource("3_h81yq")
 
-[node name="Camera3D" type="Camera3D" parent="Node2D/Parallax2D/SubViewportContainer/SubViewport" unique_id=1018916288]
+[node name="Camera3D" type="Camera3D" parent="PlushieBG/Parallax2D/SubViewportContainer/SubViewport" unique_id=1018916288]
 transform = Transform3D(0.7071068, 0.3535534, -0.61237246, 0, 0.8660254, 0.50000006, 0.7071068, -0.3535534, 0.61237246, -0.75, 0.75, 0.75)
 current = true
 
-[node name="OmniLight3D" type="OmniLight3D" parent="Node2D/Parallax2D/SubViewportContainer/SubViewport" unique_id=490197128]
+[node name="OmniLight3D" type="OmniLight3D" parent="PlushieBG/Parallax2D/SubViewportContainer/SubViewport" unique_id=490197128]
 transform = Transform3D(0.7071068, 0.3535534, -0.61237246, 0, 0.8660254, 0.50000006, 0.7071068, -0.3535534, 0.61237246, -1, 1, 1)
 
 [node name="Actions & Info" type="Control" parent="." unique_id=2040444392]
@@ -439,51 +441,94 @@ theme_override_constants/separation = -2
 script = ExtResource("8_uysh8")
 metadata/_edit_group_ = true
 
-[node name="Play" type="Button" parent="Actions & Info/MainMenu" unique_id=1224134852 node_paths=PackedStringArray("focus_up", "focus_down")]
+[node name="Play" type="PanelContainer" parent="Actions & Info/MainMenu" unique_id=1868392300]
+layout_mode = 2
+offset_transform_position = Vector2(0, 18.305)
+mouse_filter = 2
+script = ExtResource("10_eorms")
+metadata/_custom_type_script = "uid://c8jinqy00b0sn"
+
+[node name="Play" type="Button" parent="Actions & Info/MainMenu/Play" unique_id=1224134852 node_paths=PackedStringArray("focus_up", "focus_down")]
 layout_mode = 2
 mouse_filter = 2
 theme = ExtResource("6_b4h5o")
 text = "Play"
 flat = true
-script = ExtResource("9_pm5mm")
-focus_up = NodePath("../Exit")
-focus_down = NodePath("../Controls")
+script = ExtResource("10_h81yq")
+focus_up = NodePath("../../Exit/Exit")
+focus_down = NodePath("../../Extra/Extra")
 metadata/_custom_type_script = "uid://cooh3bgcdntm"
 
-[node name="Controls" type="Button" parent="Actions & Info/MainMenu" unique_id=1991594738 node_paths=PackedStringArray("focus_up", "focus_down")]
+[node name="Extra" type="PanelContainer" parent="Actions & Info/MainMenu" unique_id=828899529]
+layout_mode = 2
+mouse_filter = 2
+script = ExtResource("10_eorms")
+metadata/_custom_type_script = "uid://c8jinqy00b0sn"
+
+[node name="Extra" type="Button" parent="Actions & Info/MainMenu/Extra" unique_id=1377217862 node_paths=PackedStringArray("focus_up", "focus_down")]
+layout_mode = 2
+mouse_filter = 2
+theme = ExtResource("6_b4h5o")
+text = "Extra"
+flat = true
+script = ExtResource("12_eorms")
+focus_up = NodePath("../../Play/Play")
+focus_down = NodePath("../../Controls/Controls")
+metadata/_custom_type_script = "uid://cooh3bgcdntm"
+
+[node name="Controls" type="PanelContainer" parent="Actions & Info/MainMenu" unique_id=278692789]
+layout_mode = 2
+mouse_filter = 2
+script = ExtResource("10_eorms")
+metadata/_custom_type_script = "uid://c8jinqy00b0sn"
+
+[node name="Controls" type="Button" parent="Actions & Info/MainMenu/Controls" unique_id=1991594738 node_paths=PackedStringArray("focus_up", "focus_down")]
 layout_mode = 2
 mouse_filter = 2
 theme = ExtResource("6_b4h5o")
 text = "Controls"
 flat = true
 script = ExtResource("10_dxffa")
-focus_up = NodePath("../Play")
-focus_down = NodePath("../Settings")
+focus_up = NodePath("../../Extra/Extra")
+focus_down = NodePath("../../Settings/Settings")
 metadata/_custom_type_script = "uid://cooh3bgcdntm"
 
-[node name="Settings" type="Button" parent="Actions & Info/MainMenu" unique_id=630214938 node_paths=PackedStringArray("focus_up", "focus_down")]
+[node name="Settings" type="PanelContainer" parent="Actions & Info/MainMenu" unique_id=212620247]
+layout_mode = 2
+mouse_filter = 2
+script = ExtResource("10_eorms")
+metadata/_custom_type_script = "uid://c8jinqy00b0sn"
+
+[node name="Settings" type="Button" parent="Actions & Info/MainMenu/Settings" unique_id=630214938 node_paths=PackedStringArray("focus_up", "focus_down")]
 layout_mode = 2
 mouse_filter = 2
 theme = ExtResource("6_b4h5o")
 text = "Settings"
 flat = true
-script = ExtResource("11_e0uss")
-focus_up = NodePath("../Controls")
-focus_down = NodePath("../Exit")
+script = ExtResource("12_eorms")
+focus_up = NodePath("../../Controls/Controls")
+focus_down = NodePath("../../Exit/Exit")
 metadata/_custom_type_script = "uid://cooh3bgcdntm"
 
-[node name="Exit" type="Button" parent="Actions & Info/MainMenu" unique_id=1276312024 node_paths=PackedStringArray("focus_up", "focus_down")]
+[node name="Exit" type="PanelContainer" parent="Actions & Info/MainMenu" unique_id=827589820]
+layout_mode = 2
+mouse_filter = 2
+script = ExtResource("10_eorms")
+metadata/_custom_type_script = "uid://c8jinqy00b0sn"
+
+[node name="Exit" type="Button" parent="Actions & Info/MainMenu/Exit" unique_id=1276312024 node_paths=PackedStringArray("focus_up", "focus_down")]
 layout_mode = 2
 mouse_filter = 2
 theme = ExtResource("6_b4h5o")
 text = "Exit"
 flat = true
 script = ExtResource("12_42cyn")
-focus_up = NodePath("../Settings")
-focus_down = NodePath("../Play")
+focus_up = NodePath("../../Settings/Settings")
+focus_down = NodePath("../../Play/Play")
 metadata/_custom_type_script = "uid://cooh3bgcdntm"
 
 [node name="SettingsMenu" type="VBoxContainer" parent="." unique_id=2041721182]
+visible = false
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -491,54 +536,84 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 alignment = 1
-script = ExtResource("13_6s3j4")
+script = ExtResource("14_t2dg8")
 metadata/_edit_group_ = true
 
-[node name="Volume" type="Button" parent="SettingsMenu" unique_id=728727972 node_paths=PackedStringArray("focus_up", "focus_down")]
+[node name="PanelContainerDefault" type="PanelContainer" parent="SettingsMenu" unique_id=1082425692]
+layout_mode = 2
+mouse_filter = 2
+script = ExtResource("10_eorms")
+metadata/_custom_type_script = "uid://c8jinqy00b0sn"
+
+[node name="Volume" type="Button" parent="SettingsMenu/PanelContainerDefault" unique_id=728727972 node_paths=PackedStringArray("focus_up", "focus_down")]
 layout_mode = 2
 mouse_filter = 2
 theme = ExtResource("6_b4h5o")
 text = "Volume"
 flat = true
 script = ExtResource("14_ndece")
-focus_up = NodePath("../Back")
-focus_down = NodePath("../Vsync")
+focus_up = NodePath("../../PanelContainerDefault5/Back")
+focus_down = NodePath("../../PanelContainerDefault2/Vsync")
 metadata/_custom_type_script = "uid://cooh3bgcdntm"
 
-[node name="Vsync" type="Button" parent="SettingsMenu" unique_id=194653266 node_paths=PackedStringArray("focus_up", "focus_down")]
+[node name="PanelContainerDefault2" type="PanelContainer" parent="SettingsMenu" unique_id=1797628964]
+layout_mode = 2
+mouse_filter = 2
+script = ExtResource("10_eorms")
+metadata/_custom_type_script = "uid://c8jinqy00b0sn"
+
+[node name="Vsync" type="Button" parent="SettingsMenu/PanelContainerDefault2" unique_id=194653266 node_paths=PackedStringArray("focus_up", "focus_down")]
 layout_mode = 2
 mouse_filter = 2
 theme = ExtResource("6_b4h5o")
 text = "Vsync"
 flat = true
 script = ExtResource("15_6q5d0")
-focus_up = NodePath("../Volume")
-focus_down = NodePath("../FPSCap")
+focus_up = NodePath("../../PanelContainerDefault/Volume")
+focus_down = NodePath("../../PanelContainerDefault3/FPSCap")
 metadata/_custom_type_script = "uid://cooh3bgcdntm"
 
-[node name="FPSCap" type="Button" parent="SettingsMenu" unique_id=2061444368 node_paths=PackedStringArray("focus_up", "focus_down")]
+[node name="PanelContainerDefault3" type="PanelContainer" parent="SettingsMenu" unique_id=1196277433]
+layout_mode = 2
+mouse_filter = 2
+script = ExtResource("10_eorms")
+metadata/_custom_type_script = "uid://c8jinqy00b0sn"
+
+[node name="FPSCap" type="Button" parent="SettingsMenu/PanelContainerDefault3" unique_id=2061444368 node_paths=PackedStringArray("focus_up", "focus_down")]
 layout_mode = 2
 mouse_filter = 2
 theme = ExtResource("6_b4h5o")
 text = "FPS Cap"
 flat = true
 script = ExtResource("16_lrfri")
-focus_up = NodePath("../Vsync")
-focus_down = NodePath("../Shaders")
+focus_up = NodePath("../../PanelContainerDefault2/Vsync")
+focus_down = NodePath("../../PanelContainerDefault4/Shaders")
 metadata/_custom_type_script = "uid://cooh3bgcdntm"
 
-[node name="Shaders" type="Button" parent="SettingsMenu" unique_id=2040512252 node_paths=PackedStringArray("focus_up", "focus_down")]
+[node name="PanelContainerDefault4" type="PanelContainer" parent="SettingsMenu" unique_id=1655906641]
+layout_mode = 2
+mouse_filter = 2
+script = ExtResource("10_eorms")
+metadata/_custom_type_script = "uid://c8jinqy00b0sn"
+
+[node name="Shaders" type="Button" parent="SettingsMenu/PanelContainerDefault4" unique_id=2040512252 node_paths=PackedStringArray("focus_up", "focus_down")]
 layout_mode = 2
 mouse_filter = 2
 theme = ExtResource("6_b4h5o")
 text = "Shaders"
 flat = true
 script = ExtResource("17_bu6d0")
-focus_up = NodePath("../FPSCap")
-focus_down = NodePath("../Back")
+focus_up = NodePath("../../PanelContainerDefault3/FPSCap")
+focus_down = NodePath("../../PanelContainerDefault5/Back")
 metadata/_custom_type_script = "uid://cooh3bgcdntm"
 
-[node name="Back" type="Button" parent="SettingsMenu" unique_id=1662957655 node_paths=PackedStringArray("focus_up", "focus_down")]
+[node name="PanelContainerDefault5" type="PanelContainer" parent="SettingsMenu" unique_id=629730566]
+layout_mode = 2
+mouse_filter = 2
+script = ExtResource("10_eorms")
+metadata/_custom_type_script = "uid://c8jinqy00b0sn"
+
+[node name="Back" type="Button" parent="SettingsMenu/PanelContainerDefault5" unique_id=1662957655 node_paths=PackedStringArray("focus_up", "focus_down")]
 unique_name_in_owner = true
 layout_mode = 2
 mouse_filter = 2
@@ -546,9 +621,13 @@ theme = ExtResource("6_b4h5o")
 text = "Back"
 flat = true
 script = ExtResource("18_s34wi")
-focus_up = NodePath("../Shaders")
-focus_down = NodePath("../Volume")
+focus_up = NodePath("../../PanelContainerDefault4/Shaders")
+focus_down = NodePath("../../PanelContainerDefault/Volume")
 metadata/_custom_type_script = "uid://cooh3bgcdntm"
+
+[node name="LevelsMenu" parent="." unique_id=451293988 instance=ExtResource("20_h81yq")]
+visible = false
+layout_mode = 1
 
 [node name="Title" type="Label" parent="." unique_id=707727752]
 clip_children = 2
@@ -567,7 +646,7 @@ theme_override_font_sizes/font_size = 108
 text = "VinG's Challenge"
 label_settings = SubResource("LabelSettings_0jun2")
 horizontal_alignment = 1
-script = ExtResource("20_x2kxn")
+script = ExtResource("20_b4h5o")
 
 [node name="TextGradientNoise" type="TextureRect" parent="Title" unique_id=1882749137]
 modulate = Color(1, 1, 1, 0.39215687)
@@ -578,7 +657,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 texture = SubResource("NoiseTexture2D_p0n8t")
-script = ExtResource("21_tmd6c")
+script = ExtResource("21_dbvex")
 metadata/_edit_lock_ = true
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=152157065]
@@ -600,11 +679,19 @@ grow_vertical = 2
 color = Color(1, 1, 1, 0)
 metadata/_edit_lock_ = true
 
-[connection signal="focus_exited" from="Actions & Info/MainMenu/Controls" to="Actions & Info/ControlsText" method="_on_controls_focus_exited"]
-[connection signal="pressed" from="Actions & Info/MainMenu/Controls" to="Actions & Info/ControlsText" method="_on_controls_pressed"]
-[connection signal="pressed" from="Actions & Info/MainMenu/Settings" to="Actions & Info/MainMenu" method="_on_settings_pressed"]
-[connection signal="pressed" from="Actions & Info/MainMenu/Settings" to="SettingsMenu" method="_on_settings_pressed"]
-[connection signal="pressed" from="Actions & Info/MainMenu/Settings" to="Title" method="_on_settings_pressed"]
-[connection signal="pressed" from="SettingsMenu/Back" to="Actions & Info/MainMenu" method="_on_back_pressed"]
-[connection signal="pressed" from="SettingsMenu/Back" to="SettingsMenu" method="_on_back_pressed"]
-[connection signal="pressed" from="SettingsMenu/Back" to="Title" method="_on_back_pressed"]
+[node name="CreditsMenu" type="Control" parent="." unique_id=2082839619]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[connection signal="focus_exited" from="Actions & Info/MainMenu/Controls/Controls" to="Actions & Info/ControlsText" method="_on_controls_focus_exited"]
+[connection signal="pressed" from="Actions & Info/MainMenu/Controls/Controls" to="Actions & Info/ControlsText" method="_on_controls_pressed"]
+[connection signal="pressed" from="Actions & Info/MainMenu/Settings/Settings" to="Actions & Info/MainMenu" method="_on_settings_pressed"]
+[connection signal="pressed" from="Actions & Info/MainMenu/Settings/Settings" to="SettingsMenu" method="_on_settings_pressed"]
+[connection signal="pressed" from="Actions & Info/MainMenu/Settings/Settings" to="Title" method="_on_settings_pressed"]
+[connection signal="pressed" from="SettingsMenu/PanelContainerDefault5/Back" to="Actions & Info/MainMenu" method="_on_back_pressed"]
+[connection signal="pressed" from="SettingsMenu/PanelContainerDefault5/Back" to="SettingsMenu" method="_on_back_pressed"]
+[connection signal="pressed" from="SettingsMenu/PanelContainerDefault5/Back" to="Title" method="_on_back_pressed"]

@@ -6,8 +6,10 @@
 [ext_resource type="Script" uid="uid://fln0fofqityj" path="res://menu/pause/restart.gd" id="3_04uu7"]
 [ext_resource type="Script" uid="uid://gcexklskawhi" path="res://menu/pause/v_box_container.gd" id="3_f3dd2"]
 [ext_resource type="Script" uid="uid://dr60yvcf5wda2" path="res://menu/pause/menu.gd" id="4_4u03m"]
-[ext_resource type="Script" uid="uid://dslxsf5gtjycb" path="res://menu/exit.gd" id="4_f3dd2"]
+[ext_resource type="Script" uid="uid://dslxsf5gtjycb" path="res://menu/main/exit.gd" id="4_f3dd2"]
+[ext_resource type="Script" uid="uid://c8jinqy00b0sn" path="res://panel_container_default.gd" id="5_rwt5x"]
 [ext_resource type="Script" uid="uid://b4a2qelr5oilo" path="res://menu/pause/resume.gd" id="5_xm4lc"]
+[ext_resource type="PackedScene" uid="uid://cu8t7xe6o3p3a" path="res://rooms/og_collect/og_collect.tscn" id="8_h2e5x"]
 
 [node name="PauseMenu" type="Control" unique_id=1239628080]
 process_mode = 2
@@ -72,45 +74,70 @@ theme_override_font_sizes/font_size = 100
 text = "Paused"
 horizontal_alignment = 1
 
-[node name="Resume" type="Button" parent="MarginContainer/VBoxContainer" unique_id=143649041 node_paths=PackedStringArray("focus_up", "focus_down")]
+[node name="PanelContainerDefault" type="PanelContainer" parent="MarginContainer/VBoxContainer" unique_id=224670496]
+layout_mode = 2
+mouse_filter = 2
+script = ExtResource("5_rwt5x")
+metadata/_custom_type_script = "uid://c8jinqy00b0sn"
+
+[node name="Resume" type="Button" parent="MarginContainer/VBoxContainer/PanelContainerDefault" unique_id=143649041 node_paths=PackedStringArray("focus_up", "focus_down")]
 layout_mode = 2
 mouse_filter = 2
 text = "Resume"
 script = ExtResource("5_xm4lc")
-focus_up = NodePath("../Quit")
-focus_down = NodePath("../Restart")
+focus_up = NodePath("../../PanelContainerDefault4/Quit")
+focus_down = NodePath("../../PanelContainerDefault2/Restart")
 outline_variance = 4.0
 outline_base = 15.0
 metadata/_custom_type_script = "uid://cooh3bgcdntm"
 
-[node name="Restart" type="Button" parent="MarginContainer/VBoxContainer" unique_id=1972856709 node_paths=PackedStringArray("focus_up", "focus_down")]
+[node name="PanelContainerDefault2" type="PanelContainer" parent="MarginContainer/VBoxContainer" unique_id=726890809]
+layout_mode = 2
+mouse_filter = 2
+script = ExtResource("5_rwt5x")
+metadata/_custom_type_script = "uid://c8jinqy00b0sn"
+
+[node name="Restart" type="Button" parent="MarginContainer/VBoxContainer/PanelContainerDefault2" unique_id=1972856709 node_paths=PackedStringArray("focus_up", "focus_down")]
 layout_mode = 2
 mouse_filter = 2
 text = "Restart"
 script = ExtResource("3_04uu7")
-focus_up = NodePath("../Resume")
-focus_down = NodePath("../Menu")
+scene = ExtResource("8_h2e5x")
+focus_up = NodePath("../../PanelContainerDefault/Resume")
+focus_down = NodePath("../../PanelContainerDefault3/Menu")
 outline_variance = 4.0
 outline_base = 15.0
 metadata/_custom_type_script = "uid://cooh3bgcdntm"
 
-[node name="Menu" type="Button" parent="MarginContainer/VBoxContainer" unique_id=1067103753 node_paths=PackedStringArray("focus_up", "focus_down")]
+[node name="PanelContainerDefault3" type="PanelContainer" parent="MarginContainer/VBoxContainer" unique_id=292656893]
+layout_mode = 2
+mouse_filter = 2
+script = ExtResource("5_rwt5x")
+metadata/_custom_type_script = "uid://c8jinqy00b0sn"
+
+[node name="Menu" type="Button" parent="MarginContainer/VBoxContainer/PanelContainerDefault3" unique_id=1067103753 node_paths=PackedStringArray("focus_up", "focus_down")]
 layout_mode = 2
 mouse_filter = 2
 text = "Menu"
 script = ExtResource("4_4u03m")
-focus_up = NodePath("../Restart")
-focus_down = NodePath("../Quit")
+focus_up = NodePath("../../PanelContainerDefault2/Restart")
+focus_down = NodePath("../../PanelContainerDefault4/Quit")
 outline_variance = 4.0
 outline_base = 15.0
 metadata/_custom_type_script = "uid://cooh3bgcdntm"
 
-[node name="Quit" type="Button" parent="MarginContainer/VBoxContainer" unique_id=2053688815 node_paths=PackedStringArray("focus_up", "focus_down")]
+[node name="PanelContainerDefault4" type="PanelContainer" parent="MarginContainer/VBoxContainer" unique_id=1903207625]
+layout_mode = 2
+mouse_filter = 2
+script = ExtResource("5_rwt5x")
+metadata/_custom_type_script = "uid://c8jinqy00b0sn"
+
+[node name="Quit" type="Button" parent="MarginContainer/VBoxContainer/PanelContainerDefault4" unique_id=2053688815 node_paths=PackedStringArray("focus_up", "focus_down")]
 layout_mode = 2
 mouse_filter = 2
 text = "Quit"
 script = ExtResource("4_f3dd2")
-focus_up = NodePath("../Menu")
-focus_down = NodePath("../Resume")
+focus_up = NodePath("../../PanelContainerDefault3/Menu")
+focus_down = NodePath("../../PanelContainerDefault/Resume")
 outline_variance = 4.0
 outline_base = 15.0

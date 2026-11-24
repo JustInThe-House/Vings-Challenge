@@ -28,8 +28,20 @@ stencil_mode = 1
 stencil_flags = 2
 stencil_outline_thickness = 0.07
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_fltcq"]
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ejn7s"]
+render_priority = 1
 next_pass = SubResource("StandardMaterial3D_nmqhj")
+transparency = 1
+no_depth_test = true
+shading_mode = 0
+albedo_color = Color(0, 0, 0, 1)
+stencil_mode = 3
+stencil_flags = 1
+stencil_compare = 5
+metadata/_stencil_owned = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_fltcq"]
+next_pass = SubResource("StandardMaterial3D_ejn7s")
 albedo_texture = ExtResource("2_ejn7s")
 stencil_mode = 2
 stencil_flags = 2
@@ -47,7 +59,8 @@ physics_material_override = SubResource("PhysicsMaterial_mlfnx")
 gravity_scale = 4.678
 angular_damp = 8.0
 script = ExtResource("1_flrai")
-roll_speed = 300.0
+roll_speed = 270.0
+JUMP_POWER = 2400.0
 
 [node name="Model" type="MeshInstance3D" parent="." unique_id=1125394401]
 cast_shadow = 0

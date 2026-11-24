@@ -1,0 +1,14 @@
+[remap]
+
+importer="aseprite_wizard.plugin.noop"
+type="PackedDataContainer"
+uid="uid://4vsfbbnhfkm"
+path="res://.godot/imported/retro.aseprite-7555dd6bbc969039e76e5e5358ccb9e0.res"
+
+[deps]
+
+source_file="res://tilesets/retro.aseprite"
+dest_files=["res://.godot/imported/retro.aseprite-7555dd6bbc969039e76e5e5358ccb9e0.res"]
+
+[params]
+

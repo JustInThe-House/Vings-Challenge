@@ -58,34 +58,25 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.8269196, 0, -95.27301)
 speed = 10.0
 player = NodePath("../../Jawsh")
 
-[node name="Ving" parent="Characters/Vings" index="1" unique_id=725661223 node_paths=PackedStringArray("player") instance=ExtResource("3_b7msr")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 111.12155, 0, -63.27301)
-speed = 10.0
-player = NodePath("../../Jawsh")
-metadata/_edit_group_ = true
-
-[node name="Sprite3D" parent="Characters/Vings/Ving" index="2" unique_id=1946103702]
-modulate = Color(0.9999632, 0.4816875, 0.43960226, 0.70980394)
-
-[node name="Ving2" parent="Characters/Vings" index="2" unique_id=1965516585 node_paths=PackedStringArray("player") instance=ExtResource("3_b7msr")]
+[node name="Ving2" parent="Characters/Vings" index="1" unique_id=1965516585 node_paths=PackedStringArray("player") instance=ExtResource("3_b7msr")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -124.35385, 0, 31.72699)
 speed = 10.0
 player = NodePath("../../Jawsh")
 metadata/_edit_group_ = true
 
 [node name="Sprite3D" parent="Characters/Vings/Ving2" index="2" unique_id=1946103702]
-modulate = Color(1, 0.58546525, 0.36680222, 0.654902)
+modulate = Color(1, 0.48235294, 0.4392157, 0.70980394)
 
-[node name="Ving4" parent="Characters/Vings" index="3" unique_id=1885114305 node_paths=PackedStringArray("player") instance=ExtResource("3_b7msr")]
+[node name="Ving4" parent="Characters/Vings" index="2" unique_id=1885114305 node_paths=PackedStringArray("player") instance=ExtResource("3_b7msr")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 171.29584, 0, 99.4447)
 speed = 10.15
 player = NodePath("../../Jawsh")
 metadata/_edit_group_ = true
 
 [node name="Sprite3D" parent="Characters/Vings/Ving4" index="2" unique_id=1946103702]
-modulate = Color(0.9529412, 0.85882354, 0, 0.68235296)
+modulate = Color(1, 0.58431375, 0.36862746, 0.654902)
 
-[node name="Ving5" parent="Characters/Vings" index="4" unique_id=2025597336 node_paths=PackedStringArray("player") instance=ExtResource("3_b7msr")]
+[node name="Ving5" parent="Characters/Vings" index="3" unique_id=2025597336 node_paths=PackedStringArray("player") instance=ExtResource("3_b7msr")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 185.29584, 0, 350.8156)
 speed = 11.0
 player = NodePath("../../Jawsh")
@@ -94,25 +85,25 @@ metadata/_edit_group_ = true
 [node name="Sprite3D" parent="Characters/Vings/Ving5" index="2" unique_id=1946103702]
 modulate = Color(0.43442386, 0.5471691, 1, 0.69411767)
 
-[node name="Ving6" parent="Characters/Vings" index="5" unique_id=379260562 node_paths=PackedStringArray("player") instance=ExtResource("3_b7msr")]
+[node name="Ving6" parent="Characters/Vings" index="4" unique_id=379260562 node_paths=PackedStringArray("player") instance=ExtResource("3_b7msr")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -144.27951, 0, 161.04973)
 speed = 10.3
 player = NodePath("../../Jawsh")
 metadata/_edit_group_ = true
 
 [node name="Sprite3D" parent="Characters/Vings/Ving6" index="2" unique_id=1946103702]
-modulate = Color(0.3372549, 0.64705884, 0, 0.6666667)
+modulate = Color(0.9529412, 0.85882354, 0, 0.68235296)
 
-[node name="Ving7" parent="Characters/Vings" index="6" unique_id=689659981 node_paths=PackedStringArray("player") instance=ExtResource("3_b7msr")]
+[node name="Ving7" parent="Characters/Vings" index="5" unique_id=689659981 node_paths=PackedStringArray("player") instance=ExtResource("3_b7msr")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -146.27951, 0, 406.8652)
 speed = 11.0
 player = NodePath("../../Jawsh")
 metadata/_edit_group_ = true
 
 [node name="Sprite3D" parent="Characters/Vings/Ving7" index="2" unique_id=1946103702]
-modulate = Color(0.7711976, 0.51224095, 1, 0.69411767)
+modulate = Color(0.7883418, 0.48642564, 0.99999756, 1)
 
-[node name="Ving10" parent="Characters/Vings" index="7" unique_id=1019417292 node_paths=PackedStringArray("player") instance=ExtResource("3_b7msr")]
+[node name="Ving10" parent="Characters/Vings" index="6" unique_id=1019417292 node_paths=PackedStringArray("player") instance=ExtResource("3_b7msr")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 652)
 player = NodePath("../../Jawsh")
 metadata/_edit_group_ = true
@@ -120,7 +111,7 @@ metadata/_edit_group_ = true
 [node name="Sprite3D" parent="Characters/Vings/Ving10" index="2" unique_id=1946103702]
 modulate = Color(1, 0.4847669, 0.86133176, 0.73333335)
 
-[node name="Ving8" parent="Characters/Vings" index="8" unique_id=204150801 node_paths=PackedStringArray("player") instance=ExtResource("3_b7msr")]
+[node name="Ving8" parent="Characters/Vings" index="7" unique_id=204150801 node_paths=PackedStringArray("player") instance=ExtResource("3_b7msr")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -152.27951, 0, 254.04973)
 speed = 10.6
 player = NodePath("../../Jawsh")
@@ -129,14 +120,14 @@ metadata/_edit_group_ = true
 [node name="Sprite3D" parent="Characters/Vings/Ving8" index="2" unique_id=1946103702]
 modulate = Color(2.887845e-06, 0.7233199, 0.992686, 0.64705884)
 
-[node name="Ving9" parent="Characters/Vings" index="9" unique_id=221592003 node_paths=PackedStringArray("player") instance=ExtResource("3_b7msr")]
+[node name="Ving9" parent="Characters/Vings" index="8" unique_id=221592003 node_paths=PackedStringArray("player") instance=ExtResource("3_b7msr")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 181.29584, 0, 211.4447)
 speed = 10.45
 player = NodePath("../../Jawsh")
 metadata/_edit_group_ = true
 
 [node name="Sprite3D" parent="Characters/Vings/Ving9" index="2" unique_id=1946103702]
-modulate = Color(4.3317677e-06, 0.7380931, 0.7052809, 0.69411767)
+modulate = Color(0.3372549, 0.64705884, 0, 0.6666667)
 
 [node name="Jawsh" parent="Characters" parent_id_path=PackedInt32Array(86619700) index="1" unique_id=208343381 instance=ExtResource("4_aj7dx")]
 unique_name_in_owner = true
@@ -562,7 +553,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0.5, 24)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0.5, 20)
 
 [editable path="Plushies/VingDoll"]
-[editable path="Characters/Vings/Ving"]
 [editable path="Characters/Vings/Ving2"]
 [editable path="Characters/Vings/Ving4"]
 [editable path="Characters/Vings/Ving5"]
